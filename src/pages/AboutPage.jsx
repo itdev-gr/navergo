@@ -31,20 +31,26 @@ export default function AboutPage() {
       </section>
       {/* End Common BreadCrumb */}
 
-      {/* Start Company Journey */}
+      {/* Start Company Story */}
       <section>
         <div className="cs-cj-wrap">
           <div className="cj-left">
             <div className="cs-section-height"></div>
             <div className="cj-left-content">
-              <h2 data-aos="fade-up" data-aos-duration="500">{t("about.journey.heading")}</h2>
+              <h2 data-aos="fade-up" data-aos-duration="500">{t("about.story.title")}</h2>
               <div className="cs-height-25"></div>
               <div className="max-width-600">
-                <p  data-aos="fade-up" data-aos-duration="700">{t("about.journey.paragraph1")}</p>
+                <p data-aos="fade-up" data-aos-duration="700">{t("about.story.paragraph1")}</p>
                 <div className="cs-height-30"></div>
-                <p data-aos="fade-up" data-aos-duration="1000">{t("about.journey.paragraph2")}</p>
+                <p data-aos="fade-up" data-aos-duration="1000">{t("about.story.paragraph2")}</p>
+                <div className="cs-height-40"></div>
+                <div className="list-feature" data-aos="fade-up" data-aos-duration="1100">
+                  <h6>{t("about.story.foundedLabel")}: {t("about.story.foundedValue")}</h6>
+                  <div className="cs-list-border"></div>
+                  <h6>{t("about.story.locationLabel")}: {t("about.story.locationValue")}</h6>
+                </div>
               </div>
-                <div className="cs-height-165"></div>
+              <div className="cs-height-165"></div>
             </div>
             <img src="/assets/img/about/cj-left-img.jpg" alt="" />
           </div>
@@ -52,204 +58,21 @@ export default function AboutPage() {
           <div className="cj-right">
             <div className="cs-section-height"></div>
             <div className="cs-height-40"></div>
-
-            <div className="timeline-pagination"></div>
-            <div className="timeline-progress">
-              <div className="timeline-progress-bar"></div>
-            </div>
-
-            <div className="swiper timeline-slider">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img2.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide1.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide1.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide1.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img4.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide2.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide2.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide2.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img3.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide3.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide3.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide3.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide4.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide4.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide4.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img1.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide5.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide5.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide5.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img4.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide6.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide6.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide6.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img2.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide7.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide7.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide7.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="cs-height-50"></div>
-                  <img src="/assets/img/about/cj-right-img3.jpg" alt="" />
-                  <div className="cj-right-content">
-
-                    <div className="cs-height-40"></div>
-                    <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">{t("about.journey.slide8.heading")}</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide8.animatedText")}</span>
-                    </div>
-                    <p>{t("about.journey.slide8.paragraph")}</p>
-                    <div className="cs-height-100"></div>
-                    <div className="list-feature">
-                      <h6>{t("about.journey.features.feature1")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature2")}</h6>
-                      <div className="cs-list-border"></div>
-                      <h6>{t("about.journey.features.feature3")}</h6>
-                    </div>
-                    <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
-                  </div>
-                </div>
+            <div className="cj-right-content">
+              <img src="/assets/img/about/cj-right-img2.jpg" alt="" />
+              <div className="cs-height-40"></div>
+              <div className="cs-heading-with-animation text-left m-auto d-flex">
+                <h2 className="cs-heading">{t("about.story.title")}</h2>
+                <span className="cs-text-style-h1 cs-animated-text">{t("about.story.animatedText")}</span>
               </div>
+              <p>{t("about.story.paragraph1")}</p>
+              <div className="cs-height-50"></div>
+              <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("about.cta.button")}</span></Link>
             </div>
           </div>
         </div>
       </section>
-      {/* End Company Journey */}
+      {/* End Company Story */}
 
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
@@ -272,177 +95,272 @@ export default function AboutPage() {
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
 
-      {/* Start Testimonial */}
+      {/* Start Values Section */}
       <section>
-        <div className="testi-wrapper cs-bg-black theme-dark">
-          <div className="cs-height-175"></div>
-          <div className="container for-quote-mark">
+        <div className="container">
+          <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
+            <h2 className="cs-heading">{t("about.values.heading")}</h2>
+            <span className="cs-text-style-h1 cs-animated-text">{t("about.values.animatedText")}</span>
+          </div>
+          <div className="cs-height-50"></div>
+        </div>
+        <div className="cs-feature-card-wrap lg-gutter-control">
+          <div className="container">
             <div className="row">
-              <div className="swiper home1-testi-slider1">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div className="testi-slider-item-wrap">
-                      <div className="testi-user">
-                        <img src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>{t("about.testimonials.1.name")}</h6>
-                        <p>{t("about.testimonials.1.location")}</p>
-                      </div>
-                      <div className="testi-border">
-                        <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.5" d="M1 0V60.9809H46.3727L1 99.5681V236" stroke="#C1C1C1" />
-                        </svg>
-                      </div>
-                      <div className="testi-content">
-                        <img src="/assets/img/star.svg" alt="" />
-                        <div className="cs-height-20"></div>
-                        <h4>{t("about.testimonials.1.quote")}</h4>
-                      </div>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div className="col-xl-4 col-md-6" key={`value-${i}`}>
+                  <div className="feature-card-item cs_white_bg theme-border-wrap" data-aos="fade-up" data-aos-duration={300 + i * 100}>
+                    <div className="b-top-left">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
                     </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="testi-slider-item-wrap">
-                      <div className="testi-user">
-                        <img src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>{t("about.testimonials.2.name")}</h6>
-                        <p>{t("about.testimonials.2.location")}</p>
-                      </div>
-                      <div className="testi-border">
-                        <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.5" d="M1 0V60.9809H46.3727L1 99.5681V236" stroke="#C1C1C1" />
-                        </svg>
-                      </div>
-                      <div className="testi-content">
-                        <img src="/assets/img/star.svg" alt="" />
-                        <div className="cs-height-20"></div>
-                        <h4>{t("about.testimonials.2.quote")}</h4>
-                      </div>
+                    <div className="b-top-right">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
                     </div>
+                    <div className="b-bottom-right">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
+                    </div>
+                    <div className="b-bottom-left">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
+                    </div>
+                    <div className="cs-feature-icon">
+                      <img src="/assets/img/feature-icon-shipyard.png" alt="" />
+                    </div>
+                    <h5>{t(`about.values.items.${i}.title`)}</h5>
+                    <p>{t(`about.values.items.${i}.description`)}</p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="testi-quote-mark">
-              <img src="/assets/img/quotation-mark.svg" alt="" />
+              ))}
             </div>
           </div>
-          <div className="testi-pagi-wrap">
-            <div className="testi-pagination swiper-pagination-vertical"></div>
-          </div>
-          <div className="cs-height-175"></div>
         </div>
       </section>
-      {/* End Testimonial */}
+      {/* End Values Section */}
 
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
 
-      {/* Start Service Section */}
+      {/* Start Services Area Section */}
       <section>
-        <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
-          <h2 className="cs-heading">{t("about.services.heading")}</h2>
-          <span className="cs-text-style-h1 cs-animated-text">{t("about.services.animatedText")}</span>
-        </div>
-        <div className="cs-height-50"></div>
-
-        <div className="services-wrapper">
-          <div className="container">
-            <div className="swiper service-slider">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="service-item" data-aos="fade-up" data-aos-duration="300">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/service-img01.jpg" alt="" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.01.title")}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t("about.services.items.01.description")}</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
-                        </div>
-                    </div>
-                  </div>
+        <div className="container">
+          <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
+            <h2 className="cs-heading">{t("about.servicesArea.heading")}</h2>
+            <span className="cs-text-style-h1 cs-animated-text">{t("about.servicesArea.animatedText")}</span>
+          </div>
+          <div className="cs-height-50"></div>
+          <div className="row">
+            <div className="col-xl-6 col-lg-6">
+              <div className="feature-card-item cs_white_bg theme-border-wrap" data-aos="fade-up" data-aos-duration="400">
+                <div className="b-top-left">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
                 </div>
-                <div className="swiper-slide">
-                  <div className="service-item"  data-aos="fade-up" data-aos-duration="400">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/service-img02.jpg" alt="" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.02.title")}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t("about.services.items.02.description")}</p>
-                            <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to="/service-details"><span>{t("common.cta.moreDetails")}</span></Link>
-                        </div>
-                    </div>
-                  </div>
+                <div className="b-top-right">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
                 </div>
-                <div className="swiper-slide">
-                  <div className="service-item"  data-aos="fade-up" data-aos-duration="500">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/service-img03.jpg" alt="" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.03.title")}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t("about.services.items.03.description")}</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
-                        </div>
-                    </div>
-                  </div>
+                <div className="b-bottom-right">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
                 </div>
-                <div className="swiper-slide">
-                  <div className="service-item"  data-aos="fade-up" data-aos-duration="600">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/service-img04.jpg" alt="" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.04.title")}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t("about.services.items.04.description")}</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
-                        </div>
-                    </div>
-                  </div>
+                <div className="b-bottom-left">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
                 </div>
-                <div className="swiper-slide">
-                  <div className="service-item"  data-aos="fade-up" data-aos-duration="700">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/service-img05.jpg" alt="" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.05.title")}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t("about.services.items.05.description")}</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
-                        </div>
-                    </div>
-                  </div>
+                <h4>{t("about.servicesArea.shipRepair.title")}</h4>
+                <div className="cs-height-25"></div>
+                <div className="list-feature">
+                  <h6>{t("about.servicesArea.shipRepair.items.1")}</h6>
+                  <div className="cs-list-border"></div>
+                  <h6>{t("about.servicesArea.shipRepair.items.2")}</h6>
+                  <div className="cs-list-border"></div>
+                  <h6>{t("about.servicesArea.shipRepair.items.3")}</h6>
+                  <div className="cs-list-border"></div>
+                  <h6>{t("about.servicesArea.shipRepair.items.4")}</h6>
+                  <div className="cs-list-border"></div>
+                  <h6>{t("about.servicesArea.shipRepair.items.5")}</h6>
                 </div>
               </div>
+              <div className="cs-height-40"></div>
             </div>
-            <div className="cs-height-50"></div>
-            <div className="srv-pagination">
-              <div className="srv-swiper-pagination"></div>
+            <div className="col-xl-6 col-lg-6">
+              <div className="feature-card-item cs_white_bg theme-border-wrap" data-aos="fade-up" data-aos-duration="500">
+                <div className="b-top-left">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
+                </div>
+                <div className="b-top-right">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
+                </div>
+                <div className="b-bottom-right">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
+                </div>
+                <div className="b-bottom-left">
+                  <div className="horizontal"></div>
+                  <div className="verticle"></div>
+                </div>
+                <h4>{t("about.servicesArea.shipMaintenance.title")}</h4>
+                <div className="cs-height-25"></div>
+                <div className="list-feature">
+                  <h6>{t("about.servicesArea.shipMaintenance.items.1")}</h6>
+                  <div className="cs-list-border"></div>
+                  <h6>{t("about.servicesArea.shipMaintenance.items.2")}</h6>
+                </div>
+              </div>
+              <div className="cs-height-40"></div>
             </div>
+          </div>
+          <div className="cs-height-20"></div>
+          <p className="text-center">{t("about.servicesArea.footnote")}</p>
+        </div>
+      </section>
+      {/* End Services Area Section */}
+
+      <div className="cs-section-height"></div>
+      {/* Section to Section Gap */}
+
+      {/* Start Personnel & Know-how Section */}
+      <section>
+        <div className="container">
+          <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
+            <h2 className="cs-heading">{t("about.personnel.heading")}</h2>
+            <span className="cs-text-style-h1 cs-animated-text">{t("about.personnel.animatedText")}</span>
+          </div>
+          <div className="cs-height-30"></div>
+          <p className="text-center max-width-800 m-auto">{t("about.personnel.paragraph")}</p>
+          <div className="cs-height-50"></div>
+          <div className="row">
+            {[1, 2, 3, 4].map((i) => (
+              <div className="col-xl-3 col-md-6" key={`personnel-${i}`}>
+                <div className="feature-card-item cs_white_bg theme-border-wrap" data-aos="fade-up" data-aos-duration={300 + i * 100}>
+                  <div className="b-top-left">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="b-top-right">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="b-bottom-right">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="b-bottom-left">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="cs-feature-icon">
+                    <img src="/assets/img/feature-icon-shipyard.png" alt="" />
+                  </div>
+                  <h6>{t(`about.personnel.items.${i}`)}</h6>
+                </div>
+                <div className="cs-height-30"></div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      {/* End Service Section */}
+      {/* End Personnel & Know-how Section */}
+
+      <div className="cs-section-height"></div>
+      {/* Section to Section Gap */}
+
+      {/* Start Partnerships & Projects Section */}
+      <section>
+        <div className="container">
+          <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
+            <h2 className="cs-heading">{t("about.partnerships.heading")}</h2>
+            <span className="cs-text-style-h1 cs-animated-text">{t("about.partnerships.animatedText")}</span>
+          </div>
+          <div className="cs-height-30"></div>
+          <p className="text-center max-width-800 m-auto">{t("about.partnerships.paragraph")}</p>
+          <div className="cs-height-50"></div>
+          <div className="row">
+            {["greece", "abroad", "atSea"].map((loc, idx) => (
+              <div className="col-xl-4 col-md-6" key={`partnership-${loc}`}>
+                <div className="feature-card-item cs_white_bg theme-border-wrap" data-aos="fade-up" data-aos-duration={300 + idx * 150}>
+                  <div className="b-top-left">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="b-top-right">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="b-bottom-right">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="b-bottom-left">
+                    <div className="horizontal"></div>
+                    <div className="verticle"></div>
+                  </div>
+                  <div className="cs-feature-icon">
+                    <img src="/assets/img/feature-icon-ship.svg" alt="" />
+                  </div>
+                  <h5>{t(`about.partnerships.locations.${loc}.title`)}</h5>
+                  <p>{t(`about.partnerships.locations.${loc}.description`)}</p>
+                </div>
+                <div className="cs-height-30"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* End Partnerships & Projects Section */}
+
+      <div className="cs-section-height"></div>
+      {/* Section to Section Gap */}
+
+      {/* Start Pillars of Growth Section */}
+      <section>
+        <div className="cs-bg-black theme-dark">
+          <div className="cs-height-150"></div>
+          <div className="container">
+            <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
+              <h2 className="cs-heading cs_white_color">{t("about.pillars.heading")}</h2>
+              <span className="cs-text-style-h1 cs-animated-text">{t("about.pillars.animatedText")}</span>
+            </div>
+            <div className="cs-height-50"></div>
+            <div className="row">
+              {[1, 2, 3, 4].map((i) => (
+                <div className="col-xl-3 col-md-6" key={`pillar-${i}`}>
+                  <div className="feature-card-item theme-border-wrap" data-aos="fade-up" data-aos-duration={300 + i * 100}>
+                    <div className="b-top-left">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
+                    </div>
+                    <div className="b-top-right">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
+                    </div>
+                    <div className="b-bottom-right">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
+                    </div>
+                    <div className="b-bottom-left">
+                      <div className="horizontal"></div>
+                      <div className="verticle"></div>
+                    </div>
+                    <span className="cs-text-style-h2 themecolor">0{i}</span>
+                    <div className="cs-height-15"></div>
+                    <h5 className="cs_white_color">{t(`about.pillars.items.${i}.title`)}</h5>
+                    <p>{t(`about.pillars.items.${i}.description`)}</p>
+                  </div>
+                  <div className="cs-height-30"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="cs-height-100"></div>
+        </div>
+      </section>
+      {/* End Pillars of Growth Section */}
 
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
@@ -490,7 +408,7 @@ export default function AboutPage() {
                   <div className="counter-item" data-aos="fade-up" data-aos-duration="300">
                     <span id="count1" className="amin_auto_count cs-text-style-h2">50</span><span className="cs-text-style-h2">k</span>
                     <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.happyCustomers")}</h6>
+                    <h6>{t("about.counter.shipsServiced")}</h6>
                     <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>
@@ -502,7 +420,7 @@ export default function AboutPage() {
                   <div className="counter-item" data-aos="fade-up" data-aos-duration="400">
                     <span id="count2" className="amin_auto_count cs-text-style-h2">50</span>
                     <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.awards")}</h6>
+                    <h6>{t("about.counter.yearsExperience")}</h6>
                     <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>
@@ -511,7 +429,7 @@ export default function AboutPage() {
                   <div className="counter-item" data-aos="fade-up" data-aos-duration="500">
                     <span id="count3" className="amin_auto_count cs-text-style-h2">126</span><span className="cs-text-style-h2">+</span>
                     <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.projectsCompleted")}</h6>
+                    <h6>{t("about.counter.repairProjects")}</h6>
                     <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>
@@ -523,7 +441,7 @@ export default function AboutPage() {
                   <div className="counter-item"  data-aos="fade-up" data-aos-duration="600">
                     <span id="count4" className="amin_auto_count cs-text-style-h2">32</span><span className="cs-text-style-h2">+</span>
                     <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.ongoingProjects")}</h6>
+                    <h6>{t("about.counter.activeContracts")}</h6>
                     <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>

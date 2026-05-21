@@ -69,123 +69,145 @@
       "fromHome": "HOME",
       "current": "ABOUT US"
     },
-    "journey": {
-      "heading": "Timeless Journey of Crafting Excellence in Ship Repair",
-      "paragraph1": "We believe ship repair is more than tasks performed on a vessel — it's about building lasting partnerships that inspire trust and ensure seaworthiness. Our skilled team brings expertise and a passion for excellence to every project.",
-      "paragraph2": "From aluminum and steel plate works to piping and industrial applications, we cover the full spectrum of modern ship repair with consistency, precision, and respect for our clients' schedules.",
-      "slide1": {
-        "heading": "Starting with a Vision and a Love for the Sea",
-        "animatedText": "INITIAL START 1996",
-        "paragraph": "Navergo began as a small workshop in the port of Perama, dedicated to ship repair and deeply aware of the needs of crews who entrust their vessels to our hands."
-      },
-      "slide2": {
-        "heading": "Building Relationships with Fleets and Owners",
-        "animatedText": "GROWTH 2005",
-        "paragraph": "With the expansion of our steel plate department, we took on larger hull restoration and frame reinforcement projects, establishing Navergo as a reliable partner for Greek and international shipping offices."
-      },
-      "slide3": {
-        "heading": "Shaping the Future of Ship Repair",
-        "animatedText": "EVOLUTION 2012",
-        "paragraph": "We invested in modern aluminum welding equipment and specialized staff to support complex superstructures, cabins, and critical vessel sections with the precision class societies demand."
-      },
-      "slide4": {
-        "heading": "Innovating Ship Repair, Enriching Voyages",
-        "animatedText": "CERTIFIED 2016",
-        "paragraph": "ISO 9001 certification sealed our commitment to quality. Our processes were standardized, enabling predictable timelines and transparent communication at every phase of the project."
-      },
-      "slide5": {
-        "heading": "Your Partner in Modern Ship Repair Solutions",
-        "animatedText": "EXPANSION 2019",
-        "paragraph": "We expanded into engine-room piping works, cooling systems, and fuel management, offering integrated support to crews and technical managers of vessels."
-      },
-      "slide6": {
-        "heading": "Enriching Ship Repair with Consistency and Respect",
-        "animatedText": "MATURITY 2021",
-        "paragraph": "With dozens of completed projects each year, Navergo became one of the most trusted names in Perama ship repair, with clients across the Mediterranean and Northern Europe."
-      },
-      "slide7": {
-        "heading": "Your Partner in Modern Ship Repair Solutions",
-        "animatedText": "RENEWAL 2023",
-        "paragraph": "We upgraded our workshops and added advanced measurement and inspection tools, aiming for zero deviation from specifications and maximum safety during dry-dock operations."
-      },
-      "slide8": {
-        "heading": "Navergo — Elevating Standards in Ship Repair",
-        "animatedText": "TODAY",
-        "paragraph": "Today Navergo combines decades of experience with modern practices, highly specialized engineers, and a workshop crew that respects every delivery deadline without compromising on quality."
-      },
-      "features": {
-        "feature1": "1. Aluminum Works",
-        "feature2": "2. Steel Plate Works",
-        "feature3": "3. Piping Works"
-      }
+    "story": {
+      "title": "Navergo Ship Repair G.P.",
+      "animatedText": "THE COMPANY",
+      "paragraph1": "Navergo Ship Repair G.P. is a modern, dynamically growing company in the field of ship repair and industrial maintenance. Founded on 8 November 2022, it is headquartered in Perama, one of the most important hubs of Greek maritime activity.",
+      "paragraph2": "The company was created by two partners with many years of experience in the shipping sector, combining know-how, deep technical training, and professional consistency to deliver services of the highest quality and reliability.",
+      "foundedLabel": "Founded",
+      "foundedValue": "8 November 2022",
+      "locationLabel": "Headquarters",
+      "locationValue": "Perama, Greece"
     },
-    "marquee": "Quality Repairs, On Time, Every Time.",
-    "testimonials": {
-      "1": {
-        "name": "Sarah Johnson",
-        "location": "Los Angeles, CA",
-        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
-      },
-      "2": {
-        "name": "Sarah Johnson",
-        "location": "Los Angeles, CA",
-        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
-      }
-    },
-    "services": {
-      "heading": "Ship Repair Services Tailored to Build Your Success",
-      "animatedText": "SERVICES",
+    "values": {
+      "heading": "Our Values",
+      "animatedText": "VALUES",
       "items": {
-        "01": {
-          "title": "01. Aluminum Works",
-          "description": "Lorem is simply text you can just replace."
+        "1": {
+          "title": "Reliability",
+          "description": "Steady, consistent delivery of services that meet the highest standards."
         },
-        "02": {
-          "title": "02. Steel Plate Works",
-          "description": "Lorem is simply text you can just replace."
+        "2": {
+          "title": "Professionalism",
+          "description": "Strict adherence to specifications, safety rules, and timelines."
         },
-        "03": {
-          "title": "03. Project Management",
-          "description": "Lorem is simply text you can just replace."
+        "3": {
+          "title": "Know-how",
+          "description": "Mastery of the craft and continuous upgrading of skills."
         },
-        "04": {
-          "title": "04. Piping Works",
-          "description": "Lorem is simply text you can just replace."
+        "4": {
+          "title": "Quality",
+          "description": "Emphasis on clean, precise, and durable builds and repairs."
         },
-        "05": {
-          "title": "05. Industrial Applications",
-          "description": "Lorem is simply text you can just replace."
+        "5": {
+          "title": "Trust",
+          "description": "Long-term relationships with demanding maritime companies."
+        }
+      }
+    },
+    "marquee": "Reliability • Professionalism • Know-how • Quality • Trust",
+    "servicesArea": {
+      "heading": "Areas of Activity",
+      "animatedText": "SERVICES",
+      "shipRepair": {
+        "title": "Ship Repair Services",
+        "items": {
+          "1": "Metal structure repairs",
+          "2": "Fabrication of metal components and specialised structures",
+          "3": "Piping works",
+          "4": "Dry-docking works",
+          "5": "Structural reinforcements and technical restorations"
+        }
+      },
+      "shipMaintenance": {
+        "title": "Ship Maintenance",
+        "items": {
+          "1": "Pneumatic and hydraulic systems",
+          "2": "Wear and damage restoration"
+        }
+      },
+      "footnote": "We cover the full scope of work, from initial assessment through final delivery."
+    },
+    "personnel": {
+      "heading": "Personnel & Know-how",
+      "animatedText": "TEAM",
+      "paragraph": "Our company is staffed by experienced technicians and specialised personnel with long-standing presence in the field. The team offers:",
+      "items": {
+        "1": "Full technical training",
+        "2": "Experience with highly demanding maritime projects",
+        "3": "Ability to deliver projects on tight deadlines",
+        "4": "Continuous training on new techniques and regulations"
+      }
+    },
+    "partnerships": {
+      "heading": "Partnerships & Projects",
+      "animatedText": "PARTNERS",
+      "paragraph": "Despite its short operational history, Navergo has succeeded in collaborating with major, well-established maritime companies, undertaking projects with a high degree of complexity.",
+      "locations": {
+        "greece": {
+          "title": "Greece",
+          "description": "Piraeus, Perama, the Zone, and major ship repair infrastructures."
+        },
+        "abroad": {
+          "title": "Abroad",
+          "description": "Projects overseas demonstrate flexibility, organisation, and technical capability."
+        },
+        "atSea": {
+          "title": "At Sea",
+          "description": "Specialised technical interventions and repairs during the voyage, ensuring uninterrupted operation."
+        }
+      }
+    },
+    "pillars": {
+      "heading": "Pillars of Growth",
+      "animatedText": "VALUES",
+      "items": {
+        "1": {
+          "title": "Service Quality",
+          "description": "Consistent quality on every ship repair task."
+        },
+        "2": {
+          "title": "Rapid Response",
+          "description": "Fast turnaround on urgent vessel needs."
+        },
+        "3": {
+          "title": "Schedule Consistency",
+          "description": "Delivery on the agreed timeline."
+        },
+        "4": {
+          "title": "Professionalism",
+          "description": "Strict adherence to safety rules and specifications."
         }
       }
     },
     "counter": {
-      "happyCustomers": "Happy Customers",
-      "awards": "Awards Achievement",
-      "projectsCompleted": "Projects Completed",
-      "ongoingProjects": "On-Going Projects",
-      "description": "We believe ship repair is more than tasks performed on a vessel."
+      "shipsServiced": "Ships Serviced",
+      "yearsExperience": "Years of Experience",
+      "repairProjects": "Repair Projects Completed",
+      "activeContracts": "Active Contracts",
+      "description": "Our experience and consistency are reflected in our work."
     },
     "cta": {
-      "heading": "Get a Free Consultation Today!",
-      "paragraph": "Reach out to our team to discuss your fleet's needs and plan your next ship repair project together.",
-      "button": "Contact Us"
+      "heading": "Ready for your next project?",
+      "paragraph": "Get in touch for an introductory meeting and a quote tailored to your vessel's needs.",
+      "button": "Contact"
     },
     "team": {
-      "heading": "Get to Know Our Dedicated Team Members",
+      "heading": "Meet Our Team",
       "animatedText": "TEAM",
       "members": {
-        "1": { "name": "Richard Hernandez", "role": "Chief Officer (CEO)" },
-        "2": { "name": "Robert Brown", "role": "Lead Engineer" },
-        "3": { "name": "Michel Wilson", "role": "Site Coordinator" },
-        "4": { "name": "Lucas Thompson", "role": "Safety Officer" }
+        "1": { "name": "Panagiotis Zachos", "role": "Co-founder & Director" },
+        "2": { "name": "Katzilieris", "role": "Co-founder & Technical Director" },
+        "3": { "name": "Team Member", "role": "Project Lead" },
+        "4": { "name": "Team Member", "role": "Workshop Foreman" }
       }
     },
     "experience": {
-      "imageTitle": "SHIP REPAIR NAVERGO",
-      "yearsLine1": "Years of",
-      "yearsLine2": "Experience",
-      "leadingLine1": "We are Leading",
-      "leadingLine2": "Company"
+      "imageTitle": "EXPERIENCE IN PERAMA",
+      "yearsLine1": "3",
+      "yearsLine2": "Years Active",
+      "leadingLine1": "TRUSTED",
+      "leadingLine2": "PARTNER"
     }
   },
   "contact": {
@@ -386,9 +408,25 @@
       "heading": "Navergo",
       "animatedText": "ABOUT US",
       "paragraph": "We believe ship repair is more than restoring vessels; it's about safeguarding the voyages and crews that depend on them. Our skilled marine engineers bring precision and a passion for craftsmanship to every overhaul.",
-      "feature1": "1. Aluminum Works",
-      "feature2": "2. Steel Plate Works",
-      "feature3": "3. Piping Works"
+      "features": [
+        {
+          "title": "1. Ship Repair Services",
+          "items": [
+            "Metal structure repairs",
+            "Fabrication of metal components and special structures",
+            "Piping works",
+            "Tank works",
+            "Structural reinforcements and technical restorations"
+          ]
+        },
+        {
+          "title": "2. Ship Maintenance",
+          "items": [
+            "Pneumatic and hydraulic systems",
+            "Wear restoration"
+          ]
+        }
+      ]
     },
     "marquee": "Quality Construction, On Time, Every Time.",
     "services": {
@@ -435,8 +473,7 @@
     "funfact": {
       "1": { "label": "Happy Customers", "description": "We believe construction is more than building structures." },
       "2": { "label": "On-Going Projects", "description": "We believe construction is more than building structures." },
-      "3": { "label": "Happy Customers", "description": "We believe construction is more than building structures." },
-      "4": { "label": "Awards Achievement", "description": "We believe construction is more than building structures." }
+      "3": { "label": "Happy Customers", "description": "We believe construction is more than building structures." }
     },
     "team": {
       "heading": "Get to Know Our Dedicated Team Members",
