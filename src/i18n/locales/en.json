@@ -771,5 +771,20 @@
       "message": "Write your message...",
       "send": "Send Message"
     }
+  },
+  "pageTitles": {
+    "home": "Home",
+    "about": "About Us",
+    "service": "Services",
+    "servicedetails": "Service Details",
+    "projects": "Our Projects",
+    "projectdetails": "Project Details",
+    "team": "Our Team",
+    "teamdetails": "Team Details",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "gallery": "Gallery",
+    "coming": "Coming Soon",
+    "404": "Page Not Found"
   }
 }
