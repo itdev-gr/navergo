@@ -2,9 +2,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+const homeServiceKeys = ["01", "02", "03", "04", "05", "06", "07"];
+const homeServiceImages = {
+  "01": { src: "/assets/img/service/steelwork/steelwork-01.jpg", alt: "Metal Structure Repairs" },
+  "02": { src: "/assets/img/service/aluminum/aluminum-03.jpg",   alt: "Metal Components and Special Structures" },
+  "03": { src: "/assets/img/service/piping/piping-03.jpg",       alt: "Piping Works" },
+  "04": { src: "/assets/img/service/steelwork/steelwork-04.jpg", alt: "Tank Works" },
+  "05": { src: "/assets/img/service/steelwork/steelwork-02.jpg", alt: "Structural Reinforcements" },
+  "06": { src: "/assets/img/service/piping/piping-01.jpg",       alt: "Pneumatic and Hydraulic Systems" },
+  "07": { src: "/assets/img/service/steelwork/steelwork-05.jpg", alt: "Wear Restoration" },
+};
+
 export default function HomePage() {
   const { t } = useTranslation();
-  const [openFeature, setOpenFeature] = useState(null);
+  const [openFeature, setOpenFeature] = useState(0);
   const journeyFeatures = t("home.journey.features", { returnObjects: true }) || [];
   return (
     <>
@@ -139,13 +150,16 @@ export default function HomePage() {
                           >
                             {feature.title}
                           </h6>
-                          {isOpen && (
+                          <div
+                            className={`cs-feature-bullets-wrap${isOpen ? " is-open" : ""}`}
+                            aria-hidden={!isOpen}
+                          >
                             <ul className="cs-feature-bullets">
                               {feature.items.map((item, i) => (
                                 <li key={i}>{item}</li>
                               ))}
                             </ul>
-                          )}
+                          </div>
                           {idx < journeyFeatures.length - 1 && (
                             <div className="cs-list-border"></div>
                           )}
@@ -196,57 +210,25 @@ export default function HomePage() {
           <div className="container">
             <div className="swiper service-slider">
               <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="service-item" data-aos="fade-up" data-aos-duration="300">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/aluminum/aluminum-03.jpg" alt="Aluminum Works" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("home.services.items.01.title")}</Link>
+                {homeServiceKeys.map((key, idx) => (
+                  <div className="swiper-slide" key={key}>
+                    <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
+                      <div className="srv-img">
+                        <Link to="/service-details">
+                          <img src={homeServiceImages[key].src} alt={homeServiceImages[key].alt} />
+                        </Link>
+                      </div>
+                      <div className="services-content">
+                        <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t(`home.services.items.${key}.title`)}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>{t("home.services.items.01.description")}</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
+                          <p>{t(`home.services.items.${key}.description`)}</p>
+                          <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="service-item"  data-aos="fade-up" data-aos-duration="400">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/steelwork/steelwork-01.jpg" alt="Steel Plate Works" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("home.services.items.02.title")}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t("home.services.items.02.description")}</p>
-                            <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to="/service-details"><span>{t("common.cta.moreDetails")}</span></Link>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="service-item"  data-aos="fade-up" data-aos-duration="500">
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img src="/assets/img/service/piping/piping-03.jpg" alt="Piping Works" />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("home.services.items.03.title")}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t("home.services.items.03.description")}</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
-                        </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             <div className="cs-height-50"></div>
@@ -325,6 +307,40 @@ export default function HomePage() {
       </section>
 
       {/* End Projects Section */}
+
+      <div className="cs-section-height"></div>
+
+      {/* Start Client Area Full Width */}
+        <div className="container client-wrap">
+          <div className="swiper clients-slider">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="300">
+                <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
+              </div>
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="500">
+                <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
+              </div>
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="700">
+                <a className="client-item" href="#"><img src="/assets/img/clients/logo03.png" alt="" /></a>
+              </div>
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="900">
+                <a className="client-item" href="#"><img src="/assets/img/clients/logo02.png" alt="" /></a>
+              </div>
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1100">
+                <a className="client-item" href="#"><img src="/assets/img/clients/logo01.png" alt="" /></a>
+              </div>
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1300">
+                <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
+              </div>
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
+                <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/* End Client Area Full Width */}
+
+      <div className="cs-section-height"></div>
 
       {/* Start Features Section */}
       <section className="themecolor-bg-primary">
@@ -782,124 +798,6 @@ export default function HomePage() {
         </div>
       </section>
       {/* Start Experience & Image Section */}
-
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
-
-      {/* Start Blog Section */}
-      <section>
-        <div className="container">
-
-          <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
-            <h2 className="cs-heading">{t("home.blog.heading")}</h2>
-            <span className="cs-text-style-h1 cs-animated-text">{t("home.blog.animatedText")}</span>
-          </div>
-          <div className="cs-height-50"></div>
-
-          <div className="row">
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item" data-aos="fade-up" data-aos-duration="300">
-                <div className="blog-item-header">
-                  <div className="blog-item-img">
-                    <Link to="/blog-details">
-                      <img src="/assets/img/blog/blog-item-img01.jpg" alt="" />
-                    </Link>
-                  </div>
-                  <div className="date">
-                    <span>{t("home.blog.card1.date")}</span>
-                  </div>
-                </div>
-                <div className="blog-item-data">
-                  <div className="tag-item">
-                    <Link to="/blog-standard"><span>{t("home.blog.card1.category")}</span></Link>
-                  </div>
-                  <div className="title">
-                    <Link to="/blog-details">
-                      <h6>
-                        {t("home.blog.card1.title")}
-                      </h6>
-                    </Link>
-                  </div>
-                  <div className="border-1px"></div>
-                  <div className="cs-height-20"></div>
-                  <Link to="/blog-details" className="cs-text_b_line"
-                    ><span>{t("home.blog.readMore")}</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item" data-aos="fade-up" data-aos-duration="400">
-                <div className="blog-item-header">
-                  <div className="blog-item-img">
-                    <Link to="/blog-details">
-                      <img src="/assets/img/blog/blog-item-img02.jpg" alt="" />
-                    </Link>
-                  </div>
-                  <div className="date">
-                    <span>{t("home.blog.card2.date")}</span>
-                  </div>
-                </div>
-                <div className="blog-item-data">
-                  <div className="tag-item">
-                    <Link to="/blog-standard"><span>{t("home.blog.card2.category")}</span></Link>
-                  </div>
-                  <div className="title">
-                    <Link to="/blog-details">
-                      <h6>
-                        {t("home.blog.card2.title")}
-                      </h6>
-                    </Link>
-                  </div>
-                  <div className="border-1px"></div>
-                  <div className="cs-height-20"></div>
-                  <Link to="/blog-details" className="cs-text_b_line"
-                    ><span>{t("home.blog.readMore")}</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-            <div className="col-xl-4 col-md-12">
-              <div className="blog-item" data-aos="fade-up" data-aos-duration="500">
-                <div className="blog-item-header">
-                  <div className="blog-item-img">
-                    <Link to="/blog-details">
-                      <img src="/assets/img/blog/blog-item-img03.jpg" alt="" />
-                    </Link>
-                  </div>
-                  <div className="date">
-                    <span>{t("home.blog.card3.date")}</span>
-                  </div>
-                </div>
-                <div className="blog-item-data">
-                  <div className="tag-item">
-                    <Link to="/blog-standard"><span>{t("home.blog.card3.category")}</span></Link>
-                  </div>
-                  <div className="title">
-                    <Link to="/blog-details">
-                      <h6>
-                        {t("home.blog.card3.title")}
-                      </h6>
-                    </Link>
-                  </div>
-                  <div className="border-1px"></div>
-                  <div className="cs-height-20"></div>
-                  <Link to="/blog-details" className="cs-text_b_line"
-                    ><span>{t("home.blog.readMore")}</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Start Blog Section */}
 
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
