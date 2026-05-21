@@ -94,6 +94,8 @@ export default function Header() {
           </div>
 
           <div className="cs_main_header_right themecolor-bg">
+            <LanguageToggle />
+
             <div className="cs_toolbox">
               <span className="cs_icon_btn">
                 <span className="cs_icon_btn_in">
@@ -115,8 +117,6 @@ export default function Header() {
                 <a href="mailto:example@email.com" className="cs-text_b_line"><span>example@email.com</span></a>
               </div>
             </div>
-
-            <LanguageToggle />
           </div>
         </div>
       </div>

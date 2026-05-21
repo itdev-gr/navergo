@@ -66,18 +66,6 @@ section.themecolor-bg-primary:has(.cs-feature-card-wrap) {
   display: block;
 }
 
-.cs-feature-card-wrap .feature-card-item .cs-feature-icon img[src$="feature-icon-shipyard.png"] {
-  background-color: #7c1d1f;
-  -webkit-mask-image: url("/assets/img/feature-icon-shipyard.png");
-          mask-image: url("/assets/img/feature-icon-shipyard.png");
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
-  -webkit-mask-size: contain;
-          mask-size: contain;
-}
-
 /* --- Smoke-test fixes 2026-05-21 ---------------------------------------- */
 
 /* Belt-and-braces: prevent any future child overflow from triggering body

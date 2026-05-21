@@ -363,11 +363,13 @@
       "address": "Leof. Dimokratias 397\nPerama 188 63, Greece",
       "sendMessage": "Send Message",
       "links": {
-        "consulting": "Project Consulting",
-        "commercial": "Commercial Construction",
-        "renovations": "Renovations Construction",
-        "residential": "Residential Construction",
-        "industrial": "Industrial Construction"
+        "metalRepairs": "Metal Structure Repairs",
+        "metalConstruction": "Metal Elements & Special Structures",
+        "piping": "Piping Works",
+        "tankWorks": "Tank Works",
+        "structuralReinforcement": "Structural Reinforcements & Technical Restorations",
+        "pneumaticHydraulic": "Pneumatic & Hydraulic Systems",
+        "wearRestoration": "Wear Restoration"
       }
     },
     "cta": {

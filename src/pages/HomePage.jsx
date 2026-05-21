@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function HomePage() {
   const { t } = useTranslation();
+  const [openFeature, setOpenFeature] = useState(null);
+  const journeyFeatures = t("home.journey.features", { returnObjects: true }) || [];
   return (
     <>
       {/* Start Hero Section */}
@@ -122,11 +125,33 @@ export default function HomePage() {
                   <p>{t("home.journey.paragraph")}</p>
                   <div className="cs-height-90"></div>
                   <div className="list-feature">
-                    <h6 data-aos="fade-up" data-aos-duration="300">{t("home.journey.feature1")}</h6>
-                    <div className="cs-list-border"></div>
-                    <h6 data-aos="fade-up" data-aos-duration="400">{t("home.journey.feature2")}</h6>
-                    <div className="cs-list-border"></div>
-                    <h6 data-aos="fade-up" data-aos-duration="500">{t("home.journey.feature3")}</h6>
+                    {journeyFeatures.map((feature, idx) => {
+                      const isOpen = openFeature === idx;
+                      return (
+                        <div key={idx}>
+                          <h6
+                            data-aos="fade-up"
+                            data-aos-duration={300 + idx * 100}
+                            onClick={() => setOpenFeature(isOpen ? null : idx)}
+                            style={{ cursor: "pointer" }}
+                            role="button"
+                            aria-expanded={isOpen}
+                          >
+                            {feature.title}
+                          </h6>
+                          {isOpen && (
+                            <ul className="cs-feature-bullets">
+                              {feature.items.map((item, i) => (
+                                <li key={i}>{item}</li>
+                              ))}
+                            </ul>
+                          )}
+                          {idx < journeyFeatures.length - 1 && (
+                            <div className="cs-list-border"></div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                   <div className="cs-height-40"></div>
                   <Link to="/about" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220"><span>{t("common.cta.viewMore")}</span></Link>
@@ -416,26 +441,20 @@ export default function HomePage() {
               <div className="cs-couter-items">
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="400">
                   <h6>{t("home.funfact.1.label")}</h6>
-                  <span id="count1" className="amin_auto_count cs-text-style-h2">126</span><span className="cs-text-style-h2">+</span>
+                  <span id="count1" className="amin_auto_count cs-text-style-h2">76</span><span className="cs-text-style-h2">+</span>
                   <p>{t("home.funfact.1.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="600">
                   <h6>{t("home.funfact.2.label")}</h6>
-                  <span id="count2" className="amin_auto_count cs-text-style-h2">32</span><span className="cs-text-style-h2">+</span>
+                  <span id="count2" className="amin_auto_count cs-text-style-h2">5</span><span className="cs-text-style-h2">+</span>
                   <p>{t("home.funfact.2.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="800">
                   <h6>{t("home.funfact.3.label")}</h6>
-                  <span id="count3" className="amin_auto_count cs-text-style-h2">50</span><span className="cs-text-style-h2">k</span>
+                  <span id="count3" className="amin_auto_count cs-text-style-h2">140</span>
                   <p>{t("home.funfact.3.description")}</p>
-                </div>
-                <div className="counter-sep"></div>
-                <div className="counter-item" data-aos="fade-top" data-aos-duration="1000">
-                  <h6>{t("home.funfact.4.label")}</h6>
-                  <span id="count4" className="amin_auto_count cs-text-style-h2">50+</span><span className="cs-text-style-h2">+</span>
-                  <p>{t("home.funfact.4.description")}</p>
                 </div>
               </div>
             </div>
@@ -688,48 +707,6 @@ export default function HomePage() {
 
       {/* Start Why Choose Us & Video */}
       <section>
-        <div className="cs-com-strength theme-black-bg theme-dark">
-          <div className="cs-height-140"></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-7">
-                <h2><span data-aos="fade-up" data-aos-duration="500">{t("home.whyChoose.headingPart1")}</span> <span data-aos="fade-up" data-aos-duration="1000">{t("home.whyChoose.headingPart2")}</span>  </h2>
-                <div className="cs-height-10"></div>
-                <p>{t("home.whyChoose.paragraph")}</p>
-                <div className="cs-height-35"></div>
-                <div className="d-flex gap-3">
-                  <div className="cs-couple-btn d-flex gap-3">
-                    <Link to="/about" data-aos="fade-top" data-aos-duration="900" className="cs-primary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220"><span>{t("common.cta.readMore")}</span></Link>
-                    <Link to="/contact" data-aos="fade-top" data-aos-duration="1500" className="cs-primary-btn cs_white_color-bg cs-height-70 cs-width-220"><span>{t("common.cta.contactUs")}</span></Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-5">
-                <div className="cs-video-area">
-                  <div className="cs-video" data-aos="fade-top" data-aos-duration="1000">
-                    <img src="/assets/img/about/video-thumb.jpg" alt="" />
-                    <div className="cs-video-btn">
-                      <a href="https://www.youtube.com/watch?v=4BzjUq921Y4" className="cs_video_open"><svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25.7939 15.2383L0.293944 29.9607L0.293945 0.515848L25.7939 15.2383Z" fill="#7c1d1f"/>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="cs-height-50"></div>
-                  <div className="list-feature" data-aos="fade-up" data-aos-duration="600">
-                    <h6>{t("home.whyChoose.feature1")}</h6>
-                    <div className="cs-list-border"></div>
-                    <h6>{t("home.whyChoose.feature2")}</h6>
-                    <div className="cs-list-border"></div>
-                    <h6>{t("home.whyChoose.feature3")}</h6>
-                  </div>
-                  <div className="cs-height-140"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="cs-working-process-wrap themecolor-bg theme-dark">
           <div className="cs-height-100"></div>
           <div className="container">

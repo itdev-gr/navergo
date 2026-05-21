@@ -5,13 +5,13 @@ export default function ServiceDetailsPage() {
   const { t } = useTranslation();
 
   const sidebarLinks = [
-    "consulting",
-    "commercial",
-    "renovations",
-    "residential",
-    "consulting",
-    "industrial",
-    "commercial",
+    "metalRepairs",
+    "metalConstruction",
+    "piping",
+    "tankWorks",
+    "structuralReinforcement",
+    "pneumaticHydraulic",
+    "wearRestoration",
   ];
 
   const addressLines = t("serviceDetails.sidebar.address").split("\n");
