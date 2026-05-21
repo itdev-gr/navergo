@@ -364,25 +364,25 @@ export default function AboutPage() {
           <div className="swiper clients-slider">
             <div className="swiper-wrapper">
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
+                <a className="client-item" href="#"><img src="/assets/img/clients/golden-star-ferries.jpeg" alt="Golden Star Ferries" /></a>
               </div>
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
+                <a className="client-item" href="#"><img src="/assets/img/clients/seagate-navigation.png" alt="Seagate Navigation LTD" /></a>
               </div>
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="700">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo03.png" alt="" /></a>
+                <a className="client-item" href="#"><img src="/assets/img/clients/chatzigavriil.png" alt="Chatzigavriil Salvage & Towage" /></a>
               </div>
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="900">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo02.png" alt="" /></a>
+                <a className="client-item" href="#"><img src="/assets/img/clients/mgc-maritime.png" alt="MGC Maritime SA" /></a>
               </div>
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1100">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo01.png" alt="" /></a>
+                <a className="client-item" href="#"><img src="/assets/img/clients/neptune-lines.svg" alt="Neptune Lines" /></a>
               </div>
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
+                <a className="client-item" href="#"><img src="/assets/img/clients/seajets.png" alt="Seajets" /></a>
               </div>
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
+                <a className="client-item" href="#"><img src="/assets/img/clients/lotus-shipping.png" alt="Lotus Shipping" /></a>
               </div>
             </div>
           </div>
