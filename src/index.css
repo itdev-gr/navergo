@@ -65,3 +65,59 @@ section.themecolor-bg-primary:has(.cs-feature-card-wrap) {
   object-fit: contain;
   display: block;
 }
+
+.cs-feature-card-wrap .feature-card-item .cs-feature-icon img[src$="feature-icon-shipyard.png"] {
+  background-color: #7c1d1f;
+  -webkit-mask-image: url("/assets/img/feature-icon-shipyard.png");
+          mask-image: url("/assets/img/feature-icon-shipyard.png");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+
+/* --- Smoke-test fixes 2026-05-21 ---------------------------------------- */
+
+/* Belt-and-braces: prevent any future child overflow from triggering body
+   horizontal scroll on mobile. The page's own layout is already overflow-safe
+   in our tests, but a single careless image insert later would regress that. */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Vendored template never sets max-width on its <img>s because it assumed
+   columns wider than mobile. Force every image to respect its container — the
+   "Company Journey" and "Contact" sections were overflowing by ~45 px at 375. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* The right-side header pillar (cs_main_header_right) holds the toolbox +
+   contact info. On mobile the template hides its children, but the parent's
+   themecolor-bg keeps painting a ~5 px red sliver at the right edge of the
+   header strip. Hide the empty pillar on phones — the hamburger toggle is
+   already exposed on the opposite side via cs_munu_toggle. */
+@media (max-width: 575.98px) {
+  .cs_main_header_right {
+    display: none;
+  }
+}
+
+/* AE-title backdrop text overflows on phones (it's intentionally larger than
+   the column on desktop for the visual effect, but on a 375 viewport it
+   pushes a horizontal scroll). Clip to viewport and shrink the font so the
+   pattern still reads but stays inside the column. */
+@media (max-width: 575.98px) {
+  .ae-title,
+  .ae-title h2,
+  .ae-title h3 {
+    max-width: 100%;
+    overflow: hidden;
+    word-break: break-word;
+  }
+  .ae-title h2 { font-size: 56px; }
+  .ae-title h3 { font-size: 34px; }
+}
