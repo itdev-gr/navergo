@@ -335,6 +335,9 @@ export default function HomePage() {
               <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
                 <a className="client-item" href="#"><img src="/assets/img/clients/lotus-shipping.png" alt="Lotus Shipping" /></a>
               </div>
+              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1700">
+                <a className="client-item" href="#"><img src="/assets/img/clients/dcarrier.png" alt="D Carrier" /></a>
+              </div>
             </div>
           </div>
         </div>
