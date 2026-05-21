@@ -11,15 +11,15 @@ export default function LanguageToggle() {
   const baseBtn = {
     border: 0,
     background: "transparent",
-    color: "#ffffff",
+    color: "#08060d",
     fontWeight: 700,
     fontSize: 13,
     padding: "4px 8px",
     cursor: "pointer",
     letterSpacing: 1,
   };
-  const active = { textDecoration: "underline", textUnderlineOffset: 4 };
-  const inactive = { opacity: 0.7 };
+  const active = { textDecoration: "underline", textUnderlineOffset: 4, color: "#7c1d1f" };
+  const inactive = { opacity: 0.6 };
 
   return (
     <div
@@ -28,6 +28,10 @@ export default function LanguageToggle() {
         alignItems: "center",
         gap: 4,
         marginLeft: 16,
+        backgroundColor: "#ffffff",
+        padding: "6px 10px",
+        borderRadius: 4,
+        border: "1px solid rgba(124,29,31,0.2)",
       }}
       aria-label={t("common.languageSelector")}
     >
@@ -39,7 +43,7 @@ export default function LanguageToggle() {
       >
         ΕΛ
       </button>
-      <span style={{ color: "#ffffff", opacity: 0.5 }}>|</span>
+      <span style={{ color: "#7c1d1f", opacity: 0.5 }}>|</span>
       <button
         type="button"
         onClick={() => setLang("en")}
