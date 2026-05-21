@@ -206,6 +206,156 @@
       "send": "Αποστολή Μηνύματος"
     }
   },
+  "service": {
+    "breadcrumb": {
+      "title": "Υπηρεσίες",
+      "fromHome": "ΑΡΧΙΚΗ",
+      "current": "ΥΠΗΡΕΣΙΕΣ"
+    },
+    "intro": {
+      "heading": "Υπηρεσίες Ναυπηγοεπισκευής Προσαρμοσμένες στην Επιτυχία σας",
+      "animatedText": "ΥΠΗΡΕΣΙΕΣ",
+      "paragraph": "Η ναυπηγοεπισκευή είναι κάτι περισσότερο από εργασίες σε ένα σκάφος — αφορά τη δημιουργία συνεργασιών που κρατούν τους στόλους με ασφάλεια στη θάλασσα."
+    },
+    "items": {
+      "01": {
+        "title": "01. Εργασίες Αλουμινίου",
+        "description": "Συγκολλήσεις και κατασκευές αλουμινίου ακριβείας για υπερκατασκευές, καμπίνες και κρίσιμα τμήματα πλοίων."
+      },
+      "02": {
+        "title": "02. Ελασματουργικές Εργασίες",
+        "description": "Αποκατάσταση γάστρας, αντικατάσταση ελασμάτων και ενίσχυση σκελετού σύμφωνα με τα πρότυπα των νηογνωμόνων."
+      },
+      "03": {
+        "title": "03. Σωληνουργικές Εργασίες",
+        "description": "Εγκατάσταση και επισκευή σωληνώσεων μηχανοστασίου, συστημάτων ψύξης και διαχείρισης καυσίμων."
+      },
+      "04": {
+        "title": "04. Κατοικιακές Κατασκευές",
+        "description": "Κατασκευαστικά και ανακαινιστικά έργα κατοικιών με ακρίβεια και φροντίδα."
+      },
+      "05": {
+        "title": "05. Ανάπτυξη Υποδομών",
+        "description": "Έργα υποδομής σχεδιασμένα για ανθεκτικότητα, ασφάλεια και μακροχρόνια απόδοση."
+      },
+      "06": {
+        "title": "06. Βιομηχανικές Κατασκευές",
+        "description": "Βιομηχανικές εγκαταστάσεις και βαριά κατασκευαστικά έργα παραδοτέα σύμφωνα με τις προδιαγραφές και τα χρονοδιαγράμματα."
+      }
+    },
+    "testimonials": {
+      "1": {
+        "name": "Sarah Johnson",
+        "location": "Los Angeles, CA",
+        "quote": "Εντυπωσιαστήκαμε πραγματικά από το έργο τους. Ήταν επαγγελματίες, αποδοτικοί και παρέδωσαν προϊόν υψηλής ποιότητας στην ώρα του και εντός προϋπολογισμού. Σίγουρα θα τους προτείναμε σε άλλους. Τους συστήνουμε ανεπιφύλακτα."
+      },
+      "2": {
+        "name": "Sarah Johnson",
+        "location": "Los Angeles, CA",
+        "quote": "Εντυπωσιαστήκαμε πραγματικά από το έργο τους. Ήταν επαγγελματίες, αποδοτικοί και παρέδωσαν προϊόν υψηλής ποιότητας στην ώρα του και εντός προϋπολογισμού. Σίγουρα θα τους προτείναμε σε άλλους. Τους συστήνουμε ανεπιφύλακτα."
+      }
+    },
+    "pricing": {
+      "heading": "Βρείτε το Κατάλληλο Πακέτο για το Έργο σας",
+      "animatedText": "ΤΙΜΟΚΑΤΑΛΟΓΟΣ",
+      "tagline": "Lorem Ipsum is simply.",
+      "getStart": "Ξεκινήστε",
+      "plans": {
+        "standard": { "name": "Βασικό" },
+        "professional": { "name": "Επαγγελματικό" },
+        "enterprise": { "name": "Επιχειρησιακό" }
+      },
+      "features": {
+        "f1": "Nam semper leo ac arcu ultricies ultricies.",
+        "f2": "Suspendisse interdum nisi ut aliquam.",
+        "f3": "Maecenas cursus eros sed nulla facilisis.",
+        "f4": "Sed sit amet velit egestas, luctus dolor vel.",
+        "f5": "Pellentesque mattis urna vitae tortor."
+      }
+    },
+    "cta": {
+      "heading": "Ξεκινήστε το Κατασκευαστικό σας Ταξίδι μαζί μας Σήμερα!",
+      "button": "Επικοινωνήστε"
+    }
+  },
+  "serviceDetails": {
+    "breadcrumb": {
+      "title": "Λεπτομέρειες Υπηρεσίας",
+      "fromHome": "ΑΡΧΙΚΗ",
+      "current": "ΛΕΠΤΟΜΕΡΕΙΕΣ ΥΠΗΡΕΣΙΑΣ"
+    },
+    "content": {
+      "title": "Βιομηχανικές Κατασκευές",
+      "intro1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "intro2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "whyChoose": "Γιατί να μας Επιλέξετε;",
+      "whyChooseParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "workingProcess": "Η Διαδικασία Εργασίας μας",
+      "workingProcessParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "detailsTitle": "Λεπτομέρειες Υπηρεσίας",
+      "detailsParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "detailsParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "detailsParagraph3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    },
+    "whyChooseCards": {
+      "comprehensive": {
+        "title": "Ολοκληρωμένες Λύσεις",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "sustainable": {
+        "title": "Βιώσιμες Πρακτικές",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "timely": {
+        "title": "Εμπρόθεσμη Παράδοση",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "quality": {
+        "title": "Ποιότητα & Συμμόρφωση",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "process": {
+      "step1": {
+        "title": "Σχεδιασμός Έργου",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step2": {
+        "title": "Ανάπτυξη Σχεδιασμού",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step3": {
+        "title": "Προ-Κατασκευή",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step4": {
+        "title": "Ολοκλήρωση Έργου",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "sidebar": {
+      "otherServices": "ΑΛΛΕΣ ΥΠΗΡΕΣΙΕΣ",
+      "contactTitle": "ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ",
+      "sayHello": "Πείτε ένα γεια!",
+      "meetUs": "Επισκεφθείτε μας:",
+      "address": "Λεωφ. Δημοκρατίας 397\nΠέραμα 188 63, Ελλάδα",
+      "sendMessage": "Αποστολή Μηνύματος",
+      "links": {
+        "consulting": "Συμβουλευτικές Υπηρεσίες",
+        "commercial": "Εμπορικές Κατασκευές",
+        "renovations": "Ανακαινίσεις",
+        "residential": "Κατοικιακές Κατασκευές",
+        "industrial": "Βιομηχανικές Κατασκευές"
+      }
+    },
+    "cta": {
+      "headingPart1": "Ξεκινήστε το",
+      "headingPart2": "Κατασκευαστικό",
+      "headingPart3": "σας Ταξίδι μαζί μας Σήμερα!",
+      "paragraph": "Από τη σύλληψη έως την ολοκλήρωση, παρέχουμε εξαιρετικές κατασκευαστικές υπηρεσίες προσαρμοσμένες στις ανάγκες σας. Επικοινωνήστε μαζί μας τώρα για δωρεάν συμβουλευτική!",
+      "button": "Ζητήστε Συμβουλευτική"
+    }
+  },
   "home": {
     "hero": {
       "slide1": {

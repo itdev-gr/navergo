@@ -206,6 +206,156 @@
       "send": "Send Message"
     }
   },
+  "service": {
+    "breadcrumb": {
+      "title": "Services",
+      "fromHome": "HOME",
+      "current": "SERVICES"
+    },
+    "intro": {
+      "heading": "Ship Repair Services Tailored to Build Your Success",
+      "animatedText": "SERVICES",
+      "paragraph": "Ship repair is more than tasks performed on a vessel — it's about creating partnerships that keep fleets safely at sea."
+    },
+    "items": {
+      "01": {
+        "title": "01. Aluminum Works",
+        "description": "Precision aluminum welding for superstructures, cabins, and critical vessel sections."
+      },
+      "02": {
+        "title": "02. Steel Plate Works",
+        "description": "Hull restoration, plate replacement, and frame reinforcement to class society standards."
+      },
+      "03": {
+        "title": "03. Piping Works",
+        "description": "Engine-room piping, cooling systems, and fuel management installation and repair."
+      },
+      "04": {
+        "title": "04. Residential Construction",
+        "description": "Residential building and renovation projects delivered with precision and care."
+      },
+      "05": {
+        "title": "05. Infrastructure Development",
+        "description": "Infrastructure projects engineered for durability, safety, and long-term performance."
+      },
+      "06": {
+        "title": "06. Industrial Construction",
+        "description": "Industrial facilities and heavy construction delivered on spec and on schedule."
+      }
+    },
+    "testimonials": {
+      "1": {
+        "name": "Sarah Johnson",
+        "location": "Los Angeles, CA",
+        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
+      },
+      "2": {
+        "name": "Sarah Johnson",
+        "location": "Los Angeles, CA",
+        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
+      }
+    },
+    "pricing": {
+      "heading": "Find the Right Plan for Your Project",
+      "animatedText": "PRICING PLAN",
+      "tagline": "Lorem Ipsum is simply.",
+      "getStart": "Get Start",
+      "plans": {
+        "standard": { "name": "Standard" },
+        "professional": { "name": "Professional" },
+        "enterprise": { "name": "Enterprise" }
+      },
+      "features": {
+        "f1": "Nam semper leo ac arcu ultricies ultricies.",
+        "f2": "Suspendisse interdum nisi ut aliquam.",
+        "f3": "Maecenas cursus eros sed nulla facilisis.",
+        "f4": "Sed sit amet velit egestas, luctus dolor vel.",
+        "f5": "Pellentesque mattis urna vitae tortor."
+      }
+    },
+    "cta": {
+      "heading": "Start Your Construction Journey with Us Today!",
+      "button": "Contact Us"
+    }
+  },
+  "serviceDetails": {
+    "breadcrumb": {
+      "title": "Service Details",
+      "fromHome": "HOME",
+      "current": "SERVICE DETAILS"
+    },
+    "content": {
+      "title": "Commercial Construction",
+      "intro1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "intro2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "whyChoose": "Why Choose Us?",
+      "whyChooseParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "workingProcess": "Our Working Process",
+      "workingProcessParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "detailsTitle": "Services Details",
+      "detailsParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "detailsParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "detailsParagraph3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    },
+    "whyChooseCards": {
+      "comprehensive": {
+        "title": "Comprehensive Solutions",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "sustainable": {
+        "title": "Sustainable Practices",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "timely": {
+        "title": "Timely Delivery",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "quality": {
+        "title": "Quality & Compliance",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "process": {
+      "step1": {
+        "title": "Project Planning",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step2": {
+        "title": "Design Development",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step3": {
+        "title": "Pre-Construction",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step4": {
+        "title": "Project Completion",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "sidebar": {
+      "otherServices": "OTHERS SERVICES",
+      "contactTitle": "OTHERS SERVICES",
+      "sayHello": "Say hello!",
+      "meetUs": "Meet Us:",
+      "address": "Leof. Dimokratias 397\nPerama 188 63, Greece",
+      "sendMessage": "Send Message",
+      "links": {
+        "consulting": "Project Consulting",
+        "commercial": "Commercial Construction",
+        "renovations": "Renovations Construction",
+        "residential": "Residential Construction",
+        "industrial": "Industrial Construction"
+      }
+    },
+    "cta": {
+      "headingPart1": "Start Your",
+      "headingPart2": "Construction",
+      "headingPart3": "Journey with Us Today!",
+      "paragraph": "From concept to completion, we deliver exceptional construction services tailored to your needs. Contact us now for a free consultation!",
+      "button": "Get Consultation"
+    }
+  },
   "home": {
     "hero": {
       "slide1": {
