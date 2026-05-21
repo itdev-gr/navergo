@@ -1,6 +1,18 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectsPage() {
+  const { t } = useTranslation();
+  const projectImages = [
+    "/assets/img/projects/project-img01.jpg",
+    "/assets/img/projects/project-img02.jpg",
+    "/assets/img/projects/project-img03.jpg",
+    "/assets/img/projects/project-img04.jpg",
+    "/assets/img/projects/project-img05.jpg",
+    "/assets/img/projects/project-img06.jpg",
+  ];
+  const aosDurations = ["300", "500", "700", "900", "1100", "1300"];
+
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -10,15 +22,15 @@ export default function ProjectsPage() {
             <div className="row cs_center">
               <div className="cs-bread-page-title-area">
                 <div className="cs-page-title">
-                  <h2 className="cs_white_color">Projects</h2>
+                  <h2 className="cs_white_color">{t("projects.breadcrumb.title")}</h2>
                 </div>
                 <div className="breadcrumb">
                   <ul>
                     <li>
-                      <Link to="/" className="cs-text_b_line"><span>HOME</span></Link>
+                      <Link to="/" className="cs-text_b_line"><span>{t("projects.breadcrumb.fromHome")}</span></Link>
                     </li>
                     <li>/</li>
-                    <li>PROJECTS</li>
+                    <li>{t("projects.breadcrumb.current")}</li>
                   </ul>
                 </div>
               </div>
@@ -36,125 +48,30 @@ export default function ProjectsPage() {
       <section className="projects-list">
         <div className="container lg-gutter-control">
           <div className="row">
-            <div className="col-xl-6 col-md-12">
-              <div className="project-item" data-aos="fade-up" data-aos-duration="300">
-                <div className="project-item-in">
-                  <Link to="/project-details">
-                    <img src="/assets/img/projects/project-img01.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="project-item-text">
-                  <div className="tag-item">
-                    <a href="#"><span>Construction</span></a>
+            {projectImages.map((img, idx) => {
+              const key = String(idx + 1);
+              return (
+                <div className="col-xl-6 col-md-12" key={key}>
+                  <div className="project-item" data-aos="fade-up" data-aos-duration={aosDurations[idx]}>
+                    <div className="project-item-in">
+                      <Link to="/project-details">
+                        <img src={img} alt="" />
+                      </Link>
+                    </div>
+                    <div className="project-item-text">
+                      <div className="tag-item">
+                        <a href="#"><span>{t(`projects.items.${key}.category`)}</span></a>
+                      </div>
+                      <Link to="/project-details"><h5>{t(`projects.items.${key}.title`)}</h5></Link>
+                      <Link to="/project-details" className="cs-text_b_line"><span>{t("projects.viewProject")}</span>
+                        <i className="flaticon-right-arrow"></i>
+                      </Link>
+                    </div>
                   </div>
-                  <Link to="/project-details"><h5>Greenfield Industrial Park</h5></Link>
-                  <Link to="/project-details" className="cs-text_b_line"><span>VIEW PROJECT</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
+                  <div className="cs-height-30"></div>
                 </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-            <div className="col-xl-6 col-md-12">
-              <div className="project-item" data-aos="fade-up" data-aos-duration="500">
-                <div className="project-item-in">
-                  <Link to="/project-details">
-                    <img src="/assets/img/projects/project-img02.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="project-item-text">
-                  <div className="tag-item">
-                    <a href="#"><span>Construction</span></a>
-                  </div>
-                  <Link to="/project-details"><h5>Greenfield Industrial Park</h5></Link>
-                  <Link to="/project-details" className="cs-text_b_line"><span>VIEW PROJECT</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-            <div className="col-xl-6 col-md-12">
-              <div className="project-item" data-aos="fade-up" data-aos-duration="700">
-                <div className="project-item-in">
-                  <Link to="/project-details">
-                    <img src="/assets/img/projects/project-img03.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="project-item-text">
-                  <div className="tag-item">
-                    <a href="#"><span>Construction</span></a>
-                  </div>
-                  <Link to="/project-details"><h5>Greenfield Industrial Park</h5></Link>
-                  <Link to="/project-details" className="cs-text_b_line"><span>VIEW PROJECT</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-            <div className="col-xl-6 col-md-12">
-              <div className="project-item" data-aos="fade-up" data-aos-duration="900">
-                <div className="project-item-in">
-                  <Link to="/project-details">
-                    <img src="/assets/img/projects/project-img04.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="project-item-text">
-                  <div className="tag-item">
-                    <a href="#"><span>Construction</span></a>
-                  </div>
-                  <Link to="/project-details"><h5>Greenfield Industrial Park</h5></Link>
-                  <Link to="/project-details" className="cs-text_b_line"><span>VIEW PROJECT</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-            <div className="col-xl-6 col-md-12">
-              <div className="project-item" data-aos="fade-up" data-aos-duration="1100">
-                <div className="project-item-in">
-                  <Link to="/project-details">
-                    <img src="/assets/img/projects/project-img05.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="project-item-text">
-                  <div className="tag-item">
-                    <a href="#"><span>Construction</span></a>
-                  </div>
-                  <Link to="/project-details"><h5>Greenfield Industrial Park</h5></Link>
-                  <Link to="/project-details" className="cs-text_b_line"><span>VIEW PROJECT</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
-            <div className="col-xl-6 col-md-12">
-              <div className="project-item" data-aos="fade-up" data-aos-duration="1300">
-                <div className="project-item-in">
-                  <Link to="/project-details">
-                    <img src="/assets/img/projects/project-img06.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="project-item-text">
-                  <div className="tag-item">
-                    <a href="#">
-                      <span>Construction</span>
-                    </a>
-                  </div>
-                  <Link to="/project-details">
-                    <h5>Greenfield Industrial Park</h5>
-                  </Link>
-                  <Link to="/project-details" className="cs-text_b_line">
-                    <span>VIEW PROJECT</span>
-                    <i className="flaticon-right-arrow"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="cs-height-30"></div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -171,14 +88,14 @@ export default function ProjectsPage() {
 
                 <div className="cta-content max-width-800 m-auto">
                   <div className="cs-height-100"></div>
-                  <h2 data-aos="fade-up" data-aos-duration="400">Start Your <span className="themecolor" data-aos="fade-up" data-aos-duration="1000">Construction</span> Journey with Us Today!</h2>
+                  <h2 data-aos="fade-up" data-aos-duration="400">{t("projects.cta.headingPart1")} <span className="themecolor" data-aos="fade-up" data-aos-duration="1000">{t("projects.cta.headingPart2")}</span> {t("projects.cta.headingPart3")}</h2>
 
                   <div className="cs-height-15"></div>
 
-                  <p>From concept to completion, we deliver exceptional construction services tailored to your needs. Contact us now for a free consultation!</p>
+                  <p>{t("projects.cta.paragraph")}</p>
                   <div className="cs-height-25"></div>
 
-                  <a href="#" className="cs-text_b_line"><span>Get Consultation</span>
+                  <a href="#" className="cs-text_b_line"><span>{t("projects.cta.button")}</span>
                     <i className="flaticon-right-arrow"></i>
                   </a>
                 </div>

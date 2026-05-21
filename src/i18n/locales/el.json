@@ -528,5 +528,177 @@
         "message": "Γράψτε το μήνυμά σας..."
       }
     }
+  },
+  "projects": {
+    "breadcrumb": {
+      "title": "Έργα",
+      "fromHome": "ΑΡΧΙΚΗ",
+      "current": "ΕΡΓΑ"
+    },
+    "viewProject": "ΠΡΟΒΟΛΗ ΕΡΓΟΥ",
+    "items": {
+      "1": {
+        "category": "Ελασματουργικές Εργασίες",
+        "title": "Επισκευή Πλοίου Anna S"
+      },
+      "2": {
+        "category": "Εργασίες Αλουμινίου",
+        "title": "Αναβάθμιση Υπερκατασκευής M/V Athina"
+      },
+      "3": {
+        "category": "Σωληνουργικές Εργασίες",
+        "title": "Ανακαίνιση Μηχανοστασίου Blue Star"
+      },
+      "4": {
+        "category": "Ελασματουργικές Εργασίες",
+        "title": "Αποκατάσταση Γάστρας Aegean Pearl"
+      },
+      "5": {
+        "category": "Βιομηχανικές Εφαρμογές",
+        "title": "Συντήρηση Δεξαμενόπλοιου Olympia"
+      },
+      "6": {
+        "category": "Εργασίες Αλουμινίου",
+        "title": "Κατασκευή Καμπινών Hellenic Spirit"
+      }
+    },
+    "cta": {
+      "headingPart1": "Ξεκινήστε το",
+      "headingPart2": "Ναυπηγοεπισκευαστικό",
+      "headingPart3": "σας Ταξίδι μαζί μας Σήμερα!",
+      "paragraph": "Από τη μελέτη έως την παράδοση, παρέχουμε εξαιρετικές υπηρεσίες ναυπηγοεπισκευής προσαρμοσμένες στις ανάγκες του στόλου σας. Επικοινωνήστε μαζί μας τώρα για δωρεάν συμβουλευτική!",
+      "button": "Ζητήστε Συμβουλευτική"
+    }
+  },
+  "projectDetails": {
+    "breadcrumb": {
+      "title": "Λεπτομέρειες Έργου",
+      "fromHome": "ΑΡΧΙΚΗ",
+      "current": "ΛΕΠΤΟΜΕΡΕΙΕΣ ΕΡΓΟΥ"
+    },
+    "content": {
+      "title": "Επισκευή Πλοίου Anna S",
+      "intro1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "intro2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "overviewTitle": "Επισκόπηση Έργου",
+      "overviewParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "blockquote": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.”",
+      "designTitle": "Σχεδιασμός & Μηχανολογία",
+      "designParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "designParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "processTitle": "Διαδικασία Ναυπηγοεπισκευής",
+      "processParagraph": "Η αποκατάσταση του πλοίου Anna S περιλάμβανε εκτεταμένο σχεδιασμό και συντονισμό με τους νηογνώμονες, τους μηχανικούς και τους εκπροσώπους του πλοιοκτήτη. Η ομάδα μας αξιοποίησε σύγχρονες τεχνικές ναυπηγοεπισκευής, συμπεριλαμβανομένων προηγμένων μεθόδων συγκόλλησης και προκατασκευασμένων στοιχείων, για να επιταχύνει τις εργασίες και να διασφαλίσει την υψηλότερη ποιότητα.",
+      "challengesTitle": "Προκλήσεις & Λύσεις",
+      "challengesParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "outcomeTitle": "Αποτέλεσμα",
+      "outcomeParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "closingParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "closingParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    },
+    "process": {
+      "step1": {
+        "title": "Σχεδιασμός Έργου",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step2": {
+        "title": "Ανάπτυξη Σχεδιασμού",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step3": {
+        "title": "Προ-Επισκευή",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step4": {
+        "title": "Ολοκλήρωση Έργου",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "challenges": {
+      "urban": {
+        "title": "Λιμενική Τοποθεσία",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "sustainability": {
+        "title": "Βιωσιμότητα",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "sidebar": {
+      "heading": "Πληροφορίες Έργου",
+      "projectName": "Όνομα Έργου:",
+      "projectNameValue": "Επισκευή Πλοίου Anna S",
+      "location": "Τοποθεσία:",
+      "locationValue": "Πέραμα, Ελλάδα",
+      "client": "Πελάτης:",
+      "clientValue": "Aegean Maritime Co.",
+      "completionDate": "Ημερομηνία Ολοκλήρωσης:",
+      "completionDateValue": "Μάρτιος 2024",
+      "projectValue": "Αξία Έργου:",
+      "projectValueValue": "1,2 εκατ. €",
+      "scope": "Αντικείμενο Εργασιών:",
+      "scopeValue": "Ολοκληρωμένη Ναυπηγοεπισκευή"
+    },
+    "cta": {
+      "headingPart1": "Ξεκινήστε το",
+      "headingPart2": "Ναυπηγοεπισκευαστικό",
+      "headingPart3": "σας Ταξίδι μαζί μας Σήμερα!",
+      "paragraph": "Από τη μελέτη έως την παράδοση, παρέχουμε εξαιρετικές υπηρεσίες ναυπηγοεπισκευής προσαρμοσμένες στις ανάγκες του στόλου σας. Επικοινωνήστε μαζί μας τώρα για δωρεάν συμβουλευτική!",
+      "button": "Ζητήστε Συμβουλευτική"
+    }
+  },
+  "team": {
+    "breadcrumb": {
+      "title": "Ομάδα",
+      "fromHome": "ΑΡΧΙΚΗ",
+      "current": "ΟΜΑΔΑ"
+    },
+    "members": {
+      "1": { "name": "Ριχάρδος Ερνάντες", "role": "Διευθύνων Σύμβουλος (CEO)" },
+      "2": { "name": "Ρόμπερτ Μπράουν", "role": "Επικεφαλής Μηχανικός" },
+      "3": { "name": "Μάικλ Γουίλσον", "role": "Συντονιστής Ναυπηγείου" },
+      "4": { "name": "Λούκας Τόμπσον", "role": "Υπεύθυνος Ασφαλείας" },
+      "5": { "name": "Μάικλ Τόμπσον", "role": "Επόπτης Επισκευών" },
+      "6": { "name": "Ντέιβιντ Ροντρίγκεζ", "role": "Επικεφαλής Ναυπηγός" },
+      "7": { "name": "Κάρεν Γουίλσον", "role": "Σχέσεις με Πελάτες" }
+    }
+  },
+  "teamDetails": {
+    "breadcrumb": {
+      "title": "Λεπτομέρειες Ομάδας",
+      "fromHome": "ΑΡΧΙΚΗ",
+      "current": "ΜΕΛΟΣ ΟΜΑΔΑΣ"
+    },
+    "contact": {
+      "sayHello": "Πείτε ένα γεια!",
+      "meetUs": "Επισκεφθείτε μας:",
+      "address": "Λεωφ. Δημοκρατίας 397\nΠέραμα 188 63, Ελλάδα"
+    },
+    "member": {
+      "name": "Ιωάννης Καρτέρης",
+      "role": "Επικεφαλής Μηχανικός",
+      "bio1": "Ο Ιωάννης Καρτέρης είναι έμπειρος Επικεφαλής Μηχανικός με πάνω από 12 χρόνια εμπειρίας στη ναυπηγοεπισκευή. Εξειδικεύεται στη μηχανολογία κατασκευών, στον σχεδιασμό έργων και στη διαχείριση ναυπηγείου, διασφαλίζοντας ότι κάθε έργο πληροί τα υψηλότερα πρότυπα ασφάλειας και αποδοτικότητας.",
+      "bio2": "Με ισχυρό υπόβαθρο στη ναυπηγική μηχανολογία, ο Ιωάννης έχει ηγηθεί επιτυχώς πολυάριθμων έργων επισκευής δεξαμενόπλοιων, εμπορικών και επιβατηγών πλοίων από τη σύλληψη έως την ολοκλήρωση. Η εξειδίκευσή του στις σύγχρονες τεχνικές ναυπηγοεπισκευής, στην επιλογή υλικών και στη βιωσιμότητα του επιτρέπει να παραδίδει καινοτόμες λύσεις προσαρμοσμένες στις μοναδικές απαιτήσεις κάθε έργου."
+    },
+    "videoIntroduction": "Παρουσίαση Βίντεο",
+    "blockquote": "«Ως βασικό μέλος της ομάδας μας, ο Ιωάννης δεσμεύεται για την ποιοτική τεχνική, την έγκαιρη παράδοση και την αποδοτική εκτέλεση, καθιστώντας τον αναντικατάστατο σύμμαχο στην επιτυχία των έργων μας.»",
+    "skills": {
+      "headingPrefix": "Δεξιότητες του",
+      "animatedText": "ΔΕΞΙΟΤΗΤΕΣ",
+      "structural": "Μηχανολογία Κατασκευών",
+      "quality": "Ποιοτικός Έλεγχος & Διασφάλιση",
+      "materials": "Επιλογή & Προμήθεια Υλικών",
+      "leadership": "Ηγεσία & Συντονισμός Ομάδας"
+    },
+    "form": {
+      "headingPrefix": "Επικοινωνία με",
+      "animatedText": "ΕΠΙΚΟΙΝΩΝΙΑ",
+      "firstName": "Όνομα*",
+      "lastName": "Επώνυμο",
+      "phone": "Τηλέφωνο*",
+      "email": "Διεύθυνση Email*",
+      "subject": "Θέμα",
+      "message": "Γράψτε το μήνυμά σας...",
+      "send": "Αποστολή Μηνύματος"
+    }
   }
 }

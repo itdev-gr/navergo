@@ -1,6 +1,18 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function TeamPage() {
+  const { t } = useTranslation();
+  const members = [
+    { key: "1", img: "/assets/img/member/team-member-1.jpg" },
+    { key: "2", img: "/assets/img/member/team-member-2.jpg" },
+    { key: "3", img: "/assets/img/member/team-member-3.jpg" },
+    { key: "4", img: "/assets/img/member/team-member-4.jpg" },
+    { key: "5", img: "/assets/img/member/team-member-5.jpg" },
+    { key: "6", img: "/assets/img/member/team-member-7.jpg" },
+    { key: "7", img: "/assets/img/member/team-member-8.jpg" },
+  ];
+
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -10,15 +22,15 @@ export default function TeamPage() {
             <div className="row cs_center">
               <div className="cs-bread-page-title-area">
                 <div className="cs-page-title">
-                  <h2 className="cs_white_color">Team</h2>
+                  <h2 className="cs_white_color">{t("team.breadcrumb.title")}</h2>
                 </div>
                 <div className="breadcrumb">
                   <ul>
                     <li>
-                      <Link to="/" className="cs-text_b_line"><span>HOME</span></Link>
+                      <Link to="/" className="cs-text_b_line"><span>{t("team.breadcrumb.fromHome")}</span></Link>
                     </li>
                     <li>/</li>
-                    <li>TEAM</li>
+                    <li>{t("team.breadcrumb.current")}</li>
                   </ul>
                 </div>
               </div>
@@ -37,279 +49,47 @@ export default function TeamPage() {
         <div className="team-wrap">
           <div className="container">
             <div className="row cs-exclude-top-40">
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details">
-                    <img className="animated-img" src="/assets/img/member/team-member-1.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
+              {members.map((m) => (
+                <div className="team-member" key={m.key}>
+                  <div className="member-img">
                     <Link to="/team-details">
-                      <h6>Richard Hernandez</h6>
+                      <img className="animated-img" src={m.img} alt="" />
                     </Link>
-                    <p>Chief Officer (CEO)</p>
                   </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details">
-                    <img className="animated-img" src="/assets/img/member/team-member-2.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details">
-                      <h6>Robert Brown</h6>
-                    </Link>
-                    <p>Lead Engineer</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
+                  <div className="member-in">
+                    <div className="content">
+                      <Link to="/team-details">
+                        <h6>{t(`team.members.${m.key}.name`)}</h6>
+                      </Link>
+                      <p>{t(`team.members.${m.key}.role`)}</p>
+                    </div>
+                    <div className="theme-social">
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com" target="_blank">
+                            <i className="flaticon-facebook-app-symbol"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com" target="_blank">
+                            <i className="flaticon-linkedin-big-logo"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://x.com" target="_blank">
+                            <i className="flaticon-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com" target="_blank">
+                            <i className="flaticon-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details">
-                    <img className="animated-img" src="/assets/img/member/team-member-3.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details">
-                      <h6>Michel Wilson</h6>
-                    </Link>
-                    <p>Site Coordinator</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details">
-                    <img className="animated-img" src="/assets/img/member/team-member-4.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details">
-                      <h6>Lucas Thompson</h6>
-                    </Link>
-                    <p>Safety Officer</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details">
-                    <img className="animated-img" src="/assets/img/member/team-member-5.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details">
-                      <h6>Michael Thompson</h6>
-                    </Link>
-                    <p>Construction Supervisor</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details">
-                    <img className="animated-img" src="/assets/img/member/team-member-7.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details">
-                      <h6>David Rodriguez</h6>
-                    </Link>
-                    <p>Lead Architect</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details">
-                    <img className="animated-img" src="/assets/img/member/team-member-8.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details">
-                      <h6>Karen Wilson</h6>
-                    </Link>
-                    <p>Client Relations</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              ))}
 
             </div>
           </div>

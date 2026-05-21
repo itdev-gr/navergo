@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function TeamDetailsPage() {
+  const { t } = useTranslation();
+  const memberName = t("teamDetails.member.name");
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -9,15 +12,15 @@ export default function TeamDetailsPage() {
           <div className="container">
             <div className="cs-bc-classic-content">
               <div className="cs-page-title">
-                <h4>Team Details</h4>
+                <h4>{t("teamDetails.breadcrumb.title")}</h4>
               </div>
               <div className="breadcrumb">
                 <ul>
                   <li>
-                    <Link to="/" className="cs-text_b_line"><span>HOME</span></Link>
+                    <Link to="/" className="cs-text_b_line"><span>{t("teamDetails.breadcrumb.fromHome")}</span></Link>
                   </li>
                   <li>/</li>
-                  <li>TEAM SINGLE</li>
+                  <li>{t("teamDetails.breadcrumb.current")}</li>
                 </ul>
               </div>
             </div>
@@ -47,23 +50,22 @@ export default function TeamDetailsPage() {
                     <div className="cs-height-50"></div>
                     <div className="contact-items">
                       <div className="contact-item">
-                        <p>Say hello!</p>
+                        <p>{t("teamDetails.contact.sayHello")}</p>
                         <a href="tel:4065550120">
                           <h6>(406) 555-0120</h6>
                         </a>
                       </div>
                       <div className="cs-height-20"></div>
                       <div className="contact-item">
-                        <p>Say hello!</p>
+                        <p>{t("teamDetails.contact.sayHello")}</p>
                         <a href="mailto:info@email.com">
                           <h6>info@email.com</h6>
                         </a>
                       </div>
                       <div className="cs-height-20"></div>
                       <div className="contact-item">
-                        <p>Meet Us:</p>
-                        <h6>Leof. Dimokratias 397
-                          Perama 188 63, Greece</h6>
+                        <p>{t("teamDetails.contact.meetUs")}</p>
+                        <h6 style={{ whiteSpace: "pre-line" }}>{t("teamDetails.contact.address")}</h6>
                       </div>
                     </div>
                     <div className="cs-height-30"></div>
@@ -102,20 +104,12 @@ export default function TeamDetailsPage() {
               <div className="col-lg-7">
                 <div className="content scolling-content">
                   <div className="member-info-single">
-                    <h2 className="cs_medium">Johnathan Carter</h2>
+                    <h2 className="cs_medium">{memberName}</h2>
                     <div className="cs-height-5"></div>
-                    <p className="cs-text-style-h6 cs_light">Lead Engineer</p>
+                    <p className="cs-text-style-h6 cs_light">{t("teamDetails.member.role")}</p>
                     <div className="cs-height-20"></div>
-                    <p>Johnathan Carter is a seasoned Lead Engineer with over 12 years of experience in the construction
-                      industry. He specializes in structural engineering, project planning, and site management, ensuring that
-                      every project meets the highest standards of safety and efficiency.
-                    </p>
-                    <p>
-                      With a strong background in civil engineering, Johnathan has successfully led numerous residential,
-                      commercial, and infrastructure projects from conception to completion. His expertise in modern
-                      construction techniques, material selection, and sustainability allows him to deliver innovative
-                      solutions tailored to each project's unique requirements.
-                    </p>
+                    <p>{t("teamDetails.member.bio1")}</p>
+                    <p>{t("teamDetails.member.bio2")}</p>
                   </div>
 
                   <div className="cs-height-30"></div>
@@ -125,15 +119,14 @@ export default function TeamDetailsPage() {
                       <svg width="20" height="24" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M25.7939 15.2383L0.293944 29.9607L0.293945 0.515848L25.7939 15.2383Z" fill="#7c1d1f" />
                       </svg>
-                      <span>Video Introduction</span>
+                      <span>{t("teamDetails.videoIntroduction")}</span>
                     </a>
                   </div>
 
                   <div className="cs-height-70"></div>
 
                   <blockquote>
-                    "As a key member of our team, Johnathan is committed to quality craftsmanship, on-time delivery, and
-                    cost-effective execution, making him an invaluable asset in driving our projects to success."
+                    {t("teamDetails.blockquote")}
                   </blockquote>
 
 
@@ -143,15 +136,15 @@ export default function TeamDetailsPage() {
 
                     <div className="member-skills-wrap" data-aos="fade-top" data-aos-duration="700">
                       <div className="position-relative">
-                        <h4 className="cs-heading">Skills of <span>Johnathan Carter</span></h4>
-                        <span className="cs-text-style-h1 cs-animated-text">SKILLS</span>
+                        <h4 className="cs-heading">{t("teamDetails.skills.headingPrefix")} <span>{memberName}</span></h4>
+                        <span className="cs-text-style-h1 cs-animated-text">{t("teamDetails.skills.animatedText")}</span>
                       </div>
 
                       <div className="cs-height-35"></div>
 
                       <div className="cs-skill-box">
                         <div className="cs-skill-text">
-                          <p className="cs-skill-title">Structural Engineering</p>
+                          <p className="cs-skill-title">{t("teamDetails.skills.structural")}</p>
                           <p className="cs-skill-per">99%</p>
                         </div>
                         <div className="cs-skill-bar">
@@ -163,7 +156,7 @@ export default function TeamDetailsPage() {
 
                       <div className="cs-skill-box">
                         <div className="cs-skill-text">
-                          <p className="cs-skill-title">Quality Control &amp; Assurance</p>
+                          <p className="cs-skill-title">{t("teamDetails.skills.quality")}</p>
                           <p className="cs-skill-per">98%</p>
                         </div>
                         <div className="cs-skill-bar">
@@ -175,7 +168,7 @@ export default function TeamDetailsPage() {
 
                       <div className="cs-skill-box">
                         <div className="cs-skill-text">
-                          <p className="cs-skill-title">Material Selection &amp; Procurement</p>
+                          <p className="cs-skill-title">{t("teamDetails.skills.materials")}</p>
                           <p className="cs-skill-per">90%</p>
                         </div>
                         <div className="cs-skill-bar">
@@ -187,7 +180,7 @@ export default function TeamDetailsPage() {
 
                       <div className="cs-skill-box">
                         <div className="cs-skill-text">
-                          <p className="cs-skill-title">Team Leadership &amp; Coordination</p>
+                          <p className="cs-skill-title">{t("teamDetails.skills.leadership")}</p>
                           <p className="cs-skill-per">95%</p>
                         </div>
                         <div className="cs-skill-bar">
@@ -201,25 +194,24 @@ export default function TeamDetailsPage() {
 
                   <div className="member-single-form" data-aos="fade-top" data-aos-duration="800">
                     <div className="position-relative">
-                      <h4>Contact With <span>Johnathan Carter</span></h4>
-                      <span className="cs-text-style-h1 cs-animated-text">CONTACT</span>
+                      <h4>{t("teamDetails.form.headingPrefix")} <span>{memberName}</span></h4>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("teamDetails.form.animatedText")}</span>
                     </div>
 
                     <div className="cs-height-35"></div>
                     <form>
                       <div className="input-col-two">
-                        <input type="text" placeholder="First Name*" required />
-                        <input type="text" placeholder="Last Name" required />
+                        <input type="text" placeholder={t("teamDetails.form.firstName")} required />
+                        <input type="text" placeholder={t("teamDetails.form.lastName")} required />
                       </div>
                       <div className="input-col-two">
-                        <input type="tel" placeholder="Phone*" required />
-                        <input type="email" placeholder="Email Address*" required />
+                        <input type="tel" placeholder={t("teamDetails.form.phone")} required />
+                        <input type="email" placeholder={t("teamDetails.form.email")} required />
                       </div>
-                      <input type="text" placeholder="Subject" required />
-                      <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
+                      <input type="text" placeholder={t("teamDetails.form.subject")} required />
+                      <textarea id="message" rows="4" placeholder={t("teamDetails.form.message")} required></textarea>
                       <button type="submit"
-                        className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>Send
-                          Message</span></button>
+                        className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>{t("teamDetails.form.send")}</span></button>
                     </form>
                   </div>
                 </div>

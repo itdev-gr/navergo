@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectDetailsPage() {
+  const { t } = useTranslation();
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -10,15 +12,15 @@ export default function ProjectDetailsPage() {
             <div className="row cs_center">
               <div className="cs-bread-page-title-area">
                 <div className="cs-page-title">
-                  <h2 className="cs_white_color">Project Details</h2>
+                  <h2 className="cs_white_color">{t("projectDetails.breadcrumb.title")}</h2>
                 </div>
                 <div className="breadcrumb">
                   <ul>
                     <li>
-                      <Link to="/" className="cs-text_b_line"><span>HOME</span></Link>
+                      <Link to="/" className="cs-text_b_line"><span>{t("projectDetails.breadcrumb.fromHome")}</span></Link>
                     </li>
                     <li>/</li>
-                    <li>PROJECT DETAILS</li>
+                    <li>{t("projectDetails.breadcrumb.current")}</li>
                   </ul>
                 </div>
               </div>
@@ -40,26 +42,16 @@ export default function ProjectDetailsPage() {
               <div className="scolling-content">
                 <img data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-main.jpg" alt="" />
                 <div className="cs-height-50"></div>
-                <h3>Downtown Office Tower</h3>
+                <h3>{t("projectDetails.content.title")}</h3>
                 <div className="cs-height-10"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem
-                  Ipsum is
-                  simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                  standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                </p>
+                <p>{t("projectDetails.content.intro1")}</p>
+                <p>{t("projectDetails.content.intro2")}</p>
 
                 <div className="cs-height-30"></div>
 
-                <h5>Project Overview</h5>
+                <h5>{t("projectDetails.content.overviewTitle")}</h5>
                 <div className="cs-height-10"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-                </p>
+                <p>{t("projectDetails.content.overviewParagraph")}</p>
                 <div className="cs-height-35"></div>
 
                 <blockquote className="theme-border-wrap" data-src="/assets/img/cta-bg.jpg">
@@ -85,33 +77,24 @@ export default function ProjectDetailsPage() {
                     <div className="horizontal"></div>
                   </div>
 
-                  “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.”
+                  {t("projectDetails.content.blockquote")}
                 </blockquote>
 
                 <div className="cs-height-50"></div>
 
-                <h5>Design &amp; Architecture</h5>
+                <h5>{t("projectDetails.content.designTitle")}</h5>
                 <div className="cs-height-10"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>{t("projectDetails.content.designParagraph1")}</p>
                 <div className="cs-height-10"></div>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>{t("projectDetails.content.designParagraph2")}</p>
 
                 <div className="cs-height-40"></div>
 
-                <h5>Construction Process</h5>
+                <h5>{t("projectDetails.content.processTitle")}</h5>
                 <div className="cs-height-10"></div>
 
-                <p>The construction of the Downtown Office Tower involved extensive planning and coordination with
-                  various stakeholders, including architects, engineers, and city officials. Our team utilized the
-                  latest construction technologies, including Building Information Modeling (BIM) and prefabricated
-                  components, to streamline the construction process and ensure the highest level of quality.</p>
+                <p>{t("projectDetails.content.processParagraph")}</p>
 
                 <div className="cs-height-30"></div>
 
@@ -119,26 +102,26 @@ export default function ProjectDetailsPage() {
                   <div className="row">
                     <div className="col-xl-6 col-md-6">
                       <div className="process-item" data-aos="fade-top" data-aos-duration="400">
-                        <h6>Project Planning</h6>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+                        <h6>{t("projectDetails.process.step1.title")}</h6>
+                        <p>{t("projectDetails.process.step1.description")}</p></div>
                       <div className="cs-height-30"></div>
                     </div>
                     <div className="col-xl-6 col-md-6">
                       <div className="process-item" data-aos="fade-top" data-aos-duration="500">
-                        <h6>Design Development</h6>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+                        <h6>{t("projectDetails.process.step2.title")}</h6>
+                        <p>{t("projectDetails.process.step2.description")}</p></div>
                       <div className="cs-height-30"></div>
                     </div>
                     <div className="col-xl-6 col-md-6">
                       <div className="process-item" data-aos="fade-top" data-aos-duration="600">
-                        <h6>Pre-Construction</h6>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+                        <h6>{t("projectDetails.process.step3.title")}</h6>
+                        <p>{t("projectDetails.process.step3.description")}</p></div>
                       <div className="cs-height-30"></div>
                     </div>
                     <div className="col-xl-6 col-md-6">
                       <div className="process-item" data-aos="fade-top" data-aos-duration="700">
-                        <h6>Project Completion</h6>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+                        <h6>{t("projectDetails.process.step4.title")}</h6>
+                        <p>{t("projectDetails.process.step4.description")}</p></div>
                       <div className="cs-height-30"></div>
                     </div>
                   </div>
@@ -146,25 +129,25 @@ export default function ProjectDetailsPage() {
 
                 <div className="cs-height-15"></div>
 
-                <h5>Challenges &amp; Solutions</h5>
+                <h5>{t("projectDetails.content.challengesTitle")}</h5>
                 <div className="cs-height-10"></div>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>{t("projectDetails.content.challengesParagraph")}</p>
 
                 <div className="cs-height-30"></div>
 
                 <div className="cs-constr-process">
                   <div className="row">
                     <div className="col-xl-5 col-md-5" data-aos="fade-top" data-aos-duration="400">
-                      <h6>Urban Location</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <h6>{t("projectDetails.challenges.urban.title")}</h6>
+                      <p>{t("projectDetails.challenges.urban.description")}</p>
                     </div>
                     <div className="col-xl-2">
                       <div className="cs-border-pr"></div>
                     </div>
                     <div className="col-xl-5 col-md-5" data-aos="fade-top" data-aos-duration="600">
-                      <h6>Sustainability</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <h6>{t("projectDetails.challenges.sustainability.title")}</h6>
+                      <p>{t("projectDetails.challenges.sustainability.description")}</p>
                     </div>
                   </div>
                 </div>
@@ -172,10 +155,10 @@ export default function ProjectDetailsPage() {
 
                 <div className="cs-height-40"></div>
 
-                <h5>Outcome</h5>
+                <h5>{t("projectDetails.content.outcomeTitle")}</h5>
                 <div className="cs-height-10"></div>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>{t("projectDetails.content.outcomeParagraph")}</p>
 
                 <div className="cs-height-30"></div>
                 <img data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-image-2.jpg" alt="" />
@@ -183,41 +166,41 @@ export default function ProjectDetailsPage() {
 
                 <div className="cs-height-50"></div>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>{t("projectDetails.content.closingParagraph1")}</p>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p>{t("projectDetails.content.closingParagraph2")}</p>
 
 
               </div>
             </div>
             <div className="col-lg-4 col-md-12 sticky-box">
               <div className="widget-item widget-sidebar pw theme-dark sticky-box-child">
-                <h6>Project Information</h6>
+                <h6>{t("projectDetails.sidebar.heading")}</h6>
                 <div className="cs-height-30"></div>
                 <div className="project-info">
                   <div className="p-info-item">
-                    <p>Project Name:</p>
-                    <h6>Downtown Office Tower</h6>
+                    <p>{t("projectDetails.sidebar.projectName")}</p>
+                    <h6>{t("projectDetails.sidebar.projectNameValue")}</h6>
                   </div>
                   <div className="p-info-item">
-                    <p>Location:</p>
-                    <h6>New York City, NY</h6>
+                    <p>{t("projectDetails.sidebar.location")}</p>
+                    <h6>{t("projectDetails.sidebar.locationValue")}</h6>
                   </div>
                   <div className="p-info-item">
-                    <p>Client:</p>
-                    <h6>Urban Corp</h6>
+                    <p>{t("projectDetails.sidebar.client")}</p>
+                    <h6>{t("projectDetails.sidebar.clientValue")}</h6>
                   </div>
                   <div className="p-info-item">
-                    <p>Completion Date:</p>
-                    <h6>March 2024</h6>
+                    <p>{t("projectDetails.sidebar.completionDate")}</p>
+                    <h6>{t("projectDetails.sidebar.completionDateValue")}</h6>
                   </div>
                   <div className="p-info-item">
-                    <p>Project Value:</p>
-                    <h6>$120 Million</h6>
+                    <p>{t("projectDetails.sidebar.projectValue")}</p>
+                    <h6>{t("projectDetails.sidebar.projectValueValue")}</h6>
                   </div>
                   <div className="p-info-item">
-                    <p>Scope of Work:</p>
-                    <h6>Full-Service Commercial Construction</h6>
+                    <p>{t("projectDetails.sidebar.scope")}</p>
+                    <h6>{t("projectDetails.sidebar.scopeValue")}</h6>
                   </div>
                 </div>
               </div>
@@ -239,14 +222,14 @@ export default function ProjectDetailsPage() {
 
                 <div className="cta-content max-width-800 m-auto">
                   <div className="cs-height-100"></div>
-                  <h2 data-aos="fade-up" data-aos-duration="400">Start Your <span className="themecolor" data-aos="fade-up" data-aos-duration="1000">Construction</span> Journey with Us Today!</h2>
+                  <h2 data-aos="fade-up" data-aos-duration="400">{t("projectDetails.cta.headingPart1")} <span className="themecolor" data-aos="fade-up" data-aos-duration="1000">{t("projectDetails.cta.headingPart2")}</span> {t("projectDetails.cta.headingPart3")}</h2>
 
                   <div className="cs-height-15"></div>
 
-                  <p>From concept to completion, we deliver exceptional construction services tailored to your needs. Contact us now for a free consultation!</p>
+                  <p>{t("projectDetails.cta.paragraph")}</p>
                   <div className="cs-height-25"></div>
 
-                  <Link to="/contact" className="cs-text_b_line"><span>Get Consultation</span>
+                  <Link to="/contact" className="cs-text_b_line"><span>{t("projectDetails.cta.button")}</span>
                     <i className="flaticon-right-arrow"></i>
                   </Link>
                 </div>

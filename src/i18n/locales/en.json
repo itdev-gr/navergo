@@ -528,5 +528,177 @@
         "message": "Write your message..."
       }
     }
+  },
+  "projects": {
+    "breadcrumb": {
+      "title": "Projects",
+      "fromHome": "HOME",
+      "current": "PROJECTS"
+    },
+    "viewProject": "VIEW PROJECT",
+    "items": {
+      "1": {
+        "category": "Steel Plate Works",
+        "title": "Anna S Vessel Repair"
+      },
+      "2": {
+        "category": "Aluminum Works",
+        "title": "M/V Athina Superstructure Upgrade"
+      },
+      "3": {
+        "category": "Piping Works",
+        "title": "Blue Star Engine-Room Refit"
+      },
+      "4": {
+        "category": "Steel Plate Works",
+        "title": "Aegean Pearl Hull Restoration"
+      },
+      "5": {
+        "category": "Industrial Applications",
+        "title": "Olympia Tanker Maintenance"
+      },
+      "6": {
+        "category": "Aluminum Works",
+        "title": "Hellenic Spirit Cabin Fabrication"
+      }
+    },
+    "cta": {
+      "headingPart1": "Start Your",
+      "headingPart2": "Ship Repair",
+      "headingPart3": "Journey with Us Today!",
+      "paragraph": "From planning to delivery, we provide exceptional ship repair services tailored to your fleet's needs. Contact us now for a free consultation!",
+      "button": "Get Consultation"
+    }
+  },
+  "projectDetails": {
+    "breadcrumb": {
+      "title": "Project Details",
+      "fromHome": "HOME",
+      "current": "PROJECT DETAILS"
+    },
+    "content": {
+      "title": "Anna S Vessel Repair",
+      "intro1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "intro2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "overviewTitle": "Project Overview",
+      "overviewParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "blockquote": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.”",
+      "designTitle": "Design & Engineering",
+      "designParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "designParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "processTitle": "Ship Repair Process",
+      "processParagraph": "The restoration of the Anna S vessel involved extensive planning and coordination with class surveyors, engineers, and owner representatives. Our team utilized modern ship repair techniques, including advanced welding methods and prefabricated components, to streamline the works and ensure the highest level of quality.",
+      "challengesTitle": "Challenges & Solutions",
+      "challengesParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "outcomeTitle": "Outcome",
+      "outcomeParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "closingParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "closingParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    },
+    "process": {
+      "step1": {
+        "title": "Project Planning",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step2": {
+        "title": "Design Development",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step3": {
+        "title": "Pre-Repair",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "step4": {
+        "title": "Project Completion",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "challenges": {
+      "urban": {
+        "title": "Port Location",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    },
+    "sidebar": {
+      "heading": "Project Information",
+      "projectName": "Project Name:",
+      "projectNameValue": "Anna S Vessel Repair",
+      "location": "Location:",
+      "locationValue": "Perama, Greece",
+      "client": "Client:",
+      "clientValue": "Aegean Maritime Co.",
+      "completionDate": "Completion Date:",
+      "completionDateValue": "March 2024",
+      "projectValue": "Project Value:",
+      "projectValueValue": "€1.2 Million",
+      "scope": "Scope of Work:",
+      "scopeValue": "Full-Service Ship Repair"
+    },
+    "cta": {
+      "headingPart1": "Start Your",
+      "headingPart2": "Ship Repair",
+      "headingPart3": "Journey with Us Today!",
+      "paragraph": "From planning to delivery, we provide exceptional ship repair services tailored to your fleet's needs. Contact us now for a free consultation!",
+      "button": "Get Consultation"
+    }
+  },
+  "team": {
+    "breadcrumb": {
+      "title": "Team",
+      "fromHome": "HOME",
+      "current": "TEAM"
+    },
+    "members": {
+      "1": { "name": "Richard Hernandez", "role": "Chief Officer (CEO)" },
+      "2": { "name": "Robert Brown", "role": "Lead Engineer" },
+      "3": { "name": "Michel Wilson", "role": "Site Coordinator" },
+      "4": { "name": "Lucas Thompson", "role": "Safety Officer" },
+      "5": { "name": "Michael Thompson", "role": "Repair Supervisor" },
+      "6": { "name": "David Rodriguez", "role": "Lead Naval Architect" },
+      "7": { "name": "Karen Wilson", "role": "Client Relations" }
+    }
+  },
+  "teamDetails": {
+    "breadcrumb": {
+      "title": "Team Details",
+      "fromHome": "HOME",
+      "current": "TEAM SINGLE"
+    },
+    "contact": {
+      "sayHello": "Say hello!",
+      "meetUs": "Meet Us:",
+      "address": "Leof. Dimokratias 397\nPerama 188 63, Greece"
+    },
+    "member": {
+      "name": "Johnathan Carter",
+      "role": "Lead Engineer",
+      "bio1": "Johnathan Carter is a seasoned Lead Engineer with over 12 years of experience in the ship repair industry. He specializes in structural engineering, project planning, and shipyard management, ensuring that every project meets the highest standards of safety and efficiency.",
+      "bio2": "With a strong background in naval engineering, Johnathan has successfully led numerous tanker, commercial, and passenger vessel repair projects from conception to completion. His expertise in modern ship repair techniques, material selection, and sustainability allows him to deliver innovative solutions tailored to each project's unique requirements."
+    },
+    "videoIntroduction": "Video Introduction",
+    "blockquote": "\"As a key member of our team, Johnathan is committed to quality craftsmanship, on-time delivery, and cost-effective execution, making him an invaluable asset in driving our projects to success.\"",
+    "skills": {
+      "headingPrefix": "Skills of",
+      "animatedText": "SKILLS",
+      "structural": "Structural Engineering",
+      "quality": "Quality Control & Assurance",
+      "materials": "Material Selection & Procurement",
+      "leadership": "Team Leadership & Coordination"
+    },
+    "form": {
+      "headingPrefix": "Contact With",
+      "animatedText": "CONTACT",
+      "firstName": "First Name*",
+      "lastName": "Last Name",
+      "phone": "Phone*",
+      "email": "Email Address*",
+      "subject": "Subject",
+      "message": "Write your message...",
+      "send": "Send Message"
+    }
   }
 }
