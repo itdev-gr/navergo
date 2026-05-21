@@ -1,22 +1,20 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ClientLogos from "../components/ClientLogos";
 
 export default function ServicePage() {
   const { t } = useTranslation();
 
   const serviceItems = ["01", "02", "03", "04", "05", "06"];
+  // Match the homepage service tiles 1:1 — same real shipyard photos.
   const serviceImages = [
-    "/assets/img/service/service-img01.jpg",
-    "/assets/img/service/service-img02.jpg",
-    "/assets/img/service/service-img03.jpg",
-    "/assets/img/service/service-img04.jpg",
-    "/assets/img/service/service-img05.jpg",
-    "/assets/img/service/service-img01.jpg",
+    "/assets/img/service/steelwork/steelwork-01.jpg",
+    "/assets/img/service/aluminum/aluminum-03.jpg",
+    "/assets/img/service/piping/piping-03.jpg",
+    "/assets/img/service/steelwork/steelwork-04.jpg",
+    "/assets/img/service/steelwork/steelwork-02.jpg",
+    "/assets/img/service/piping/piping-01.jpg",
   ];
-
-  const pricingFeatures = ["f1", "f2", "f3", "f4", "f5"].map((k) =>
-    t(`service.pricing.features.${k}`)
-  );
 
   return (
     <>
@@ -135,213 +133,8 @@ export default function ServicePage() {
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
 
-      {/* Start Pricing */}
-      <section>
-        <div className="pricing-wrap ">
-          <div className="container lg-gutter-control">
-
-            <div className="cs-heading-with-animation text-center max-width-700 m-auto d-flex">
-              <h2 className="cs-heading">{t("service.pricing.heading")}</h2>
-              <span className="cs-text-style-h1 cs-animated-text">{t("service.pricing.animatedText")}</span>
-            </div>
-
-            <div className="cs-height-50"></div>
-
-            <div className="row">
-              <div className="col-xl-4 col-md-6">
-                <div className="pricing-item theme-border-wrap cs-hover-card-anim" data-aos="fade-up" data-aos-duration="300"
-                  data-ser="hover-reveal">
-
-                  <div className="b-top-left">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-top-right d-flex">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-right d-flex flex-end">
-
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-left">
-                    <div className="verticle"></div>
-                    <div className="horizontal"></div>
-                  </div>
-
-                  <div className="content-for-top">
-                    <div className="cs-height-50"></div>
-
-                    <h5>{t("service.pricing.plans.standard.name")}</h5>
-                    <p>{t("service.pricing.tagline")}</p>
-                    <div className="cs-pricing-border-with-margin"></div>
-                    <h2>$250M</h2>
-
-                    <div className="cs-height-20"></div>
-
-                    <div className="pricing-feature-list body-text-color">
-                      <ul className="cs-text-lh-200">
-                        {pricingFeatures.map((feat, i) => (
-                          <li key={i}>{feat}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="cs-height-70"></div>
-                    <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50" to="/contact">
-                      <span>{t("service.pricing.getStart")}</span>
-                    </Link>
-                    <div className="cs-height-50"></div>
-                  </div>
-                  <div className="magic" data-src="/assets/img/contact/contact-office-bg.jpg"></div>
-                </div>
-                <div className="cs-height-30"></div>
-              </div>
-              <div className="col-xl-4 col-md-6">
-                <div className="pricing-item theme-border-wrap theme-dark themecolor-bg" data-aos="fade-up"
-                  data-aos-duration="500">
-
-                  <div className="b-top-left">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-top-right d-flex">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-right d-flex flex-end">
-
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-left">
-                    <div className="verticle"></div>
-                    <div className="horizontal"></div>
-                  </div>
-
-                  <div className="cs-height-50"></div>
-
-                  <h5>{t("service.pricing.plans.professional.name")}</h5>
-                  <p>{t("service.pricing.tagline")}</p>
-                  <div className="cs-pricing-border-with-margin"></div>
-                  <h2>$350M</h2>
-
-                  <div className="cs-height-20"></div>
-
-                  <div className="pricing-feature-list body-text-color">
-                    <ul className="cs-text-lh-200">
-                      {pricingFeatures.map((feat, i) => (
-                        <li key={i}>{feat}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="cs-height-70"></div>
-
-                  <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50" to="/contact"><span>{t("service.pricing.getStart")}</span>
-                    </Link>
-
-                  <div className="cs-height-50"></div>
-
-                </div>
-                <div className="cs-height-30"></div>
-              </div>
-              <div className="col-xl-4 col-md-6">
-                <div className="pricing-item theme-border-wrap cs-hover-card-anim" data-aos="fade-up" data-aos-duration="900"
-                  data-ser="hover-reveal">
-
-                  <div className="b-top-left">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-top-right d-flex">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-right d-flex flex-end">
-
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-left">
-                    <div className="verticle"></div>
-                    <div className="horizontal"></div>
-                  </div>
-
-                  <div className="content-for-top">
-                    <div className="cs-height-50"></div>
-                    <h5>{t("service.pricing.plans.enterprise.name")}</h5>
-                    <p>{t("service.pricing.tagline")}</p>
-                    <div className="cs-pricing-border-with-margin"></div>
-                    <h2>$550M</h2>
-
-                    <div className="cs-height-20"></div>
-
-                    <div className="pricing-feature-list body-text-color">
-                      <ul className="cs-text-lh-200">
-                        {pricingFeatures.map((feat, i) => (
-                          <li key={i}>{feat}</li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="cs-height-70"></div>
-
-                    <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50" to="/contact">
-                      <span>{t("service.pricing.getStart")}</span>
-                    </Link>
-                    <div className="cs-height-50"></div>
-                  </div>
-                  <div className="magic" data-src="/assets/img/contact/contact-office-bg.jpg"></div>
-                </div>
-                <div className="cs-height-30"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* End Pricing */}
-
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
-
       {/* Start Clients */}
-        <div className="container client-wrap">
-          <div className="swiper clients-slider">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="700">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo03.png" alt="" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="900">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo02.png" alt="" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1100">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo01.png" alt="" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ClientLogos />
       {/* End Clients */}
 
       <div className="cs-section-height"></div>
