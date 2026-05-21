@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function AboutPage() {
+  const { t } = useTranslation();
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -10,15 +12,15 @@ export default function AboutPage() {
             <div className="row cs_center">
               <div className="cs-bread-page-title-area">
                 <div className="cs-page-title">
-                  <h2 className="cs_white_color">About Us</h2>
+                  <h2 className="cs_white_color">{t("about.breadcrumb.title")}</h2>
                 </div>
                 <div className="breadcrumb">
                   <ul>
                     <li>
-                      <Link to="/" className="cs-text_b_line"><span>HOME</span></Link>
+                      <Link to="/" className="cs-text_b_line"><span>{t("about.breadcrumb.fromHome")}</span></Link>
                     </li>
                     <li>/</li>
-                    <li>ABOUT US</li>
+                    <li>{t("about.breadcrumb.current")}</li>
                   </ul>
                 </div>
               </div>
@@ -35,14 +37,12 @@ export default function AboutPage() {
           <div className="cj-left">
             <div className="cs-section-height"></div>
             <div className="cj-left-content">
-              <h2 data-aos="fade-up" data-aos-duration="500">Timeless Journey of Crafting Excellence in Construction</h2>
+              <h2 data-aos="fade-up" data-aos-duration="500">{t("about.journey.heading")}</h2>
               <div className="cs-height-25"></div>
               <div className="max-width-600">
-                <p  data-aos="fade-up" data-aos-duration="700">We believe construction is more than building structures; it's about creating spaces that inspire and
-                  enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.</p>
+                <p  data-aos="fade-up" data-aos-duration="700">{t("about.journey.paragraph1")}</p>
                 <div className="cs-height-30"></div>
-                <p data-aos="fade-up" data-aos-duration="1000">We believe construction is more than building structures; it's about creating spaces that inspire and
-                  enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.</p>
+                <p data-aos="fade-up" data-aos-duration="1000">{t("about.journey.paragraph2")}</p>
               </div>
                 <div className="cs-height-165"></div>
             </div>
@@ -67,22 +67,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Enriching Lives with Constr Partner in Construction</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide1.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide1.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide1.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
                 <div className="swiper-slide">
@@ -92,22 +90,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Building Dreams With Your Construction Partner</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide2.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide2.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide2.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
                 <div className="swiper-slide">
@@ -117,22 +113,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Shaping Future with Constr Excellence in Construction</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide3.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide3.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide3.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
                 <div className="swiper-slide">
@@ -142,22 +136,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Innovating Construction, Enriching Lives</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide4.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide4.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide4.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
                 <div className="swiper-slide">
@@ -167,22 +159,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Your Partner in Modern Construction Solutions</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide5.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide5.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide5.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
                 <div className="swiper-slide">
@@ -192,22 +182,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Enriching Lives with Constr Partner in Construction</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide6.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide6.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide6.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
                 <div className="swiper-slide">
@@ -217,22 +205,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Your Partner in Modern Construction Solutions</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide7.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide7.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide7.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
                 <div className="swiper-slide">
@@ -242,22 +228,20 @@ export default function AboutPage() {
 
                     <div className="cs-height-40"></div>
                     <div className="cs-heading-with-animation text-left m-auto d-flex">
-                      <h2 className="cs-heading">Constr – Elevating Standards in Construction</h2>
-                      <span className="cs-text-style-h1 cs-animated-text">INITIAL START 1996</span>
+                      <h2 className="cs-heading">{t("about.journey.slide8.heading")}</h2>
+                      <span className="cs-text-style-h1 cs-animated-text">{t("about.journey.slide8.animatedText")}</span>
                     </div>
-                    <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                      enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                    </p>
+                    <p>{t("about.journey.slide8.paragraph")}</p>
                     <div className="cs-height-100"></div>
                     <div className="list-feature">
-                      <h6>1. Resistant Construction</h6>
+                      <h6>{t("about.journey.features.feature1")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>2. Commercial Construction</h6>
+                      <h6>{t("about.journey.features.feature2")}</h6>
                       <div className="cs-list-border"></div>
-                      <h6>3. Infrastructure Construction</h6>
+                      <h6>{t("about.journey.features.feature3")}</h6>
                     </div>
                     <div className="cs-height-50"></div>
-                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>Start project</span></Link>
+                    <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("common.cta.startProject")}</span></Link>
                   </div>
                 </div>
               </div>
@@ -275,10 +259,10 @@ export default function AboutPage() {
         <div className="cs-text-moving-wrap">
           <div className="cs_text-moving_in">
             <div className="cs_text-moving">
-              <h2>Quality Construction, On Time, Every Time.</h2>
+              <h2>{t("about.marquee")}</h2>
             </div>
             <div className="cs_text-moving">
-              <h2>Quality Construction, On Time, Every Time.</h2>
+              <h2>{t("about.marquee")}</h2>
             </div>
           </div>
         </div>
@@ -300,8 +284,8 @@ export default function AboutPage() {
                     <div className="testi-slider-item-wrap">
                       <div className="testi-user">
                         <img src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>Sarah Johnson</h6>
-                        <p>Los Angeles, CA</p>
+                        <h6>{t("about.testimonials.1.name")}</h6>
+                        <p>{t("about.testimonials.1.location")}</p>
                       </div>
                       <div className="testi-border">
                         <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -311,9 +295,7 @@ export default function AboutPage() {
                       <div className="testi-content">
                         <img src="/assets/img/star.svg" alt="" />
                         <div className="cs-height-20"></div>
-                        <h4>We were incredibly impressed with work on our project. They were professional, efficient, and
-                          delivered a high-quality product on time and within budget. We would definitely recommend them to
-                          others. Definitely recommend them.</h4>
+                        <h4>{t("about.testimonials.1.quote")}</h4>
                       </div>
                     </div>
                   </div>
@@ -321,8 +303,8 @@ export default function AboutPage() {
                     <div className="testi-slider-item-wrap">
                       <div className="testi-user">
                         <img src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>Sarah Johnson</h6>
-                        <p>Los Angeles, CA</p>
+                        <h6>{t("about.testimonials.2.name")}</h6>
+                        <p>{t("about.testimonials.2.location")}</p>
                       </div>
                       <div className="testi-border">
                         <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -332,9 +314,7 @@ export default function AboutPage() {
                       <div className="testi-content">
                         <img src="/assets/img/star.svg" alt="" />
                         <div className="cs-height-20"></div>
-                        <h4>We were incredibly impressed with work on our project. They were professional, efficient, and
-                          delivered a high-quality product on time and within budget. We would definitely recommend them to
-                          others. Definitely recommend them.</h4>
+                        <h4>{t("about.testimonials.2.quote")}</h4>
                       </div>
                     </div>
                   </div>
@@ -359,8 +339,8 @@ export default function AboutPage() {
       {/* Start Service Section */}
       <section>
         <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
-          <h2 className="cs-heading">Construction Services Tailored to Build Your Success</h2>
-          <span className="cs-text-style-h1 cs-animated-text">SERVICES</span>
+          <h2 className="cs-heading">{t("about.services.heading")}</h2>
+          <span className="cs-text-style-h1 cs-animated-text">{t("about.services.animatedText")}</span>
         </div>
         <div className="cs-height-50"></div>
 
@@ -376,12 +356,11 @@ export default function AboutPage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">01. Residential Construction</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.01.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Lorem is simply text you can
-                            just replace.</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>More Details</span></Link>
+                          <p>{t("about.services.items.01.description")}</p>
+                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -394,12 +373,11 @@ export default function AboutPage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">02. Commercial Construction</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.02.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Lorem is simply text you can
-                            just replace.</p>
-                            <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to="/service-details"><span>More Details</span></Link>
+                          <p>{t("about.services.items.02.description")}</p>
+                            <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to="/service-details"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -412,12 +390,11 @@ export default function AboutPage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">03. Project Management</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.03.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Lorem is simply text you can
-                            just replace.</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>More Details</span></Link>
+                          <p>{t("about.services.items.03.description")}</p>
+                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -430,12 +407,11 @@ export default function AboutPage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">04. Renovation and Remodeling</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.04.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Lorem is simply text you can
-                            just replace.</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>More Details</span></Link>
+                          <p>{t("about.services.items.04.description")}</p>
+                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -448,12 +424,11 @@ export default function AboutPage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">05. Infrastructure Development</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("about.services.items.05.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Lorem is simply text you can
-                            just replace.</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>More Details</span></Link>
+                          <p>{t("about.services.items.05.description")}</p>
+                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -515,8 +490,8 @@ export default function AboutPage() {
                   <div className="counter-item" data-aos="fade-up" data-aos-duration="300">
                     <span id="count1" className="amin_auto_count cs-text-style-h2">50</span><span className="cs-text-style-h2">k</span>
                     <div className="cs-height-10"></div>
-                    <h6>Happy Customers</h6>
-                    <p>We believe construction is more than building structures.</p>
+                    <h6>{t("about.counter.happyCustomers")}</h6>
+                    <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>
                 </div>
@@ -527,8 +502,8 @@ export default function AboutPage() {
                   <div className="counter-item" data-aos="fade-up" data-aos-duration="400">
                     <span id="count2" className="amin_auto_count cs-text-style-h2">50</span>
                     <div className="cs-height-10"></div>
-                    <h6>Awards Achievement</h6>
-                    <p>We believe construction is more than building structures.</p>
+                    <h6>{t("about.counter.awards")}</h6>
+                    <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>
                 </div>
@@ -536,8 +511,8 @@ export default function AboutPage() {
                   <div className="counter-item" data-aos="fade-up" data-aos-duration="500">
                     <span id="count3" className="amin_auto_count cs-text-style-h2">126</span><span className="cs-text-style-h2">+</span>
                     <div className="cs-height-10"></div>
-                    <h6>Projects Completed</h6>
-                    <p>We believe construction is more than building structures.</p>
+                    <h6>{t("about.counter.projectsCompleted")}</h6>
+                    <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>
                 </div>
@@ -548,8 +523,8 @@ export default function AboutPage() {
                   <div className="counter-item"  data-aos="fade-up" data-aos-duration="600">
                     <span id="count4" className="amin_auto_count cs-text-style-h2">32</span><span className="cs-text-style-h2">+</span>
                     <div className="cs-height-10"></div>
-                    <h6>On-Going Projects</h6>
-                    <p>We believe construction is more than building structures.</p>
+                    <h6>{t("about.counter.ongoingProjects")}</h6>
+                    <p>{t("about.counter.description")}</p>
                   </div>
                   <div className="cs-height-40"></div>
                 </div>
@@ -558,11 +533,11 @@ export default function AboutPage() {
             <div className="cta-alone theme-dark">
               <div className="cs-cta-in">
                 <div className="cs-height-200"></div>
-                <h2 data-aos="fade-top" data-aos-duration="500">Get a Free Consultation Today!</h2>
+                <h2 data-aos="fade-top" data-aos-duration="500">{t("about.cta.heading")}</h2>
                 <div className="cs-height-20"></div>
-                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                <p>{t("about.cta.paragraph")}</p>
                 <div className="cs-height-30"></div>
-                <Link to="/contact" data-aos="fade-up" data-aos-duration="500" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-60 cs-width-220"><span>Contact Us</span></Link>
+                <Link to="/contact" data-aos="fade-up" data-aos-duration="500" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-60 cs-width-220"><span>{t("about.cta.button")}</span></Link>
                 <div className="cs-height-200"></div>
               </div>
             </div>
@@ -579,8 +554,8 @@ export default function AboutPage() {
         <div className="team-wrap">
           <div className="container">
             <div className="cs-heading-with-animation max-width-700">
-              <h2 className="cs-heading">Get to Know Our Dedicated Team Members</h2>
-              <span className="cs-text-style-h1 cs-animated-text">TEAM</span>
+              <h2 className="cs-heading">{t("about.team.heading")}</h2>
+              <span className="cs-text-style-h1 cs-animated-text">{t("about.team.animatedText")}</span>
               <div className="cs-height-50"></div>
             </div>
             <div className="row">
@@ -593,9 +568,9 @@ export default function AboutPage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Richard Hernandez</h6>
+                      <h6>{t("about.team.members.1.name")}</h6>
                     </Link>
-                    <p>Chief Officer (CEO)</p>
+                    <p>{t("about.team.members.1.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -632,9 +607,9 @@ export default function AboutPage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Robert Brown</h6>
+                      <h6>{t("about.team.members.2.name")}</h6>
                     </Link>
-                    <p>Lead Engineer</p>
+                    <p>{t("about.team.members.2.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -671,9 +646,9 @@ export default function AboutPage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Michel Wilson</h6>
+                      <h6>{t("about.team.members.3.name")}</h6>
                     </Link>
-                    <p>Site Coordinator</p>
+                    <p>{t("about.team.members.3.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -710,9 +685,9 @@ export default function AboutPage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Lucas Thompson</h6>
+                      <h6>{t("about.team.members.4.name")}</h6>
                     </Link>
-                    <p>Safety Officer</p>
+                    <p>{t("about.team.members.4.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -757,7 +732,7 @@ export default function AboutPage() {
             <div className="parallax-image max-height-750">
               <img src="/assets/img/about/about-experience.jpg" alt="" />
               <div className="ae-title">
-                <h2>CONSTRUCTION CONSTR</h2>
+                <h2>{t("about.experience.imageTitle")}</h2>
               </div>
             </div>
           </div>
@@ -767,10 +742,10 @@ export default function AboutPage() {
               <div className="cs-experience" data-aos="fade-right" data-aos-duration="400">
                 <img src="/assets/img/about/27.svg" alt="" />
                 <div className="cs-height-15"></div>
-                <h4 className="cs-uppercase">Years of <br /> Experience</h4>
+                <h4 className="cs-uppercase">{t("about.experience.yearsLine1")} <br /> {t("about.experience.yearsLine2")}</h4>
               </div>
               <div className="aec-line"></div>
-              <h3 data-aos="fade-left" data-aos-duration="400" className="cs-uppercase">We are Leading <br /> Company</h3>
+              <h3 data-aos="fade-left" data-aos-duration="400" className="cs-uppercase">{t("about.experience.leadingLine1")} <br /> {t("about.experience.leadingLine2")}</h3>
             </div>
           </div>
         </div>

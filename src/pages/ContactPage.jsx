@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function ContactPage() {
+  const { t } = useTranslation();
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -10,15 +12,15 @@ export default function ContactPage() {
             <div className="row cs_center">
               <div className="cs-bread-page-title-area">
                 <div className="cs-page-title">
-                  <h2 className="cs_white_color">Contact Us</h2>
+                  <h2 className="cs_white_color">{t("contact.breadcrumb.title")}</h2>
                 </div>
                 <div className="breadcrumb">
                   <ul>
                     <li>
-                      <Link to="/" className="cs-text_b_line"><span>HOME</span></Link>
+                      <Link to="/" className="cs-text_b_line"><span>{t("contact.breadcrumb.fromHome")}</span></Link>
                     </li>
                     <li>/</li>
-                    <li>CONTACT US</li>
+                    <li>{t("contact.breadcrumb.current")}</li>
                   </ul>
                 </div>
               </div>
@@ -45,23 +47,23 @@ export default function ContactPage() {
               <div className="col-xl-5 col-lg-6 col-md-12">
                 <div className="cs-contact-form-wrap">
                   <div className="position-relative" data-aos="fade-up" data-aos-duration="500">
-                    <h2 className="cs-heading">Send Us a Message Use Our Contact Form to Get in Touch</h2>
-                    <span className="cs-text-style-h1 cs-animated-text">CONTACT US</span>
+                    <h2 className="cs-heading">{t("contact.form.heading")}</h2>
+                    <span className="cs-text-style-h1 cs-animated-text">{t("contact.form.animatedText")}</span>
                   </div>
 
                   <div className="cs-height-35"></div>
                   <form>
                       <div className="input-col-two">
-                        <input type="text" placeholder="First Name*" required />
-                        <input type="text" placeholder="Last Name" required />
+                        <input type="text" placeholder={t("contact.form.firstName")} required />
+                        <input type="text" placeholder={t("contact.form.lastName")} required />
                       </div>
                       <div className="input-col-two">
-                        <input type="tel" placeholder="Phone*" required />
-                        <input type="email" placeholder="Email Address*" required />
+                        <input type="tel" placeholder={t("contact.form.phone")} required />
+                        <input type="email" placeholder={t("contact.form.email")} required />
                       </div>
-                      <input type="text" placeholder="Subject" required />
-                      <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
-                      <button type="submit" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>Send Message</span></button>
+                      <input type="text" placeholder={t("contact.form.subject")} required />
+                      <textarea id="message" rows="4" placeholder={t("contact.form.message")} required></textarea>
+                      <button type="submit" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>{t("contact.form.send")}</span></button>
                   </form>
                 </div>
               </div>
