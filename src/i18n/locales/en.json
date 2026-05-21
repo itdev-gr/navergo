@@ -35,5 +35,34 @@
       "sendMessage": "Send Message",
       "subscribe": "Subscribe"
     }
+  },
+  "sidebar": {
+    "sayHello": "Say hello!",
+    "meetUs": "Meet Us:",
+    "address": "Leof. Dimokratias 397, Perama 188 63, Greece"
+  },
+  "footer": {
+    "newsletter": "NEWSLETTER",
+    "newsletterPlaceholder": "Enter your email...",
+    "usefulLinks": "USEFUL LINK",
+    "ourServices": "OUR SERVICES",
+    "links": {
+      "aboutUs": "ABOUT US",
+      "ourServices": "OUR SERVICES",
+      "recentPortfolio": "RECENT PORTFOLIO",
+      "contactUs": "CONTACT US"
+    },
+    "services": {
+      "aluminum": "ALUMINUM WORKS",
+      "steel": "STEEL PLATE WORKS",
+      "piping": "PIPING WORKS",
+      "consulting": "CONSULTING",
+      "industrial": "INDUSTRIAL"
+    },
+    "rights": "All Rights Reserved.",
+    "credit": "Designed and developed by"
+  },
+  "about": {
+    "intro": "We believe construction is more than building structures — it's about creating."
   }
 }

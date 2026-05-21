@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function SideHeader() {
+  const { t } = useTranslation();
   return (
     <div className="cs_side_header">
       <button className="cs_close"></button>
@@ -11,21 +13,21 @@ export default function SideHeader() {
             <img src="/assets/img/logo_main.png" alt="Logo" />
           </Link>
           <div className="cs-height-20"></div>
-          <p>We believe construction is more than building structures.</p>
+          <p>{t("common.brand.tagline")}</p>
           <div className="cs-height-35"></div>
           <img src="/assets/img/header-sidebar/header-sidebar.jpg" alt="" />
         </div>
 
         <div className="cs-height-150"></div>
         <div className="cs-sidebar-middle-area">
-          <p>Say hello!</p>
+          <p>{t("sidebar.sayHello")}</p>
           <a href="tel:+14065550120"><h6>(406) 555-0120</h6></a>
           <div className="cs-height-20"></div>
-          <p>Say hello!</p>
+          <p>{t("sidebar.sayHello")}</p>
           <a href="mailto:info@email.com"><h6>info@email.com</h6></a>
           <div className="cs-height-20"></div>
-          <p>Meet Us:</p>
-          <span className="cs-text-style-h6">Leof. Dimokratias 397 <br /> Perama 188 63, Greece</span>
+          <p>{t("sidebar.meetUs")}</p>
+          <span className="cs-text-style-h6">{t("sidebar.address")}</span>
 
           <div className="cs-height-30"></div>
 

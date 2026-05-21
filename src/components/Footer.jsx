@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer>
       <div
@@ -21,16 +23,21 @@ export default function Footer() {
                   <div>
                     <Link to="/"><img src="/assets/img/navergo-logo.png" alt="Navergo" /></Link>
                     <div className="cs-height-20"></div>
-                    <p>We believe construction is more than building structures it's about creating.</p>
+                    <p>{t("about.intro")}</p>
                   </div>
                   <div className="cs-height-30"></div>
                   <div className="cs-footer-widget-title">
-                    <h6>NEWSLETTER</h6>
+                    <h6>{t("footer.newsletter")}</h6>
                     <div className="cs-height-10"></div>
                   </div>
                   <form className="cs-constr-newsletter">
-                    <input className="cs-newsletter-email" type="email" placeholder="Enter your email..." required />
-                    <button className="cs-newsletter-btn cs_center" type="submit">Subscribe</button>
+                    <input
+                      className="cs-newsletter-email"
+                      type="email"
+                      placeholder={t("footer.newsletterPlaceholder")}
+                      required
+                    />
+                    <button className="cs-newsletter-btn cs_center" type="submit">{t("common.cta.subscribe")}</button>
                   </form>
 
                   <div className="cs-height-30"></div>
@@ -43,25 +50,9 @@ export default function Footer() {
                       <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i className="flaticon-instagram"></i></a></li>
                     </ul>
                   </div>
-                </div>
-              </div>
 
-              <div className="col-xl-3 col-lg-6 col-md-4">
-                <div className="cs-footer-widget padding-lg-50">
-                  <div className="cs-footer-widget-title">
-                    <h6>USEFUL LINK</h6>
-                    <div className="cs-height-30"></div>
-                  </div>
-                  <div className="cs-constr-footer-menu">
-                    <ul>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/about" className="cs-text_b_line"><span>ABOUT US</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service" className="cs-text_b_line"><span>OUR SERVICES</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/projects" className="cs-text_b_line"><span>RECENT PORTFOLIO</span></Link></li>
-                      {/* <li><i className="flaticon-right-arrow themecolor"></i> <Link to="/blog" className="cs-text_b_line"><span>NEWS &amp; INSIGHTS</span></Link></li> */}
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/contact" className="cs-text_b_line"><span>CONTACT US</span></Link></li>
-                    </ul>
-                  </div>
                   <div className="cs-height-30"></div>
+
                   <img
                     src="/assets/img/iso-9001-certification.png"
                     alt="LRQA Certified — ISO 9001 — UKAS Management Systems"
@@ -70,19 +61,37 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="col-xl-2 col-lg-5 col-md-6">
-                <div className="cs-footer-widget">
+              <div className="col-xl-3 col-lg-6 col-md-4">
+                <div className="cs-footer-widget padding-lg-50">
                   <div className="cs-footer-widget-title">
-                    <h6>OUR SERVICES</h6>
+                    <h6>{t("footer.usefulLinks")}</h6>
                     <div className="cs-height-30"></div>
                   </div>
                   <div className="cs-constr-footer-menu">
                     <ul>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>COMMERCIAL</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>CONSULTING</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>RENOVATIONS</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>RESIDENTIAL</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i> <Link to="/service-details" className="cs-text_b_line"><span>INDUSTRIAL</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/about" className="cs-text_b_line"><span>{t("footer.links.aboutUs")}</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service" className="cs-text_b_line"><span>{t("footer.links.ourServices")}</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/projects" className="cs-text_b_line"><span>{t("footer.links.recentPortfolio")}</span></Link></li>
+                      {/* <li><i className="flaticon-right-arrow themecolor"></i> <Link to="/blog" className="cs-text_b_line"><span>NEWS &amp; INSIGHTS</span></Link></li> */}
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/contact" className="cs-text_b_line"><span>{t("footer.links.contactUs")}</span></Link></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-xl-2 col-lg-5 col-md-6">
+                <div className="cs-footer-widget">
+                  <div className="cs-footer-widget-title">
+                    <h6>{t("footer.ourServices")}</h6>
+                    <div className="cs-height-30"></div>
+                  </div>
+                  <div className="cs-constr-footer-menu">
+                    <ul>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.aluminum")}</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.steel")}</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.piping")}</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.consulting")}</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.industrial")}</span></Link></li>
                     </ul>
                   </div>
                 </div>
@@ -90,15 +99,15 @@ export default function Footer() {
 
               <div className="col-xl-3 col-lg-7 col-md-6">
                 <div className="cs-footer-widget">
-                  <p>Say hello!</p>
+                  <p>{t("sidebar.sayHello")}</p>
                   <a href="tel:+14065550120" className="cs-text-style-h4">(406) 555-0120</a>
                   <div className="cs-height-30"></div>
-                  <p>Say hello!</p>
+                  <p>{t("sidebar.sayHello")}</p>
                   <a href="mailto:info@email.com" className="cs-text-style-h4">info@email.com</a>
                   <div className="cs-height-30"></div>
-                  <p>Meet Us:</p>
+                  <p>{t("sidebar.meetUs")}</p>
                   <div className="cs-height-5"></div>
-                  <span className="cs-font-size-20">Leof. Dimokratias 397, Perama 188 63, Greece</span>
+                  <span className="cs-font-size-20">{t("sidebar.address")}</span>
                 </div>
               </div>
             </div>
@@ -109,8 +118,8 @@ export default function Footer() {
 
         <div className="cs-theme-copyright">
           <div className="cs-footer-copy-text">
-            <p>© 2025 <a href="#" className="themecolor">Navergo.</a> All Rights Reserved.</p>
-            <p>Designed and developed by <a href="https://www.itdev.gr" target="_blank" rel="noopener" className="themecolor">ITDEV</a> — <a href="https://www.itdev.gr" target="_blank" rel="noopener" className="themecolor">www.itdev.gr</a></p>
+            <p>© 2025 <a href="#" className="themecolor">Navergo.</a> {t("footer.rights")}</p>
+            <p>{t("footer.credit")} <a href="https://www.itdev.gr" target="_blank" rel="noopener" className="themecolor">ITDEV</a> — <a href="https://www.itdev.gr" target="_blank" rel="noopener" className="themecolor">www.itdev.gr</a></p>
           </div>
         </div>
       </div>
