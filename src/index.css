@@ -1,0 +1,67 @@
+/* Defensive overrides for SPA routing — the React app emits the same DOM as the
+   static template, but margin-collapse semantics on the first <section> child
+   can swallow the breadcrumb's `margin-top: 100px`, leaving the page banner
+   tucked behind the fixed header. Padding cannot collapse, so this is robust. */
+.cs_sticky_header {
+  top: 0;
+}
+
+.cs-breadcrumb-wrap {
+  margin-top: 0;
+  padding-top: 100px;
+  height: auto;
+  min-height: 365px;
+  box-sizing: border-box;
+}
+
+/* Hero text contrast: photographic slides need a scrim so the headline and
+   subtitle stay legible regardless of the slide image. The scrim is anchored
+   to the left where the copy sits, fading out across the photo. */
+.cs-hero-wrap .hero-slider-item {
+  position: relative;
+}
+.cs-hero-wrap .hero-slider-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.28) 35%,
+    rgba(255, 255, 255, 0.08) 65%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+.cs-hero-wrap .hero-slider-item .slider-item-content {
+  position: relative;
+  z-index: 1;
+}
+.cs-hero-wrap .hero-slider-item .slider-item-content h1,
+.cs-hero-wrap .hero-slider-item .slider-item-content .hero-strong-title,
+.cs-hero-wrap .hero-slider-item .slider-item-content .cs-hero-title-normal {
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+.cs-hero-wrap .hero-slider-item .slider-item-content p.hero-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+.cs-feature-card-wrap,
+.cs-feature-card-wrap .container,
+.cs-feature-card-wrap .row,
+.cs-feature-card-wrap .feature-card-item {
+  background-image: none !important;
+}
+section.themecolor-bg-primary:has(.cs-feature-card-wrap) {
+  background-image: none !important;
+}
+
+.cs-feature-card-wrap .feature-card-item .cs-feature-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+}
