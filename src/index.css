@@ -67,6 +67,20 @@ section.themecolor-bg-primary:has(.cs-feature-card-wrap) {
   display: block;
 }
 
+/* Corner accents on feature-card-item are designed to be invisible by default
+   and fade in on hover — the template only applies this rule when the card is
+   inside `.cs-feature-card-wrap`. The About page also uses `feature-card-item`
+   in Services Area, Personnel, and Pillars without that wrapper, which left
+   the red corner brackets at opacity 1 (visually broken). Extend the hide rule
+   to all `.feature-card-item` instances; the `:hover` reveal still works
+   because the template's hover selectors are also unscoped on hover. */
+.feature-card-item .b-top-left,
+.feature-card-item .b-top-right,
+.feature-card-item .b-bottom-right,
+.feature-card-item .b-bottom-left {
+  opacity: 0;
+}
+
 /* --- Smoke-test fixes 2026-05-21 ---------------------------------------- */
 
 /* Belt-and-braces: prevent any future child overflow from triggering body
@@ -139,4 +153,11 @@ img {
   .list-feature .cs-feature-bullets-wrap {
     transition: none;
   }
+}
+
+.feature-card-item .list-feature h6 {
+  text-align: center;
+}
+.feature-card-item .list-feature .cs-list-border {
+  margin: 13px auto;
 }
