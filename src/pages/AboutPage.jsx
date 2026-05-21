@@ -400,21 +400,21 @@ export default function AboutPage() {
             <div className="container">
               <div className="cs-couter-items">
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="400">
-                  <h6>{t("home.funfact.1.label")}</h6>
+                  <h6>{t("about.counter.shipsServiced")}</h6>
                   <span id="count1" className="amin_auto_count cs-text-style-h2">76</span><span className="cs-text-style-h2">+</span>
-                  <p>{t("home.funfact.1.description")}</p>
+                  <p>{t("about.counter.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="600">
-                  <h6>{t("home.funfact.2.label")}</h6>
+                  <h6>{t("about.counter.yearsExperience")}</h6>
                   <span id="count2" className="amin_auto_count cs-text-style-h2">5</span><span className="cs-text-style-h2">+</span>
-                  <p>{t("home.funfact.2.description")}</p>
+                  <p>{t("about.counter.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="800">
-                  <h6>{t("home.funfact.3.label")}</h6>
+                  <h6>{t("about.counter.repairProjects")}</h6>
                   <span id="count3" className="amin_auto_count cs-text-style-h2">140</span>
-                  <p>{t("home.funfact.3.description")}</p>
+                  <p>{t("about.counter.description")}</p>
                 </div>
               </div>
             </div>
