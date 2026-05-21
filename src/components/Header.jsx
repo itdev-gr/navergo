@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Header() {
+  const { t } = useTranslation();
   return (
     <header className="cs_site_header cs-header-with-bg cs_style1 cs_sticky_header">
       <div className="cs_main_header">
@@ -28,13 +31,13 @@ export default function Header() {
             <div className="cs_nav cs_medium">
               <ul className="cs_nav_list">
                 <li>
-                  <Link to="/" className="cs-text_b_line"><span>HOME</span></Link>
+                  <Link to="/" className="cs-text_b_line"><span>{t("common.nav.home")}</span></Link>
                 </li>
                 <li>
-                  <Link to="/about" className="cs-text_b_line"><span>ABOUT</span></Link>
+                  <Link to="/about" className="cs-text_b_line"><span>{t("common.nav.about")}</span></Link>
                 </li>
                 <li>
-                  <Link to="/service" className="cs-text_b_line"><span>SERVICES</span></Link>
+                  <Link to="/service" className="cs-text_b_line"><span>{t("common.nav.services")}</span></Link>
                 </li>
                 {/* News & Insights — disabled for now
                 <li className="menu-item-has-children">
@@ -54,37 +57,37 @@ export default function Header() {
                 </li>
                 */}
                 <li className="menu-item-has-children">
-                  <a href="#" className="cs-text_b_line"><span>PAGES</span></a>
+                  <a href="#" className="cs-text_b_line"><span>{t("common.nav.pages")}</span></a>
                   <ul>
                     <li>
-                      <Link to="/projects" className="cs-text_b_line"><span>OUR PROJECTS</span></Link>
+                      <Link to="/projects" className="cs-text_b_line"><span>{t("common.nav.projects")}</span></Link>
                     </li>
                     <li>
-                      <Link to="/project-details" className="cs-text_b_line"><span>PROJECTS DETAILS</span></Link>
+                      <Link to="/project-details" className="cs-text_b_line"><span>{t("common.nav.projectDetails")}</span></Link>
                     </li>
                     <li>
-                      <Link to="/team" className="cs-text_b_line"><span>OUR TEAM</span></Link>
+                      <Link to="/team" className="cs-text_b_line"><span>{t("common.nav.team")}</span></Link>
                     </li>
                     <li>
-                      <Link to="/team-details" className="cs-text_b_line"><span>TEAM DETAILS</span></Link>
+                      <Link to="/team-details" className="cs-text_b_line"><span>{t("common.nav.teamDetails")}</span></Link>
                     </li>
                     <li>
-                      <Link to="/gallery" className="cs-text_b_line"><span>Gallery</span></Link>
+                      <Link to="/gallery" className="cs-text_b_line"><span>{t("common.nav.gallery")}</span></Link>
                     </li>
                     <li>
-                      <Link to="/faq" className="cs-text_b_line"><span>FAQ</span></Link>
+                      <Link to="/faq" className="cs-text_b_line"><span>{t("common.nav.faq")}</span></Link>
                     </li>
                     <li>
-                      <Link to="/404" className="cs-text_b_line"><span>Error</span></Link>
+                      <Link to="/404" className="cs-text_b_line"><span>{t("common.nav.error")}</span></Link>
                     </li>
                     <li>
-                      <Link to="/coming" className="cs-text_b_line"><span>Coming Soon</span></Link>
+                      <Link to="/coming" className="cs-text_b_line"><span>{t("common.nav.comingSoon")}</span></Link>
                     </li>
                   </ul>
                   <span className="cs_munu_dropdown_toggle"></span>
                 </li>
                 <li>
-                  <Link to="/contact" className="cs-text_b_line"><span>CONTACT US</span></Link>
+                  <Link to="/contact" className="cs-text_b_line"><span>{t("common.nav.contact")}</span></Link>
                 </li>
               </ul>
             </div>
@@ -104,14 +107,16 @@ export default function Header() {
 
             <div className="header-contact">
               <div className="cs-header-phone theme-dark">
-                <span>Support 24:</span>
+                <span>{t("common.header.support24")}</span>
                 <a href="tel:+14065550120" className="cs-text_b_line"><span>(406) 555-0120</span></a>
               </div>
               <div className="cs-header-email theme-dark">
-                <span>Email Us:</span>
+                <span>{t("common.header.emailUs")}</span>
                 <a href="mailto:example@email.com" className="cs-text_b_line"><span>example@email.com</span></a>
               </div>
             </div>
+
+            <LanguageToggle />
           </div>
         </div>
       </div>

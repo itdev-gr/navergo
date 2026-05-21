@@ -1,5 +1,39 @@
 {
   "common": {
-    "loading": "Loading…"
+    "loading": "Loading…",
+    "languageSelector": "Language selector",
+    "brand": {
+      "name": "Navergo",
+      "tagline": "We believe construction is more than building structures."
+    },
+    "nav": {
+      "home": "HOME",
+      "about": "ABOUT",
+      "services": "SERVICES",
+      "serviceDetails": "SERVICE DETAILS",
+      "pages": "PAGES",
+      "projects": "OUR PROJECTS",
+      "projectDetails": "PROJECT DETAILS",
+      "team": "OUR TEAM",
+      "teamDetails": "TEAM DETAILS",
+      "gallery": "GALLERY",
+      "faq": "FAQ",
+      "error": "Error",
+      "comingSoon": "Coming Soon",
+      "contact": "CONTACT US"
+    },
+    "header": {
+      "support24": "Support 24:",
+      "emailUs": "Email Us:"
+    },
+    "cta": {
+      "startProject": "Start Project",
+      "contactUs": "Contact Us",
+      "viewMore": "View More",
+      "readMore": "Read More",
+      "moreDetails": "More Details",
+      "sendMessage": "Send Message",
+      "subscribe": "Subscribe"
+    }
   }
 }

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 export default function LanguageToggle() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const current = i18n.language || "el";
 
   function setLang(lng) {
@@ -29,7 +29,7 @@ export default function LanguageToggle() {
         gap: 4,
         marginLeft: 16,
       }}
-      aria-label="Επιλογή γλώσσας"
+      aria-label={t("common.languageSelector")}
     >
       <button
         type="button"
