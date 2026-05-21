@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function NotFoundPage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="cs-height-100"></div>
@@ -12,14 +15,11 @@ export default function NotFoundPage() {
             <div className="container">
               <div className="error-content">
 
-                <h1 className="error-title">404</h1>
-                <h2 className="erro-sub-title cs_semi_bold">Sorry! The Page isn't Found Here</h2>
-                <p className="erro-desp">Fortunately, since it is mainly a client-side issue, it is relatively easy for website
-                  owners to fix the
-                  404 error. This article will explain the possible causes of error 404 and show four effective methods to
-                  resolve it.Fortunately, since it is mainly a client-side issue.</p>
+                <h1 className="error-title">{t("notFound.code")}</h1>
+                <h2 className="erro-sub-title cs_semi_bold">{t("notFound.title")}</h2>
+                <p className="erro-desp">{t("notFound.description")}</p>
 
-                <Link to="/" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>Back to Home</span></Link>
+                <Link to="/" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>{t("notFound.backToHome")}</span></Link>
 
               </div>
             </div>

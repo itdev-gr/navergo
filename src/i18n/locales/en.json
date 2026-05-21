@@ -662,6 +662,77 @@
       "7": { "name": "Karen Wilson", "role": "Client Relations" }
     }
   },
+  "faq": {
+    "breadcrumb": {
+      "title": "FAQ",
+      "fromHome": "HOME",
+      "current": "FAQ"
+    },
+    "items": {
+      "q1": {
+        "question": "What ship repair services does your company offer?",
+        "answer": "Navergo offers comprehensive ship repair services including aluminum works, steel plate works, engine-room piping, consulting services, and industrial applications. We cover the full spectrum of vessel repair, maintenance, and upgrade work in the port of Perama."
+      },
+      "q2": {
+        "question": "How do you ensure the quality of your work?",
+        "answer": "Navergo is ISO 9001 certified and follows the standards of major international class societies. We perform quality checks at every phase, work closely with class surveyors, and use modern measurement equipment to ensure zero deviation from specifications."
+      },
+      "q3": {
+        "question": "What is the typical timeline for completing a project?",
+        "answer": "Timelines depend on the scope of the project. Small repairs can be completed in a few days, while larger hull or engine-room overhauls may take several weeks. We plan every project precisely to minimize dry-dock time."
+      },
+      "q4": {
+        "question": "Can you help with class approvals and certificates?",
+        "answer": "Yes. We coordinate directly with class society surveyors (Lloyd's Register, ABS, DNV, Bureau Veritas, etc.) and prepare all technical documentation required for approvals and certificate renewals."
+      },
+      "q5": {
+        "question": "How do you ensure the project stays within budget?",
+        "answer": "We provide a detailed quotation before work begins, with transparent costing for materials and labor. We track progress closely and notify the owner immediately about any proposed additional work, so there are no surprises."
+      }
+    },
+    "journey": {
+      "slide1": { "heading": "Timeless Journey of Crafting Excellence in Ship Repair" },
+      "slide2": { "heading": "Building Dreams With Your Ship Repair Partner" },
+      "slide3": { "heading": "Shaping the Future with Excellence in Ship Repair" },
+      "slide4": { "heading": "Navergo — Innovating Ship Repair, Enriching Voyages" },
+      "slide5": { "heading": "Your Partner in Modern Ship Repair Solutions" },
+      "slide6": { "heading": "Navergo — Elevating Standards in Ship Repair" },
+      "paragraph": "We believe ship repair is more than work performed on a vessel; it's about building partnerships that inspire trust and keep fleets safely at sea. Our skilled technicians bring expertise and a passion for excellence to every project.",
+      "features": {
+        "feature1": "Aluminum Works",
+        "feature2": "Steel Plate Works",
+        "feature3": "Piping Works"
+      }
+    },
+    "cta": {
+      "heading": "Start Your Ship Repair Journey with Us Today!",
+      "button": "Contact Us"
+    }
+  },
+  "gallery": {
+    "breadcrumb": {
+      "title": "Gallery",
+      "fromHome": "HOME",
+      "current": "GALLERY"
+    },
+    "imageAlt": "Photo"
+  },
+  "coming": {
+    "title": "Coming Soon",
+    "labels": {
+      "months": "Months",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Sorry! The Page Isn't Found Here",
+    "description": "The page you are looking for may have been moved, renamed, or be temporarily unavailable. Return to the home page or use the navigation menu to find what you need.",
+    "backToHome": "Back to Home"
+  },
   "teamDetails": {
     "breadcrumb": {
       "title": "Team Details",
