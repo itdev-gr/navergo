@@ -59,7 +59,8 @@ section.themecolor-bg-primary:has(.cs-feature-card-wrap) {
   background-image: none !important;
 }
 
-.cs-feature-card-wrap .feature-card-item .cs-feature-icon img {
+.cs-feature-card-wrap .feature-card-item .cs-feature-icon img,
+.cs-feature-icon img {
   width: 60px;
   height: 60px;
   object-fit: contain;
@@ -83,23 +84,13 @@ img {
   height: auto;
 }
 
-/* The right-side header pillar (cs_main_header_right) holds the toolbox +
-   contact info. On mobile the template hides its children, but the parent's
-   themecolor-bg keeps painting a ~5 px red sliver at the right edge of the
-   header strip. Hide the empty pillar on phones — the hamburger toggle is
-   already exposed on the opposite side via cs_munu_toggle. */
+/* Tighten the right-side header pillar on phones — collapse spacing and
+   hide the phone/email block so only the hamburger toggle remains. */
 @media (max-width: 575.98px) {
-  /* Strip the red background pillar painted by .themecolor-bg, but KEEP the
-     element visible — it contains .cs_toolbox > .cs_icon_btn which is the
-     only handler that opens the offcanvas mobile menu (see template.js). */
   .cs_main_header_right {
-    background: transparent !important;
     padding: 0;
     gap: 0;
   }
-  /* Belt-and-braces: hide the phone/email children that the template usually
-     hides at this breakpoint anyway, so the pillar collapses to just the
-     hamburger button. */
   .cs_main_header_right .header-contact {
     display: none;
   }
@@ -119,4 +110,33 @@ img {
   }
   .ae-title h2 { font-size: 56px; }
   .ae-title h3 { font-size: 34px; }
+}
+
+/* Smooth expand/collapse for journey sub-services (HomePage list-feature).
+   grid-template-rows animates to the actual content height, so the motion
+   stays smooth regardless of how many bullets each list contains. */
+.list-feature .cs-feature-bullets-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    grid-template-rows 360ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 280ms ease,
+    transform 360ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: grid-template-rows, opacity, transform;
+}
+.list-feature .cs-feature-bullets-wrap > ul {
+  overflow: hidden;
+  margin: 0;
+}
+.list-feature .cs-feature-bullets-wrap.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .list-feature .cs-feature-bullets-wrap {
+    transition: none;
+  }
 }

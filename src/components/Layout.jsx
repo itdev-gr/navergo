@@ -11,6 +11,9 @@ export default function Layout() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
+    if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
     bindGlobalHandlers();
   }, []);
 
@@ -23,9 +26,24 @@ export default function Layout() {
   }, [i18n.language, pathname, t]);
 
   useLayoutEffect(() => {
-    window.scrollTo(0, 0);
+    // Force instant scroll to top regardless of CSS scroll-behavior, then
+    // re-assert on next animation frame to defeat any browser auto-restore
+    // (some browsers clamp scroll to the new document height after route swap).
+    const scrollTop = () => {
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      } catch {
+        window.scrollTo(0, 0);
+      }
+    };
+    scrollTop();
+    const raf1 = requestAnimationFrame(() => {
+      scrollTop();
+      requestAnimationFrame(scrollTop);
+    });
     initPage();
     return () => {
+      cancelAnimationFrame(raf1);
       cleanupPage();
     };
   }, [pathname]);
