@@ -83,7 +83,7 @@ section.themecolor-bg-primary:has(.cs-feature-card-wrap) {
 /* Belt-and-braces: prevent any future child overflow from triggering body
    horizontal scroll on mobile. The page's own layout is already overflow-safe
    in our tests, but a single careless image insert later would regress that. */
-html, body {
+body {
   overflow-x: hidden;
 }
 
@@ -101,7 +101,18 @@ img {
    header strip. Hide the empty pillar on phones — the hamburger toggle is
    already exposed on the opposite side via cs_munu_toggle. */
 @media (max-width: 575.98px) {
+  /* Strip the red background pillar painted by .themecolor-bg, but KEEP the
+     element visible — it contains .cs_toolbox > .cs_icon_btn which is the
+     only handler that opens the offcanvas mobile menu (see template.js). */
   .cs_main_header_right {
+    background: transparent !important;
+    padding: 0;
+    gap: 0;
+  }
+  /* Belt-and-braces: hide the phone/email children that the template usually
+     hides at this breakpoint anyway, so the pillar collapses to just the
+     hamburger button. */
+  .cs_main_header_right .header-contact {
     display: none;
   }
 }
@@ -116,7 +127,7 @@ img {
   .ae-title h3 {
     max-width: 100%;
     overflow: hidden;
-    word-break: break-word;
+    overflow-wrap: break-word;
   }
   .ae-title h2 { font-size: 56px; }
   .ae-title h3 { font-size: 34px; }
