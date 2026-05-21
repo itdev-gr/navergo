@@ -161,3 +161,36 @@ img {
 .feature-card-item .list-feature .cs-list-border {
   margin: 13px auto;
 }
+.feature-card-item {
+  display: flex;
+  flex-direction: column;
+}
+.feature-card-item .list-feature {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Service tiles use real shipyard photos with varying intrinsic aspect ratios
+   (portrait + landscape mixed). Lock every .srv-img to a uniform 4:3 frame and
+   absolutely position the inner <img> so it cover-fits regardless of intrinsic
+   dimensions. Absolute positioning sidesteps the global `img { height: auto }`
+   rule that wins via cascade ordering. */
+.service-item .srv-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.service-item .srv-img > a {
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+.service-item .srv-img img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
