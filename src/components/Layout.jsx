@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Header from "./Header";
 import SideHeader from "./SideHeader";
 import Footer from "./Footer";
@@ -7,13 +8,20 @@ import { bindGlobalHandlers, initPage, cleanupPage } from "../lib/template.js";
 
 export default function Layout() {
   const { pathname } = useLocation();
+  const { t, i18n } = useTranslation();
 
-  // Bind document-level handlers once.
   useEffect(() => {
     bindGlobalHandlers();
   }, []);
 
-  // Re-init per-page plugins on every navigation, scroll to top.
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+    const slug = pathname === "/" ? "home" : pathname.replace(/^\//, "").replace(/-/g, "");
+    const titleSuffix = t("common.brand.name", { defaultValue: "Navergo" });
+    const pageTitle = t(`pageTitles.${slug}`, { defaultValue: titleSuffix });
+    document.title = pageTitle === titleSuffix ? titleSuffix : `${pageTitle} | ${titleSuffix}`;
+  }, [i18n.language, pathname, t]);
+
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
     initPage();
