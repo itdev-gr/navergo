@@ -61,12 +61,6 @@ export default function AboutPage() {
             <div className="cj-right-content">
               <img src="/assets/img/about/cj-right-img2.jpg" alt="" />
               <div className="cs-height-40"></div>
-              <div className="cs-heading-with-animation text-left m-auto d-flex">
-                <h2 className="cs-heading">{t("about.story.title")}</h2>
-                <span className="cs-text-style-h1 cs-animated-text">{t("about.story.animatedText")}</span>
-              </div>
-              <p>{t("about.story.paragraph1")}</p>
-              <div className="cs-height-50"></div>
               <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("about.cta.button")}</span></Link>
             </div>
           </div>
@@ -400,65 +394,31 @@ export default function AboutPage() {
 
       {/* Start Counter With CTA Section */}
       <section>
-        <div className="counter-with-cta themecolor-bg-primary">
-          <div className="container-fluid counter-with-cta-in" data-src="/assets/img/about/construction-stoke-home.svg">
-            <div className="counter-alone">
-              <div className="row cs_center">
-                <div className="col-xl-5 col-md-6">
-                  <div className="counter-item" data-aos="fade-up" data-aos-duration="300">
-                    <span id="count1" className="amin_auto_count cs-text-style-h2">50</span><span className="cs-text-style-h2">k</span>
-                    <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.shipsServiced")}</h6>
-                    <p>{t("about.counter.description")}</p>
-                  </div>
-                  <div className="cs-height-40"></div>
+        <div className="cs-counter-wrap">
+          <div className="theme-black-bg theme-dark">
+            <div className="cs-height-100"></div>
+            <div className="container">
+              <div className="cs-couter-items">
+                <div className="counter-item" data-aos="fade-top" data-aos-duration="400">
+                  <h6>{t("home.funfact.1.label")}</h6>
+                  <span id="count1" className="amin_auto_count cs-text-style-h2">76</span><span className="cs-text-style-h2">+</span>
+                  <p>{t("home.funfact.1.description")}</p>
                 </div>
-                <div className="col-xl-1">
-                  <div className="cs-counter-border"></div>
+                <div className="counter-sep"></div>
+                <div className="counter-item" data-aos="fade-top" data-aos-duration="600">
+                  <h6>{t("home.funfact.2.label")}</h6>
+                  <span id="count2" className="amin_auto_count cs-text-style-h2">5</span><span className="cs-text-style-h2">+</span>
+                  <p>{t("home.funfact.2.description")}</p>
                 </div>
-                <div className="col-xl-5 col-md-6">
-                  <div className="counter-item" data-aos="fade-up" data-aos-duration="400">
-                    <span id="count2" className="amin_auto_count cs-text-style-h2">50</span>
-                    <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.yearsExperience")}</h6>
-                    <p>{t("about.counter.description")}</p>
-                  </div>
-                  <div className="cs-height-40"></div>
-                </div>
-                <div className="col-xl-5 col-md-6">
-                  <div className="counter-item" data-aos="fade-up" data-aos-duration="500">
-                    <span id="count3" className="amin_auto_count cs-text-style-h2">126</span><span className="cs-text-style-h2">+</span>
-                    <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.repairProjects")}</h6>
-                    <p>{t("about.counter.description")}</p>
-                  </div>
-                  <div className="cs-height-40"></div>
-                </div>
-                <div className="col-xl-1">
-                  <div className="cs-counter-border"></div>
-                </div>
-                <div className="col-xl-5 col-md-6">
-                  <div className="counter-item"  data-aos="fade-up" data-aos-duration="600">
-                    <span id="count4" className="amin_auto_count cs-text-style-h2">32</span><span className="cs-text-style-h2">+</span>
-                    <div className="cs-height-10"></div>
-                    <h6>{t("about.counter.activeContracts")}</h6>
-                    <p>{t("about.counter.description")}</p>
-                  </div>
-                  <div className="cs-height-40"></div>
+                <div className="counter-sep"></div>
+                <div className="counter-item" data-aos="fade-top" data-aos-duration="800">
+                  <h6>{t("home.funfact.3.label")}</h6>
+                  <span id="count3" className="amin_auto_count cs-text-style-h2">140</span>
+                  <p>{t("home.funfact.3.description")}</p>
                 </div>
               </div>
             </div>
-            <div className="cta-alone theme-dark">
-              <div className="cs-cta-in">
-                <div className="cs-height-200"></div>
-                <h2 data-aos="fade-top" data-aos-duration="500">{t("about.cta.heading")}</h2>
-                <div className="cs-height-20"></div>
-                <p>{t("about.cta.paragraph")}</p>
-                <div className="cs-height-30"></div>
-                <Link to="/contact" data-aos="fade-up" data-aos-duration="500" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-60 cs-width-220"><span>{t("about.cta.button")}</span></Link>
-                <div className="cs-height-200"></div>
-              </div>
-            </div>
+            <div className="cs-height-100"></div>
           </div>
         </div>
       </section>
