@@ -64,5 +64,178 @@
   },
   "about": {
     "intro": "We believe construction is more than building structures — it's about creating."
+  },
+  "home": {
+    "hero": {
+      "slide1": {
+        "strong": "Construction",
+        "normal": "Solutions for Your Modern Living",
+        "backdrop": "NAVERGO NAVERGO NAVE",
+        "subtitle": "Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures"
+      },
+      "slide2": {
+        "strong": "Construction",
+        "normal": "Solutions for Modern Excellence",
+        "backdrop": "NAVERGO NAVERGO NAVE",
+        "subtitle": "Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures"
+      },
+      "slide3": {
+        "strong": "Construction",
+        "normal": "That Stands the Test of Time",
+        "backdrop": "NAVERGO NAVERGO NAVE",
+        "subtitle": "Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures"
+      },
+      "social": {
+        "instagram": "INSTAGRAM",
+        "linkedin": "LINKEDIN",
+        "facebook": "FACEBOOK"
+      }
+    },
+    "journey": {
+      "heading": "Navergo",
+      "animatedText": "ABOUT US",
+      "paragraph": "We believe ship repair is more than restoring vessels; it's about safeguarding the voyages and crews that depend on them. Our skilled marine engineers bring precision and a passion for craftsmanship to every overhaul.",
+      "feature1": "1. Aluminum Works",
+      "feature2": "2. Steel Plate Works",
+      "feature3": "3. Piping Works"
+    },
+    "marquee": "Quality Construction, On Time, Every Time.",
+    "services": {
+      "heading": "Maintenance Services Tailored to Build Your Success",
+      "animatedText": "SERVICES",
+      "items": {
+        "01": {
+          "title": "01. Aluminum Works",
+          "description": "Precision aluminum fabrication for facades, frames, and structural assemblies built to spec."
+        },
+        "02": {
+          "title": "02. Steel Plate Works",
+          "description": "Precision-cut steel plates engineered for structural strength and lasting durability."
+        },
+        "03": {
+          "title": "03. Piping Works",
+          "description": "Industrial piping systems fabricated and installed for reliable flow, pressure, and long-term performance."
+        }
+      }
+    },
+    "projects": {
+      "heading": "Explore Our Most Recent Projects",
+      "animatedText": "PORTFOLIO",
+      "viewProject": "VIEW PROJECT",
+      "item1": { "title": "Stronghold construction" },
+      "item2": { "title": "The Future of Sustainable Construction Trends to Watch" },
+      "item3": { "title": "The Future of Sustainable Construction Trends to Watch" },
+      "item4": { "title": "The Future of Sustainable Construction Trends to Watch" }
+    },
+    "features": {
+      "card1": {
+        "title": "Optimized Construction",
+        "description": "Every ship repair is engineered with precision and lean execution — maximizing vessel uptime while never compromising on craftsmanship."
+      },
+      "card2": {
+        "title": "Shipbuilding & Marine Construction",
+        "description": "From keel laying to sea trials, we deliver precision-engineered vessels and marine structures built to navigate every challenge."
+      },
+      "card3": {
+        "title": "Full-Service Contracting",
+        "description": "From dry-dock planning to final sea trials, we own every phase of the contract — one accountable team delivering each ship repair on time, on spec, and on budget."
+      }
+    },
+    "funfact": {
+      "1": { "label": "Happy Customers", "description": "We believe construction is more than building structures." },
+      "2": { "label": "On-Going Projects", "description": "We believe construction is more than building structures." },
+      "3": { "label": "Happy Customers", "description": "We believe construction is more than building structures." },
+      "4": { "label": "Awards Achievement", "description": "We believe construction is more than building structures." }
+    },
+    "team": {
+      "heading": "Get to Know Our Dedicated Team Members",
+      "animatedText": "TEAM",
+      "member": {
+        "name": "Name Surname"
+      },
+      "roles": {
+        "ceo": "Chief Officer (CEO)",
+        "engineer": "Lead Engineer",
+        "coordinator": "Site Coordinator",
+        "safety": "Safety Officer"
+      }
+    },
+    "testimonials": {
+      "1": {
+        "name": "Sarah Johnson",
+        "location": "Los Angeles, CA",
+        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
+      },
+      "2": {
+        "name": "Sarah Johnson",
+        "location": "Los Angeles, CA",
+        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
+      }
+    },
+    "whyChoose": {
+      "headingPart1": "Building Beyond Expectations",
+      "headingPart2": "with Innovation & Precision",
+      "paragraph": "Construction is more than building structures — it's about crafting spaces that inspire and enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project we deliver.",
+      "readMore": "Read More",
+      "feature1": "Comprehensive Project Management",
+      "feature2": "High-Quality Craftsmanship",
+      "feature3": "Sustainable and Innovative Solutions"
+    },
+    "process": {
+      "step1": {
+        "title": "Project Planning",
+        "description": "We map out your vision, budget, and timeline across residential, commercial, and infrastructure projects through detailed feasibility studies and site assessments."
+      },
+      "step2": {
+        "title": "Design Development",
+        "description": "Our naval architects and marine engineers turn your fleet goals into precise dry-dock plans, hull schematics, and system specifications tailored to scheduled maintenance, repairs, and refits."
+      },
+      "step3": {
+        "title": "Pre-Construction",
+        "description": "We secure class approvals, coordinate shipyard crews, and stage the dry dock so every vessel maintenance, repair, or refit job starts on a fully prepared berth."
+      },
+      "step4": {
+        "title": "Project Completion",
+        "description": "We deliver finished spaces with full quality inspections, final walkthroughs, and ongoing support — from new construction to project management and consulting."
+      }
+    },
+    "experience": {
+      "yearsLine1": "Years of",
+      "yearsLine2": "Experience",
+      "leadingLine1": "We are Leading",
+      "leadingLine2": "Company"
+    },
+    "blog": {
+      "heading": "Explore Our Most Recent Blog Posts and Insights",
+      "animatedText": "RECENT NEWS",
+      "readMore": "Read More",
+      "card1": {
+        "date": "15 Aug",
+        "category": "Construction",
+        "title": "The Future of Sustainable Construction Trends to Watch"
+      },
+      "card2": {
+        "date": "17 Dec",
+        "category": "Project Management",
+        "title": "Key Factors in Choosing the Right Construction Agency"
+      },
+      "card3": {
+        "date": "07 Jan",
+        "category": "Commercial",
+        "title": "How Our Construction Agency Turns Visions into Reality"
+      }
+    },
+    "contact": {
+      "heading": "Send Us a Message Use Our Contact Form to Get in Touch",
+      "animatedText": "CONTACT US",
+      "form": {
+        "firstName": "First Name*",
+        "lastName": "Last Name",
+        "phone": "Phone*",
+        "email": "Email Address*",
+        "subject": "Subject",
+        "message": "Write your message..."
+      }
+    }
   }
 }

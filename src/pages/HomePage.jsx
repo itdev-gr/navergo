@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function HomePage() {
+  const { t } = useTranslation();
   return (
     <>
       {/* Start Hero Section */}
@@ -15,16 +17,16 @@ export default function HomePage() {
                     <div className="slider-item-content">
                      <div className="cs-hero-title">
                       <div className="cs-hero-title-in cs-head">
-                        <h1><span className="hero-strong-title constr-splite">Construction</span> <span className="cs-hero-title-normal hero-second-splite">Solutions for Your Modern Living</span></h1>
+                        <h1><span className="hero-strong-title constr-splite">{t("home.hero.slide1.strong")}</span> <span className="cs-hero-title-normal hero-second-splite">{t("home.hero.slide1.normal")}</span></h1>
                       </div>
                       <div className="ae-title hero-backdrop-text constr-splite">
-                        <h2>NAVERGO NAVERGO NAVE</h2>
+                        <h2>{t("home.hero.slide1.backdrop")}</h2>
                       </div>
                      </div>
-                      <p className="hero-subtitle">Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures</p>
+                      <p className="hero-subtitle">{t("home.hero.slide1.subtitle")}</p>
                       <div className="cs-couple-btn d-flex gap-3">
-                        <Link to="/contact" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>Start Project</span></Link>
-                        <Link to="/contact" className="cs-primary-btn cs-color-white theme-black-bg cs-height-60 cs-width-180"><span>Contact Us</span></Link>
+                        <Link to="/contact" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>{t("common.cta.startProject")}</span></Link>
+                        <Link to="/contact" className="cs-primary-btn cs-color-white theme-black-bg cs-height-60 cs-width-180"><span>{t("common.cta.contactUs")}</span></Link>
                       </div>
                     </div>
                   </div>
@@ -34,16 +36,16 @@ export default function HomePage() {
                     <div className="slider-item-content">
                      <div className="cs-hero-title">
                       <div className="cs-hero-title-in">
-                        <h1><span className="hero-strong-title constr-splite">Construction</span> <span className="cs-hero-title-normal hero-second-splite">Solutions for Modern Excellence</span></h1>
+                        <h1><span className="hero-strong-title constr-splite">{t("home.hero.slide2.strong")}</span> <span className="cs-hero-title-normal hero-second-splite">{t("home.hero.slide2.normal")}</span></h1>
                       </div>
                       <div className="ae-title hero-backdrop-text constr-splite">
-                        <h2>NAVERGO NAVERGO NAVE</h2>
+                        <h2>{t("home.hero.slide2.backdrop")}</h2>
                       </div>
                      </div>
-                      <p className="hero-subtitle">Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures</p>
+                      <p className="hero-subtitle">{t("home.hero.slide2.subtitle")}</p>
                       <div className="cs-couple-btn d-flex gap-3">
-                        <Link to="/contact" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>Start Project</span></Link>
-                        <Link to="/contact" className="cs-primary-btn cs-color-white theme-black-bg cs-height-60 cs-width-180"><span>Contact Us</span></Link>
+                        <Link to="/contact" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>{t("common.cta.startProject")}</span></Link>
+                        <Link to="/contact" className="cs-primary-btn cs-color-white theme-black-bg cs-height-60 cs-width-180"><span>{t("common.cta.contactUs")}</span></Link>
                       </div>
                     </div>
                   </div>
@@ -53,16 +55,16 @@ export default function HomePage() {
                     <div className="slider-item-content">
                      <div className="cs-hero-title">
                       <div className="cs-hero-title-in">
-                        <h1><span className="hero-strong-title constr-splite">Construction</span> <span className="cs-hero-title-normal hero-second-splite">That Stands the <br /> Test  of Time</span></h1>
+                        <h1><span className="hero-strong-title constr-splite">{t("home.hero.slide3.strong")}</span> <span className="cs-hero-title-normal hero-second-splite">{t("home.hero.slide3.normal")}</span></h1>
                       </div>
                       <div className="ae-title hero-backdrop-text constr-splite">
-                        <h2>NAVERGO NAVERGO NAVE</h2>
+                        <h2>{t("home.hero.slide3.backdrop")}</h2>
                       </div>
                      </div>
-                      <p className="hero-subtitle">Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures</p>
+                      <p className="hero-subtitle">{t("home.hero.slide3.subtitle")}</p>
                       <div className="cs-couple-btn d-flex gap-3">
-                        <Link to="/contact" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>Start Project</span></Link>
-                        <Link to="/contact" className="cs-primary-btn cs-color-white theme-black-bg cs-height-60 cs-width-180"><span>Contact Us</span></Link>
+                        <Link to="/contact" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>{t("common.cta.startProject")}</span></Link>
+                        <Link to="/contact" className="cs-primary-btn cs-color-white theme-black-bg cs-height-60 cs-width-180"><span>{t("common.cta.contactUs")}</span></Link>
                       </div>
                     </div>
                   </div>
@@ -72,9 +74,9 @@ export default function HomePage() {
           </div>
           <div className="cs-hero-social">
             <ul>
-              <li><a href="https://instagram.com" target="_blank">INSTAGRAM</a></li>
-              <li><a href="https://linkedin.com" target="_blank">LINKEDIN</a></li>
-              <li><a href="https://facebook.com" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://instagram.com" target="_blank">{t("home.hero.social.instagram")}</a></li>
+              <li><a href="https://linkedin.com" target="_blank">{t("home.hero.social.linkedin")}</a></li>
+              <li><a href="https://facebook.com" target="_blank">{t("home.hero.social.facebook")}</a></li>
             </ul>
           </div>
           <div className="cs-arrow-style-fill">
@@ -113,23 +115,21 @@ export default function HomePage() {
                   <div className="cs-section-height"></div>
                   {/* Section to Section Gap */}
                   <div className="cs-heading-with-animation">
-                    <h2 className="cs-heading">Navergo</h2>
-                    <span className="cs-text-style-h1 cs-animated-text">ABOUT US</span>
+                    <h2 className="cs-heading">{t("home.journey.heading")}</h2>
+                    <span className="cs-text-style-h1 cs-animated-text">{t("home.journey.animatedText")}</span>
                   </div>
                   <div className="cs-height-10"></div>
-                  <p>We believe construction is more than building structures; it's about creating spaces that inspire and
-                    enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project.
-                  </p>
+                  <p>{t("home.journey.paragraph")}</p>
                   <div className="cs-height-90"></div>
                   <div className="list-feature">
-                    <h6 data-aos="fade-up" data-aos-duration="300">1. Aluminum Works</h6>
+                    <h6 data-aos="fade-up" data-aos-duration="300">{t("home.journey.feature1")}</h6>
                     <div className="cs-list-border"></div>
-                    <h6 data-aos="fade-up" data-aos-duration="400">2. Steel Plate Works</h6>
+                    <h6 data-aos="fade-up" data-aos-duration="400">{t("home.journey.feature2")}</h6>
                     <div className="cs-list-border"></div>
-                    <h6 data-aos="fade-up" data-aos-duration="500">3. Piping Works</h6>
+                    <h6 data-aos="fade-up" data-aos-duration="500">{t("home.journey.feature3")}</h6>
                   </div>
                   <div className="cs-height-40"></div>
-                  <Link to="/about" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220"><span>View More</span></Link>
+                  <Link to="/about" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220"><span>{t("common.cta.viewMore")}</span></Link>
                 </div>
               </div>
             </div>
@@ -146,10 +146,10 @@ export default function HomePage() {
         <div className="cs-text-moving-wrap">
           <div className="cs_text-moving_in">
             <div className="cs_text-moving">
-              <h2>Quality Construction, On Time, Every Time.</h2>
+              <h2>{t("home.marquee")}</h2>
             </div>
             <div className="cs_text-moving">
-              <h2>Quality Construction, On Time, Every Time.</h2>
+              <h2>{t("home.marquee")}</h2>
             </div>
           </div>
         </div>
@@ -162,8 +162,8 @@ export default function HomePage() {
       {/* Start Service Section */}
       <section>
         <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
-          <h2 className="cs-heading">Maintenance Services Tailored to Build Your Success</h2>
-          <span className="cs-text-style-h1 cs-animated-text">SERVICES</span>
+          <h2 className="cs-heading">{t("home.services.heading")}</h2>
+          <span className="cs-text-style-h1 cs-animated-text">{t("home.services.animatedText")}</span>
         </div>
         <div className="cs-height-50"></div>
 
@@ -179,12 +179,11 @@ export default function HomePage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">01. Aluminum Works</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("home.services.items.01.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Precision aluminum fabrication for facades, frames,
-                            and structural assemblies built to spec.</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>More Details</span></Link>
+                          <p>{t("home.services.items.01.description")}</p>
+                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -197,11 +196,11 @@ export default function HomePage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">02. Steel Plate Works</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("home.services.items.02.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Precision-cut steel plates engineered for structural strength and lasting durability.</p>
-                            <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to="/service-details"><span>More Details</span></Link>
+                          <p>{t("home.services.items.02.description")}</p>
+                            <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to="/service-details"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -214,11 +213,11 @@ export default function HomePage() {
                       </Link>
                     </div>
                     <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">03. Piping Works</Link>
+                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t("home.services.items.03.title")}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>Industrial piping systems fabricated and installed for reliable flow, pressure, and long-term performance.</p>
-                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>More Details</span></Link>
+                          <p>{t("home.services.items.03.description")}</p>
+                            <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                     </div>
                   </div>
@@ -243,8 +242,8 @@ export default function HomePage() {
           <div className="container-fluid">
             <div className="cs-section-height"></div>
             <div className="cs-heading-with-animation text-center max-width-700 m-auto d-flex">
-              <h2 className="cs-heading">Explore Our Most Recent Projects</h2>
-              <span className="cs-text-style-h1 cs-animated-text">PORTFOLIO</span>
+              <h2 className="cs-heading">{t("home.projects.heading")}</h2>
+              <span className="cs-text-style-h1 cs-animated-text">{t("home.projects.animatedText")}</span>
             </div>
 
             <div className="cs-height-50"></div>
@@ -256,8 +255,8 @@ export default function HomePage() {
                 <img src="/assets/img/service/steelwork/steelwork-01.jpg" alt="" />
                 <div className="project-meta-data">
                   <div className="cs-project-content">
-                    <h4>Stronghold construction</h4>
-                    <span className="view-project">VIEW PROJECT <i className="flaticon-right-arrow"></i></span>
+                    <h4>{t("home.projects.item1.title")}</h4>
+                    <span className="view-project">{t("home.projects.viewProject")} <i className="flaticon-right-arrow"></i></span>
                   </div>
                 </div>
               </Link>
@@ -268,8 +267,8 @@ export default function HomePage() {
                 <img src="/assets/img/service/aluminum/aluminum-01.jpg" alt="" />
                 <div className="project-meta-data">
                   <div className="cs-project-content">
-                    <h4>The Future of Sustainable Construction Trends to Watch</h4>
-                    <span className="view-project">VIEW PROJECT</span>
+                    <h4>{t("home.projects.item2.title")}</h4>
+                    <span className="view-project">{t("home.projects.viewProject")}</span>
                   </div>
                 </div>
               </Link>
@@ -280,8 +279,8 @@ export default function HomePage() {
                 <img src="/assets/img/service/steelwork/steelwork-02.jpg" alt="" />
                 <div className="project-meta-data">
                   <div className="cs-project-content">
-                    <h5>The Future of Sustainable Construction Trends to Watch</h5>
-                    <span className="view-project">VIEW PROJECT</span>
+                    <h5>{t("home.projects.item3.title")}</h5>
+                    <span className="view-project">{t("home.projects.viewProject")}</span>
                   </div>
                 </div>
               </Link>
@@ -290,8 +289,8 @@ export default function HomePage() {
                 <img src="/assets/img/service/piping/piping-01.jpg" alt="" />
                 <div className="project-meta-data">
                   <div className="cs-project-content">
-                    <h5>The Future of Sustainable Construction Trends to Watch</h5>
-                    <span className="view-project">VIEW PROJECT</span>
+                    <h5>{t("home.projects.item4.title")}</h5>
+                    <span className="view-project">{t("home.projects.viewProject")}</span>
                   </div>
                 </div>
               </Link>
@@ -332,10 +331,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="cs-feature-icon">
-                    <img src="/assets/img/feature-icon-shipyard.png" alt="Shipyard construction" />
+                    <img src="/assets/img/feature-icon-shipyard.svg" alt="Shipyard construction" />
                   </div>
-                  <h5>Optimized Construction</h5>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <h5>{t("home.features.card1.title")}</h5>
+                  <p>{t("home.features.card1.description")}</p>
                 </div>
                 <div className="cs-height-30"></div>
               </div>
@@ -365,8 +364,8 @@ export default function HomePage() {
                   <div className="cs-feature-icon">
                     <img src="/assets/img/feature-icon-2.svg" alt="" />
                   </div>
-                  <h5>Shipbuilding & Marine Construction</h5>
-                  <p>From keel laying to sea trials, we deliver precision-engineered vessels and marine structures built to navigate every challenge.</p>
+                  <h5>{t("home.features.card2.title")}</h5>
+                  <p>{t("home.features.card2.description")}</p>
                 </div>
                 <div className="cs-height-30"></div>
               </div>
@@ -396,8 +395,8 @@ export default function HomePage() {
                   <div className="cs-feature-icon">
                     <img src="/assets/img/feature-icon-ship.svg" alt="" />
                   </div>
-                  <h5>Full-Service Contracting</h5>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <h5>{t("home.features.card3.title")}</h5>
+                  <p>{t("home.features.card3.description")}</p>
                 </div>
                 <div className="cs-height-30"></div>
               </div>
@@ -405,39 +404,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="cs-section-height"></div>
-        {/* Section to Section Gap */}
-
-        <div className="container client-wrap">
-            <div className="swiper clients-slider">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
-                </div>
-                <div className="swiper-slide">
-                  <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
-                </div>
-                <div className="swiper-slide">
-                  <a className="client-item" href="#"><img src="/assets/img/clients/logo03.png" alt="" /></a>
-                </div>
-                <div className="swiper-slide">
-                  <a className="client-item" href="#"><img src="/assets/img/clients/logo02.png" alt="" /></a>
-                </div>
-                <div className="swiper-slide">
-                  <a className="client-item" href="#"><img src="/assets/img/clients/logo01.png" alt="" /></a>
-                </div>
-                <div className="swiper-slide">
-                  <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
-                </div>
-                <div className="swiper-slide">
-                  <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <div className="cs-section-height"></div>
-        {/* Section to Section Gap */}
       </section>
       {/* Start Features Section */}
 
@@ -449,27 +415,27 @@ export default function HomePage() {
             <div className="container">
               <div className="cs-couter-items">
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="400">
-                  <h6>Happy Customers</h6>
+                  <h6>{t("home.funfact.1.label")}</h6>
                   <span id="count1" className="amin_auto_count cs-text-style-h2">126</span><span className="cs-text-style-h2">+</span>
-                  <p>We believe construction is more than building structures.</p>
+                  <p>{t("home.funfact.1.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="600">
-                  <h6>On-Going Projects</h6>
+                  <h6>{t("home.funfact.2.label")}</h6>
                   <span id="count2" className="amin_auto_count cs-text-style-h2">32</span><span className="cs-text-style-h2">+</span>
-                  <p>We believe construction is more than building structures.</p>
+                  <p>{t("home.funfact.2.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="800">
-                  <h6>Happy Customers</h6>
+                  <h6>{t("home.funfact.3.label")}</h6>
                   <span id="count3" className="amin_auto_count cs-text-style-h2">50</span><span className="cs-text-style-h2">k</span>
-                  <p>We believe construction is more than building structures.</p>
+                  <p>{t("home.funfact.3.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="1000">
-                  <h6>Awards Achievement</h6>
+                  <h6>{t("home.funfact.4.label")}</h6>
                   <span id="count4" className="amin_auto_count cs-text-style-h2">50+</span><span className="cs-text-style-h2">+</span>
-                  <p>We believe construction is more than building structures.</p>
+                  <p>{t("home.funfact.4.description")}</p>
                 </div>
               </div>
             </div>
@@ -487,8 +453,8 @@ export default function HomePage() {
         <div className="team-wrap">
           <div className="container">
             <div className="cs-heading-with-animation max-width-700">
-              <h2 className="cs-heading">Get to Know Our Dedicated Team Members</h2>
-              <span className="cs-text-style-h1 cs-animated-text">TEAM</span>
+              <h2 className="cs-heading">{t("home.team.heading")}</h2>
+              <span className="cs-text-style-h1 cs-animated-text">{t("home.team.animatedText")}</span>
               <div className="cs-height-50"></div>
             </div>
             <div className="row">
@@ -501,9 +467,9 @@ export default function HomePage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Richard Hernandez</h6>
+                      <h6>{t("home.team.member.name")}</h6>
                     </Link>
-                    <p>Chief Officer (CEO)</p>
+                    <p>{t("home.team.roles.ceo")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -540,9 +506,9 @@ export default function HomePage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Robert Brown</h6>
+                      <h6>{t("home.team.member.name")}</h6>
                     </Link>
-                    <p>Lead Engineer</p>
+                    <p>{t("home.team.roles.engineer")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -579,9 +545,9 @@ export default function HomePage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Michel Wilson</h6>
+                      <h6>{t("home.team.member.name")}</h6>
                     </Link>
-                    <p>Site Coordinator</p>
+                    <p>{t("home.team.roles.coordinator")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -618,9 +584,9 @@ export default function HomePage() {
                 <div className="member-in">
                   <div className="content">
                     <Link to="/team-details">
-                      <h6>Lucas Thompson</h6>
+                      <h6>{t("home.team.member.name")}</h6>
                     </Link>
-                    <p>Safety Officer</p>
+                    <p>{t("home.team.roles.safety")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -669,8 +635,8 @@ export default function HomePage() {
                     <div className="testi-slider-item-wrap">
                       <div className="testi-user" data-aos="fade-up" data-aos-duration="300">
                         <img className="testi-img" src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>Sarah Johnson</h6>
-                        <p>Los Angeles, CA</p>
+                        <h6>{t("home.testimonials.1.name")}</h6>
+                        <p>{t("home.testimonials.1.location")}</p>
                       </div>
                       <div className="testi-border">
                         <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -680,9 +646,7 @@ export default function HomePage() {
                       <div className="testi-content">
                         <img src="/assets/img/star.svg" alt="" />
                         <div className="cs-height-20"></div>
-                        <h4 className="testi-main-content">We were incredibly impressed with work on our project. They were professional, efficient, and
-                          delivered a high-quality product on time and within budget. We would definitely recommend them to
-                          others. Definitely recommend them.</h4>
+                        <h4 className="testi-main-content">{t("home.testimonials.1.quote")}</h4>
                       </div>
                     </div>
                   </div>
@@ -690,8 +654,8 @@ export default function HomePage() {
                     <div className="testi-slider-item-wrap">
                       <div className="testi-user">
                         <img src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>Sarah Johnson</h6>
-                        <p>Los Angeles, CA</p>
+                        <h6>{t("home.testimonials.2.name")}</h6>
+                        <p>{t("home.testimonials.2.location")}</p>
                       </div>
                       <div className="testi-border">
                         <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -701,9 +665,7 @@ export default function HomePage() {
                       <div className="testi-content">
                         <img src="/assets/img/star.svg" alt="" />
                         <div className="cs-height-20"></div>
-                        <h4 className="testi-main-content">We were incredibly impressed with work on our project. They were professional, efficient, and
-                          delivered a high-quality product on time and within budget. We would definitely recommend them to
-                          others. Definitely recommend them.</h4>
+                        <h4 className="testi-main-content">{t("home.testimonials.2.quote")}</h4>
                       </div>
                     </div>
                   </div>
@@ -731,14 +693,14 @@ export default function HomePage() {
           <div className="container">
             <div className="row">
               <div className="col-xl-7">
-                <h2><span data-aos="fade-up" data-aos-duration="500">Building Beyond Expectations</span> <span data-aos="fade-up" data-aos-duration="1000">with Innovation &amp; Precision</span>  </h2>
+                <h2><span data-aos="fade-up" data-aos-duration="500">{t("home.whyChoose.headingPart1")}</span> <span data-aos="fade-up" data-aos-duration="1000">{t("home.whyChoose.headingPart2")}</span>  </h2>
                 <div className="cs-height-10"></div>
-                <p>Construction is more than building structures — it's about crafting spaces that inspire and enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project we deliver.</p>
+                <p>{t("home.whyChoose.paragraph")}</p>
                 <div className="cs-height-35"></div>
                 <div className="d-flex gap-3">
                   <div className="cs-couple-btn d-flex gap-3">
-                    <Link to="/about" data-aos="fade-top" data-aos-duration="900" className="cs-primary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220"><span>Read More</span></Link>
-                    <Link to="/contact" data-aos="fade-top" data-aos-duration="1500" className="cs-primary-btn cs_white_color-bg cs-height-70 cs-width-220"><span>Contact Us</span></Link>
+                    <Link to="/about" data-aos="fade-top" data-aos-duration="900" className="cs-primary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220"><span>{t("common.cta.readMore")}</span></Link>
+                    <Link to="/contact" data-aos="fade-top" data-aos-duration="1500" className="cs-primary-btn cs_white_color-bg cs-height-70 cs-width-220"><span>{t("common.cta.contactUs")}</span></Link>
                   </div>
                 </div>
               </div>
@@ -755,19 +717,16 @@ export default function HomePage() {
                   </div>
                   <div className="cs-height-50"></div>
                   <div className="list-feature" data-aos="fade-up" data-aos-duration="600">
-                    <h6>Comprehensive Project Management</h6>
+                    <h6>{t("home.whyChoose.feature1")}</h6>
                     <div className="cs-list-border"></div>
-                    <h6>High-Quality Craftsmanship</h6>
+                    <h6>{t("home.whyChoose.feature2")}</h6>
                     <div className="cs-list-border"></div>
-                    <h6>Sustainable and Innovative Solutions</h6>
+                    <h6>{t("home.whyChoose.feature3")}</h6>
                   </div>
                   <div className="cs-height-140"></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="com-strength-img" data-aos="fade-right" data-aos-duration="500">
-            <img src="/assets/img/about/transparent-img-about-com.png" alt="" />
           </div>
         </div>
 
@@ -780,8 +739,8 @@ export default function HomePage() {
                   <div className="cs-wp-icon">
                     <img src="/assets/img/one.svg" alt="" />
                   </div>
-                  <h6>Project Planning</h6>
-                  <p>We map out your vision, budget, and timeline across residential, commercial, and infrastructure projects through detailed feasibility studies and site assessments.</p>
+                  <h6>{t("home.process.step1.title")}</h6>
+                  <p>{t("home.process.step1.description")}</p>
                 </div>
               </div>
               <div className="col-xl-3 col-md-6">
@@ -789,8 +748,8 @@ export default function HomePage() {
                   <div className="cs-wp-icon">
                     <img src="/assets/img/two.svg" alt="" />
                   </div>
-                  <h6>Design Development</h6>
-                  <p>Our architects and engineers turn your goals into precise blueprints, structural plans, and material specifications tailored to new builds, renovations, and remodels.</p>
+                  <h6>{t("home.process.step2.title")}</h6>
+                  <p>{t("home.process.step2.description")}</p>
                 </div>
               </div>
               <div className="col-xl-3 col-md-6">
@@ -798,8 +757,8 @@ export default function HomePage() {
                   <div className="cs-wp-icon">
                     <img src="/assets/img/three.svg" alt="" />
                   </div>
-                  <h6>Pre-Construction</h6>
-                  <p>We secure permits, coordinate subcontractors, and prepare the site so every residential, commercial, or industrial build starts on solid ground.</p>
+                  <h6>{t("home.process.step3.title")}</h6>
+                  <p>{t("home.process.step3.description")}</p>
                 </div>
               </div>
               <div className="col-xl-3 col-md-6">
@@ -807,8 +766,8 @@ export default function HomePage() {
                   <div className="cs-wp-icon">
                     <img src="/assets/img/four.svg" alt="" />
                   </div>
-                  <h6>Project Completion</h6>
-                  <p>We deliver finished spaces with full quality inspections, final walkthroughs, and ongoing support — from new construction to project management and consulting.</p>
+                  <h6>{t("home.process.step4.title")}</h6>
+                  <p>{t("home.process.step4.description")}</p>
                 </div>
               </div>
             </div>
@@ -826,7 +785,7 @@ export default function HomePage() {
         <div className="about-experience-wrap bottom-align">
           <div className="img-ae background-parallax">
             <div className="parallax-image max-height-750">
-              <img src="/assets/img/about/about-experience.jpg" alt="" />
+              <img src="/assets/img/about/ship-repair-experience.jpg" alt="Cargo ship undergoing repair in dry dock at shipyard" />
               <div className="ae-title">
                 <h2>NAVERGO NAVERGO NAVE</h2>
               </div>
@@ -837,10 +796,10 @@ export default function HomePage() {
               <div className="cs-experience" data-aos="fade-right" data-aos-duration="400">
                 <img src="/assets/img/about/27.svg" alt="" />
                 <div className="cs-height-15"></div>
-                <h4 className="cs-uppercase">Years of <br /> Experience</h4>
+                <h4 className="cs-uppercase">{t("home.experience.yearsLine1")} <br /> {t("home.experience.yearsLine2")}</h4>
               </div>
               <div className="aec-line"></div>
-              <h3 data-aos="fade-left" data-aos-duration="400" className="cs-uppercase">We are Leading <br /> Company</h3>
+              <h3 data-aos="fade-left" data-aos-duration="400" className="cs-uppercase">{t("home.experience.leadingLine1")} <br /> {t("home.experience.leadingLine2")}</h3>
             </div>
           </div>
         </div>
@@ -855,8 +814,8 @@ export default function HomePage() {
         <div className="container">
 
           <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
-            <h2 className="cs-heading">Explore Our Most Recent Blog Posts and Insights</h2>
-            <span className="cs-text-style-h1 cs-animated-text">RECENT NEWS</span>
+            <h2 className="cs-heading">{t("home.blog.heading")}</h2>
+            <span className="cs-text-style-h1 cs-animated-text">{t("home.blog.animatedText")}</span>
           </div>
           <div className="cs-height-50"></div>
 
@@ -870,24 +829,24 @@ export default function HomePage() {
                     </Link>
                   </div>
                   <div className="date">
-                    <span>15 Aug</span>
+                    <span>{t("home.blog.card1.date")}</span>
                   </div>
                 </div>
                 <div className="blog-item-data">
                   <div className="tag-item">
-                    <Link to="/blog-standard"><span>Construction</span></Link>
+                    <Link to="/blog-standard"><span>{t("home.blog.card1.category")}</span></Link>
                   </div>
                   <div className="title">
                     <Link to="/blog-details">
                       <h6>
-                        The Future of Sustainable Construction Trends to Watch
+                        {t("home.blog.card1.title")}
                       </h6>
                     </Link>
                   </div>
                   <div className="border-1px"></div>
                   <div className="cs-height-20"></div>
                   <Link to="/blog-details" className="cs-text_b_line"
-                    ><span>Read More</span>
+                    ><span>{t("home.blog.readMore")}</span>
                     <i className="flaticon-right-arrow"></i>
                   </Link>
                 </div>
@@ -903,24 +862,24 @@ export default function HomePage() {
                     </Link>
                   </div>
                   <div className="date">
-                    <span>17 Dec</span>
+                    <span>{t("home.blog.card2.date")}</span>
                   </div>
                 </div>
                 <div className="blog-item-data">
                   <div className="tag-item">
-                    <Link to="/blog-standard"><span>Project Management</span></Link>
+                    <Link to="/blog-standard"><span>{t("home.blog.card2.category")}</span></Link>
                   </div>
                   <div className="title">
                     <Link to="/blog-details">
                       <h6>
-                        Key Factors in Choosing the Right Construction Agency
+                        {t("home.blog.card2.title")}
                       </h6>
                     </Link>
                   </div>
                   <div className="border-1px"></div>
                   <div className="cs-height-20"></div>
                   <Link to="/blog-details" className="cs-text_b_line"
-                    ><span>Read More</span>
+                    ><span>{t("home.blog.readMore")}</span>
                     <i className="flaticon-right-arrow"></i>
                   </Link>
                 </div>
@@ -936,24 +895,24 @@ export default function HomePage() {
                     </Link>
                   </div>
                   <div className="date">
-                    <span>07 Jan</span>
+                    <span>{t("home.blog.card3.date")}</span>
                   </div>
                 </div>
                 <div className="blog-item-data">
                   <div className="tag-item">
-                    <Link to="/blog-standard"><span>Commercial</span></Link>
+                    <Link to="/blog-standard"><span>{t("home.blog.card3.category")}</span></Link>
                   </div>
                   <div className="title">
                     <Link to="/blog-details">
                       <h6>
-                        How Our Construction Agency Turns Visions into Reality
+                        {t("home.blog.card3.title")}
                       </h6>
                     </Link>
                   </div>
                   <div className="border-1px"></div>
                   <div className="cs-height-20"></div>
                   <Link to="/blog-details" className="cs-text_b_line"
-                    ><span>Read More</span>
+                    ><span>{t("home.blog.readMore")}</span>
                     <i className="flaticon-right-arrow"></i>
                   </Link>
                 </div>
@@ -985,23 +944,23 @@ export default function HomePage() {
 
               <div className="col-xl-5">
                 <div className="position-relative" data-aos="fade-up" data-aos-duration="300">
-                  <h2 className="cs-heading">Send Us a Message Use Our Contact Form to Get in Touch</h2>
-                  <span className="cs-text-style-h1 cs-animated-text">CONTACT US</span>
+                  <h2 className="cs-heading">{t("home.contact.heading")}</h2>
+                  <span className="cs-text-style-h1 cs-animated-text">{t("home.contact.animatedText")}</span>
                 </div>
 
                 <div className="cs-height-35"></div>
                 <form>
                   <div className="input-col-two">
-                    <input type="text" placeholder="First Name*" required />
-                    <input type="text" placeholder="Last Name" required />
+                    <input type="text" placeholder={t("home.contact.form.firstName")} required />
+                    <input type="text" placeholder={t("home.contact.form.lastName")} required />
                   </div>
                   <div className="input-col-two">
-                    <input type="tel" placeholder="Phone*" required />
-                    <input type="email" placeholder="Email Address*" required />
+                    <input type="tel" placeholder={t("home.contact.form.phone")} required />
+                    <input type="email" placeholder={t("home.contact.form.email")} required />
                   </div>
-                  <input type="text" placeholder="Subject" required />
-                  <textarea id="message" rows="4" placeholder="Write your message..." required></textarea>
-                  <button type="submit" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>Send Message</span></button>
+                  <input type="text" placeholder={t("home.contact.form.subject")} required />
+                  <textarea id="message" rows="4" placeholder={t("home.contact.form.message")} required></textarea>
+                  <button type="submit" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>{t("common.cta.sendMessage")}</span></button>
                 </form>
               </div>
 
