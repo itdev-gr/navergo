@@ -4169,6 +4169,17 @@ button i {
   opacity: 0.7;
   transform: scale(0.9);
 }
+.client-wrap.client-grid {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 30px;
+}
+@media (max-width: 1199px) {
+  .client-wrap.client-grid .client-item { width: 180px; }
+}
+@media (max-width: 767px) {
+  .client-wrap.client-grid .client-item { width: 140px; }
+}
 
 /*--------------------------------------------------------------
   18. Counter Style

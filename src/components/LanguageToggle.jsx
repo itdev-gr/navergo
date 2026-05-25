@@ -26,6 +26,7 @@ export default function LanguageToggle() {
       style={{
         display: "flex",
         alignItems: "center",
+        alignSelf: "center",
         gap: 4,
         marginLeft: 16,
         backgroundColor: "#ffffff",

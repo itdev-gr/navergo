@@ -9,8 +9,19 @@ export default function SideHeader() {
       <div className="cs_side_header_overlay"></div>
       <div className="cs_side_header_in">
         <div className="cs-sidebar-about-brand">
-          <Link className="cs_site_branding" to="/">
-            <img src="/assets/img/logo_main.png" alt="Logo" />
+          <Link
+            className="cs_site_branding"
+            to="/"
+            style={{
+              color: "#7c1d1f",
+              fontWeight: 800,
+              fontSize: "36px",
+              letterSpacing: "2px",
+              lineHeight: 1,
+              textDecoration: "none",
+            }}
+          >
+            NAVERGO
           </Link>
           <div className="cs-height-20"></div>
           <p>{t("common.brand.tagline")}</p>

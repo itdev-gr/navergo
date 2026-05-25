@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ClientLogos from "../components/ClientLogos";
+
+const personnelIcons = {
+  1: "feature-icon-training",
+  2: "feature-icon-anchor",
+  3: "feature-icon-stopwatch",
+  4: "feature-icon-regulations",
+};
 
 export default function AboutPage() {
   const { t } = useTranslation();
@@ -52,14 +60,14 @@ export default function AboutPage() {
               </div>
               <div className="cs-height-165"></div>
             </div>
-            <img src="/assets/img/about/cj-left-img.jpg" alt="" />
+            <img src="/assets/img/about/cj-left-img.jpg" alt="Cargo vessel docked in a shipyard with industrial cranes at sunset" />
           </div>
 
           <div className="cj-right">
             <div className="cs-section-height"></div>
             <div className="cs-height-40"></div>
             <div className="cj-right-content">
-              <img src="/assets/img/about/cj-right-img2.jpg" alt="" />
+              <img src="/assets/img/about/story-shipyard-vessel.jpg" alt="Vessel in dry dock alongside a shipyard crane" />
               <div className="cs-height-40"></div>
               <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("about.cta.button")}</span></Link>
             </div>
@@ -249,7 +257,7 @@ export default function AboutPage() {
                     <div className="verticle"></div>
                   </div>
                   <div className="cs-feature-icon">
-                    <img src="/assets/img/feature-icon-shipyard.png" alt="" />
+                    <img src={`/assets/img/${personnelIcons[i]}.svg`} alt="" />
                   </div>
                   <h6>{t(`about.personnel.items.${i}`)}</h6>
                 </div>
@@ -260,53 +268,6 @@ export default function AboutPage() {
         </div>
       </section>
       {/* End Personnel & Know-how Section */}
-
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
-
-      {/* Start Partnerships & Projects Section */}
-      <section>
-        <div className="container">
-          <div className="cs-heading-with-animation text-center max-width-800 m-auto d-flex">
-            <h2 className="cs-heading">{t("about.partnerships.heading")}</h2>
-            <span className="cs-text-style-h1 cs-animated-text">{t("about.partnerships.animatedText")}</span>
-          </div>
-          <div className="cs-height-30"></div>
-          <p className="text-center max-width-800 m-auto">{t("about.partnerships.paragraph")}</p>
-          <div className="cs-height-50"></div>
-          <div className="row">
-            {["greece", "abroad", "atSea"].map((loc, idx) => (
-              <div className="col-xl-4 col-md-6" key={`partnership-${loc}`}>
-                <div className="feature-card-item cs_white_bg theme-border-wrap" data-aos="fade-up" data-aos-duration={300 + idx * 150}>
-                  <div className="b-top-left">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-                  <div className="b-top-right">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-                  <div className="b-bottom-right">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-                  <div className="b-bottom-left">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-                  <div className="cs-feature-icon">
-                    <img src="/assets/img/feature-icon-ship.svg" alt="" />
-                  </div>
-                  <h5>{t(`about.partnerships.locations.${loc}.title`)}</h5>
-                  <p>{t(`about.partnerships.locations.${loc}.description`)}</p>
-                </div>
-                <div className="cs-height-30"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* End Partnerships & Projects Section */}
 
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
@@ -356,40 +317,8 @@ export default function AboutPage() {
       </section>
       {/* End Pillars of Growth Section */}
 
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
-
       {/* Start Client Area Full Width */}
-        <div className="container client-wrap">
-          <div className="swiper clients-slider">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/golden-star-ferries.jpeg" alt="Golden Star Ferries" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/seagate-navigation.png" alt="Seagate Navigation LTD" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="700">
-                <a className="client-item" href="#"><img src="/assets/img/clients/chatzigavriil.png" alt="Chatzigavriil Salvage & Towage" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="900">
-                <a className="client-item" href="#"><img src="/assets/img/clients/mgc-maritime.png" alt="MGC Maritime SA" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1100">
-                <a className="client-item" href="#"><img src="/assets/img/clients/neptune-lines.svg" alt="Neptune Lines" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/seajets.png" alt="Seajets" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/lotus-shipping.png" alt="Lotus Shipping" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1700">
-                <a className="client-item" href="#"><img src="/assets/img/clients/dcarrier.png" alt="D Carrier" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ClientLogos />
       {/* End Client Area Full Width */}
 
       <div className="cs-section-height"></div>
@@ -442,13 +371,13 @@ export default function AboutPage() {
             <div className="row">
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=1">
                     <img className="animated-img" src="/assets/img/member/team-member-1.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
+                    <Link to="/team-details?member=1">
                       <h6>{t("about.team.members.1.name")}</h6>
                     </Link>
                     <p>{t("about.team.members.1.role")}</p>
@@ -481,13 +410,13 @@ export default function AboutPage() {
               </div>
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=2">
                     <img className="animated-img" src="/assets/img/member/team-member-2.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
+                    <Link to="/team-details?member=2">
                       <h6>{t("about.team.members.2.name")}</h6>
                     </Link>
                     <p>{t("about.team.members.2.role")}</p>
@@ -520,13 +449,13 @@ export default function AboutPage() {
               </div>
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=3">
                     <img className="animated-img" src="/assets/img/member/team-member-3.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
+                    <Link to="/team-details?member=3">
                       <h6>{t("about.team.members.3.name")}</h6>
                     </Link>
                     <p>{t("about.team.members.3.role")}</p>
@@ -559,13 +488,13 @@ export default function AboutPage() {
               </div>
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=4">
                     <img className="animated-img" src="/assets/img/member/team-member-4.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
+                    <Link to="/team-details?member=4">
                       <h6>{t("about.team.members.4.name")}</h6>
                     </Link>
                     <p>{t("about.team.members.4.role")}</p>

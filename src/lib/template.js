@@ -442,6 +442,13 @@ function initSwipers() {
       new Swiper(".service-slider", {
         slidesPerView: 3,
         spaceBetween: 30,
+        loop: true,
+        speed: 800,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
         pagination: { el: ".srv-swiper-pagination", clickable: true },
         breakpoints: {
           1200: { slidesPerView: 3, spaceBetween: 30 },
@@ -454,22 +461,6 @@ function initSwipers() {
     );
   }
 
-  if ($(".clients-slider").length) {
-    perPageSwipers.push(
-      new Swiper(".clients-slider", {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        breakpoints: {
-          1200: { slidesPerView: 5, spaceBetween: 30 },
-          992: { slidesPerView: 4, spaceBetween: 15 },
-          768: { slidesPerView: 3, spaceBetween: 15 },
-          576: { slidesPerView: 2, spaceBetween: 10 },
-          300: { slidesPerView: 1, spaceBetween: 0 },
-          0: { slidesPerView: 1, spaceBetween: 0 },
-        },
-      }),
-    );
-  }
 }
 
 function initFunfactCounter() {

@@ -8,9 +8,6 @@ export default function TeamPage() {
     { key: "2", img: "/assets/img/member/team-member-2.jpg" },
     { key: "3", img: "/assets/img/member/team-member-3.jpg" },
     { key: "4", img: "/assets/img/member/team-member-4.jpg" },
-    { key: "5", img: "/assets/img/member/team-member-5.jpg" },
-    { key: "6", img: "/assets/img/member/team-member-7.jpg" },
-    { key: "7", img: "/assets/img/member/team-member-8.jpg" },
   ];
 
   return (
@@ -52,13 +49,13 @@ export default function TeamPage() {
               {members.map((m) => (
                 <div className="team-member" key={m.key}>
                   <div className="member-img">
-                    <Link to="/team-details">
+                    <Link to={`/team-details?member=${m.key}`}>
                       <img className="animated-img" src={m.img} alt="" />
                     </Link>
                   </div>
                   <div className="member-in">
                     <div className="content">
-                      <Link to="/team-details">
+                      <Link to={`/team-details?member=${m.key}`}>
                         <h6>{t(`team.members.${m.key}.name`)}</h6>
                       </Link>
                       <p>{t(`team.members.${m.key}.role`)}</p>

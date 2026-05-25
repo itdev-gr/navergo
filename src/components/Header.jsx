@@ -89,12 +89,24 @@ export default function Header() {
                 <li>
                   <Link to="/contact" className="cs-text_b_line"><span>{t("common.nav.contact")}</span></Link>
                 </li>
+                <li style={{ display: "flex", alignItems: "center" }}>
+                  <LanguageToggle />
+                </li>
               </ul>
             </div>
           </div>
 
-          <div className="cs_main_header_right themecolor-bg">
-            <LanguageToggle />
+          <div className="cs_main_header_right">
+            <div className="header-contact">
+              <div className="cs-header-phone">
+                <span>{t("common.header.support24")}</span>
+                <a href="tel:+14065550120" className="cs-text_b_line"><span>(406) 555-0120</span></a>
+              </div>
+              <div className="cs-header-email">
+                <span>{t("common.header.emailUs")}</span>
+                <a href="mailto:example@email.com" className="cs-text_b_line"><span>example@email.com</span></a>
+              </div>
+            </div>
 
             <div className="cs_toolbox">
               <span className="cs_icon_btn">
@@ -105,17 +117,6 @@ export default function Header() {
                   <span></span>
                 </span>
               </span>
-            </div>
-
-            <div className="header-contact">
-              <div className="cs-header-phone theme-dark">
-                <span>{t("common.header.support24")}</span>
-                <a href="tel:+14065550120" className="cs-text_b_line"><span>(406) 555-0120</span></a>
-              </div>
-              <div className="cs-header-email theme-dark">
-                <span>{t("common.header.emailUs")}</span>
-                <a href="mailto:example@email.com" className="cs-text_b_line"><span>example@email.com</span></a>
-              </div>
             </div>
           </div>
         </div>

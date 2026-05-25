@@ -139,25 +139,6 @@
         "4": "Continuous training on new techniques and regulations"
       }
     },
-    "partnerships": {
-      "heading": "Partnerships & Projects",
-      "animatedText": "PARTNERS",
-      "paragraph": "Despite its short operational history, Navergo has succeeded in collaborating with major, well-established maritime companies, undertaking projects with a high degree of complexity.",
-      "locations": {
-        "greece": {
-          "title": "Greece",
-          "description": "Piraeus, Perama, the Zone, and major ship repair infrastructures."
-        },
-        "abroad": {
-          "title": "Abroad",
-          "description": "Projects overseas demonstrate flexibility, organisation, and technical capability."
-        },
-        "atSea": {
-          "title": "At Sea",
-          "description": "Specialised technical interventions and repairs during the voyage, ensuring uninterrupted operation."
-        }
-      }
-    },
     "pillars": {
       "heading": "Pillars of Growth",
       "animatedText": "VALUES",
@@ -275,24 +256,6 @@
         "name": "Sarah Johnson",
         "location": "Los Angeles, CA",
         "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
-      }
-    },
-    "pricing": {
-      "heading": "Find the Right Plan for Your Project",
-      "animatedText": "PRICING PLAN",
-      "tagline": "Lorem Ipsum is simply.",
-      "getStart": "Get Start",
-      "plans": {
-        "standard": { "name": "Standard" },
-        "professional": { "name": "Professional" },
-        "enterprise": { "name": "Enterprise" }
-      },
-      "features": {
-        "f1": "Nam semper leo ac arcu ultricies ultricies.",
-        "f2": "Suspendisse interdum nisi ut aliquam.",
-        "f3": "Maecenas cursus eros sed nulla facilisis.",
-        "f4": "Sed sit amet velit egestas, luctus dolor vel.",
-        "f5": "Pellentesque mattis urna vitae tortor."
       }
     },
     "cta": {
@@ -436,16 +399,32 @@
       "animatedText": "SERVICES",
       "items": {
         "01": {
-          "title": "01. Aluminum Works",
-          "description": "Precision aluminum fabrication for facades, frames, and structural assemblies built to spec."
+          "title": "01. Metal Structure Repairs",
+          "description": "Repair and restoration of load-bearing vessel metal structures, fully aligned with classification society standards."
         },
         "02": {
-          "title": "02. Steel Plate Works",
-          "description": "Precision-cut steel plates engineered for structural strength and lasting durability."
+          "title": "02. Metal Components & Special Structures",
+          "description": "Precision fabrication of metal components and specialized structures for superstructures, decks, and critical vessel sections."
         },
         "03": {
           "title": "03. Piping Works",
-          "description": "Industrial piping systems fabricated and installed for reliable flow, pressure, and long-term performance."
+          "description": "Installation and repair of engine-room piping, cooling systems, and fuel management lines."
+        },
+        "04": {
+          "title": "04. Tank Works",
+          "description": "Cleaning, inspection, and restoration of ballast, fuel, and cargo tanks per classification society standards."
+        },
+        "05": {
+          "title": "05. Structural Reinforcements & Technical Restorations",
+          "description": "Hull structural reinforcements and technical restorations to safely return vessels to service."
+        },
+        "06": {
+          "title": "06. Pneumatic & Hydraulic Systems",
+          "description": "Maintenance and repair of vessel pneumatic and hydraulic systems for reliable operation across decks, engine room, and auxiliary machinery."
+        },
+        "07": {
+          "title": "07. Wear Restoration",
+          "description": "Detection and restoration of wear on metal parts and equipment, using techniques that extend the vessel's service life."
         }
       }
     },
@@ -473,21 +452,18 @@
       }
     },
     "funfact": {
-      "1": { "label": "Happy Customers", "description": "We believe construction is more than building structures." },
+      "1": { "label": "Completed Projects", "description": "We believe construction is more than building structures." },
       "2": { "label": "On-Going Projects", "description": "We believe construction is more than building structures." },
       "3": { "label": "Happy Customers", "description": "We believe construction is more than building structures." }
     },
     "team": {
       "heading": "Get to Know Our Dedicated Team Members",
       "animatedText": "TEAM",
-      "member": {
-        "name": "Name Surname"
-      },
-      "roles": {
-        "ceo": "Chief Officer (CEO)",
-        "engineer": "Lead Engineer",
-        "coordinator": "Site Coordinator",
-        "safety": "Safety Officer"
+      "members": {
+        "1": { "name": "Panagiotis Zachos", "role": "Co-founder & Director" },
+        "2": { "name": "Katzilieris", "role": "Co-founder & Technical Director" },
+        "3": { "name": "Team Member", "role": "Project Lead" },
+        "4": { "name": "Team Member", "role": "Workshop Foreman" }
       }
     },
     "testimonials": {
@@ -534,26 +510,6 @@
       "yearsLine2": "Experience",
       "leadingLine1": "We are Leading",
       "leadingLine2": "Company"
-    },
-    "blog": {
-      "heading": "Explore Our Most Recent Blog Posts and Insights",
-      "animatedText": "RECENT NEWS",
-      "readMore": "Read More",
-      "card1": {
-        "date": "15 Aug",
-        "category": "Construction",
-        "title": "The Future of Sustainable Construction Trends to Watch"
-      },
-      "card2": {
-        "date": "17 Dec",
-        "category": "Project Management",
-        "title": "Key Factors in Choosing the Right Construction Agency"
-      },
-      "card3": {
-        "date": "07 Jan",
-        "category": "Commercial",
-        "title": "How Our Construction Agency Turns Visions into Reality"
-      }
     },
     "contact": {
       "heading": "Send Us a Message Use Our Contact Form to Get in Touch",
@@ -692,13 +648,10 @@
       "current": "TEAM"
     },
     "members": {
-      "1": { "name": "Richard Hernandez", "role": "Chief Officer (CEO)" },
-      "2": { "name": "Robert Brown", "role": "Lead Engineer" },
-      "3": { "name": "Michel Wilson", "role": "Site Coordinator" },
-      "4": { "name": "Lucas Thompson", "role": "Safety Officer" },
-      "5": { "name": "Michael Thompson", "role": "Repair Supervisor" },
-      "6": { "name": "David Rodriguez", "role": "Lead Naval Architect" },
-      "7": { "name": "Karen Wilson", "role": "Client Relations" }
+      "1": { "name": "Panagiotis Zachos", "role": "Co-founder & Director" },
+      "2": { "name": "Katzilieris", "role": "Co-founder & Technical Director" },
+      "3": { "name": "Team Member", "role": "Project Lead" },
+      "4": { "name": "Team Member", "role": "Workshop Foreman" }
     }
   },
   "faq": {
@@ -784,13 +737,11 @@
       "address": "Leof. Dimokratias 397\nPerama 188 63, Greece"
     },
     "member": {
-      "name": "Johnathan Carter",
-      "role": "Lead Engineer",
-      "bio1": "Johnathan Carter is a seasoned Lead Engineer with over 12 years of experience in the ship repair industry. He specializes in structural engineering, project planning, and shipyard management, ensuring that every project meets the highest standards of safety and efficiency.",
-      "bio2": "With a strong background in naval engineering, Johnathan has successfully led numerous tanker, commercial, and passenger vessel repair projects from conception to completion. His expertise in modern ship repair techniques, material selection, and sustainability allows him to deliver innovative solutions tailored to each project's unique requirements."
+      "bio1": "As a member of the Navergo team, they contribute every day to delivering top-tier ship repair services, with a focus on quality, safety, and the on-time delivery of every project.",
+      "bio2": "With deep industry knowledge and a commitment to modern techniques, they support the execution of numerous repair projects on commercial and passenger vessels from conception to completion, collaborating closely with the rest of the team to ensure the success of every mission."
     },
     "videoIntroduction": "Video Introduction",
-    "blockquote": "\"As a key member of our team, Johnathan is committed to quality craftsmanship, on-time delivery, and cost-effective execution, making him an invaluable asset in driving our projects to success.\"",
+    "blockquote": "\"As a member of our team, they are committed to quality craftsmanship, on-time delivery, and cost-effective execution, making their contribution invaluable in driving our projects to success.\"",
     "skills": {
       "headingPrefix": "Skills of",
       "animatedText": "SKILLS",

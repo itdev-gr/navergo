@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ClientLogos from "../components/ClientLogos";
 
 export default function FaqPage() {
   const { t } = useTranslation();
@@ -145,33 +146,7 @@ export default function FaqPage() {
       {/* Section to Section Gap */}
 
       {/* Start Client Section */}
-      <div className="container client-wrap">
-        <div className="swiper clients-slider">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide" data-aos="fade-up" data-aos-duration="300">
-              <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
-            </div>
-            <div className="swiper-slide" data-aos="fade-up" data-aos-duration="500">
-              <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
-            </div>
-            <div className="swiper-slide" data-aos="fade-up" data-aos-duration="700">
-              <a className="client-item" href="#"><img src="/assets/img/clients/logo03.png" alt="" /></a>
-            </div>
-            <div className="swiper-slide" data-aos="fade-up" data-aos-duration="900">
-              <a className="client-item" href="#"><img src="/assets/img/clients/logo02.png" alt="" /></a>
-            </div>
-            <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1100">
-              <a className="client-item" href="#"><img src="/assets/img/clients/logo01.png" alt="" /></a>
-            </div>
-            <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1300">
-              <a className="client-item" href="#"><img src="/assets/img/clients/logo05.png" alt="" /></a>
-            </div>
-            <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
-              <a className="client-item" href="#"><img src="/assets/img/clients/logo04.png" alt="" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ClientLogos />
       {/* End Client Section */}
 
 

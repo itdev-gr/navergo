@@ -1,9 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function TeamDetailsPage() {
   const { t } = useTranslation();
-  const memberName = t("teamDetails.member.name");
+  const [searchParams] = useSearchParams();
+  const rawMember = searchParams.get("member");
+  const memberKey = ["1", "2", "3", "4"].includes(rawMember) ? rawMember : "1";
+  const memberName = t(`about.team.members.${memberKey}.name`);
+  const memberRole = t(`about.team.members.${memberKey}.role`);
+  const memberImage = `/assets/img/member/team-member-${memberKey}.jpg`;
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -42,7 +47,7 @@ export default function TeamDetailsPage() {
                   <div className="member-img-single">
                     <div className="animate-img-wrap">
                       <div className="reveal"></div>
-                      <img src="/assets/img/member/team-member-3.jpg" alt="" />
+                      <img src={memberImage} alt={memberName} />
                     </div>
                   </div>
                   <div className="cs-height-50"></div>
@@ -106,7 +111,7 @@ export default function TeamDetailsPage() {
                   <div className="member-info-single">
                     <h2 className="cs_medium">{memberName}</h2>
                     <div className="cs-height-5"></div>
-                    <p className="cs-text-style-h6 cs_light">{t("teamDetails.member.role")}</p>
+                    <p className="cs-text-style-h6 cs_light">{memberRole}</p>
                     <div className="cs-height-20"></div>
                     <p>{t("teamDetails.member.bio1")}</p>
                     <p>{t("teamDetails.member.bio2")}</p>

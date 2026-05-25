@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ClientLogos from "../components/ClientLogos";
 
 const homeServiceKeys = ["01", "02", "03", "04", "05", "06", "07"];
 const homeServiceImages = {
@@ -311,36 +312,7 @@ export default function HomePage() {
       <div className="cs-section-height"></div>
 
       {/* Start Client Area Full Width */}
-        <div className="container client-wrap">
-          <div className="swiper clients-slider">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/golden-star-ferries.jpeg" alt="Golden Star Ferries" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/seagate-navigation.png" alt="Seagate Navigation LTD" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="700">
-                <a className="client-item" href="#"><img src="/assets/img/clients/chatzigavriil.png" alt="Chatzigavriil Salvage & Towage" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="900">
-                <a className="client-item" href="#"><img src="/assets/img/clients/mgc-maritime.png" alt="MGC Maritime SA" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1100">
-                <a className="client-item" href="#"><img src="/assets/img/clients/neptune-lines.svg" alt="Neptune Lines" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1300">
-                <a className="client-item" href="#"><img src="/assets/img/clients/seajets.png" alt="Seajets" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1500">
-                <a className="client-item" href="#"><img src="/assets/img/clients/lotus-shipping.png" alt="Lotus Shipping" /></a>
-              </div>
-              <div className="swiper-slide" data-aos="fade-up" data-aos-duration="1700">
-                <a className="client-item" href="#"><img src="/assets/img/clients/dcarrier.png" alt="D Carrier" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <ClientLogos />
       {/* End Client Area Full Width */}
 
       <div className="cs-section-height"></div>
@@ -498,16 +470,16 @@ export default function HomePage() {
             <div className="row">
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=1">
                     <img className="animated-img" src="/assets/img/member/team-member-1.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
-                      <h6>{t("home.team.member.name")}</h6>
+                    <Link to="/team-details?member=1">
+                      <h6>{t("home.team.members.1.name")}</h6>
                     </Link>
-                    <p>{t("home.team.roles.ceo")}</p>
+                    <p>{t("home.team.members.1.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -537,16 +509,16 @@ export default function HomePage() {
               </div>
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=2">
                     <img className="animated-img" src="/assets/img/member/team-member-2.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
-                      <h6>{t("home.team.member.name")}</h6>
+                    <Link to="/team-details?member=2">
+                      <h6>{t("home.team.members.2.name")}</h6>
                     </Link>
-                    <p>{t("home.team.roles.engineer")}</p>
+                    <p>{t("home.team.members.2.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -576,16 +548,16 @@ export default function HomePage() {
               </div>
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=3">
                     <img className="animated-img" src="/assets/img/member/team-member-3.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
-                      <h6>{t("home.team.member.name")}</h6>
+                    <Link to="/team-details?member=3">
+                      <h6>{t("home.team.members.3.name")}</h6>
                     </Link>
-                    <p>{t("home.team.roles.coordinator")}</p>
+                    <p>{t("home.team.members.3.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -615,16 +587,16 @@ export default function HomePage() {
               </div>
               <div className="team-member">
                 <div className="member-img">
-                  <Link to="/team-details">
+                  <Link to="/team-details?member=4">
                     <img className="animated-img" src="/assets/img/member/team-member-4.jpg" alt="" />
                   </Link>
                 </div>
                 <div className="member-in">
                   <div className="content">
-                    <Link to="/team-details">
-                      <h6>{t("home.team.member.name")}</h6>
+                    <Link to="/team-details?member=4">
+                      <h6>{t("home.team.members.4.name")}</h6>
                     </Link>
-                    <p>{t("home.team.roles.safety")}</p>
+                    <p>{t("home.team.members.4.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
