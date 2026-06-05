@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import { projects } from "../data/projects";
 
 const homeServiceKeys = ["01", "02", "03", "04", "05", "06", "07"];
 const homeServiceImages = {
@@ -258,50 +259,50 @@ export default function HomePage() {
           </div>
 
           <div className="project-masonry">
-            <div className="cs-project-item first" data-aos="fade-top" data-aos-duration="300">
-              <Link to="/project-details" className="cs-project-item-content-in">
-                <img src="/assets/img/service/steelwork/steelwork-01.jpg" alt="" />
+            <div className="cs-project-item third">
+              {[projects[0], projects[1]].map((p, i) => {
+                const title = t(`home.projects.item${i + 1}.title`);
+                return (
+                  <Link key={p.slug} to={`/project-details?project=${p.slug}`} className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration={300 + i * 100}>
+                    <img src={p.images[0]} alt={title} />
+                    <div className="project-meta-data">
+                      <div className="cs-project-content">
+                        <h5>{title}</h5>
+                        <span className="view-project">{t("home.projects.viewProject")} <i className="flaticon-right-arrow"></i></span>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+
+            <div className="cs-project-item second">
+              <Link to={`/project-details?project=${projects[2].slug}`} className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration="500">
+                <img src={projects[2].images[0]} alt={t("home.projects.item3.title")} />
                 <div className="project-meta-data">
                   <div className="cs-project-content">
-                    <h4>{t("home.projects.item1.title")}</h4>
+                    <h4>{t("home.projects.item3.title")}</h4>
                     <span className="view-project">{t("home.projects.viewProject")} <i className="flaticon-right-arrow"></i></span>
                   </div>
                 </div>
               </Link>
             </div>
 
-            <div className="cs-project-item second">
-              <Link to="/project-details" className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration="500">
-                <img src="/assets/img/service/aluminum/aluminum-01.jpg" alt="" />
-                <div className="project-meta-data">
-                  <div className="cs-project-content">
-                    <h4>{t("home.projects.item2.title")}</h4>
-                    <span className="view-project">{t("home.projects.viewProject")}</span>
-                  </div>
-                </div>
-              </Link>
-            </div>
-
             <div className="cs-project-item third">
-              <Link to="/project-details" className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration="600">
-                <img src="/assets/img/service/steelwork/steelwork-02.jpg" alt="" />
-                <div className="project-meta-data">
-                  <div className="cs-project-content">
-                    <h5>{t("home.projects.item3.title")}</h5>
-                    <span className="view-project">{t("home.projects.viewProject")}</span>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="/project-details" className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration="700">
-                <img src="/assets/img/service/piping/piping-01.jpg" alt="" />
-                <div className="project-meta-data">
-                  <div className="cs-project-content">
-                    <h5>{t("home.projects.item4.title")}</h5>
-                    <span className="view-project">{t("home.projects.viewProject")}</span>
-                  </div>
-                </div>
-              </Link>
+              {[projects[3], projects[4]].map((p, i) => {
+                const title = t(`home.projects.item${i + 4}.title`);
+                return (
+                  <Link key={p.slug} to={`/project-details?project=${p.slug}`} className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration={600 + i * 100}>
+                    <img src={p.images[0]} alt={title} />
+                    <div className="project-meta-data">
+                      <div className="cs-project-content">
+                        <h5>{title}</h5>
+                        <span className="view-project">{t("home.projects.viewProject")} <i className="flaticon-right-arrow"></i></span>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -471,7 +472,7 @@ export default function HomePage() {
               <div className="team-member">
                 <div className="member-img">
                   <Link to="/team-details?member=1">
-                    <img className="animated-img" src="/assets/img/member/team-member-1.jpg" alt="" />
+                    <img className="animated-img" src="/assets/img/member/team-member-1.jpg" alt={t("home.team.members.1.name")} />
                   </Link>
                 </div>
                 <div className="member-in">
@@ -510,7 +511,7 @@ export default function HomePage() {
               <div className="team-member">
                 <div className="member-img">
                   <Link to="/team-details?member=2">
-                    <img className="animated-img" src="/assets/img/member/team-member-2.jpg" alt="" />
+                    <img className="animated-img" src="/assets/img/member/team-member-2.jpg" alt={t("home.team.members.2.name")} />
                   </Link>
                 </div>
                 <div className="member-in">
@@ -519,84 +520,6 @@ export default function HomePage() {
                       <h6>{t("home.team.members.2.name")}</h6>
                     </Link>
                     <p>{t("home.team.members.2.role")}</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details?member=3">
-                    <img className="animated-img" src="/assets/img/member/team-member-3.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details?member=3">
-                      <h6>{t("home.team.members.3.name")}</h6>
-                    </Link>
-                    <p>{t("home.team.members.3.role")}</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details?member=4">
-                    <img className="animated-img" src="/assets/img/member/team-member-4.jpg" alt="" />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details?member=4">
-                      <h6>{t("home.team.members.4.name")}</h6>
-                    </Link>
-                    <p>{t("home.team.members.4.role")}</p>
                   </div>
                   <div className="theme-social">
                     <ul>
@@ -784,7 +707,7 @@ export default function HomePage() {
                 <div className="contact-img">
                   <div className="animate-img-wrap">
                     <div className="reveal"></div>
-                    <img className="the-animated-image" src="/assets/img/contact/contact-image.jpg" alt="" />
+                    <img className="the-animated-image" src="/assets/img/about/story-shipyard-vessel.jpg" alt="Πλοίο σε εργασίες ναυπηγοεπισκευής στο ναυπηγείο της Navergo" />
                   </div>
                 </div>
               </div>

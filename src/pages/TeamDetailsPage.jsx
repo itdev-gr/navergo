@@ -5,7 +5,7 @@ export default function TeamDetailsPage() {
   const { t } = useTranslation();
   const [searchParams] = useSearchParams();
   const rawMember = searchParams.get("member");
-  const memberKey = ["1", "2", "3", "4"].includes(rawMember) ? rawMember : "1";
+  const memberKey = ["1", "2"].includes(rawMember) ? rawMember : "1";
   const memberName = t(`about.team.members.${memberKey}.name`);
   const memberRole = t(`about.team.members.${memberKey}.role`);
   const memberImage = `/assets/img/member/team-member-${memberKey}.jpg`;
@@ -63,8 +63,8 @@ export default function TeamDetailsPage() {
                       <div className="cs-height-20"></div>
                       <div className="contact-item">
                         <p>{t("teamDetails.contact.sayHello")}</p>
-                        <a href="mailto:info@email.com">
-                          <h6>info@email.com</h6>
+                        <a href="mailto:navergozk@gmail.com">
+                          <h6>navergozk@gmail.com</h6>
                         </a>
                       </div>
                       <div className="cs-height-20"></div>

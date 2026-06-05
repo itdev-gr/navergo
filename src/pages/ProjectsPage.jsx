@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import { projects } from "../data/projects";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
-  const projectImages = [
-    "/assets/img/projects/project-img01.jpg",
-    "/assets/img/projects/project-img02.jpg",
-    "/assets/img/projects/project-img03.jpg",
-    "/assets/img/projects/project-img04.jpg",
-    "/assets/img/projects/project-img05.jpg",
-    "/assets/img/projects/project-img06.jpg",
-  ];
   const aosDurations = ["300", "500", "700", "900", "1100", "1300"];
 
   return (
@@ -49,22 +42,23 @@ export default function ProjectsPage() {
       <section className="projects-list">
         <div className="container lg-gutter-control">
           <div className="row">
-            {projectImages.map((img, idx) => {
-              const key = String(idx + 1);
+            {projects.map((project, idx) => {
+              const to = `/project-details?project=${project.slug}`;
+              const title = t(`projects.items.${project.slug}.title`);
               return (
-                <div className="col-xl-6 col-md-12" key={key}>
+                <div className="col-xl-6 col-md-12" key={project.slug}>
                   <div className="project-item" data-aos="fade-up" data-aos-duration={aosDurations[idx]}>
                     <div className="project-item-in">
-                      <Link to="/project-details">
-                        <img src={img} alt="" />
+                      <Link to={to}>
+                        <img src={project.images[0]} alt={title} />
                       </Link>
                     </div>
                     <div className="project-item-text">
                       <div className="tag-item">
-                        <a href="#"><span>{t(`projects.items.${key}.category`)}</span></a>
+                        <Link to={to}><span>{t(`projects.items.${project.slug}.category`)}</span></Link>
                       </div>
-                      <Link to="/project-details"><h5>{t(`projects.items.${key}.title`)}</h5></Link>
-                      <Link to="/project-details" className="cs-text_b_line"><span>{t("projects.viewProject")}</span>
+                      <Link to={to}><h5>{title}</h5></Link>
+                      <Link to={to} className="cs-text_b_line"><span>{t("projects.viewProject")}</span>
                         <i className="flaticon-right-arrow"></i>
                       </Link>
                     </div>

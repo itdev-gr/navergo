@@ -472,7 +472,7 @@ function initFunfactCounter() {
 
   count_id.forEach((num) => {
     gsap.from(num, {
-      scrollTrigger: { trigger: num, start: "top center+=200", markers: false },
+      scrollTrigger: { trigger: num, start: "top 85%", markers: false },
       delay: 0,
       innerText: 0,
       duration: 3,
@@ -485,7 +485,7 @@ function initFunfactCounter() {
 
   if (count_number.length) {
     gsap.from(count_number, {
-      scrollTrigger: { trigger: count_number, start: "top center+=200", markers: false },
+      scrollTrigger: { trigger: count_number, start: "top 85%", markers: false },
       duration: 0.5,
       scale: 0.1,
       opacity: 0,

@@ -47,6 +47,37 @@ export default function ServicePage() {
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
 
+      {/* Start Where We Work */}
+      <section>
+        <div className="cs-working-process-wrap themecolor-bg theme-dark">
+          <div className="cs-height-100"></div>
+          <div className="container">
+            <div className="cs-heading-with-animation text-center max-width-700 m-auto">
+              <h2 className="cs-heading cs_white_color">{t("service.delivery.heading")}</h2>
+            </div>
+            <div className="cs-height-50"></div>
+            <div className="row">
+              {["1", "2", "3"].map((id, idx) => (
+                <div className="col-xl-4 col-md-6" key={id}>
+                  <div className="cs-process-item" data-aos="fade-top" data-aos-duration={300 + idx * 200}>
+                    <div className="cs-wp-icon">
+                      <img src={`/assets/img/${["one", "two", "three"][idx]}.svg`} alt="" />
+                    </div>
+                    <h6>{t(`service.delivery.items.${id}.title`)}</h6>
+                    <p>{t(`service.delivery.items.${id}.description`)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="cs-height-100"></div>
+        </div>
+      </section>
+      {/* End Where We Work */}
+
+      <div className="cs-section-height"></div>
+      {/* Section to Section Gap */}
+
       {/* Start Service Section */}
       <section>
         <div className="services-wrapper lg-gutter-control">

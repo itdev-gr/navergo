@@ -1,9 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import { projects, projectSlugs, getProject } from "../data/projects";
 
 export default function ProjectDetailsPage() {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
+
+  const rawSlug = searchParams.get("project");
+  const slug = projectSlugs.includes(rawSlug) ? rawSlug : projects[0].slug;
+  const project = getProject(slug);
+
+  const base = `projects.items.${slug}`;
+  const title = t(`${base}.title`);
+  const category = t(`${base}.category`);
+  const intro = t(`${base}.intro`);
+  const sidebarScope = t(`${base}.sidebarScope`);
+  const scope = t(`${base}.scope`, { returnObjects: true });
+  const scopeList = Array.isArray(scope) ? scope : [];
+
   return (
     <>
       {/* Start Common BreadCrumb */}
@@ -13,7 +28,7 @@ export default function ProjectDetailsPage() {
             <div className="row cs_center">
               <div className="cs-bread-page-title-area">
                 <div className="cs-page-title">
-                  <h2 className="cs_white_color">{t("projectDetails.breadcrumb.title")}</h2>
+                  <h2 className="cs_white_color">{title}</h2>
                 </div>
                 <div className="breadcrumb">
                   <ul>
@@ -21,7 +36,11 @@ export default function ProjectDetailsPage() {
                       <Link to="/" className="cs-text_b_line"><span>{t("projectDetails.breadcrumb.fromHome")}</span></Link>
                     </li>
                     <li>/</li>
-                    <li>{t("projectDetails.breadcrumb.current")}</li>
+                    <li>
+                      <Link to="/projects" className="cs-text_b_line"><span>{t("projects.breadcrumb.current")}</span></Link>
+                    </li>
+                    <li>/</li>
+                    <li>{title}</li>
                   </ul>
                 </div>
               </div>
@@ -41,137 +60,24 @@ export default function ProjectDetailsPage() {
           <div className="row stickysec-wrap">
             <div className="col-lg-8 col-md-12 scolling-content">
               <div className="scolling-content">
-                <img data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-main.jpg" alt="" />
+                <img data-aos="fade-top" data-aos-duration="400" src={project.images[0]} alt={title} />
                 <div className="cs-height-50"></div>
-                <h3>{t("projectDetails.content.title")}</h3>
+                <h3>{title}</h3>
                 <div className="cs-height-10"></div>
-                <p>{t("projectDetails.content.intro1")}</p>
-                <p>{t("projectDetails.content.intro2")}</p>
+                <p>{intro}</p>
 
-                <div className="cs-height-30"></div>
-
-                <h5>{t("projectDetails.content.overviewTitle")}</h5>
-                <div className="cs-height-10"></div>
-                <p>{t("projectDetails.content.overviewParagraph")}</p>
                 <div className="cs-height-35"></div>
 
-                <blockquote className="theme-border-wrap" data-src="/assets/img/cta-bg.jpg">
-
-                  <div className="b-top-left">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-top-right d-flex">
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-right d-flex flex-end">
-
-                    <div className="horizontal"></div>
-                    <div className="verticle"></div>
-                  </div>
-
-                  <div className="b-bottom-left">
-                    <div className="verticle"></div>
-                    <div className="horizontal"></div>
-                  </div>
-
-                  {t("projectDetails.content.blockquote")}
-                </blockquote>
-
-                <div className="cs-height-50"></div>
-
-                <h5>{t("projectDetails.content.designTitle")}</h5>
-                <div className="cs-height-10"></div>
-                <p>{t("projectDetails.content.designParagraph1")}</p>
-                <div className="cs-height-10"></div>
-
-                <p>{t("projectDetails.content.designParagraph2")}</p>
+                <h5>{t("projectDetails.scopeHeading")}</h5>
+                <div className="cs-height-20"></div>
+                <ul className="project-scope-list">
+                  {scopeList.map((item, idx) => (
+                    <li key={idx} data-aos="fade-top" data-aos-duration={300 + idx * 100}>{item}</li>
+                  ))}
+                </ul>
 
                 <div className="cs-height-40"></div>
-
-                <h5>{t("projectDetails.content.processTitle")}</h5>
-                <div className="cs-height-10"></div>
-
-                <p>{t("projectDetails.content.processParagraph")}</p>
-
-                <div className="cs-height-30"></div>
-
-                <div className="cs-constr-process">
-                  <div className="row">
-                    <div className="col-xl-6 col-md-6">
-                      <div className="process-item" data-aos="fade-top" data-aos-duration="400">
-                        <h6>{t("projectDetails.process.step1.title")}</h6>
-                        <p>{t("projectDetails.process.step1.description")}</p></div>
-                      <div className="cs-height-30"></div>
-                    </div>
-                    <div className="col-xl-6 col-md-6">
-                      <div className="process-item" data-aos="fade-top" data-aos-duration="500">
-                        <h6>{t("projectDetails.process.step2.title")}</h6>
-                        <p>{t("projectDetails.process.step2.description")}</p></div>
-                      <div className="cs-height-30"></div>
-                    </div>
-                    <div className="col-xl-6 col-md-6">
-                      <div className="process-item" data-aos="fade-top" data-aos-duration="600">
-                        <h6>{t("projectDetails.process.step3.title")}</h6>
-                        <p>{t("projectDetails.process.step3.description")}</p></div>
-                      <div className="cs-height-30"></div>
-                    </div>
-                    <div className="col-xl-6 col-md-6">
-                      <div className="process-item" data-aos="fade-top" data-aos-duration="700">
-                        <h6>{t("projectDetails.process.step4.title")}</h6>
-                        <p>{t("projectDetails.process.step4.description")}</p></div>
-                      <div className="cs-height-30"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="cs-height-15"></div>
-
-                <h5>{t("projectDetails.content.challengesTitle")}</h5>
-                <div className="cs-height-10"></div>
-
-                <p>{t("projectDetails.content.challengesParagraph")}</p>
-
-                <div className="cs-height-30"></div>
-
-                <div className="cs-constr-process">
-                  <div className="row">
-                    <div className="col-xl-5 col-md-5" data-aos="fade-top" data-aos-duration="400">
-                      <h6>{t("projectDetails.challenges.urban.title")}</h6>
-                      <p>{t("projectDetails.challenges.urban.description")}</p>
-                    </div>
-                    <div className="col-xl-2">
-                      <div className="cs-border-pr"></div>
-                    </div>
-                    <div className="col-xl-5 col-md-5" data-aos="fade-top" data-aos-duration="600">
-                      <h6>{t("projectDetails.challenges.sustainability.title")}</h6>
-                      <p>{t("projectDetails.challenges.sustainability.description")}</p>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div className="cs-height-40"></div>
-
-                <h5>{t("projectDetails.content.outcomeTitle")}</h5>
-                <div className="cs-height-10"></div>
-
-                <p>{t("projectDetails.content.outcomeParagraph")}</p>
-
-                <div className="cs-height-30"></div>
-                <img data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-image-2.jpg" alt="" />
-
-
-                <div className="cs-height-50"></div>
-
-                <p>{t("projectDetails.content.closingParagraph1")}</p>
-
-                <p>{t("projectDetails.content.closingParagraph2")}</p>
-
-
+                <img data-aos="fade-top" data-aos-duration="400" src={project.images[1]} alt={title} />
               </div>
             </div>
             <div className="col-lg-4 col-md-12 sticky-box">
@@ -181,27 +87,15 @@ export default function ProjectDetailsPage() {
                 <div className="project-info">
                   <div className="p-info-item">
                     <p>{t("projectDetails.sidebar.projectName")}</p>
-                    <h6>{t("projectDetails.sidebar.projectNameValue")}</h6>
+                    <h6>{title}</h6>
                   </div>
                   <div className="p-info-item">
-                    <p>{t("projectDetails.sidebar.location")}</p>
-                    <h6>{t("projectDetails.sidebar.locationValue")}</h6>
-                  </div>
-                  <div className="p-info-item">
-                    <p>{t("projectDetails.sidebar.client")}</p>
-                    <h6>{t("projectDetails.sidebar.clientValue")}</h6>
-                  </div>
-                  <div className="p-info-item">
-                    <p>{t("projectDetails.sidebar.completionDate")}</p>
-                    <h6>{t("projectDetails.sidebar.completionDateValue")}</h6>
-                  </div>
-                  <div className="p-info-item">
-                    <p>{t("projectDetails.sidebar.projectValue")}</p>
-                    <h6>{t("projectDetails.sidebar.projectValueValue")}</h6>
+                    <p>{t("projectDetails.sidebar.typeOfWorks")}</p>
+                    <h6>{category}</h6>
                   </div>
                   <div className="p-info-item">
                     <p>{t("projectDetails.sidebar.scope")}</p>
-                    <h6>{t("projectDetails.sidebar.scopeValue")}</h6>
+                    <h6>{sidebarScope}</h6>
                   </div>
                 </div>
               </div>

@@ -6,8 +6,6 @@ export default function TeamPage() {
   const members = [
     { key: "1", img: "/assets/img/member/team-member-1.jpg" },
     { key: "2", img: "/assets/img/member/team-member-2.jpg" },
-    { key: "3", img: "/assets/img/member/team-member-3.jpg" },
-    { key: "4", img: "/assets/img/member/team-member-4.jpg" },
   ];
 
   return (

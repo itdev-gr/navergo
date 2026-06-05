@@ -33,11 +33,23 @@ export default function Header() {
                 <li>
                   <Link to="/" className="cs-text_b_line"><span>{t("common.nav.home")}</span></Link>
                 </li>
-                <li>
+                <li className="menu-item-has-children">
                   <Link to="/about" className="cs-text_b_line"><span>{t("common.nav.about")}</span></Link>
+                  <ul>
+                    <li>
+                      <Link to="/team" className="cs-text_b_line"><span>{t("common.nav.team")}</span></Link>
+                    </li>
+                    <li>
+                      <Link to="/faq" className="cs-text_b_line"><span>{t("common.nav.faq")}</span></Link>
+                    </li>
+                  </ul>
+                  <span className="cs_munu_dropdown_toggle"></span>
                 </li>
                 <li>
                   <Link to="/service" className="cs-text_b_line"><span>{t("common.nav.services")}</span></Link>
+                </li>
+                <li>
+                  <Link to="/projects" className="cs-text_b_line"><span>{t("common.nav.projects")}</span></Link>
                 </li>
                 {/* News & Insights — disabled for now
                 <li className="menu-item-has-children">
@@ -56,35 +68,8 @@ export default function Header() {
                   <span className="cs_munu_dropdown_toggle"></span>
                 </li>
                 */}
-                <li className="menu-item-has-children">
-                  <a href="#" className="cs-text_b_line"><span>{t("common.nav.pages")}</span></a>
-                  <ul>
-                    <li>
-                      <Link to="/projects" className="cs-text_b_line"><span>{t("common.nav.projects")}</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/project-details" className="cs-text_b_line"><span>{t("common.nav.projectDetails")}</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/team" className="cs-text_b_line"><span>{t("common.nav.team")}</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/team-details" className="cs-text_b_line"><span>{t("common.nav.teamDetails")}</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/gallery" className="cs-text_b_line"><span>{t("common.nav.gallery")}</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/faq" className="cs-text_b_line"><span>{t("common.nav.faq")}</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/404" className="cs-text_b_line"><span>{t("common.nav.error")}</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/coming" className="cs-text_b_line"><span>{t("common.nav.comingSoon")}</span></Link>
-                    </li>
-                  </ul>
-                  <span className="cs_munu_dropdown_toggle"></span>
+                <li>
+                  <Link to="/gallery" className="cs-text_b_line"><span>{t("common.nav.gallery")}</span></Link>
                 </li>
                 <li>
                   <Link to="/contact" className="cs-text_b_line"><span>{t("common.nav.contact")}</span></Link>
@@ -104,7 +89,7 @@ export default function Header() {
               </div>
               <div className="cs-header-email">
                 <span>{t("common.header.emailUs")}</span>
-                <a href="mailto:example@email.com" className="cs-text_b_line"><span>example@email.com</span></a>
+                <a href="mailto:navergozk@gmail.com" className="cs-text_b_line"><span>navergozk@gmail.com</span></a>
               </div>
             </div>
 

@@ -301,7 +301,7 @@ export default function ServiceDetailsPage() {
                   </div>
                   <div className="cs-height-50"></div>
 
-                  <div className="theme-dark" data-src="/assets/img/service/contact-widget-bg.jpg">
+                  <div className="theme-dark" data-src="/assets/img/service/steelwork/steelwork-04.jpg">
                     <h6 className="contact-widget-title">{t("serviceDetails.sidebar.contactTitle")}</h6>
                     <div className="border-100"></div>
                     <div className="cs-height-30"></div>
@@ -313,7 +313,7 @@ export default function ServiceDetailsPage() {
                       <div className="cs-height-20"></div>
                       <div className="contact-item">
                         <p>{t("serviceDetails.sidebar.sayHello")}</p>
-                        <a href="mailto:info@email.com"><h6>info@email.com</h6></a>
+                        <a href="mailto:navergozk@gmail.com"><h6>navergozk@gmail.com</h6></a>
                       </div>
                       <div className="cs-height-20"></div>
                       <div className="contact-item">

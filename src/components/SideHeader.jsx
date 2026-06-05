@@ -35,7 +35,7 @@ export default function SideHeader() {
           <a href="tel:+14065550120"><h6>(406) 555-0120</h6></a>
           <div className="cs-height-20"></div>
           <p>{t("sidebar.sayHello")}</p>
-          <a href="mailto:info@email.com"><h6>info@email.com</h6></a>
+          <a href="mailto:navergozk@gmail.com"><h6>navergozk@gmail.com</h6></a>
           <div className="cs-height-20"></div>
           <p>{t("sidebar.meetUs")}</p>
           <span className="cs-text-style-h6">{t("sidebar.address")}</span>

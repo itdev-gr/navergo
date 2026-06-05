@@ -194,3 +194,54 @@ img {
   object-fit: cover;
   object-position: center;
 }
+
+/* Client logos ship with wildly different intrinsic dimensions (the vendored
+   template assumed identically-sized assets). Without normalization the strip
+   reads as broken — some marks tower over others. Lock every logo to a uniform
+   optical height and contain-fit it, center each cell, and dim slightly so the
+   row feels cohesive, brightening to full strength on hover. The mgc-maritime
+   mark keeps its inline `invert(1)` (needed for a dark logo on light) because
+   inline styles outrank this rule. */
+.client-grid .client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-grid .client-item img {
+  max-height: 50px !important;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.25s ease;
+}
+.client-grid .client-item:hover img {
+  opacity: 1;
+}
+
+/* The service-details sidebar contact widget was a flat placeholder image with
+   light text baked for a dark background. Now that it carries a real shipyard
+   photo, add a brand-tinted scrim so the white contact text stays legible over
+   any part of the photo. Scoped with `:has(.contact-widget-title)` so it only
+   hits this widget — `.theme-dark[data-src]` alone also matches the breadcrumb
+   banner. `isolation` + child z-index keeps the scrim above the background but
+   below the content. */
+.theme-dark[data-src]:has(.contact-widget-title) {
+  position: relative;
+  isolation: isolate;
+}
+.theme-dark[data-src]:has(.contact-widget-title)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(10, 12, 46, 0.82),
+    rgba(10, 12, 46, 0.9)
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+.theme-dark[data-src]:has(.contact-widget-title) > * {
+  position: relative;
+  z-index: 1;
+}

@@ -177,10 +177,14 @@
       "heading": "Γνωρίστε την Ομάδα μας",
       "animatedText": "ΟΜΑΔΑ",
       "members": {
-        "1": { "name": "Παναγιώτης Ζάχος", "role": "Συν-ιδρυτής & Διευθυντής" },
-        "2": { "name": "Κατζηλιέρης", "role": "Συν-ιδρυτής & Τεχνικός Διευθυντής" },
-        "3": { "name": "Μέλος Ομάδας", "role": "Επικεφαλής Έργων" },
-        "4": { "name": "Μέλος Ομάδας", "role": "Επικεφαλής Συνεργείου" }
+        "1": {
+          "name": "Χρήστος Ζάχος",
+          "role": "Συν-ιδρυτής & Διευθυντής"
+        },
+        "2": {
+          "name": "Νικόλαος Κατζηλιέρης",
+          "role": "Συν-ιδρυτής & Τεχνικός Διευθυντής"
+        }
       }
     },
     "experience": {
@@ -261,6 +265,23 @@
     "cta": {
       "heading": "Ξεκινήστε το Κατασκευαστικό σας Ταξίδι μαζί μας Σήμερα!",
       "button": "Επικοινωνήστε"
+    },
+    "delivery": {
+      "heading": "Όπου κι αν Βρίσκεται το Πλοίο σας",
+      "items": {
+        "1": {
+          "title": "Εργασίες στο Εσωτερικό",
+          "description": "Ολοκληρωμένες εργασίες ναυπηγοεπισκευής σε ναυπηγεία και εγκαταστάσεις σε όλη την Ελλάδα, με βάση μας το Πέραμα."
+        },
+        "2": {
+          "title": "Εργασίες στο Εξωτερικό",
+          "description": "Τα συνεργεία μας μετακινούνται σε ναυπηγεία του εξωτερικού για επισκευές και μετασκευές, όπου κι αν βρίσκεται το πλοίο σας."
+        },
+        "3": {
+          "title": "Εν Πλω",
+          "description": "Επισκευές και εργασίες συντήρησης εν πλω, ενώ το πλοίο βρίσκεται σε υπηρεσία, για ελαχιστοποίηση του χρόνου ακινησίας."
+        }
+      }
     }
   },
   "serviceDetails": {
@@ -432,10 +453,21 @@
       "heading": "Δείτε τα πιο πρόσφατα έργα μας",
       "animatedText": "ΕΡΓΑ",
       "viewProject": "ΠΡΟΒΟΛΗ ΕΡΓΟΥ",
-      "item1": { "title": "Έργο Ναυπηγοεπισκευής" },
-      "item2": { "title": "Το Μέλλον της Βιώσιμης Ναυπηγοεπισκευής — Τάσεις για Παρακολούθηση" },
-      "item3": { "title": "Το Μέλλον της Βιώσιμης Ναυπηγοεπισκευής — Τάσεις για Παρακολούθηση" },
-      "item4": { "title": "Το Μέλλον της Βιώσιμης Ναυπηγοεπισκευής — Τάσεις για Παρακολούθηση" }
+      "item1": {
+        "title": "Andros King"
+      },
+      "item2": {
+        "title": "North Star"
+      },
+      "item3": {
+        "title": "Golden Princess"
+      },
+      "item4": {
+        "title": "Laskaro"
+      },
+      "item5": {
+        "title": "Anna S"
+      }
     },
     "features": {
       "card1": {
@@ -452,18 +484,31 @@
       }
     },
     "funfact": {
-      "1": { "label": "Ολοκληρωμένα Έργα", "description": "Πιστεύουμε ότι η κατασκευή είναι κάτι περισσότερο από την ανέγερση δομών." },
-      "2": { "label": "Έργα σε Εξέλιξη", "description": "Πιστεύουμε ότι η κατασκευή είναι κάτι περισσότερο από την ανέγερση δομών." },
-      "3": { "label": "Ικανοποιημένοι Πελάτες", "description": "Πιστεύουμε ότι η κατασκευή είναι κάτι περισσότερο από την ανέγερση δομών." }
+      "1": {
+        "label": "Ολοκληρωμένα Έργα",
+        "description": "Επισκευές και κατασκευές που παραδόθηκαν με συνέπεια και ασφάλεια."
+      },
+      "2": {
+        "label": "Έργα σε Εξέλιξη",
+        "description": "Ενεργά έργα που βρίσκονται αυτή τη στιγμή στις εγκαταστάσεις μας."
+      },
+      "3": {
+        "label": "Ικανοποιημένοι Πελάτες",
+        "description": "Ναυτιλιακές εταιρείες που μας εμπιστεύονται ξανά και ξανά."
+      }
     },
     "team": {
       "heading": "Γνωρίστε τα Αφοσιωμένα Μέλη της Ομάδας μας",
       "animatedText": "ΟΜΑΔΑ",
       "members": {
-        "1": { "name": "Παναγιώτης Ζάχος", "role": "Συν-ιδρυτής & Διευθυντής" },
-        "2": { "name": "Κατζηλιέρης", "role": "Συν-ιδρυτής & Τεχνικός Διευθυντής" },
-        "3": { "name": "Μέλος Ομάδας", "role": "Επικεφαλής Έργων" },
-        "4": { "name": "Μέλος Ομάδας", "role": "Επικεφαλής Συνεργείου" }
+        "1": {
+          "name": "Χρήστος Ζάχος",
+          "role": "Συν-ιδρυτής & Διευθυντής"
+        },
+        "2": {
+          "name": "Νικόλαος Κατζηλιέρης",
+          "role": "Συν-ιδρυτής & Τεχνικός Διευθυντής"
+        }
       }
     },
     "testimonials": {
@@ -532,29 +577,70 @@
     },
     "viewProject": "ΠΡΟΒΟΛΗ ΕΡΓΟΥ",
     "items": {
-      "1": {
-        "category": "Ελασματουργικές Εργασίες",
-        "title": "Επισκευή Πλοίου Anna S"
+      "andros-king": {
+        "title": "Andros King",
+        "category": "Ολική Ανακατασκευή",
+        "intro": "Ολική ανακατασκευή του Andros King, με εκτεταμένες κατασκευές σιδήρου και αλουμινίου, νέες υπερκατασκευές και χώρους ενδιαίτησης — όλα υλοποιημένα βάσει σχεδίων.",
+        "scope": [
+          "Ολική ανακατασκευή",
+          "Κατασκευές σιδήρου και αλουμινίου",
+          "Υπερκατασκευές",
+          "Χώροι ενδιαίτησης",
+          "Σκάλες και κυλιόμενες σκάλες",
+          "Όλα βάσει σχεδίων"
+        ],
+        "sidebarScope": "Ολική ανακατασκευή, κατασκευές σιδήρου/αλουμινίου, υπερκατασκευές & χώροι ενδιαίτησης"
       },
-      "2": {
-        "category": "Εργασίες Αλουμινίου",
-        "title": "Αναβάθμιση Υπερκατασκευής M/V Athina"
+      "north-star": {
+        "title": "North Star",
+        "category": "Μετασκευή Σκάφους",
+        "intro": "Εκτεταμένη μετασκευή του North Star σε πλώρα και πρύμα. Κατόπιν απαίτησης της πλοιοκτήτριας εταιρείας, το σκάφος μικρύνθηκε κατά 6 μέτρα από την πλώρη και 1 μέτρο από την πρύμνη, με κατασκευή νέας γέφυρας — όλες οι εργασίες βάσει σχεδίου και εντός των απαιτούμενων χρόνων.",
+        "scope": [
+          "Ολική ανακατασκευή σκάφους σε πρύμα/πλώρα",
+          "Μείωση μήκους κατά 6 μέτρα από την πλώρη και 1 μέτρο από την πρύμνη, σύμφωνα με τις απαιτήσεις της πλοιοκτήτριας εταιρείας",
+          "Κατασκευή νέας γέφυρας",
+          "Όλες οι εργασίες βάσει σχεδίου και στους απαιτούμενους χρόνους"
+        ],
+        "sidebarScope": "Μετασκευή πλώρης/πρύμνης, μείωση μήκους & κατασκευή νέας γέφυρας"
       },
-      "3": {
-        "category": "Σωληνουργικές Εργασίες",
-        "title": "Ανακαίνιση Μηχανοστασίου Blue Star"
+      "golden-princess": {
+        "title": "Golden Princess",
+        "category": "Εργασίες Μετασκευής",
+        "intro": "Εκτεταμένες εργασίες μετασκευής στο Golden Princess βάσει σχεδίου, που περιλάμβαναν κατασκευή υποδοχής αριστερής άγκυρας, νέο κεντρικό κλιμακοστάσιο, επιμήκυνση καταπελτών και διάφορες σωληνουργικές εργασίες.",
+        "scope": [
+          "Εκτεταμένες εργασίες μετασκευής βάσει σχεδίου",
+          "Κατασκευή υποδοχής αριστερής άγκυρας",
+          "Κατασκευή κεντρικού κλιμακοστασίου",
+          "Επιμήκυνση καταπελτών",
+          "Διάφορες σωληνουργικές εργασίες"
+        ],
+        "sidebarScope": "Μετασκευή, υποδοχή άγκυρας, κεντρικό κλιμακοστάσιο & επιμήκυνση καταπελτών"
       },
-      "4": {
-        "category": "Ελασματουργικές Εργασίες",
-        "title": "Αποκατάσταση Γάστρας Aegean Pearl"
+      "laskaro": {
+        "title": "Laskaro",
+        "category": "Ετήσια Επισκευή & Δεξαμενισμός",
+        "intro": "Προγραμματισμένη ετήσια επισκευή του Laskaro, με δεξαμενισμό, σωληνουργικές εργασίες, συντήρηση sea valves και διάφορες εργασίες αποκατάστασης σε hatch covers, top side και κατάστρωμα.",
+        "scope": [
+          "Προγραμματισμένη ετήσια επισκευή",
+          "Δεξαμενισμός",
+          "Σωληνουργικές εργασίες",
+          "Συντήρηση sea valves",
+          "Διάφορες εργασίες αποκατάστασης (hatch covers, top side, κατάστρωμα)"
+        ],
+        "sidebarScope": "Ετήσια επισκευή, δεξαμενισμός, σωληνουργικές εργασίες & συντήρηση sea valves"
       },
-      "5": {
-        "category": "Βιομηχανικές Εφαρμογές",
-        "title": "Συντήρηση Δεξαμενόπλοιου Olympia"
-      },
-      "6": {
-        "category": "Εργασίες Αλουμινίου",
-        "title": "Κατασκευή Καμπινών Hellenic Spirit"
+      "anna-s": {
+        "title": "Anna S",
+        "category": "Ετήσια Επισκευή & Δεξαμενισμός",
+        "intro": "Προγραμματισμένη ετήσια επισκευή του Anna S, με δεξαμενισμό, σωληνουργικές εργασίες, συντήρηση sea valves και διάφορες εργασίες αποκατάστασης σε hatch covers, top side και κατάστρωμα.",
+        "scope": [
+          "Προγραμματισμένη ετήσια επισκευή",
+          "Δεξαμενισμός",
+          "Σωληνουργικές εργασίες",
+          "Συντήρηση sea valves",
+          "Διάφορες εργασίες αποκατάστασης (hatch covers, top side, κατάστρωμα)"
+        ],
+        "sidebarScope": "Ετήσια επισκευή, δεξαμενισμός, σωληνουργικές εργασίες & συντήρηση sea valves"
       }
     },
     "cta": {
@@ -571,67 +657,12 @@
       "fromHome": "ΑΡΧΙΚΗ",
       "current": "ΛΕΠΤΟΜΕΡΕΙΕΣ ΕΡΓΟΥ"
     },
-    "content": {
-      "title": "Επισκευή Πλοίου Anna S",
-      "intro1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "intro2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "overviewTitle": "Επισκόπηση Έργου",
-      "overviewParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "blockquote": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.”",
-      "designTitle": "Σχεδιασμός & Μηχανολογία",
-      "designParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "designParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "processTitle": "Διαδικασία Ναυπηγοεπισκευής",
-      "processParagraph": "Η αποκατάσταση του πλοίου Anna S περιλάμβανε εκτεταμένο σχεδιασμό και συντονισμό με τους νηογνώμονες, τους μηχανικούς και τους εκπροσώπους του πλοιοκτήτη. Η ομάδα μας αξιοποίησε σύγχρονες τεχνικές ναυπηγοεπισκευής, συμπεριλαμβανομένων προηγμένων μεθόδων συγκόλλησης και προκατασκευασμένων στοιχείων, για να επιταχύνει τις εργασίες και να διασφαλίσει την υψηλότερη ποιότητα.",
-      "challengesTitle": "Προκλήσεις & Λύσεις",
-      "challengesParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "outcomeTitle": "Αποτέλεσμα",
-      "outcomeParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "closingParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "closingParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
-    },
-    "process": {
-      "step1": {
-        "title": "Σχεδιασμός Έργου",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "step2": {
-        "title": "Ανάπτυξη Σχεδιασμού",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "step3": {
-        "title": "Προ-Επισκευή",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "step4": {
-        "title": "Ολοκλήρωση Έργου",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      }
-    },
-    "challenges": {
-      "urban": {
-        "title": "Λιμενική Τοποθεσία",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "sustainability": {
-        "title": "Βιωσιμότητα",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      }
-    },
+    "scopeHeading": "Αντικείμενο Εργασιών",
     "sidebar": {
       "heading": "Πληροφορίες Έργου",
-      "projectName": "Όνομα Έργου:",
-      "projectNameValue": "Επισκευή Πλοίου Anna S",
-      "location": "Τοποθεσία:",
-      "locationValue": "Πέραμα, Ελλάδα",
-      "client": "Πελάτης:",
-      "clientValue": "Aegean Maritime Co.",
-      "completionDate": "Ημερομηνία Ολοκλήρωσης:",
-      "completionDateValue": "Μάρτιος 2024",
-      "projectValue": "Αξία Έργου:",
-      "projectValueValue": "1,2 εκατ. €",
-      "scope": "Αντικείμενο Εργασιών:",
-      "scopeValue": "Ολοκληρωμένη Ναυπηγοεπισκευή"
+      "projectName": "Σκάφος:",
+      "typeOfWorks": "Είδος Εργασιών:",
+      "scope": "Αντικείμενο:"
     },
     "cta": {
       "headingPart1": "Ξεκινήστε το",
@@ -648,10 +679,14 @@
       "current": "ΟΜΑΔΑ"
     },
     "members": {
-      "1": { "name": "Παναγιώτης Ζάχος", "role": "Συν-ιδρυτής & Διευθυντής" },
-      "2": { "name": "Κατζηλιέρης", "role": "Συν-ιδρυτής & Τεχνικός Διευθυντής" },
-      "3": { "name": "Μέλος Ομάδας", "role": "Επικεφαλής Έργων" },
-      "4": { "name": "Μέλος Ομάδας", "role": "Επικεφαλής Συνεργείου" }
+      "1": {
+        "name": "Χρήστος Ζάχος",
+        "role": "Συν-ιδρυτής & Διευθυντής"
+      },
+      "2": {
+        "name": "Νικόλαος Κατζηλιέρης",
+        "role": "Συν-ιδρυτής & Τεχνικός Διευθυντής"
+      }
     }
   },
   "faq": {
@@ -683,12 +718,24 @@
       }
     },
     "journey": {
-      "slide1": { "heading": "Διαχρονική Πορεία Αριστείας στη Ναυπηγοεπισκευή" },
-      "slide2": { "heading": "Χτίζουμε Όνειρα μαζί με τον Συνεργάτη σας στη Ναυπηγοεπισκευή" },
-      "slide3": { "heading": "Διαμορφώνουμε το Μέλλον με Αριστεία στη Ναυπηγοεπισκευή" },
-      "slide4": { "heading": "Navergo — Καινοτομία στη Ναυπηγοεπισκευή, Εμπλουτισμός των Ταξιδιών" },
-      "slide5": { "heading": "Ο Συνεργάτης σας σε Σύγχρονες Λύσεις Ναυπηγοεπισκευής" },
-      "slide6": { "heading": "Navergo — Ανεβάζοντας τον Πήχη στη Ναυπηγοεπισκευή" },
+      "slide1": {
+        "heading": "Διαχρονική Πορεία Αριστείας στη Ναυπηγοεπισκευή"
+      },
+      "slide2": {
+        "heading": "Χτίζουμε Όνειρα μαζί με τον Συνεργάτη σας στη Ναυπηγοεπισκευή"
+      },
+      "slide3": {
+        "heading": "Διαμορφώνουμε το Μέλλον με Αριστεία στη Ναυπηγοεπισκευή"
+      },
+      "slide4": {
+        "heading": "Navergo — Καινοτομία στη Ναυπηγοεπισκευή, Εμπλουτισμός των Ταξιδιών"
+      },
+      "slide5": {
+        "heading": "Ο Συνεργάτης σας σε Σύγχρονες Λύσεις Ναυπηγοεπισκευής"
+      },
+      "slide6": {
+        "heading": "Navergo — Ανεβάζοντας τον Πήχη στη Ναυπηγοεπισκευή"
+      },
       "paragraph": "Πιστεύουμε ότι η ναυπηγοεπισκευή είναι κάτι περισσότερο από εργασίες σε ένα σκάφος· αφορά τη δημιουργία συνεργασιών που εμπνέουν εμπιστοσύνη και κρατούν τους στόλους με ασφάλεια στη θάλασσα. Οι έμπειροι τεχνικοί μας προσφέρουν εξειδίκευση και πάθος για την αριστεία σε κάθε έργο.",
       "features": {
         "feature1": "Εργασίες Αλουμινίου",

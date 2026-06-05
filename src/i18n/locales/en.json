@@ -177,10 +177,14 @@
       "heading": "Meet Our Team",
       "animatedText": "TEAM",
       "members": {
-        "1": { "name": "Panagiotis Zachos", "role": "Co-founder & Director" },
-        "2": { "name": "Katzilieris", "role": "Co-founder & Technical Director" },
-        "3": { "name": "Team Member", "role": "Project Lead" },
-        "4": { "name": "Team Member", "role": "Workshop Foreman" }
+        "1": {
+          "name": "Christos Zachos",
+          "role": "Co-founder & Director"
+        },
+        "2": {
+          "name": "Nikolaos Katzilieris",
+          "role": "Co-founder & Technical Director"
+        }
       }
     },
     "experience": {
@@ -261,6 +265,23 @@
     "cta": {
       "heading": "Start Your Construction Journey with Us Today!",
       "button": "Contact Us"
+    },
+    "delivery": {
+      "heading": "Wherever Your Vessel Is",
+      "items": {
+        "1": {
+          "title": "Works in Greece",
+          "description": "Complete ship-repair works at shipyards and facilities throughout Greece, operating from our base in Perama."
+        },
+        "2": {
+          "title": "Works Abroad",
+          "description": "Our crews travel to overseas shipyards to carry out repairs and conversions, wherever your vessel is located."
+        },
+        "3": {
+          "title": "Underway (En Plo)",
+          "description": "Repairs and maintenance carried out while the vessel is underway and in service, to minimise downtime."
+        }
+      }
     }
   },
   "serviceDetails": {
@@ -432,10 +453,21 @@
       "heading": "Explore Our Most Recent Projects",
       "animatedText": "PORTFOLIO",
       "viewProject": "VIEW PROJECT",
-      "item1": { "title": "Stronghold construction" },
-      "item2": { "title": "The Future of Sustainable Construction Trends to Watch" },
-      "item3": { "title": "The Future of Sustainable Construction Trends to Watch" },
-      "item4": { "title": "The Future of Sustainable Construction Trends to Watch" }
+      "item1": {
+        "title": "Andros King"
+      },
+      "item2": {
+        "title": "North Star"
+      },
+      "item3": {
+        "title": "Golden Princess"
+      },
+      "item4": {
+        "title": "Laskaro"
+      },
+      "item5": {
+        "title": "Anna S"
+      }
     },
     "features": {
       "card1": {
@@ -452,18 +484,31 @@
       }
     },
     "funfact": {
-      "1": { "label": "Completed Projects", "description": "We believe construction is more than building structures." },
-      "2": { "label": "On-Going Projects", "description": "We believe construction is more than building structures." },
-      "3": { "label": "Happy Customers", "description": "We believe construction is more than building structures." }
+      "1": {
+        "label": "Completed Projects",
+        "description": "Repairs and builds delivered consistently and safely."
+      },
+      "2": {
+        "label": "On-Going Projects",
+        "description": "Active projects currently underway at our facilities."
+      },
+      "3": {
+        "label": "Happy Customers",
+        "description": "Shipping companies that trust us time and again."
+      }
     },
     "team": {
       "heading": "Get to Know Our Dedicated Team Members",
       "animatedText": "TEAM",
       "members": {
-        "1": { "name": "Panagiotis Zachos", "role": "Co-founder & Director" },
-        "2": { "name": "Katzilieris", "role": "Co-founder & Technical Director" },
-        "3": { "name": "Team Member", "role": "Project Lead" },
-        "4": { "name": "Team Member", "role": "Workshop Foreman" }
+        "1": {
+          "name": "Christos Zachos",
+          "role": "Co-founder & Director"
+        },
+        "2": {
+          "name": "Nikolaos Katzilieris",
+          "role": "Co-founder & Technical Director"
+        }
       }
     },
     "testimonials": {
@@ -532,29 +577,70 @@
     },
     "viewProject": "VIEW PROJECT",
     "items": {
-      "1": {
-        "category": "Steel Plate Works",
-        "title": "Anna S Vessel Repair"
+      "andros-king": {
+        "title": "Andros King",
+        "category": "Total Reconstruction",
+        "intro": "A complete reconstruction of the Andros King, featuring extensive steel and aluminium fabrication, new superstructures and accommodation spaces — all executed strictly according to drawings.",
+        "scope": [
+          "Total reconstruction",
+          "Steel and aluminium fabrication",
+          "Superstructures",
+          "Accommodation spaces",
+          "Staircases and escalators",
+          "All works carried out to drawings"
+        ],
+        "sidebarScope": "Total reconstruction, steel/aluminium fabrication, superstructures & accommodation spaces"
       },
-      "2": {
-        "category": "Aluminum Works",
-        "title": "M/V Athina Superstructure Upgrade"
+      "north-star": {
+        "title": "North Star",
+        "category": "Vessel Conversion",
+        "intro": "An extensive fore-and-aft conversion of the North Star. At the owner company's request, the vessel was shortened by 6 metres at the bow and 1 metre at the stern, with a newly built bridge — all works delivered to drawing and within the required timeframes.",
+        "scope": [
+          "Complete fore-and-aft reconstruction of the vessel",
+          "Length reduced by 6 metres at the bow and 1 metre at the stern, per the owner company's requirements",
+          "Construction of a new bridge",
+          "All works carried out to drawing and within the required timeframes"
+        ],
+        "sidebarScope": "Bow/stern conversion, length reduction & new bridge construction"
       },
-      "3": {
-        "category": "Piping Works",
-        "title": "Blue Star Engine-Room Refit"
+      "golden-princess": {
+        "title": "Golden Princess",
+        "category": "Conversion Works",
+        "intro": "Extensive conversion works on the Golden Princess, carried out to drawing — including a new port anchor housing, a central staircase, ramp extensions and various piping works.",
+        "scope": [
+          "Extensive conversion works to drawing",
+          "Construction of the port anchor housing",
+          "Construction of the central staircase",
+          "Extension of the ramps",
+          "Various piping works"
+        ],
+        "sidebarScope": "Conversion, anchor housing, central staircase & ramp extension"
       },
-      "4": {
-        "category": "Steel Plate Works",
-        "title": "Aegean Pearl Hull Restoration"
+      "laskaro": {
+        "title": "Laskaro",
+        "category": "Annual Repair & Drydocking",
+        "intro": "Scheduled annual repair of the Laskaro, including drydocking, piping works, sea-valve maintenance and various restoration works on hatch covers, top side and deck.",
+        "scope": [
+          "Scheduled annual repair",
+          "Drydocking",
+          "Piping works",
+          "Sea-valve maintenance",
+          "Various restoration works (hatch covers, top side, deck)"
+        ],
+        "sidebarScope": "Annual repair, drydocking, piping works & sea-valve maintenance"
       },
-      "5": {
-        "category": "Industrial Applications",
-        "title": "Olympia Tanker Maintenance"
-      },
-      "6": {
-        "category": "Aluminum Works",
-        "title": "Hellenic Spirit Cabin Fabrication"
+      "anna-s": {
+        "title": "Anna S",
+        "category": "Annual Repair & Drydocking",
+        "intro": "Scheduled annual repair of the Anna S, including drydocking, piping works, sea-valve maintenance and various restoration works on hatch covers, top side and deck.",
+        "scope": [
+          "Scheduled annual repair",
+          "Drydocking",
+          "Piping works",
+          "Sea-valve maintenance",
+          "Various restoration works (hatch covers, top side, deck)"
+        ],
+        "sidebarScope": "Annual repair, drydocking, piping works & sea-valve maintenance"
       }
     },
     "cta": {
@@ -571,67 +657,12 @@
       "fromHome": "HOME",
       "current": "PROJECT DETAILS"
     },
-    "content": {
-      "title": "Anna S Vessel Repair",
-      "intro1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "intro2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "overviewTitle": "Project Overview",
-      "overviewParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "blockquote": "“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.”",
-      "designTitle": "Design & Engineering",
-      "designParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "designParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "processTitle": "Ship Repair Process",
-      "processParagraph": "The restoration of the Anna S vessel involved extensive planning and coordination with class surveyors, engineers, and owner representatives. Our team utilized modern ship repair techniques, including advanced welding methods and prefabricated components, to streamline the works and ensure the highest level of quality.",
-      "challengesTitle": "Challenges & Solutions",
-      "challengesParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "outcomeTitle": "Outcome",
-      "outcomeParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "closingParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "closingParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
-    },
-    "process": {
-      "step1": {
-        "title": "Project Planning",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "step2": {
-        "title": "Design Development",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "step3": {
-        "title": "Pre-Repair",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "step4": {
-        "title": "Project Completion",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      }
-    },
-    "challenges": {
-      "urban": {
-        "title": "Port Location",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      },
-      "sustainability": {
-        "title": "Sustainability",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-      }
-    },
+    "scopeHeading": "Scope of Works",
     "sidebar": {
       "heading": "Project Information",
-      "projectName": "Project Name:",
-      "projectNameValue": "Anna S Vessel Repair",
-      "location": "Location:",
-      "locationValue": "Perama, Greece",
-      "client": "Client:",
-      "clientValue": "Aegean Maritime Co.",
-      "completionDate": "Completion Date:",
-      "completionDateValue": "March 2024",
-      "projectValue": "Project Value:",
-      "projectValueValue": "€1.2 Million",
-      "scope": "Scope of Work:",
-      "scopeValue": "Full-Service Ship Repair"
+      "projectName": "Vessel:",
+      "typeOfWorks": "Type of Works:",
+      "scope": "Scope:"
     },
     "cta": {
       "headingPart1": "Start Your",
@@ -648,10 +679,14 @@
       "current": "TEAM"
     },
     "members": {
-      "1": { "name": "Panagiotis Zachos", "role": "Co-founder & Director" },
-      "2": { "name": "Katzilieris", "role": "Co-founder & Technical Director" },
-      "3": { "name": "Team Member", "role": "Project Lead" },
-      "4": { "name": "Team Member", "role": "Workshop Foreman" }
+      "1": {
+        "name": "Christos Zachos",
+        "role": "Co-founder & Director"
+      },
+      "2": {
+        "name": "Nikolaos Katzilieris",
+        "role": "Co-founder & Technical Director"
+      }
     }
   },
   "faq": {
@@ -683,12 +718,24 @@
       }
     },
     "journey": {
-      "slide1": { "heading": "Timeless Journey of Crafting Excellence in Ship Repair" },
-      "slide2": { "heading": "Building Dreams With Your Ship Repair Partner" },
-      "slide3": { "heading": "Shaping the Future with Excellence in Ship Repair" },
-      "slide4": { "heading": "Navergo — Innovating Ship Repair, Enriching Voyages" },
-      "slide5": { "heading": "Your Partner in Modern Ship Repair Solutions" },
-      "slide6": { "heading": "Navergo — Elevating Standards in Ship Repair" },
+      "slide1": {
+        "heading": "Timeless Journey of Crafting Excellence in Ship Repair"
+      },
+      "slide2": {
+        "heading": "Building Dreams With Your Ship Repair Partner"
+      },
+      "slide3": {
+        "heading": "Shaping the Future with Excellence in Ship Repair"
+      },
+      "slide4": {
+        "heading": "Navergo — Innovating Ship Repair, Enriching Voyages"
+      },
+      "slide5": {
+        "heading": "Your Partner in Modern Ship Repair Solutions"
+      },
+      "slide6": {
+        "heading": "Navergo — Elevating Standards in Ship Repair"
+      },
       "paragraph": "We believe ship repair is more than work performed on a vessel; it's about building partnerships that inspire trust and keep fleets safely at sea. Our skilled technicians bring expertise and a passion for excellence to every project.",
       "features": {
         "feature1": "Aluminum Works",

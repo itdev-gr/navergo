@@ -103,7 +103,7 @@ export default function Footer() {
                   <a href="tel:+14065550120" className="cs-text-style-h4">(406) 555-0120</a>
                   <div className="cs-height-30"></div>
                   <p>{t("sidebar.sayHello")}</p>
-                  <a href="mailto:info@email.com" className="cs-text-style-h4">info@email.com</a>
+                  <a href="mailto:navergozk@gmail.com" className="cs-text-style-h4">navergozk@gmail.com</a>
                   <div className="cs-height-30"></div>
                   <p>{t("sidebar.meetUs")}</p>
                   <div className="cs-height-5"></div>
@@ -118,7 +118,7 @@ export default function Footer() {
 
         <div className="cs-theme-copyright">
           <div className="cs-footer-copy-text">
-            <p>© 2025 <a href="#" className="themecolor">Navergo.</a> {t("footer.rights")}</p>
+            <p>© {new Date().getFullYear()} <a href="#" className="themecolor">Navergo.</a> {t("footer.rights")}</p>
             <p>{t("footer.credit")} <a href="https://www.itdev.gr" target="_blank" rel="noopener" className="themecolor">ITDEV</a> — <a href="https://www.itdev.gr" target="_blank" rel="noopener" className="themecolor">www.itdev.gr</a></p>
           </div>
         </div>
