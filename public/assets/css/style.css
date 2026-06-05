@@ -4764,7 +4764,8 @@ button i {
 }
 .project-item .project-item-in img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 645 / 500;
+  object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 .project-item .tag-item {
