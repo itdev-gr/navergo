@@ -63,7 +63,7 @@ export default function ProjectDetailsPage() {
           <div className="row stickysec-wrap">
             <div className="col-lg-8 col-md-12 scolling-content">
               <div className="scolling-content">
-                <img data-aos="fade-top" data-aos-duration="400" src={project.images[0]} alt={title} />
+                <img className="project-main-img" data-aos="fade-top" data-aos-duration="400" src={project.images[0]} alt={title} />
                 <div className="cs-height-50"></div>
                 <h3>{title}</h3>
                 <div className="cs-height-10"></div>

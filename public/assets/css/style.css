@@ -4732,6 +4732,14 @@ button i {
   display: block;
 }
 
+.project-main-img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 560px;
+  margin: 0 auto;
+}
+
 .p-info-item {
   margin-bottom: 15px;
 }

@@ -26,19 +26,28 @@ export default function Footer() {
                     <p>{t("about.intro")}</p>
                   </div>
                   <div className="cs-height-30"></div>
-                  <div className="cs-footer-widget-title">
-                    <h6>{t("footer.newsletter")}</h6>
-                    <div className="cs-height-10"></div>
-                  </div>
-                  <form className="cs-constr-newsletter">
-                    <input
-                      className="cs-newsletter-email"
-                      type="email"
-                      placeholder={t("footer.newsletterPlaceholder")}
-                      required
+                  <div className="cs-footer-newsletter-cert" style={{ display: "flex", alignItems: "center", gap: "24px", flexWrap: "wrap" }}>
+                    <div style={{ flex: "1 1 220px" }}>
+                      <div className="cs-footer-widget-title">
+                        <h6>{t("footer.newsletter")}</h6>
+                        <div className="cs-height-10"></div>
+                      </div>
+                      <form className="cs-constr-newsletter">
+                        <input
+                          className="cs-newsletter-email"
+                          type="email"
+                          placeholder={t("footer.newsletterPlaceholder")}
+                          required
+                        />
+                        <button className="cs-newsletter-btn cs_center" type="submit">{t("common.cta.subscribe")}</button>
+                      </form>
+                    </div>
+                    <img
+                      src="/assets/img/iso-9001-certification.png"
+                      alt="LRQA Certified — ISO 9001 — UKAS Management Systems"
+                      style={{ height: "auto", maxWidth: "120px", flex: "0 0 auto" }}
                     />
-                    <button className="cs-newsletter-btn cs_center" type="submit">{t("common.cta.subscribe")}</button>
-                  </form>
+                  </div>
 
                   <div className="cs-height-30"></div>
 
@@ -50,14 +59,6 @@ export default function Footer() {
                       <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i className="flaticon-instagram"></i></a></li>
                     </ul>
                   </div>
-
-                  <div className="cs-height-30"></div>
-
-                  <img
-                    src="/assets/img/iso-9001-certification.png"
-                    alt="LRQA Certified — ISO 9001 — UKAS Management Systems"
-                    style={{ height: "auto", maxWidth: "170px" }}
-                  />
                 </div>
               </div>
 
