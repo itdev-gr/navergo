@@ -4725,6 +4725,13 @@ button i {
   transform: rotate(45deg);
 }
 
+.project-gallery-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
 .p-info-item {
   margin-bottom: 15px;
 }

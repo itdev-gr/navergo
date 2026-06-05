@@ -19,6 +19,7 @@ export default function ProjectDetailsPage() {
   const period = t(`${base}.period`);
   const scope = t(`${base}.scope`, { returnObjects: true });
   const scopeList = Array.isArray(scope) ? scope : [];
+  const galleryImages = project.images.slice(1);
 
   return (
     <>
@@ -78,7 +79,18 @@ export default function ProjectDetailsPage() {
                 </ul>
 
                 <div className="cs-height-40"></div>
-                <img data-aos="fade-top" data-aos-duration="400" src={project.images[1]} alt={title} />
+                {galleryImages.length > 1 ? (
+                  <div className="row project-gallery">
+                    {galleryImages.map((src, i) => (
+                      <div className="col-md-6" key={i}>
+                        <img className="project-gallery-img" data-aos="fade-top" data-aos-duration={400 + i * 100} src={src} alt={title} />
+                        <div className="cs-height-30"></div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <img data-aos="fade-top" data-aos-duration="400" src={galleryImages[0]} alt={title} />
+                )}
               </div>
             </div>
             <div className="col-lg-4 col-md-12 sticky-box">
