@@ -14,7 +14,8 @@ export default function ProjectDetailsPage() {
   const base = `projects.items.${slug}`;
   const title = t(`${base}.title`);
   const category = t(`${base}.category`);
-  const intro = t(`${base}.intro`);
+  const introRaw = t(`${base}.intro`, { returnObjects: true });
+  const introParas = Array.isArray(introRaw) ? introRaw : [introRaw];
   const sidebarScope = t(`${base}.sidebarScope`);
   const period = t(`${base}.period`);
   const scope = t(`${base}.scope`, { returnObjects: true });
@@ -66,7 +67,9 @@ export default function ProjectDetailsPage() {
                 <div className="cs-height-50"></div>
                 <h3>{title}</h3>
                 <div className="cs-height-10"></div>
-                <p>{intro}</p>
+                {introParas.map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
 
                 <div className="cs-height-35"></div>
 

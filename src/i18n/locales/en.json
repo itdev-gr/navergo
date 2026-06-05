@@ -581,7 +581,13 @@
         "title": "Andros King",
         "category": "Total Reconstruction",
         "period": "October 2024",
-        "intro": "A complete reconstruction of the Andros King, featuring extensive steel and aluminium fabrication, new superstructures and accommodation spaces — all executed strictly according to drawings.",
+        "intro": [
+          "The Andros King project was one of the most extensive undertakings handled at our facilities — a total reconstruction in which large parts of the vessel were rebuilt from the structure up. Working entirely to approved drawings, our teams combined heavy steelwork, aluminium fabrication and detailed outfitting into a single coordinated programme, transforming the ship while holding firmly to the engineering, quality and schedule targets agreed with the owner.",
+          "At the heart of the contract was major structural fabrication in both steel and aluminium. Our steelworkers renewed and rebuilt substantial sections of the hull and internal structure, while our aluminium shop produced and installed new superstructure elements where weight saving and corrosion resistance mattered most. Every assembly was prefabricated in panels and blocks, dimensionally checked, and erected to the lines and tolerances called for on the drawings, ensuring a precise fit during installation on board.",
+          "New superstructures were a defining feature of the reconstruction. We built and installed fresh deck-house and superstructure modules, integrating them with the existing hull and with the vessel's mechanical and electrical services. The work demanded careful sequencing — cutting away the old, reinforcing the structure and landing the new sections — all while maintaining the watertight and structural integrity of the ship throughout the project.",
+          "The accommodation spaces were rebuilt to a high standard. Cabins, public areas and service spaces were reconstructed and outfitted, with new bulkheads, decks and linings installed and prepared for the final fit-out. Throughout these areas we manufactured and fitted new staircases and escalators, fabricated in steel to the architect's and engineer's drawings, providing safe, code-compliant circulation between the vessel's decks.",
+          "What distinguished the Andros King project was the discipline behind it: every cut, weld and assembly was executed strictly in accordance with the approved drawings and class requirements, with continuous coordination between our drawing office, production shops and the on-board teams. The result was a comprehensively reconstructed vessel — stronger, renewed and ready for many more years of service — delivered as a single, accountable shipyard package."
+        ],
         "scope": [
           "Total reconstruction",
           "Steel and aluminium fabrication",
@@ -596,7 +602,13 @@
         "title": "North Star",
         "category": "Vessel Conversion",
         "period": "May 2025 – June 2025",
-        "intro": "An extensive fore-and-aft conversion of the North Star. At the owner company's request, the vessel was shortened by 6 metres at the bow and 1 metre at the stern, with a newly built bridge — all works delivered to drawing and within the required timeframes.",
+        "intro": [
+          "The North Star project was a major conversion that changed the very dimensions of the vessel. Carried out entirely to approved drawings and to a demanding schedule, the work reshaped the ship at both ends and gave her a new navigating bridge — a complex undertaking that called for precise engineering, careful structural planning and tight coordination across every trade in the yard.",
+          "The defining feature of the contract was a reduction in the vessel's length, completed at the specific request of the owning company. Our teams shortened the ship by six metres at the bow and by one metre at the stern — removing existing structure, re-fairing the hull lines and rebuilding the bow and stern sections so that the new, shorter profile remained strong, watertight and true to the revised drawings. Work of this kind leaves no room for approximation: each block was set out, cut and rejoined to exact dimensions.",
+          "Reconstructing the bow demanded particularly careful work. After the forward section was removed, we rebuilt the stem and forward structure to the new lines, restoring the hull's strength and form while integrating it cleanly with the remaining structure. At the stern, the one-metre reduction was carried out with the same attention to alignment, ensuring the after body and its appendages continued to function correctly.",
+          "A completely new bridge was built and installed as part of the conversion. We fabricated and erected the new wheelhouse and bridge structure, integrating it with the vessel's existing decks and preparing it for the navigation, communication and control systems it would house. The new bridge improved the vessel's command position while forming a structural and visual centrepiece of the rebuilt ship.",
+          "Throughout the project, every operation was performed strictly according to drawing and, critically, within the timeframes the owner required. Our drawing office, steel shops and erection teams worked in close sequence so that cutting, fabrication and re-assembly progressed without lost time. The North Star was redelivered as a re-proportioned, structurally renewed vessel — reshaped to her owner's specification and returned to service on schedule."
+        ],
         "scope": [
           "Complete fore-and-aft reconstruction of the vessel",
           "Length reduced by 6 metres at the bow and 1 metre at the stern, per the owner company's requirements",
@@ -609,7 +621,13 @@
         "title": "Golden Princess",
         "category": "Conversion Works",
         "period": "June 2023 – May 2024",
-        "intro": "Extensive conversion works on the Golden Princess, carried out to drawing — including a new port anchor housing, a central staircase, ramp extensions and various piping works.",
+        "intro": [
+          "The Golden Princess underwent an extensive conversion at our facilities — a varied programme of structural and mechanical work carried out entirely to approved drawings. The contract brought together heavy steel fabrication, detailed outfitting and piping under a single project plan, modifying and upgrading several major areas of the vessel while she was in our care.",
+          "A key element of the conversion was the construction of a new housing for the port anchor. Our steel teams fabricated and installed the anchor pocket and its surrounding structure, shaping and reinforcing the shell and internal members so that the anchor would stow, run and hold correctly. This is precise, safety-critical work, where the geometry of the recess and the strength of the supporting structure must be exactly right.",
+          "We also built a new central staircase for the vessel. Designed and fabricated to the drawings, the staircase was constructed in steel and installed to provide safe, code-compliant circulation through the heart of the ship, tying the decks together both structurally and in terms of passenger and crew movement.",
+          "The vessel's ramps were extended as part of the works. Our teams lengthened the existing ramp structures, fabricating new sections and integrating them with the original framing and operating arrangements so that the extended ramps remained strong, well-aligned and fully functional. Modifications of this kind demand careful structural detailing to preserve load capacity and smooth operation.",
+          "Alongside the structural scope, a range of piping works was carried out across the vessel. Our pipe shop fabricated, modified and reinstated piping systems affected by the conversion, renewing lines, fittings and supports and testing each system before return to service. Delivered as a coordinated package and executed to drawing throughout, the Golden Princess conversion upgraded the vessel's structure and systems while meeting the standards and schedule set for the project."
+        ],
         "scope": [
           "Extensive conversion works to drawing",
           "Construction of the port anchor housing",
@@ -623,7 +641,13 @@
         "title": "Laskaro",
         "category": "Annual Repair & Drydocking",
         "period": "April 2024 – July 2024",
-        "intro": "Scheduled annual repair of the Laskaro, including drydocking, piping works, sea-valve maintenance and various restoration works on hatch covers, top side and deck.",
+        "intro": [
+          "The Laskaro was received at our yard for her planned annual repair — a docking period scheduled around the vessel's class and statutory survey cycle. Our objective was straightforward but demanding: deliver a complete maintenance and restoration package within a tight, agreed timeframe, so that the ship returned to trade promptly, certificated and in better condition than when she arrived. A single project team took ownership of the contract from docking to delivery, coordinating hull, piping, valve and steel works in one continuous programme.",
+          "Once the vessel was drydocked, we undertook the full underwater programme. The hull was washed down, the shell plating examined and thickness-gauged, and the underwater body, boot-top and topsides blasted or prepared as required and recoated to specification. Sea chests and gratings were cleaned, anodes renewed, and the stern frame, rudder and propeller inspected and reported to the attending surveyor, allowing the docking survey to be completed without delay.",
+          "Piping renewals were a central element of the works. Wasted lengths of sea-water, cooling and service piping were identified, removed and replaced with new spools manufactured in our pipe shop to the vessel's drawings. Joints, flanges and supports were renewed where necessary, and each modified system was pressure-tested and recommissioned, restoring the integrity of the vessel's essential fluid systems.",
+          "The sea valves received a thorough overhaul. Each unit was stripped, cleaned and assessed; sealing faces were lapped, gaskets and worn internals replaced, and the valves rebuilt, refitted and tested for tightness and operation. This careful work protects the ship's hull penetrations and ensures the reliability of the cooling, ballast and firefighting connections that depend on them.",
+          "Restoration work completed the contract. Hatch covers were serviced and their seals and securing devices brought back to class condition; top-side and deck structures suffering from corrosion were renewed in steel and re-protected; and worn deck areas were made good. Throughout, our team worked closely with the owner's representatives and the classification society to keep the project on programme. The Laskaro was redelivered on schedule — fully surveyed, structurally sound and ready to resume service."
+        ],
         "scope": [
           "Scheduled annual repair",
           "Drydocking",
@@ -637,7 +661,13 @@
         "title": "Anna S",
         "category": "Annual Repair & Drydocking",
         "period": "July 2024 – February 2025",
-        "intro": "Scheduled annual repair of the Anna S, including drydocking, piping works, sea-valve maintenance and various restoration works on hatch covers, top side and deck.",
+        "intro": [
+          "The Anna S came alongside our Perama repair facilities for her scheduled annual repair — a planned drydocking campaign that brought together statutory survey requirements and a wide-ranging programme of maintenance, renewal and restoration. From the day she docked, our project team coordinated every discipline — hull, piping, mechanical, steel and coatings — around a fixed delivery window, so that the vessel could return to commercial service on schedule and in full compliance with her classification society and flag administration.",
+          "With the ship safely positioned on the blocks, we completed the full drydocking routine. The underwater hull was high-pressure washed, the shell plating inspected and ultrasonically gauged, and the hull, boot-top and topsides prepared and recoated with the owner's specified paint scheme. Anodes were renewed, sea chests opened, cleaned and re-gridded, and the rudder, propeller and stern gear inspected and cleared, closing out every item on the docking survey before the vessel was floated up.",
+          "Piping formed a major part of the contract. Our pipe shop removed wasted and corroded sections of the sea-water, ballast and service systems and replaced them with new spools, bends and flanges fabricated in-house to the original drawings and material specifications. Each renewed line was hydrostatically pressure-tested and reinstated, so that every system returned to service tight, clean and ready for another year of operation.",
+          "All sea valves were overhauled as part of the planned maintenance. Each valve was dismantled, cleaned and inspected; seats and discs were lapped, worn components and seals renewed, and the valves reassembled, refitted and function-tested. Although routine, this work is critical to the vessel's safety and watertight integrity, and it keeps the ship's sea connections dependable throughout the operating cycle.",
+          "In parallel, our steel and outfitting crews carried out a programme of restoration across the vessel. Hatch covers were refurbished and their securing and sealing arrangements restored; top-side structures and deck areas affected by wear and corrosion were cropped, renewed and recoated; and general steelwork was brought back to a sound, well-protected condition. The Anna S left the yard on time, fully surveyed and noticeably improved — the product of close cooperation between the owners, the attending class surveyors and our shipyard team."
+        ],
         "scope": [
           "Scheduled annual repair",
           "Drydocking",
