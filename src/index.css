@@ -203,14 +203,21 @@ img {
    mark keeps its inline `invert(1)` (needed for a dark logo on light) because
    inline styles outrank this rule. */
 .client-grid .client-item {
+  /* Drop the theme's fixed 220px cell: square/compact marks were stranded in a
+     wide empty box and read as tiny. Let each item hug its logo so the row is a
+     centered strip of uniform-height marks instead. */
+  width: auto !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .client-grid .client-item img {
-  max-height: 50px !important;
+  /* Uniform optical height for every logo regardless of intrinsic aspect; width
+     follows naturally (no distortion), capped so the widest marks don't dominate. */
+  max-height: 60px !important;
+  max-width: 260px;
   width: auto;
-  max-width: 100%;
+  height: auto;
   object-fit: contain;
   opacity: 0.8;
   transition: opacity 0.25s ease;
