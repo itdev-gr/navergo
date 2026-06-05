@@ -580,6 +580,7 @@
       "andros-king": {
         "title": "Andros King",
         "category": "Total Reconstruction",
+        "period": "October 2024",
         "intro": "A complete reconstruction of the Andros King, featuring extensive steel and aluminium fabrication, new superstructures and accommodation spaces — all executed strictly according to drawings.",
         "scope": [
           "Total reconstruction",
@@ -594,6 +595,7 @@
       "north-star": {
         "title": "North Star",
         "category": "Vessel Conversion",
+        "period": "May 2025 – June 2025",
         "intro": "An extensive fore-and-aft conversion of the North Star. At the owner company's request, the vessel was shortened by 6 metres at the bow and 1 metre at the stern, with a newly built bridge — all works delivered to drawing and within the required timeframes.",
         "scope": [
           "Complete fore-and-aft reconstruction of the vessel",
@@ -606,6 +608,7 @@
       "golden-princess": {
         "title": "Golden Princess",
         "category": "Conversion Works",
+        "period": "June 2023 – May 2024",
         "intro": "Extensive conversion works on the Golden Princess, carried out to drawing — including a new port anchor housing, a central staircase, ramp extensions and various piping works.",
         "scope": [
           "Extensive conversion works to drawing",
@@ -619,6 +622,7 @@
       "laskaro": {
         "title": "Laskaro",
         "category": "Annual Repair & Drydocking",
+        "period": "April 2024 – July 2024",
         "intro": "Scheduled annual repair of the Laskaro, including drydocking, piping works, sea-valve maintenance and various restoration works on hatch covers, top side and deck.",
         "scope": [
           "Scheduled annual repair",
@@ -632,6 +636,7 @@
       "anna-s": {
         "title": "Anna S",
         "category": "Annual Repair & Drydocking",
+        "period": "July 2024 – February 2025",
         "intro": "Scheduled annual repair of the Anna S, including drydocking, piping works, sea-valve maintenance and various restoration works on hatch covers, top side and deck.",
         "scope": [
           "Scheduled annual repair",
@@ -662,7 +667,8 @@
       "heading": "Project Information",
       "projectName": "Vessel:",
       "typeOfWorks": "Type of Works:",
-      "scope": "Scope:"
+      "scope": "Scope:",
+      "period": "Period:"
     },
     "cta": {
       "headingPart1": "Start Your",

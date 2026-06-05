@@ -16,6 +16,7 @@ export default function ProjectDetailsPage() {
   const category = t(`${base}.category`);
   const intro = t(`${base}.intro`);
   const sidebarScope = t(`${base}.sidebarScope`);
+  const period = t(`${base}.period`);
   const scope = t(`${base}.scope`, { returnObjects: true });
   const scopeList = Array.isArray(scope) ? scope : [];
 
@@ -92,6 +93,10 @@ export default function ProjectDetailsPage() {
                   <div className="p-info-item">
                     <p>{t("projectDetails.sidebar.typeOfWorks")}</p>
                     <h6>{category}</h6>
+                  </div>
+                  <div className="p-info-item">
+                    <p>{t("projectDetails.sidebar.period")}</p>
+                    <h6>{period}</h6>
                   </div>
                   <div className="p-info-item">
                     <p>{t("projectDetails.sidebar.scope")}</p>
