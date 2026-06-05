@@ -202,28 +202,60 @@ img {
    row feels cohesive, brightening to full strength on hover. The mgc-maritime
    mark keeps its inline `invert(1)` (needed for a dark logo on light) because
    inline styles outrank this rule. */
-.client-grid .client-item {
-  /* Drop the theme's fixed 220px cell: square/compact marks were stranded in a
-     wide empty box and read as tiny. Let each item hug its logo so the row is a
-     centered strip of uniform-height marks instead. */
-  width: auto !important;
+/* Single-row auto-scrolling logo marquee. The track holds two copies of the set
+   and slides by -50% (exactly one set) on an infinite linear loop, so it reads as
+   a continuous scroll. Edges fade out via a mask; hover pauses it. */
+.client-marquee {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+}
+.client-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: client-marquee-scroll 35s linear infinite;
+}
+.client-marquee:hover .client-marquee-track {
+  animation-play-state: paused;
+}
+.client-marquee-item {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 42px;
 }
-.client-grid .client-item img {
-  /* Uniform optical height for every logo regardless of intrinsic aspect; width
-     follows naturally (no distortion), capped so the widest marks don't dominate. */
-  max-height: 60px !important;
-  max-width: 260px;
+.client-marquee-item img {
+  max-height: 55px;
+  max-width: 230px;
   width: auto;
   height: auto;
   object-fit: contain;
   opacity: 0.8;
   transition: opacity 0.25s ease;
 }
-.client-grid .client-item:hover img {
+.client-marquee-item:hover img {
   opacity: 1;
+}
+@keyframes client-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+/* Respect reduced-motion: stop scrolling and wrap into centered rows instead. */
+@media (prefers-reduced-motion: reduce) {
+  .client-marquee {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .client-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 20px 0;
+  }
 }
 
 /* The service-details sidebar contact widget was a flat placeholder image with
