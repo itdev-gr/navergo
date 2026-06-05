@@ -42,6 +42,9 @@ export default function Header() {
                     <li>
                       <Link to="/faq" className="cs-text_b_line"><span>{t("common.nav.faq")}</span></Link>
                     </li>
+                    <li>
+                      <Link to="/gallery" className="cs-text_b_line"><span>{t("common.nav.gallery")}</span></Link>
+                    </li>
                   </ul>
                   <span className="cs_munu_dropdown_toggle"></span>
                 </li>
@@ -68,9 +71,6 @@ export default function Header() {
                   <span className="cs_munu_dropdown_toggle"></span>
                 </li>
                 */}
-                <li>
-                  <Link to="/gallery" className="cs-text_b_line"><span>{t("common.nav.gallery")}</span></Link>
-                </li>
                 <li>
                   <Link to="/contact" className="cs-text_b_line"><span>{t("common.nav.contact")}</span></Link>
                 </li>
