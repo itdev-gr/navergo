@@ -284,3 +284,104 @@ img {
   position: relative;
   z-index: 1;
 }
+
+/* Footer copyright links used .themecolor (maroon) on the maroon footer and
+   were invisible. Keep them white with a subtle hover. */
+.cs-theme-copyright .cs-copyright-link {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.cs-theme-copyright .cs-copyright-link:hover {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
+/* Hero: dark gradient scrim behind the headline so white text stays legible
+   over busy shipyard photos. The slide background is set by template.js on
+   .hero-slider-item, so the scrim is a stacked pseudo-element. */
+.cs-hero-wrap .hero-slider-item {
+  position: relative;
+}
+.cs-hero-wrap .hero-slider-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 12, 46, 0.6) 0%,
+    rgba(10, 12, 46, 0.32) 55%,
+    rgba(10, 12, 46, 0.05) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+.cs-hero-wrap .hero-slider-item .slider-item-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* The template's 1440px media query is missing a closing brace, so its rules
+   to hide the hero arrows and backdrop text on smaller screens never apply.
+   Re-assert them here. */
+@media screen and (max-width: 1440px) {
+  .cs-hero-wrap .cs-arrow-style-fill {
+    display: none !important;
+  }
+  .cs-hero-wrap .hero-slider-item .slider-item-content .cs-hero-title .hero-backdrop-text {
+    display: none;
+  }
+}
+
+/* Interaction polish: every clickable element signals it, with a consistent
+   200ms response. */
+a,
+button,
+[role="button"],
+.cs_icon_btn,
+.cs_video_open,
+.cs_scrollup {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.service-item,
+.team-member,
+.wcu-item,
+.cs-process-item {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.service-item:hover,
+.team-member:hover {
+  box-shadow: 0 14px 34px rgba(10, 12, 46, 0.12);
+}
+
+/* Visible focus for keyboard users, without affecting mouse clicks. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #7c1d1f;
+  outline-offset: 3px;
+}
+
+/* Respect reduced-motion preferences: stop AOS/GSAP-driven movement and the
+   logo marquee for users who ask for it. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

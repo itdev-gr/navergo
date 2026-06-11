@@ -41,7 +41,7 @@ export function bindGlobalHandlers() {
   });
 
   // Dropdown toggles on click for nested menu items (mobile)
-  $(document).on("click", ".menu-item-has-children", function (e) {
+  $(document).on("click", ".menu-item-has-children", function () {
     // Avoid toggling when clicking the inner <a> with real href on desktop
     const $this = $(this);
     $(".menu-item-has-children").not($this).removeClass("active");
@@ -729,7 +729,9 @@ export function cleanupPage() {
   perPageSwipers.forEach((s) => {
     try {
       s.destroy(true, true);
-    } catch {}
+    } catch {
+      /* swiper already destroyed */
+    }
   });
   perPageSwipers = [];
   if (coomingCleanup) {

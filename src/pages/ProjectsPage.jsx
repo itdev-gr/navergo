@@ -50,7 +50,7 @@ export default function ProjectsPage() {
                   <div className="project-item" data-aos="fade-up" data-aos-duration={aosDurations[idx]}>
                     <div className="project-item-in">
                       <Link to={to}>
-                        <img src={project.images[0]} alt={title} />
+                        <img loading="lazy" src={project.images[0]} alt={title} />
                       </Link>
                     </div>
                     <div className="project-item-text">
@@ -90,9 +90,9 @@ export default function ProjectsPage() {
                   <p>{t("projects.cta.paragraph")}</p>
                   <div className="cs-height-25"></div>
 
-                  <a href="#" className="cs-text_b_line"><span>{t("projects.cta.button")}</span>
+                  <Link to="/contact" className="cs-text_b_line"><span>{t("projects.cta.button")}</span>
                     <i className="flaticon-right-arrow"></i>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="cs-height-100"></div>

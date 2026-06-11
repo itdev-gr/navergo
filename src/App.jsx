@@ -1,28 +1,28 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.jsx";
 
+// Route-level code splitting: the home page stays in the main bundle so the
+// landing view paints immediately; every other page loads on demand.
 import HomePage from "./pages/HomePage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
-import ServicePage from "./pages/ServicePage.jsx";
-import ServiceDetailsPage from "./pages/ServiceDetailsPage.jsx";
-import ProjectsPage from "./pages/ProjectsPage.jsx";
-import ProjectDetailsPage from "./pages/ProjectDetailsPage.jsx";
-import TeamPage from "./pages/TeamPage.jsx";
-import TeamDetailsPage from "./pages/TeamDetailsPage.jsx";
-// News & Insights — disabled for now
-// import BlogPage from "./pages/BlogPage.jsx";
-// import BlogStandardPage from "./pages/BlogStandardPage.jsx";
-// import BlogDetailsPage from "./pages/BlogDetailsPage.jsx";
-import ContactPage from "./pages/ContactPage.jsx";
-import FaqPage from "./pages/FaqPage.jsx";
-import GalleryPage from "./pages/GalleryPage.jsx";
-import ComingPage from "./pages/ComingPage.jsx";
-import NotFoundPage from "./pages/NotFoundPage.jsx";
+const AboutPage = lazy(() => import("./pages/AboutPage.jsx"));
+const ServicePage = lazy(() => import("./pages/ServicePage.jsx"));
+const ServiceDetailsPage = lazy(() => import("./pages/ServiceDetailsPage.jsx"));
+const ProjectsPage = lazy(() => import("./pages/ProjectsPage.jsx"));
+const ProjectDetailsPage = lazy(() => import("./pages/ProjectDetailsPage.jsx"));
+const TeamPage = lazy(() => import("./pages/TeamPage.jsx"));
+const TeamDetailsPage = lazy(() => import("./pages/TeamDetailsPage.jsx"));
+const ContactPage = lazy(() => import("./pages/ContactPage.jsx"));
+const FaqPage = lazy(() => import("./pages/FaqPage.jsx"));
+const GalleryPage = lazy(() => import("./pages/GalleryPage.jsx"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage.jsx"));
+const LegalPage = lazy(() => import("./pages/LegalPage.jsx"));
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Suspense fallback={null}>
+        <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -32,19 +32,16 @@ export default function App() {
           <Route path="/project-details" element={<ProjectDetailsPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/team-details" element={<TeamDetailsPage />} />
-          {/* News & Insights — disabled for now
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog-standard" element={<BlogStandardPage />} />
-          <Route path="/blog-details" element={<BlogDetailsPage />} />
-          */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/coming" element={<ComingPage />} />
+          <Route path="/privacy-policy" element={<LegalPage doc="privacy" />} />
+          <Route path="/terms" element={<LegalPage doc="terms" />} />
           <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
-      </Routes>
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }

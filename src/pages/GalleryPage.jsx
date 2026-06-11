@@ -64,7 +64,7 @@ export default function GalleryPage() {
           {GALLERY.map((g) => (
             <div className={`item ${SPAN_CLASS[g.span]}`.trim()} key={g.src}>
               <a href={g.src}>
-                <img src={g.src} alt={g.alt} />
+                <img loading="lazy" src={g.src} alt={g.alt} />
                 <div className="frame gallery-hover-icon">
                   <i className="flaticon-magnifying-glass"></i>
                 </div>

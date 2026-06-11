@@ -26,14 +26,11 @@ export default function SideHeader() {
           <div className="cs-height-20"></div>
           <p>{t("common.brand.tagline")}</p>
           <div className="cs-height-35"></div>
-          <img src="/assets/img/header-sidebar/header-sidebar.jpg" alt="" />
+          <img loading="lazy" src="/assets/img/header-sidebar/header-sidebar.jpg" alt="" />
         </div>
 
         <div className="cs-height-150"></div>
         <div className="cs-sidebar-middle-area">
-          <p>{t("sidebar.sayHello")}</p>
-          <a href="tel:+14065550120"><h6>(406) 555-0120</h6></a>
-          <div className="cs-height-20"></div>
           <p>{t("sidebar.sayHello")}</p>
           <a href="mailto:navergozk@gmail.com"><h6>navergozk@gmail.com</h6></a>
           <div className="cs-height-20"></div>

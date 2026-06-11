@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import CountUp from "../components/CountUp";
 
 const personnelIcons = {
   1: "feature-icon-training",
@@ -60,14 +61,14 @@ export default function AboutPage() {
               </div>
               <div className="cs-height-165"></div>
             </div>
-            <img src="/assets/img/about/cj-left-img.jpg" alt="Cargo vessel docked in a shipyard with industrial cranes at sunset" />
+            <img loading="lazy" src="/assets/img/about/cj-left-img.jpg" alt="Cargo vessel docked in a shipyard with industrial cranes at sunset" />
           </div>
 
           <div className="cj-right">
             <div className="cs-section-height"></div>
             <div className="cs-height-40"></div>
             <div className="cj-right-content">
-              <img src="/assets/img/about/story-shipyard-vessel.jpg" alt="Vessel in dry dock alongside a shipyard crane" />
+              <img loading="lazy" src="/assets/img/about/story-shipyard-vessel.jpg" alt="Vessel in dry dock alongside a shipyard crane" />
               <div className="cs-height-40"></div>
               <Link className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-70 cs-width-220" to="/contact"><span>{t("about.cta.button")}</span></Link>
             </div>
@@ -129,7 +130,7 @@ export default function AboutPage() {
                       <div className="verticle"></div>
                     </div>
                     <div className="cs-feature-icon">
-                      <img src="/assets/img/feature-icon-shipyard.png" alt="" />
+                      <img loading="lazy" src="/assets/img/feature-icon-shipyard.png" alt="" />
                     </div>
                     <h5>{t(`about.values.items.${i}.title`)}</h5>
                     <p>{t(`about.values.items.${i}.description`)}</p>
@@ -257,7 +258,7 @@ export default function AboutPage() {
                     <div className="verticle"></div>
                   </div>
                   <div className="cs-feature-icon">
-                    <img src={`/assets/img/${personnelIcons[i]}.svg`} alt="" />
+                    <img loading="lazy" src={`/assets/img/${personnelIcons[i]}.svg`} alt="" />
                   </div>
                   <h6>{t(`about.personnel.items.${i}`)}</h6>
                 </div>
@@ -333,19 +334,19 @@ export default function AboutPage() {
               <div className="cs-couter-items">
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="400">
                   <h6>{t("about.counter.shipsServiced")}</h6>
-                  <span id="count1" className="amin_auto_count cs-text-style-h2">76</span><span className="cs-text-style-h2">+</span>
+                  <CountUp end={76} className="cs-text-style-h2" /><span className="cs-text-style-h2">+</span>
                   <p>{t("about.counter.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="600">
                   <h6>{t("about.counter.yearsExperience")}</h6>
-                  <span id="count2" className="amin_auto_count cs-text-style-h2">5</span><span className="cs-text-style-h2">+</span>
+                  <CountUp end={5} className="cs-text-style-h2" /><span className="cs-text-style-h2">+</span>
                   <p>{t("about.counter.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="800">
                   <h6>{t("about.counter.repairProjects")}</h6>
-                  <span id="count3" className="amin_auto_count cs-text-style-h2">140</span>
+                  <CountUp end={140} className="cs-text-style-h2" />
                   <p>{t("about.counter.description")}</p>
                 </div>
               </div>
@@ -372,7 +373,7 @@ export default function AboutPage() {
               <div className="team-member">
                 <div className="member-img">
                   <Link to="/team-details?member=1">
-                    <img className="animated-img" src="/assets/img/member/team-member-1.jpg" alt="" />
+                    <img loading="lazy" className="animated-img" src="/assets/img/member/team-member-1.jpg" alt={t("about.team.members.1.name")} />
                   </Link>
                 </div>
                 <div className="member-in">
@@ -385,22 +386,22 @@ export default function AboutPage() {
                   <div className="theme-social">
                     <ul>
                       <li>
-                        <a href="https://www.facebook.com" target="_blank">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-facebook-app-symbol"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com" target="_blank">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-linkedin-big-logo"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://x.com" target="_blank">
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com" target="_blank">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-instagram"></i>
                         </a>
                       </li>
@@ -411,7 +412,7 @@ export default function AboutPage() {
               <div className="team-member">
                 <div className="member-img">
                   <Link to="/team-details?member=2">
-                    <img className="animated-img" src="/assets/img/member/team-member-2.jpg" alt="" />
+                    <img loading="lazy" className="animated-img" src="/assets/img/member/team-member-2.jpg" alt={t("about.team.members.2.name")} />
                   </Link>
                 </div>
                 <div className="member-in">
@@ -424,22 +425,22 @@ export default function AboutPage() {
                   <div className="theme-social">
                     <ul>
                       <li>
-                        <a href="https://www.facebook.com" target="_blank">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-facebook-app-symbol"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com" target="_blank">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-linkedin-big-logo"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://x.com" target="_blank">
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com" target="_blank">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                           <i className="flaticon-instagram"></i>
                         </a>
                       </li>
@@ -462,7 +463,7 @@ export default function AboutPage() {
         <div className="about-experience-wrap">
           <div className="img-ae background-parallax">
             <div className="parallax-image max-height-750">
-              <img src="/assets/img/about/about-experience.jpg" alt="" />
+              <img loading="lazy" src="/assets/img/about/about-experience.jpg" alt="Navergo crew working on a vessel" />
               <div className="ae-title">
                 <h2>{t("about.experience.imageTitle")}</h2>
               </div>
@@ -472,7 +473,7 @@ export default function AboutPage() {
 
             <div className="ae-content theme-dark">
               <div className="cs-experience" data-aos="fade-right" data-aos-duration="400">
-                <img src="/assets/img/about/27.svg" alt="" />
+                <img loading="lazy" src="/assets/img/about/27.svg" alt="" />
                 <div className="cs-height-15"></div>
                 <h4 className="cs-uppercase">{t("about.experience.yearsLine1")} <br /> {t("about.experience.yearsLine2")}</h4>
               </div>

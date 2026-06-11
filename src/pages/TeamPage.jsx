@@ -48,7 +48,7 @@ export default function TeamPage() {
                 <div className="team-member" key={m.key}>
                   <div className="member-img">
                     <Link to={`/team-details?member=${m.key}`}>
-                      <img className="animated-img" src={m.img} alt="" />
+                      <img loading="lazy" className="animated-img" src={m.img} alt={t(`about.team.members.${m.key}.name`, { defaultValue: "" })} />
                     </Link>
                   </div>
                   <div className="member-in">
@@ -61,22 +61,22 @@ export default function TeamPage() {
                     <div className="theme-social">
                       <ul>
                         <li>
-                          <a href="https://www.facebook.com" target="_blank">
+                          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                             <i className="flaticon-facebook-app-symbol"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.linkedin.com" target="_blank">
+                          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                             <i className="flaticon-linkedin-big-logo"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://x.com" target="_blank">
+                          <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                             <i className="flaticon-twitter"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com" target="_blank">
+                          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                             <i className="flaticon-instagram"></i>
                           </a>
                         </li>

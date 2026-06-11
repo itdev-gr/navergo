@@ -63,7 +63,7 @@ export default function ProjectDetailsPage() {
           <div className="row stickysec-wrap">
             <div className="col-lg-8 col-md-12 scolling-content">
               <div className="scolling-content">
-                <img className="project-main-img" data-aos="fade-top" data-aos-duration="400" src={project.images[0]} alt={title} />
+                <img loading="lazy" className="project-main-img" data-aos="fade-top" data-aos-duration="400" src={project.images[0]} alt={title} />
                 <div className="cs-height-50"></div>
                 <h3>{title}</h3>
                 <div className="cs-height-10"></div>
@@ -86,13 +86,13 @@ export default function ProjectDetailsPage() {
                   <div className="row project-gallery">
                     {galleryImages.map((src, i) => (
                       <div className="col-md-6" key={i}>
-                        <img className="project-gallery-img" data-aos="fade-top" data-aos-duration={400 + i * 100} src={src} alt={title} />
+                        <img loading="lazy" className="project-gallery-img" data-aos="fade-top" data-aos-duration={400 + i * 100} src={src} alt={title} />
                         <div className="cs-height-30"></div>
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <img data-aos="fade-top" data-aos-duration="400" src={galleryImages[0]} alt={title} />
+                  <img loading="lazy" data-aos="fade-top" data-aos-duration="400" src={galleryImages[0]} alt={title} />
                 )}
               </div>
             </div>

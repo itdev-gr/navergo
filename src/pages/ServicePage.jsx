@@ -61,7 +61,7 @@ export default function ServicePage() {
                 <div className="col-xl-4 col-md-6" key={id}>
                   <div className="cs-process-item" data-aos="fade-top" data-aos-duration={300 + idx * 200}>
                     <div className="cs-wp-icon">
-                      <img src={`/assets/img/${["one", "two", "three"][idx]}.svg`} alt="" />
+                      <img loading="lazy" src={`/assets/img/${["one", "two", "three"][idx]}.svg`} alt="" />
                     </div>
                     <h6>{t(`service.delivery.items.${id}.title`)}</h6>
                     <p>{t(`service.delivery.items.${id}.description`)}</p>
@@ -97,7 +97,7 @@ export default function ServicePage() {
                   <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
                     <div className="srv-img">
                       <Link to="/service-details">
-                        <img src={serviceImages[idx]} alt="" />
+                        <img loading="lazy" src={serviceImages[idx]} alt={t(`service.items.${key}.title`)} />
                       </Link>
                     </div>
                     <div className="services-content">
@@ -121,48 +121,6 @@ export default function ServicePage() {
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
 
-      {/* Start Testimonial */}
-      <section>
-        <div className="testi-wrapper themecolor-bg-primary">
-          <div className="cs-height-175"></div>
-          <div className="container">
-            <div className="row">
-              <div className="swiper home1-testi-slider1">
-
-                <div className="swiper-wrapper">
-                  {["1", "2"].map((id) => (
-                    <div className="swiper-slide" key={id}>
-                      <div className="testi-slider-item-wrap">
-                        <div className="testi-user">
-                          <img src="/assets/img/avatar-testi.png" alt="" />
-                          <h6>{t(`service.testimonials.${id}.name`)}</h6>
-                          <p>{t(`service.testimonials.${id}.location`)}</p>
-                        </div>
-                        <div className="testi-border">
-                          <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.5" d="M1 0V60.9809H46.3727L1 99.5681V236" stroke="#C1C1C1"/>
-                          </svg>
-                        </div>
-                        <div className="testi-content">
-                          <h4>{t(`service.testimonials.${id}.quote`)}</h4>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="testi-pagi-wrap">
-            <div className="testi-pagination swiper-pagination-vertical"></div>
-          </div>
-          <div className="cs-height-175"></div>
-        </div>
-      </section>
-      {/* End Testimonial */}
-
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
 
       {/* Start Clients */}
       <ClientLogos />

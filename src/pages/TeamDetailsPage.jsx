@@ -1,5 +1,6 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ContactForm from "../components/ContactForm";
 
 export default function TeamDetailsPage() {
   const { t } = useTranslation();
@@ -47,20 +48,13 @@ export default function TeamDetailsPage() {
                   <div className="member-img-single">
                     <div className="animate-img-wrap">
                       <div className="reveal"></div>
-                      <img src={memberImage} alt={memberName} />
+                      <img loading="lazy" src={memberImage} alt={memberName} />
                     </div>
                   </div>
                   <div className="cs-height-50"></div>
                   <div className="cs_gray_bg" data-aos="fade-up" data-aos-duration="500">
                     <div className="cs-height-50"></div>
                     <div className="contact-items">
-                      <div className="contact-item">
-                        <p>{t("teamDetails.contact.sayHello")}</p>
-                        <a href="tel:4065550120">
-                          <h6>(406) 555-0120</h6>
-                        </a>
-                      </div>
-                      <div className="cs-height-20"></div>
                       <div className="contact-item">
                         <p>{t("teamDetails.contact.sayHello")}</p>
                         <a href="mailto:navergozk@gmail.com">
@@ -79,22 +73,22 @@ export default function TeamDetailsPage() {
                       <div className="theme-social contact-items">
                         <ul>
                           <li>
-                            <a href="https://www.facebook.com" target="_blank">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                               <i className="flaticon-facebook-app-symbol"></i>
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.linkedin.com" target="_blank">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                               <i className="flaticon-linkedin-big-logo"></i>
                             </a>
                           </li>
                           <li>
-                            <a href="https://x.com" target="_blank">
+                            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                               <i className="flaticon-twitter"></i>
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.instagram.com" target="_blank">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                               <i className="flaticon-instagram"></i>
                             </a>
                           </li>
@@ -119,16 +113,6 @@ export default function TeamDetailsPage() {
 
                   <div className="cs-height-30"></div>
 
-                  <div className="cs-tm-single-video cs-text_b_line">
-                    <a href="https://www.youtube.com/watch?v=4BzjUq921Y4" className="cs_video_open">
-                      <svg width="20" height="24" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25.7939 15.2383L0.293944 29.9607L0.293945 0.515848L25.7939 15.2383Z" fill="#7c1d1f" />
-                      </svg>
-                      <span>{t("teamDetails.videoIntroduction")}</span>
-                    </a>
-                  </div>
-
-                  <div className="cs-height-70"></div>
 
                   <blockquote>
                     {t("teamDetails.blockquote")}
@@ -204,20 +188,7 @@ export default function TeamDetailsPage() {
                     </div>
 
                     <div className="cs-height-35"></div>
-                    <form>
-                      <div className="input-col-two">
-                        <input type="text" placeholder={t("teamDetails.form.firstName")} required />
-                        <input type="text" placeholder={t("teamDetails.form.lastName")} required />
-                      </div>
-                      <div className="input-col-two">
-                        <input type="tel" placeholder={t("teamDetails.form.phone")} required />
-                        <input type="email" placeholder={t("teamDetails.form.email")} required />
-                      </div>
-                      <input type="text" placeholder={t("teamDetails.form.subject")} required />
-                      <textarea id="message" rows="4" placeholder={t("teamDetails.form.message")} required></textarea>
-                      <button type="submit"
-                        className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>{t("teamDetails.form.send")}</span></button>
-                    </form>
+                    <ContactForm tPrefix="teamDetails.form" />
                   </div>
                 </div>
               </div>

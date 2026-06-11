@@ -4,7 +4,7 @@
     "languageSelector": "Language selector",
     "brand": {
       "name": "Navergo",
-      "tagline": "We believe construction is more than building structures."
+      "tagline": "We believe ship repair is more than fixing steel."
     },
     "nav": {
       "home": "HOME",
@@ -24,7 +24,8 @@
     },
     "header": {
       "support24": "Support 24:",
-      "emailUs": "Email Us:"
+      "emailUs": "Email Us:",
+      "menuToggle": "Menu"
     },
     "cta": {
       "startProject": "Start Project",
@@ -60,10 +61,14 @@
       "industrial": "INDUSTRIAL"
     },
     "rights": "All Rights Reserved.",
-    "credit": "Designed and developed by"
+    "credit": "Designed and developed by",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "newsletterSuccess": "Thank you! Your subscription has been received.",
+    "newsletterError": "Something went wrong. Please try again."
   },
   "about": {
-    "intro": "We believe construction is more than building structures — it's about creating.",
+    "intro": "We believe ship repair is more than fixing steel — it is keeping every vessel safe, reliable and ready for sea.",
     "breadcrumb": {
       "title": "About Us",
       "fromHome": "HOME",
@@ -210,7 +215,15 @@
       "email": "Email Address*",
       "subject": "Subject",
       "message": "Write your message...",
-      "send": "Send Message"
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Your message has been sent. We will get back to you shortly.",
+      "error": "Your message could not be sent. Please try again or email us directly at navergozk@gmail.com."
+    },
+    "map": {
+      "consentHeading": "The map is loaded from Google Maps",
+      "consentNote": "By loading the map you accept Google's privacy policy.",
+      "consentButton": "Load map"
     }
   },
   "service": {
@@ -238,32 +251,20 @@
         "description": "Engine-room piping, cooling systems, and fuel management installation and repair."
       },
       "04": {
-        "title": "04. Residential Construction",
-        "description": "Residential building and renovation projects delivered with precision and care."
+        "title": "04. Tank Works",
+        "description": "Tank cleaning, repairs and coating preparation for ballast, fuel and cargo tanks, ready for survey."
       },
       "05": {
-        "title": "05. Infrastructure Development",
-        "description": "Infrastructure projects engineered for durability, safety, and long-term performance."
+        "title": "05. Structural Reinforcements",
+        "description": "Structural reinforcements and technical restorations executed to class society requirements."
       },
       "06": {
-        "title": "06. Industrial Construction",
-        "description": "Industrial facilities and heavy construction delivered on spec and on schedule."
-      }
-    },
-    "testimonials": {
-      "1": {
-        "name": "Sarah Johnson",
-        "location": "Los Angeles, CA",
-        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
-      },
-      "2": {
-        "name": "Sarah Johnson",
-        "location": "Los Angeles, CA",
-        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
+        "title": "06. Pneumatic & Hydraulic Systems",
+        "description": "Maintenance and repair of pneumatic and hydraulic systems, from deck machinery to engine-room equipment."
       }
     },
     "cta": {
-      "heading": "Start Your Construction Journey with Us Today!",
+      "heading": "Ready to Service Your Vessel? Contact Us Today!",
       "button": "Contact Us"
     },
     "delivery": {
@@ -291,57 +292,57 @@
       "current": "SERVICE DETAILS"
     },
     "content": {
-      "title": "Commercial Construction",
-      "intro1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "intro2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "title": "Ship Repair & Maintenance",
+      "intro1": "Navergo delivers complete ship repair and maintenance services at the port of Perama, the heart of Greece's ship-repair zone. Our crews undertake steel and aluminium structural work, piping, tank works and structural reinforcements on every type of vessel — afloat, alongside or in dry dock.",
+      "intro2": "Every project is planned around the vessel's schedule and class requirements, so the work is completed on time, within budget and to the standards your fleet operates under.",
       "whyChoose": "Why Choose Us?",
-      "whyChooseParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "whyChooseParagraph": "Shipowners and technical managers choose Navergo because we deliver: experienced foremen, certified welders and a coordinated network of workshops mean reliable quality and predictable turnaround on every job.",
       "workingProcess": "Our Working Process",
-      "workingProcessParagraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+      "workingProcessParagraph": "From the first inspection to final delivery, we follow a clear, supervised process that keeps you informed at every stage of the repair.",
       "detailsTitle": "Services Details",
-      "detailsParagraph1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "detailsParagraph2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
-      "detailsParagraph3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+      "detailsParagraph1": "Our steel-plate and aluminium teams handle hull plating renewals, internal structural members, decks, bulkheads and superstructures, working to class society specifications and survey requirements.",
+      "detailsParagraph2": "Piping crews fabricate and renew systems in steel, stainless and non-ferrous materials — ballast, cooling, fuel, hydraulic and deck lines — pressure-tested and ready for survey.",
+      "detailsParagraph3": "Alongside repairs we carry out tank works, structural reinforcements and technical restorations, with full documentation handed over on completion."
     },
     "whyChooseCards": {
       "comprehensive": {
         "title": "Comprehensive Solutions",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "One contractor for steelwork, piping, tanks and technical restorations — fewer interfaces, clearer responsibility, faster completion."
       },
       "sustainable": {
         "title": "Sustainable Practices",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "Materials, consumables and waste are managed responsibly, in line with port and environmental regulations."
       },
       "timely": {
         "title": "Timely Delivery",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "Repair windows are expensive. We plan around your schedule and man the job to finish inside the agreed window."
       },
       "quality": {
         "title": "Quality & Compliance",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "ISO 9001-certified processes and work executed to class society requirements, with inspection records handed over at delivery."
       }
     },
     "process": {
       "step1": {
         "title": "Project Planning",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "We inspect the vessel, agree the scope with your technical team and submit a clear offer with timeline and cost."
       },
       "step2": {
         "title": "Design Development",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "Repair drawings and material specifications are prepared and aligned with class requirements before any cutting begins."
       },
       "step3": {
         "title": "Pre-Construction",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "Materials, staging and crews are arranged in advance so work starts the moment the vessel is ready."
       },
       "step4": {
         "title": "Project Completion",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "description": "The job closes with quality control, testing in the presence of the surveyor where required, and full handover documentation."
       }
     },
     "sidebar": {
       "otherServices": "OTHERS SERVICES",
-      "contactTitle": "OTHERS SERVICES",
+      "contactTitle": "CONTACT US",
       "sayHello": "Say hello!",
       "meetUs": "Meet Us:",
       "address": "Leof. Dimokratias 397\nPerama 188 63, Greece",
@@ -358,31 +359,31 @@
     },
     "cta": {
       "headingPart1": "Start Your",
-      "headingPart2": "Construction",
-      "headingPart3": "Journey with Us Today!",
-      "paragraph": "From concept to completion, we deliver exceptional construction services tailored to your needs. Contact us now for a free consultation!",
-      "button": "Get Consultation"
+      "headingPart2": "Next Docking",
+      "headingPart3": "with Us Today!",
+      "paragraph": "From inspection to final delivery, we provide ship repair services tailored to your fleet. Contact us today for an offer!",
+      "button": "Request an Offer"
     }
   },
   "home": {
     "hero": {
       "slide1": {
-        "strong": "Construction",
-        "normal": "Solutions for Your Modern Living",
+        "strong": "SHIP REPAIR",
+        "normal": "Solutions for Modern Shipping",
         "backdrop": "NAVERGO NAVERGO NAVE",
-        "subtitle": "Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures"
+        "subtitle": "Your reliable partner for ship repair works at the port of Perama."
       },
       "slide2": {
-        "strong": "Construction",
-        "normal": "Solutions for Modern Excellence",
+        "strong": "SHIPYARD",
+        "normal": "Excellence in Every Repair",
         "backdrop": "NAVERGO NAVERGO NAVE",
-        "subtitle": "Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures"
+        "subtitle": "Specialised aluminium, steel-plate and piping crews."
       },
       "slide3": {
-        "strong": "Construction",
+        "strong": "EXPERIENCE",
         "normal": "That Stands the Test of Time",
         "backdrop": "NAVERGO NAVERGO NAVE",
-        "subtitle": "Your Partner in Creating Sustainable and Innovative Structures Your Partner in Creating Sustainable and Innovative Structures"
+        "subtitle": "Decades of general ship repairs, certified to ISO 9001."
       },
       "social": {
         "instagram": "INSTAGRAM",
@@ -414,7 +415,7 @@
         }
       ]
     },
-    "marquee": "Quality Construction, On Time, Every Time.",
+    "marquee": "Quality Repairs, On Time, Every Time.",
     "services": {
       "heading": "Maintenance Services Tailored to Build Your Success",
       "animatedText": "SERVICES",
@@ -471,7 +472,7 @@
     },
     "features": {
       "card1": {
-        "title": "Optimized Construction",
+        "title": "Optimised Ship Repair",
         "description": "Every ship repair is engineered with precision and lean execution — maximizing vessel uptime while never compromising on craftsmanship."
       },
       "card2": {
@@ -511,31 +512,19 @@
         }
       }
     },
-    "testimonials": {
-      "1": {
-        "name": "Sarah Johnson",
-        "location": "Los Angeles, CA",
-        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
-      },
-      "2": {
-        "name": "Sarah Johnson",
-        "location": "Los Angeles, CA",
-        "quote": "We were incredibly impressed with work on our project. They were professional, efficient, and delivered a high-quality product on time and within budget. We would definitely recommend them to others. Definitely recommend them."
-      }
-    },
     "whyChoose": {
-      "headingPart1": "Building Beyond Expectations",
+      "headingPart1": "Repairs Beyond Expectations",
       "headingPart2": "with Innovation & Precision",
-      "paragraph": "Construction is more than building structures — it's about crafting spaces that inspire and enrich lives. Our skilled professionals bring expertise and a passion for excellence to every project we deliver.",
+      "paragraph": "Ship repair is more than working steel — it is keeping vessels safe, reliable and earning. Our skilled crews bring expertise and a passion for excellence to every project we deliver.",
       "readMore": "Read More",
       "feature1": "Comprehensive Project Management",
-      "feature2": "High-Quality Craftsmanship",
+      "feature2": "High-Quality Workmanship",
       "feature3": "Sustainable and Innovative Solutions"
     },
     "process": {
       "step1": {
         "title": "Project Planning",
-        "description": "We map out your vision, budget, and timeline across residential, commercial, and infrastructure projects through detailed feasibility studies and site assessments."
+        "description": "We map out the scope, budget and timeline of every docking and repair through detailed on-board inspections and assessments."
       },
       "step2": {
         "title": "Design Development",
@@ -547,7 +536,7 @@
       },
       "step4": {
         "title": "Project Completion",
-        "description": "We deliver finished spaces with full quality inspections, final walkthroughs, and ongoing support — from new construction to project management and consulting."
+        "description": "We hand the vessel back with full quality inspections, sea-trial support where needed, and ongoing technical assistance after delivery."
       }
     },
     "experience": {
@@ -858,6 +847,80 @@
     "faq": "FAQ",
     "gallery": "Gallery",
     "coming": "Coming Soon",
-    "404": "Page Not Found"
+    "404": "Page Not Found",
+    "privacypolicy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "meta": {
+    "defaultDescription": "Navergo provides ship repair and maintenance services at the port of Perama, Greece — steel and aluminium works, piping, tank works and structural reinforcements.",
+    "descriptions": {
+      "home": "Navergo provides ship repair and maintenance services at the port of Perama, Greece — steel and aluminium works, piping, tank works and structural reinforcements.",
+      "about": "Learn about Navergo, an ISO 9001-certified ship repair company operating in the Perama ship-repair zone, Greece.",
+      "service": "Specialised ship repair services: steel-plate works, aluminium works, piping, tank works, structural reinforcements and technical restorations.",
+      "servicedetails": "Detailed overview of Navergo's ship repair and maintenance services at the port of Perama, Greece.",
+      "projects": "Recent ship repair and maintenance projects delivered by Navergo for shipping companies operating in Greece.",
+      "team": "Meet the people behind Navergo — the team coordinating ship repairs in the Perama ship-repair zone.",
+      "contact": "Contact Navergo for ship repair and maintenance offers — Leof. Dimokratias 397, Perama 188 63, Greece.",
+      "faq": "Answers to common questions about Navergo's ship repair, docking and maintenance services.",
+      "gallery": "Photo gallery of ship repair and maintenance projects carried out by Navergo."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: 10 June 2026",
+      "sections": [
+        {
+          "h": "Who we are",
+          "p": "Navergo Ναυπηγοεπισκευαστική Ε.Ε. (\"Navergo\"), Leof. Dimokratias 397, Perama 188 63, Greece, is the controller of any personal data processed through this website. You can reach us at navergozk@gmail.com."
+        },
+        {
+          "h": "What data we collect",
+          "p": "When you use our contact or newsletter forms we process the details you submit: name, phone number, e-mail address and the content of your message. We do not use advertising or analytics cookies. Your language preference is stored locally in your browser and is never transmitted to us."
+        },
+        {
+          "h": "Why we process it",
+          "p": "We use your data solely to respond to your enquiry or to send you updates you requested (Article 6(1)(b) and (a) GDPR). We do not sell or share your data for marketing purposes."
+        },
+        {
+          "h": "Form processing",
+          "p": "Form submissions are delivered to our e-mail inbox via the FormSubmit service, which acts as a processor for transmission only. Messages are kept for as long as needed to handle your request and are then deleted."
+        },
+        {
+          "h": "Third-party content",
+          "p": "The map on our contact page is loaded from Google Maps only after you click to load it; from that point Google's privacy policy applies. Fonts are served by Google Fonts. Our hosting provider may keep standard technical logs (IP address, time of request) for security purposes."
+        },
+        {
+          "h": "Your rights",
+          "p": "You may request access to, rectification or erasure of your personal data, restriction of processing, or object to processing, by e-mailing navergozk@gmail.com. You also have the right to lodge a complaint with the Hellenic Data Protection Authority (www.dpa.gr)."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "updated": "Last updated: 10 June 2026",
+      "sections": [
+        {
+          "h": "Use of this website",
+          "p": "This website presents the services of Navergo Ναυπηγοεπισκευαστική Ε.Ε. The content is provided for general information only and does not constitute a binding offer. Offers for specific works are provided upon request."
+        },
+        {
+          "h": "Intellectual property",
+          "p": "All content on this site — texts, photographs, logos and graphics — belongs to Navergo or its licensors and may not be reproduced without prior written permission."
+        },
+        {
+          "h": "Liability",
+          "p": "We make reasonable efforts to keep the information on this site accurate and up to date, but we provide no warranty as to its completeness. Navergo is not liable for damage arising from the use of this website or from temporary unavailability."
+        },
+        {
+          "h": "External links",
+          "p": "Links to third-party websites are provided for convenience; we are not responsible for their content or privacy practices."
+        },
+        {
+          "h": "Applicable law",
+          "p": "These terms are governed by Greek law. Any dispute arising from the use of this website falls under the jurisdiction of the courts of Piraeus, Greece."
+        }
+      ]
+    }
   }
 }

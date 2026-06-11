@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import ContactForm from "../components/ContactForm";
+import CountUp from "../components/CountUp";
 import { projects } from "../data/projects";
 
 const homeServiceKeys = ["01", "02", "03", "04", "05", "06", "07"];
@@ -52,7 +54,7 @@ export default function HomePage() {
                     <div className="slider-item-content">
                      <div className="cs-hero-title">
                       <div className="cs-hero-title-in">
-                        <h1><span className="hero-strong-title constr-splite">{t("home.hero.slide2.strong")}</span> <span className="cs-hero-title-normal hero-second-splite">{t("home.hero.slide2.normal")}</span></h1>
+                        <h2><span className="hero-strong-title constr-splite">{t("home.hero.slide2.strong")}</span> <span className="cs-hero-title-normal hero-second-splite">{t("home.hero.slide2.normal")}</span></h2>
                       </div>
                       <div className="ae-title hero-backdrop-text constr-splite">
                         <h2>{t("home.hero.slide2.backdrop")}</h2>
@@ -71,7 +73,7 @@ export default function HomePage() {
                     <div className="slider-item-content">
                      <div className="cs-hero-title">
                       <div className="cs-hero-title-in">
-                        <h1><span className="hero-strong-title constr-splite">{t("home.hero.slide3.strong")}</span> <span className="cs-hero-title-normal hero-second-splite">{t("home.hero.slide3.normal")}</span></h1>
+                        <h2><span className="hero-strong-title constr-splite">{t("home.hero.slide3.strong")}</span> <span className="cs-hero-title-normal hero-second-splite">{t("home.hero.slide3.normal")}</span></h2>
                       </div>
                       <div className="ae-title hero-backdrop-text constr-splite">
                         <h2>{t("home.hero.slide3.backdrop")}</h2>
@@ -90,9 +92,9 @@ export default function HomePage() {
           </div>
           <div className="cs-hero-social">
             <ul>
-              <li><a href="https://instagram.com" target="_blank">{t("home.hero.social.instagram")}</a></li>
-              <li><a href="https://linkedin.com" target="_blank">{t("home.hero.social.linkedin")}</a></li>
-              <li><a href="https://facebook.com" target="_blank">{t("home.hero.social.facebook")}</a></li>
+              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">{t("home.hero.social.instagram")}</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">{t("home.hero.social.linkedin")}</a></li>
+              <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">{t("home.hero.social.facebook")}</a></li>
             </ul>
           </div>
           <div className="cs-arrow-style-fill">
@@ -120,7 +122,7 @@ export default function HomePage() {
                   {/* Section to Section Gap */}
                 <div className="animate-img-wrap">
                   <div className="reveal"></div>
-                  <img className="the-animated-image" src="/assets/img/service/steelwork/steelwork-01.jpg" alt="" />
+                  <img loading="lazy" className="the-animated-image" src="/assets/img/service/steelwork/steelwork-01.jpg" alt={t("home.journey.title", { defaultValue: "Navergo shipyard works" })} />
                 </div>
               </div>
             </div>
@@ -217,7 +219,7 @@ export default function HomePage() {
                     <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
                       <div className="srv-img">
                         <Link to="/service-details">
-                          <img src={homeServiceImages[key].src} alt={homeServiceImages[key].alt} />
+                          <img loading="lazy" src={homeServiceImages[key].src} alt={homeServiceImages[key].alt} />
                         </Link>
                       </div>
                       <div className="services-content">
@@ -264,7 +266,7 @@ export default function HomePage() {
                 const title = t(`home.projects.item${i + 1}.title`);
                 return (
                   <Link key={p.slug} to={`/project-details?project=${p.slug}`} className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration={300 + i * 100}>
-                    <img src={p.images[0]} alt={title} />
+                    <img loading="lazy" src={p.images[0]} alt={title} />
                     <div className="project-meta-data">
                       <div className="cs-project-content">
                         <h5>{title}</h5>
@@ -278,7 +280,7 @@ export default function HomePage() {
 
             <div className="cs-project-item second">
               <Link to={`/project-details?project=${projects[2].slug}`} className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration="500">
-                <img src={projects[2].images[0]} alt={t("home.projects.item3.title")} />
+                <img loading="lazy" src={projects[2].images[0]} alt={t("home.projects.item3.title")} />
                 <div className="project-meta-data">
                   <div className="cs-project-content">
                     <h4>{t("home.projects.item3.title")}</h4>
@@ -293,7 +295,7 @@ export default function HomePage() {
                 const title = t(`home.projects.item${i + 4}.title`);
                 return (
                   <Link key={p.slug} to={`/project-details?project=${p.slug}`} className="cs-project-item-content-in" data-aos="fade-top" data-aos-duration={600 + i * 100}>
-                    <img src={p.images[0]} alt={title} />
+                    <img loading="lazy" src={p.images[0]} alt={title} />
                     <div className="project-meta-data">
                       <div className="cs-project-content">
                         <h5>{title}</h5>
@@ -348,7 +350,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="cs-feature-icon">
-                    <img src="/assets/img/feature-icon-shipyard.svg" alt="Shipyard construction" />
+                    <img loading="lazy" src="/assets/img/feature-icon-shipyard.svg" alt="Shipyard construction" />
                   </div>
                   <h5>{t("home.features.card1.title")}</h5>
                   <p>{t("home.features.card1.description")}</p>
@@ -379,7 +381,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="cs-feature-icon">
-                    <img src="/assets/img/feature-icon-2.svg" alt="" />
+                    <img loading="lazy" src="/assets/img/feature-icon-crane-hull.svg" alt="" />
                   </div>
                   <h5>{t("home.features.card2.title")}</h5>
                   <p>{t("home.features.card2.description")}</p>
@@ -410,7 +412,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="cs-feature-icon">
-                    <img src="/assets/img/feature-icon-ship.svg" alt="" />
+                    <img loading="lazy" src="/assets/img/feature-icon-checklist.svg" alt="" />
                   </div>
                   <h5>{t("home.features.card3.title")}</h5>
                   <p>{t("home.features.card3.description")}</p>
@@ -433,19 +435,19 @@ export default function HomePage() {
               <div className="cs-couter-items">
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="400">
                   <h6>{t("home.funfact.1.label")}</h6>
-                  <span id="count1" className="amin_auto_count cs-text-style-h2">76</span><span className="cs-text-style-h2">+</span>
+                  <CountUp end={76} className="cs-text-style-h2" /><span className="cs-text-style-h2">+</span>
                   <p>{t("home.funfact.1.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="600">
                   <h6>{t("home.funfact.2.label")}</h6>
-                  <span id="count2" className="amin_auto_count cs-text-style-h2">5</span><span className="cs-text-style-h2">+</span>
+                  <CountUp end={5} className="cs-text-style-h2" /><span className="cs-text-style-h2">+</span>
                   <p>{t("home.funfact.2.description")}</p>
                 </div>
                 <div className="counter-sep"></div>
                 <div className="counter-item" data-aos="fade-top" data-aos-duration="800">
                   <h6>{t("home.funfact.3.label")}</h6>
-                  <span id="count3" className="amin_auto_count cs-text-style-h2">140</span>
+                  <CountUp end={140} className="cs-text-style-h2" />
                   <p>{t("home.funfact.3.description")}</p>
                 </div>
               </div>
@@ -459,67 +461,6 @@ export default function HomePage() {
       <div className="cs-section-height"></div>
       {/* Section to Section Gap */}
 
-      {/* Start Testimonial */}
-      <section>
-        <div className="testi-wrapper">
-          <div className="container for-quote-mark">
-            <div className="row">
-              <div className="swiper home1-testi-slider1">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div className="testi-slider-item-wrap">
-                      <div className="testi-user" data-aos="fade-up" data-aos-duration="300">
-                        <img className="testi-img" src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>{t("home.testimonials.1.name")}</h6>
-                        <p>{t("home.testimonials.1.location")}</p>
-                      </div>
-                      <div className="testi-border">
-                        <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.5" d="M1 0V60.9809H46.3727L1 99.5681V236" stroke="#C1C1C1" />
-                        </svg>
-                      </div>
-                      <div className="testi-content">
-                        <img src="/assets/img/star.svg" alt="" />
-                        <div className="cs-height-20"></div>
-                        <h4 className="testi-main-content">{t("home.testimonials.1.quote")}</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="testi-slider-item-wrap">
-                      <div className="testi-user">
-                        <img src="/assets/img/avatar-testi.png" alt="" />
-                        <h6>{t("home.testimonials.2.name")}</h6>
-                        <p>{t("home.testimonials.2.location")}</p>
-                      </div>
-                      <div className="testi-border">
-                        <svg width="48" height="236" viewBox="0 0 48 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.5" d="M1 0V60.9809H46.3727L1 99.5681V236" stroke="#C1C1C1" />
-                        </svg>
-                      </div>
-                      <div className="testi-content">
-                        <img src="/assets/img/star.svg" alt="" />
-                        <div className="cs-height-20"></div>
-                        <h4 className="testi-main-content">{t("home.testimonials.2.quote")}</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="testi-quote-mark opacity01">
-              <img src="/assets/img/quotation-mark.svg" alt="" />
-            </div>
-          </div>
-          <div className="testi-pagi-wrap">
-            <div className="testi-pagination swiper-pagination-vertical"></div>
-          </div>
-        </div>
-      </section>
-      {/* End Testimonial */}
-
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
 
       {/* Start Why Choose Us & Video */}
       <section>
@@ -530,7 +471,7 @@ export default function HomePage() {
               <div className="col-xl-3 col-md-6">
                 <div className="cs-process-item" data-aos="fade-top" data-aos-duration="300">
                   <div className="cs-wp-icon">
-                    <img src="/assets/img/one.svg" alt="" />
+                    <img loading="lazy" src="/assets/img/one.svg" alt="" />
                   </div>
                   <h6>{t("home.process.step1.title")}</h6>
                   <p>{t("home.process.step1.description")}</p>
@@ -539,7 +480,7 @@ export default function HomePage() {
               <div className="col-xl-3 col-md-6">
                 <div className="cs-process-item" data-aos="fade-top" data-aos-duration="500">
                   <div className="cs-wp-icon">
-                    <img src="/assets/img/two.svg" alt="" />
+                    <img loading="lazy" src="/assets/img/two.svg" alt="" />
                   </div>
                   <h6>{t("home.process.step2.title")}</h6>
                   <p>{t("home.process.step2.description")}</p>
@@ -548,7 +489,7 @@ export default function HomePage() {
               <div className="col-xl-3 col-md-6">
                 <div className="cs-process-item" data-aos="fade-top" data-aos-duration="700">
                   <div className="cs-wp-icon">
-                    <img src="/assets/img/three.svg" alt="" />
+                    <img loading="lazy" src="/assets/img/three.svg" alt="" />
                   </div>
                   <h6>{t("home.process.step3.title")}</h6>
                   <p>{t("home.process.step3.description")}</p>
@@ -557,7 +498,7 @@ export default function HomePage() {
               <div className="col-xl-3 col-md-6">
                 <div className="cs-process-item" data-aos="fade-top" data-aos-duration="900">
                   <div className="cs-wp-icon">
-                    <img src="/assets/img/four.svg" alt="" />
+                    <img loading="lazy" src="/assets/img/four.svg" alt="" />
                   </div>
                   <h6>{t("home.process.step4.title")}</h6>
                   <p>{t("home.process.step4.description")}</p>
@@ -578,7 +519,7 @@ export default function HomePage() {
         <div className="about-experience-wrap bottom-align">
           <div className="img-ae background-parallax">
             <div className="parallax-image max-height-750">
-              <img src="/assets/img/about/ship-repair-experience.jpg" alt="Cargo ship undergoing repair in dry dock at shipyard" />
+              <img loading="lazy" src="/assets/img/about/ship-repair-experience.jpg" alt="Cargo ship undergoing repair in dry dock at shipyard" />
               <div className="ae-title">
                 <h2>NAVERGO NAVERGO NAVE</h2>
               </div>
@@ -587,7 +528,7 @@ export default function HomePage() {
           <div className="content-for-parallax">
             <div className="ae-content theme-dark">
               <div className="cs-experience" data-aos="fade-right" data-aos-duration="400">
-                <img src="/assets/img/about/27.svg" alt="" />
+                <img loading="lazy" src="/assets/img/about/27.svg" alt="" />
                 <div className="cs-height-15"></div>
                 <h4 className="cs-uppercase">{t("home.experience.yearsLine1")} <br /> {t("home.experience.yearsLine2")}</h4>
               </div>
@@ -609,7 +550,7 @@ export default function HomePage() {
                 <div className="contact-img">
                   <div className="animate-img-wrap">
                     <div className="reveal"></div>
-                    <img className="the-animated-image" src="/assets/img/about/story-shipyard-vessel.jpg" alt="Πλοίο σε εργασίες ναυπηγοεπισκευής στο ναυπηγείο της Navergo" />
+                    <img loading="lazy" className="the-animated-image" src="/assets/img/about/story-shipyard-vessel.jpg" alt="Πλοίο σε εργασίες ναυπηγοεπισκευής στο ναυπηγείο της Navergo" />
                   </div>
                 </div>
               </div>
@@ -621,19 +562,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="cs-height-35"></div>
-                <form>
-                  <div className="input-col-two">
-                    <input type="text" placeholder={t("home.contact.form.firstName")} required />
-                    <input type="text" placeholder={t("home.contact.form.lastName")} required />
-                  </div>
-                  <div className="input-col-two">
-                    <input type="tel" placeholder={t("home.contact.form.phone")} required />
-                    <input type="email" placeholder={t("home.contact.form.email")} required />
-                  </div>
-                  <input type="text" placeholder={t("home.contact.form.subject")} required />
-                  <textarea id="message" rows="4" placeholder={t("home.contact.form.message")} required></textarea>
-                  <button type="submit" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>{t("common.cta.sendMessage")}</span></button>
-                </form>
+                <ContactForm tPrefix="home.contact.form" />
               </div>
 
             </div>

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import ContactForm from "../components/ContactForm";
+import ConsentMap from "../components/ConsentMap";
 
 export default function ContactPage() {
   const { t } = useTranslation();
@@ -39,10 +41,7 @@ export default function ContactPage() {
             <div className="row cs_center" data-src="/assets/img/pattern-bg-for-light.png">
 
               <div className="col-xl-7 col-lg-6 col-md-12">
-                <iframe
-                  src="https://www.google.com/maps?q=Leof.+Dimokratias+397,+Perama+188+63,+Greece&output=embed"
-                  allowFullScreen="">
-                </iframe>
+                <ConsentMap />
               </div>
 
               <div className="col-xl-5 col-lg-6 col-md-12">
@@ -53,19 +52,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="cs-height-35"></div>
-                  <form>
-                      <div className="input-col-two">
-                        <input type="text" placeholder={t("contact.form.firstName")} required />
-                        <input type="text" placeholder={t("contact.form.lastName")} required />
-                      </div>
-                      <div className="input-col-two">
-                        <input type="tel" placeholder={t("contact.form.phone")} required />
-                        <input type="email" placeholder={t("contact.form.email")} required />
-                      </div>
-                      <input type="text" placeholder={t("contact.form.subject")} required />
-                      <textarea id="message" rows="4" placeholder={t("contact.form.message")} required></textarea>
-                      <button type="submit" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-220"><span>{t("contact.form.send")}</span></button>
-                  </form>
+                  <ContactForm />
                 </div>
               </div>
 

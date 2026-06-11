@@ -21,7 +21,7 @@ export default function ClientLogos() {
             const dup = i >= CLIENTS.length;
             return (
               <div className="client-marquee-item" key={i} aria-hidden={dup || undefined}>
-                <img
+                <img loading="lazy"
                   src={c.src}
                   alt={dup ? "" : c.alt}
                   style={c.invert ? { filter: "invert(1)" } : undefined}

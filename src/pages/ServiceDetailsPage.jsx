@@ -58,7 +58,7 @@ export default function ServiceDetailsPage() {
                   <div className="row">
                     <div className="srv-single-content">
                       <div className="">
-                        <img data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-main.jpg" alt="" />
+                        <img loading="lazy" data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-main.jpg" alt={t("serviceDetails.content.title")} />
                         <div className="cs-height-50"></div>
                         <h3>{t("serviceDetails.content.title")}</h3>
                         <div className="cs-height-10"></div>
@@ -206,7 +206,7 @@ export default function ServiceDetailsPage() {
                               <div data-aos="fade-top" data-aos-duration="400" className="process-item cs-hover-card-anim" data-ser="hover-reveal">
                                 <div className="content-for-top">
                                   <div className="cs-border-icon">
-                                    <img src="/assets/img/one.svg" alt="" />
+                                    <img loading="lazy" src="/assets/img/one.svg" alt="" />
                                   </div>
                                   <h6>{t("serviceDetails.process.step1.title")}</h6>
                                   <div className="cs-height-5"></div>
@@ -221,7 +221,7 @@ export default function ServiceDetailsPage() {
                               <div data-aos="fade-top" data-aos-duration="500" className="process-item cs-hover-card-anim" data-ser="hover-reveal">
                                 <div className="content-for-top">
                                   <div className="cs-border-icon">
-                                    <img src="/assets/img/two.svg" alt="" />
+                                    <img loading="lazy" src="/assets/img/two.svg" alt="" />
                                   </div>
                                   <h6>{t("serviceDetails.process.step2.title")}</h6>
                                   <div className="cs-height-5"></div>
@@ -235,7 +235,7 @@ export default function ServiceDetailsPage() {
                               <div data-aos="fade-top" data-aos-duration="600" className="process-item cs-hover-card-anim" data-ser="hover-reveal">
                                 <div className="content-for-top">
                                   <div className="cs-border-icon">
-                                    <img src="/assets/img/three.svg" alt="" />
+                                    <img loading="lazy" src="/assets/img/three.svg" alt="" />
                                   </div>
                                   <h6>{t("serviceDetails.process.step3.title")}</h6>
                                   <div className="cs-height-5"></div>
@@ -250,7 +250,7 @@ export default function ServiceDetailsPage() {
                               <div data-aos="fade-top" data-aos-duration="700" className="process-item cs-hover-card-anim" data-ser="hover-reveal">
                                 <div className="content-for-top">
                                   <div className="cs-border-icon">
-                                    <img src="/assets/img/four.svg" alt="" />
+                                    <img loading="lazy" src="/assets/img/four.svg" alt="" />
                                   </div>
                                   <h6>{t("serviceDetails.process.step4.title")}</h6>
                                   <div className="cs-height-5"></div>
@@ -274,7 +274,7 @@ export default function ServiceDetailsPage() {
                       <p>{t("serviceDetails.content.detailsParagraph1")}</p>
 
                       <div className="cs-height-30"></div>
-                      <img data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-image-2.jpg" alt="" />
+                      <img loading="lazy" data-aos="fade-top" data-aos-duration="400" src="/assets/img/projects/project-single-image-2.jpg" alt={t("serviceDetails.content.detailsTitle")} />
 
 
                         <div className="cs-height-50"></div>
@@ -294,7 +294,7 @@ export default function ServiceDetailsPage() {
                     <h6 className="cat-w-title">{t("serviceDetails.sidebar.otherServices")}</h6>
                     <ul>
                       {sidebarLinks.map((key, idx) => (
-                        <li key={idx}><a href="#"><i className="flaticon-right-arrow"></i>{t(`serviceDetails.sidebar.links.${key}`)}</a></li>
+                        <li key={idx}><Link to="/service"><i className="flaticon-right-arrow"></i>{t(`serviceDetails.sidebar.links.${key}`)}</Link></li>
                       ))}
                     </ul>
 
@@ -306,11 +306,6 @@ export default function ServiceDetailsPage() {
                     <div className="border-100"></div>
                     <div className="cs-height-30"></div>
                     <div className="contact-items">
-                      <div className="contact-item">
-                        <p>{t("serviceDetails.sidebar.sayHello")}</p>
-                        <a href="tel:4065550120"><h6>(406) 555-0120</h6></a>
-                      </div>
-                      <div className="cs-height-20"></div>
                       <div className="contact-item">
                         <p>{t("serviceDetails.sidebar.sayHello")}</p>
                         <a href="mailto:navergozk@gmail.com"><h6>navergozk@gmail.com</h6></a>

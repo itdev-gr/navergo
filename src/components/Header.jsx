@@ -54,23 +54,6 @@ export default function Header() {
                 <li>
                   <Link to="/projects" className="cs-text_b_line"><span>{t("common.nav.projects")}</span></Link>
                 </li>
-                {/* News & Insights — disabled for now
-                <li className="menu-item-has-children">
-                  <Link to="/blog" className="cs-text_b_line"><span>NEWS &amp; INSIGHTS</span></Link>
-                  <ul>
-                    <li>
-                      <Link to="/blog" className="cs-text_b_line"><span>NEWS</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/blog-standard" className="cs-text_b_line"><span>NEWS STANDARD</span></Link>
-                    </li>
-                    <li>
-                      <Link to="/blog-details" className="cs-text_b_line"><span>NEWS SINGLE</span></Link>
-                    </li>
-                  </ul>
-                  <span className="cs_munu_dropdown_toggle"></span>
-                </li>
-                */}
                 <li>
                   <Link to="/contact" className="cs-text_b_line"><span>{t("common.nav.contact")}</span></Link>
                 </li>
@@ -83,10 +66,6 @@ export default function Header() {
 
           <div className="cs_main_header_right">
             <div className="header-contact">
-              <div className="cs-header-phone">
-                <span>{t("common.header.support24")}</span>
-                <a href="tel:+14065550120" className="cs-text_b_line"><span>(406) 555-0120</span></a>
-              </div>
               <div className="cs-header-email">
                 <span>{t("common.header.emailUs")}</span>
                 <a href="mailto:navergozk@gmail.com" className="cs-text_b_line"><span>navergozk@gmail.com</span></a>
@@ -94,14 +73,19 @@ export default function Header() {
             </div>
 
             <div className="cs_toolbox">
-              <span className="cs_icon_btn">
+              <button
+                type="button"
+                className="cs_icon_btn"
+                aria-label={t("common.header.menuToggle", { defaultValue: "Menu" })}
+                style={{ background: "none", border: "none", padding: 0 }}
+              >
                 <span className="cs_icon_btn_in">
                   <span></span>
                   <span></span>
                   <span></span>
                   <span></span>
                 </span>
-              </span>
+              </button>
             </div>
           </div>
         </div>

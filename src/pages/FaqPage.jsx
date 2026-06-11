@@ -56,11 +56,11 @@ export default function FaqPage() {
                 <div className="faq-img gap-3 cs-flex-start">
                   <div className="animate-img-wrap">
                     <div className="reveal"></div>
-                    <img className="the-animated-image" src="/assets/img/faq01.jpg" alt="" />
+                    <img loading="lazy" className="the-animated-image" src="/assets/img/faq01.jpg" alt="Ship repair works at the Navergo yard" />
                   </div>
                   <div className="animate-img-wrap">
                     <div className="reveal"></div>
-                    <img className="the-animated-image" src="/assets/img/faq02.jpg" alt="" />
+                    <img loading="lazy" className="the-animated-image" src="/assets/img/faq02.jpg" alt="Vessel maintenance in dry dock" />
                   </div>
                 </div>
               </div>
@@ -130,8 +130,8 @@ export default function FaqPage() {
                       </div>
                     </div>
                     <div className="cj-slider-img d-flex gap-3">
-                      <img src="/assets/img/about/faq-cj-slider-img01.jpg" alt="" />
-                      <img src={idx % 2 === 0 ? "/assets/img/about/faq-cj-slider-img02.jpg" : "/assets/img/about/faq-cj-slider-img-large03.jpg"} alt="" />
+                      <img loading="lazy" src="/assets/img/about/faq-cj-slider-img01.jpg" alt="" />
+                      <img loading="lazy" src={idx % 2 === 0 ? "/assets/img/about/faq-cj-slider-img02.jpg" : "/assets/img/about/faq-cj-slider-img-large03.jpg"} alt="" />
                     </div>
                   </div>
                 </div>

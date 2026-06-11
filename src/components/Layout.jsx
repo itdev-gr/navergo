@@ -23,6 +23,22 @@ export default function Layout() {
     const titleSuffix = t("common.brand.name", { defaultValue: "Navergo" });
     const pageTitle = t(`pageTitles.${slug}`, { defaultValue: titleSuffix });
     document.title = pageTitle === titleSuffix ? titleSuffix : `${pageTitle} | ${titleSuffix}`;
+
+    const defaultDescription = t("meta.defaultDescription", { defaultValue: "" });
+    const description = t(`meta.descriptions.${slug}`, { defaultValue: defaultDescription });
+    if (description) {
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (!metaDesc) {
+        metaDesc = document.createElement("meta");
+        metaDesc.setAttribute("name", "description");
+        document.head.appendChild(metaDesc);
+      }
+      metaDesc.setAttribute("content", description);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", description);
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", document.title);
+    }
   }, [i18n.language, pathname, t]);
 
   useLayoutEffect(() => {
