@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const MAP_SRC = "https://www.google.com/maps?q=Leof.+Dimokratias+397,+Perama+188+63,+Greece&output=embed";
+const MAP_SRC = "https://www.google.com/maps?q=Leof.+Dimokratias+395-397,+Perama+188+63,+Greece&output=embed";
 
 // GDPR: the Google Maps iframe sets third-party cookies, so it only loads
 // after the visitor explicitly opts in.
