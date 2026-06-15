@@ -422,3 +422,16 @@ textarea:focus-visible {
     word-break: break-word;
   }
 }
+
+/* Section H2 headings (and their .themecolor accent spans) are sized for
+   wide columns; on a ~385px phone they overflow ~49px. Cap the size and let
+   them wrap. */
+@media (max-width: 575.98px) {
+  h2,
+  .cs-text-style-h2 {
+    font-size: clamp(1.6rem, 7.5vw, 2.4rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
