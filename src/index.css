@@ -409,3 +409,16 @@ textarea:focus-visible {
     transition: none !important;
   }
 }
+
+/* Hero / breadcrumb H1 is 80px at <=991px and never shrinks again, so at
+   ~385px it runs up to 175px past the viewport (clipped by overflow-x:hidden).
+   Scale it fluidly so it always fits, and allow long Greek words to wrap. */
+@media (max-width: 767.98px) {
+  h1,
+  .cs-text-style-h1 {
+    font-size: clamp(2.25rem, 10vw, 3.75rem); /* 36px floor → 60px ceiling */
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
