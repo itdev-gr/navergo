@@ -18,7 +18,6 @@ const GALLERY = [
   { src: "/assets/img/projects/north-star-2.jpg", span: "tall", alt: "North Star — stern section" },
   { src: "/assets/img/projects/anna-s-3.jpg", span: "", alt: "Anna S — engine-room piping" },
   { src: "/assets/img/projects/laskaro-1.jpg", span: "", alt: "Laskaro vessel in drydock" },
-  { src: "/assets/img/projects/andros-king-3.jpg", span: "tall", alt: "Andros King — superstructure view" },
   { src: "/assets/img/projects/anna-s-4.jpg", span: "tall", alt: "Anna S — sea-valve maintenance" },
 ];
 
