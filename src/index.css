@@ -518,3 +518,33 @@ textarea:focus-visible {
     display: none;
   }
 }
+
+/* The shared CTA (.cs-cta-wrap — used on Projects, Project-details and
+   Service-details) renders a bright photo background, but the template gives it
+   no overlay and the default heading/body text is dark, so the text is
+   illegible over the image. Add a dark overlay and make the content white (with
+   a lightened accent) for readable contrast. */
+.cs-cta-wrap {
+  position: relative;
+}
+.cs-cta-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 10, 28, 0.66);
+  pointer-events: none;
+  z-index: 0;
+}
+.cs-cta-wrap .container {
+  position: relative;
+  z-index: 1;
+}
+.cs-cta-wrap h2,
+.cs-cta-wrap p,
+.cs-cta-wrap .cs-text_b_line span,
+.cs-cta-wrap .cs-text_b_line i {
+  color: #ffffff !important;
+}
+.cs-cta-wrap .themecolor {
+  color: #ff8a8a !important;
+}
