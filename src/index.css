@@ -461,3 +461,47 @@ textarea:focus-visible {
     overflow-wrap: anywhere;
   }
 }
+
+/* --- Tablet (<=991px) overflow fixes ---------------------------------- */
+
+/* The home & contact ".row.cs_center" uses Bootstrap's -12px gutters but its
+   columns have zero padding, so the gutters aren't compensated and the row
+   runs 12px past the viewport. Zero the negative margins at this breakpoint
+   (the columns carry no padding here, so no inter-column gutter is lost). */
+@media (max-width: 991px) {
+  .row.cs_center {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* The About "experience" overlay is still the absolute box at tablet width and
+   its uppercase <h3> runs ~37px past the viewport. Bound the overlay to its
+   column and let the heading wrap. (Phones get tighter padding in the
+   <=575.98px block above.) */
+@media (max-width: 991px) {
+  .about-experience-wrap .ae-content {
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .about-experience-wrap .ae-content h3 {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+/* The FAQ image cluster (.faq-img) overflows its column by a few px on tablet
+   and ~9px on phones. Keep it inside its container. */
+@media (max-width: 991px) {
+  .faq-img {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .faq-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
