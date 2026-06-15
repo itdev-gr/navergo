@@ -507,16 +507,20 @@ textarea:focus-visible {
 }
 
 /* The .ae-content is a nowrap flex row (big number + divider + uppercase
-   label) with a 50px gap; at tablet width the row is wider than its box so the
-   label spills ~40px past the edge. Let the row wrap and its items shrink, and
-   trim the gap so it fits. Scoped to tablet only — phones (<=575.98px) keep
-   their own tighter rules above. */
+   label) whose content is wider than its box at tablet width, so the label
+   spills past the edge — bounding the box alone can't fix a non-shrinking flex
+   row. Stack it into a centered column (and drop the vertical divider) so it
+   always fits. Phones (<=575.98px) keep their own tighter rules above. */
 @media (min-width: 576px) and (max-width: 991px) {
   .about-experience-wrap .ae-content {
-    flex-wrap: wrap;
-    gap: 18px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
   }
   .about-experience-wrap .ae-content > * {
     min-width: 0;
+  }
+  .about-experience-wrap .ae-content .aec-line {
+    display: none;
   }
 }
