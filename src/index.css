@@ -385,3 +385,27 @@ textarea:focus-visible {
     transform: none !important;
   }
 }
+
+/* --- Responsiveness fixes 2026-06-15 ----------------------------------- */
+
+/* AOS (animate-on-scroll) hides elements via aos.css [data-aos] opacity rules
+   and only reveals them when JS adds .aos-animate. On small viewports the
+   trigger sometimes never fires, leaving real content permanently invisible.
+   Below the tablet breakpoint, force every AOS element fully visible and
+   un-transformed so content can never be hidden on a phone. */
+@media (max-width: 767.98px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Same guarantee for anyone who prefers reduced motion, at any width. */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -706,12 +706,18 @@ export function initPage() {
 
   if (AOS) {
     AOS.init({
-      offset: -350,
+      offset: 80,
       delay: 0,
+      duration: 600,
       easing: "ease",
       once: true,
       mirror: false,
       anchorPlacement: "top-bottom",
+      // Don't run AOS at all on phones or for reduced-motion users — it removes
+      // the data-aos attributes so content renders immediately and can't stick.
+      disable: () =>
+        window.matchMedia("(max-width: 767.98px)").matches ||
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     });
     AOS.refresh();
   }
