@@ -505,3 +505,18 @@ textarea:focus-visible {
     height: auto;
   }
 }
+
+/* The .ae-content is a nowrap flex row (big number + divider + uppercase
+   label) with a 50px gap; at tablet width the row is wider than its box so the
+   label spills ~40px past the edge. Let the row wrap and its items shrink, and
+   trim the gap so it fits. Scoped to tablet only — phones (<=575.98px) keep
+   their own tighter rules above. */
+@media (min-width: 576px) and (max-width: 991px) {
+  .about-experience-wrap .ae-content {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .about-experience-wrap .ae-content > * {
+    min-width: 0;
+  }
+}
