@@ -548,3 +548,36 @@ textarea:focus-visible {
 .cs-cta-wrap .themecolor {
   color: #ff8a8a !important;
 }
+
+/* The client-logo marquee also lives inside .cs-cta-wrap, so the dark overlay
+   left the mixed logo formats (colored PNGs, a white-background JPEG, an
+   inverted mark) reading inconsistently — some invisible, some as stray white
+   boxes. Give each logo a white card so they all show on their natural light
+   background. Scoped to .cs-cta-wrap so the light-background logo strips
+   (home, about, contact, faq, service) keep their existing look. */
+.cs-cta-wrap .client-marquee-item {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin: 0 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
+.cs-cta-wrap .client-marquee-item img {
+  opacity: 1;
+}
+
+/* /service breadcrumb hero: the white spacer below it was removed in
+   ServicePage.jsx; expand the banner so it fills the space and flows straight
+   into the content section. Scoped to the .cs-breadcrumb-expanded modifier so
+   only the Services hero changes. */
+.cs-breadcrumb-wrap.cs-breadcrumb-expanded {
+  height: 560px;
+  background-size: cover;
+}
+@media screen and (max-width: 1400px) {
+  .cs-breadcrumb-wrap.cs-breadcrumb-expanded {
+    height: auto;
+    padding: 160px 0;
+    background-size: cover;
+  }
+}

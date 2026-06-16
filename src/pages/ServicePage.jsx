@@ -20,7 +20,7 @@ export default function ServicePage() {
     <>
       {/* Start Common BreadCrumb */}
       <section>
-        <div className="cs-breadcrumb-wrap theme-dark" data-src="/assets/img/breadcrumb.jpg">
+        <div className="cs-breadcrumb-wrap cs-breadcrumb-expanded theme-dark" data-src="/assets/img/breadcrumb.jpg">
           <div className="container">
             <div className="row cs_center">
               <div className="cs-bread-page-title-area">
@@ -43,9 +43,6 @@ export default function ServicePage() {
         </div>
       </section>
       {/* End Common BreadCrumb */}
-
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
 
       {/* Start Where We Work */}
       <section>
