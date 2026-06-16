@@ -1,20 +1,10 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import { services } from "../data/services";
 
 export default function ServicePage() {
   const { t } = useTranslation();
-
-  const serviceItems = ["01", "02", "03", "04", "05", "06"];
-  // Match the homepage service tiles 1:1 — same real shipyard photos.
-  const serviceImages = [
-    "/assets/img/service/steelwork/steelwork-01.jpg",
-    "/assets/img/service/aluminum/aluminum-03.jpg",
-    "/assets/img/service/piping/piping-03.jpg",
-    "/assets/img/service/steelwork/steelwork-04.jpg",
-    "/assets/img/service/steelwork/steelwork-02.jpg",
-    "/assets/img/service/piping/piping-01.jpg",
-  ];
 
   return (
     <>
@@ -89,26 +79,29 @@ export default function ServicePage() {
                 <p>{t("service.intro.paragraph")}</p>
                 <div className="cs-height-30"></div>
               </div>
-              {serviceItems.map((key, idx) => (
-                <div className="col-xl-4 col-md-6" key={key}>
-                  <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
-                    <div className="srv-img">
-                      <Link to="/service-details">
-                        <img loading="lazy" src={serviceImages[idx]} alt={t(`service.items.${key}.title`)} />
-                      </Link>
-                    </div>
-                    <div className="services-content">
-                      <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t(`service.items.${key}.title`)}</Link>
-                      <h4 className="the-plus">+</h4>
-                      <div className="srv-the-hover">
-                        <p>{t(`service.items.${key}.description`)}</p>
-                        <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to="/service-details"><span>{t("common.cta.moreDetails")}</span></Link>
+              {services.map((service, idx) => {
+                const to = `/service-details?service=${service.slug}`;
+                return (
+                  <div className="col-xl-4 col-md-6" key={service.slug}>
+                    <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
+                      <div className="srv-img">
+                        <Link to={to}>
+                          <img loading="lazy" src={service.image} alt={t(`service.items.${service.key}.title`)} />
+                        </Link>
+                      </div>
+                      <div className="services-content">
+                        <Link to={to} className="the-srv-title cs-text-style-h6">{t(`service.items.${service.key}.title`)}</Link>
+                        <h4 className="the-plus">+</h4>
+                        <div className="srv-the-hover">
+                          <p>{t(`service.items.${service.key}.description`)}</p>
+                          <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to={to}><span>{t("common.cta.moreDetails")}</span></Link>
+                        </div>
                       </div>
                     </div>
+                    <div className="cs-height-30"></div>
                   </div>
-                  <div className="cs-height-30"></div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
