@@ -458,10 +458,6 @@ export default function HomePage() {
       </section>
       {/* End Counter With CTA Section */}
 
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
-
-
       {/* Start Why Choose Us & Video */}
       <section>
         <div className="cs-working-process-wrap themecolor-bg theme-dark">
@@ -511,18 +507,12 @@ export default function HomePage() {
       </section>
       {/* End Why Choose Us & Video */}
 
-      <div className="cs-section-height"></div>
-      {/* Section to Section Gap */}
-
       {/* Start Experience & Image Section */}
       <section>
         <div className="about-experience-wrap bottom-align">
           <div className="img-ae background-parallax">
             <div className="parallax-image max-height-750">
               <img loading="lazy" src="/assets/img/about/ship-repair-experience.jpg" alt="Cargo ship undergoing repair in dry dock at shipyard" />
-              <div className="ae-title">
-                <h2>NAVERGO NAVERGO NAVE</h2>
-              </div>
             </div>
           </div>
           <div className="content-for-parallax">
