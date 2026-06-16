@@ -7,7 +7,8 @@ import Footer from "./Footer";
 import { bindGlobalHandlers, initPage, cleanupPage } from "../lib/template.js";
 
 export default function Layout() {
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname } = location;
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -41,25 +42,43 @@ export default function Layout() {
     }
   }, [i18n.language, pathname, t]);
 
+  // Reset scroll to the top on EVERY navigation. Keyed on location.key so it
+  // also fires on same-path query changes (e.g. ?project=a → ?project=b), not
+  // just pathname changes. The site scrolls the document natively, but reset
+  // every candidate (window + scrollingElement + html + body) and re-assert
+  // across a few frames/timeouts so the reset still wins after a lazy-loaded
+  // page mounts or a parallax/ScrollTrigger init nudges the position.
   useLayoutEffect(() => {
-    // Force instant scroll to top regardless of CSS scroll-behavior, then
-    // re-assert on next animation frame to defeat any browser auto-restore
-    // (some browsers clamp scroll to the new document height after route swap).
     const scrollTop = () => {
       try {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
       } catch {
         window.scrollTo(0, 0);
       }
+      const se = document.scrollingElement;
+      if (se) se.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
     };
     scrollTop();
     const raf1 = requestAnimationFrame(() => {
       scrollTop();
       requestAnimationFrame(scrollTop);
     });
-    initPage();
+    const t1 = setTimeout(scrollTop, 120);
+    const t2 = setTimeout(scrollTop, 320);
     return () => {
       cancelAnimationFrame(raf1);
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
+  }, [location.key]);
+
+  // Re-run the template's per-page init (AOS, ScrollTrigger, parallax, sliders)
+  // when the page itself changes.
+  useLayoutEffect(() => {
+    initPage();
+    return () => {
       cleanupPage();
     };
   }, [pathname]);
