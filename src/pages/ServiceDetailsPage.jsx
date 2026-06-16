@@ -15,9 +15,8 @@ export default function ServiceDetailsPage() {
   const slug = serviceSlugs.includes(rawSlug) ? rawSlug : services[0].slug;
   const service = getService(slug);
 
-  const base = `service.items.${service.key}`;
-  const title = stripIndex(t(`${base}.title`));
-  const description = t(`${base}.description`);
+  const title = stripIndex(t(`${service.base}.title`));
+  const description = t(`${service.base}.description`);
 
   const addressLines = t("serviceDetails.sidebar.address").split("\n");
 
@@ -134,7 +133,7 @@ export default function ServiceDetailsPage() {
                     {services.map((s) => (
                       <li key={s.slug}>
                         <Link to={`/service-details?service=${s.slug}`}>
-                          <i className="flaticon-right-arrow"></i>{stripIndex(t(`service.items.${s.key}.title`))}
+                          <i className="flaticon-right-arrow"></i>{stripIndex(t(`${s.base}.title`))}
                         </Link>
                       </li>
                     ))}

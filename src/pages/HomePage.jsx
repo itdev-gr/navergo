@@ -5,6 +5,7 @@ import ClientLogos from "../components/ClientLogos";
 import ContactForm from "../components/ContactForm";
 import CountUp from "../components/CountUp";
 import { projects } from "../data/projects";
+import { homeServiceSlug } from "../data/services";
 
 const homeServiceKeys = ["01", "02", "03", "04", "05", "06", "07"];
 const homeServiceImages = {
@@ -214,25 +215,28 @@ export default function HomePage() {
           <div className="container">
             <div className="swiper service-slider">
               <div className="swiper-wrapper">
-                {homeServiceKeys.map((key, idx) => (
-                  <div className="swiper-slide" key={key}>
-                    <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
-                      <div className="srv-img">
-                        <Link to="/service-details">
-                          <img loading="lazy" src={homeServiceImages[key].src} alt={homeServiceImages[key].alt} />
-                        </Link>
-                      </div>
-                      <div className="services-content">
-                        <Link to="/service-details" className="the-srv-title cs-text-style-h6">{t(`home.services.items.${key}.title`)}</Link>
-                        <h4 className="the-plus">+</h4>
-                        <div className="srv-the-hover">
-                          <p>{t(`home.services.items.${key}.description`)}</p>
-                          <Link to="/service-details" className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
+                {homeServiceKeys.map((key, idx) => {
+                  const to = `/service-details?service=${homeServiceSlug[key]}`;
+                  return (
+                    <div className="swiper-slide" key={key}>
+                      <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
+                        <div className="srv-img">
+                          <Link to={to}>
+                            <img loading="lazy" src={homeServiceImages[key].src} alt={homeServiceImages[key].alt} />
+                          </Link>
+                        </div>
+                        <div className="services-content">
+                          <Link to={to} className="the-srv-title cs-text-style-h6">{t(`home.services.items.${key}.title`)}</Link>
+                          <h4 className="the-plus">+</h4>
+                          <div className="srv-the-hover">
+                            <p>{t(`home.services.items.${key}.description`)}</p>
+                            <Link to={to} className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160"><span>{t("common.cta.moreDetails")}</span></Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
             <div className="cs-height-50"></div>

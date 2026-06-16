@@ -1,17 +1,39 @@
-// Single source of truth for service ordering, slugs, i18n keys and the
-// detail-page / tile image. All translatable text lives in i18n under
-// `service.items.<key>` (title + description). Mirrors data/projects.js.
+// Single source of truth for services that have their own detail page.
+// `base` is the i18n path holding the service's `title` + `description`.
+// Mirrors data/projects.js.
+
+// Services shown in the /service page grid.
 export const services = [
-  { slug: "aluminum",           key: "01", image: "/assets/img/service/steelwork/steelwork-01.jpg" },
-  { slug: "plating",            key: "02", image: "/assets/img/service/aluminum/aluminum-03.jpg" },
-  { slug: "piping",             key: "03", image: "/assets/img/service/piping/piping-03.jpg" },
-  { slug: "tanks",              key: "04", image: "/assets/img/service/steelwork/steelwork-04.jpg" },
-  { slug: "structural",         key: "05", image: "/assets/img/service/steelwork/steelwork-02.jpg" },
-  { slug: "pneumatic-hydraulic", key: "06", image: "/assets/img/service/piping/piping-engine-room.jpg" },
+  { slug: "aluminum",            base: "service.items.01", image: "/assets/img/service/steelwork/steelwork-01.jpg" },
+  { slug: "plating",             base: "service.items.02", image: "/assets/img/service/aluminum/aluminum-03.jpg" },
+  { slug: "piping",              base: "service.items.03", image: "/assets/img/service/piping/piping-03.jpg" },
+  { slug: "tanks",               base: "service.items.04", image: "/assets/img/service/steelwork/steelwork-04.jpg" },
+  { slug: "structural",          base: "service.items.05", image: "/assets/img/service/steelwork/steelwork-02.jpg" },
+  { slug: "pneumatic-hydraulic", base: "service.items.06", image: "/assets/img/service/piping/piping-engine-room.jpg" },
 ];
 
-export const serviceSlugs = services.map((s) => s.slug);
+// Services that appear on the home page but not in the /service grid — they
+// still get their own detail page so every service tile links somewhere
+// distinct rather than all landing on one generic page.
+const extraServices = [
+  { slug: "metal-structure-repairs", base: "home.services.items.01", image: "/assets/img/service/steelwork/steelwork-04.jpg" },
+  { slug: "wear-restoration",        base: "home.services.items.07", image: "/assets/img/service/steelwork/steelwork-05.jpg" },
+];
+
+export const allServices = [...services, ...extraServices];
+export const serviceSlugs = allServices.map((s) => s.slug);
 
 export function getService(slug) {
-  return services.find((s) => s.slug === slug);
+  return allServices.find((s) => s.slug === slug);
 }
+
+// Map a home.services.items key (01–07) to the matching detail-page slug.
+export const homeServiceSlug = {
+  "01": "metal-structure-repairs",
+  "02": "plating",
+  "03": "piping",
+  "04": "tanks",
+  "05": "structural",
+  "06": "pneumatic-hydraulic",
+  "07": "wear-restoration",
+};

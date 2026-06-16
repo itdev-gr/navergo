@@ -86,14 +86,14 @@ export default function ServicePage() {
                     <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
                       <div className="srv-img">
                         <Link to={to}>
-                          <img loading="lazy" src={service.image} alt={t(`service.items.${service.key}.title`)} />
+                          <img loading="lazy" src={service.image} alt={t(`${service.base}.title`)} />
                         </Link>
                       </div>
                       <div className="services-content">
-                        <Link to={to} className="the-srv-title cs-text-style-h6">{t(`service.items.${service.key}.title`)}</Link>
+                        <Link to={to} className="the-srv-title cs-text-style-h6">{t(`${service.base}.title`)}</Link>
                         <h4 className="the-plus">+</h4>
                         <div className="srv-the-hover">
-                          <p>{t(`service.items.${service.key}.description`)}</p>
+                          <p>{t(`${service.base}.description`)}</p>
                           <Link className="cs-primary-btn cs-color-black cs_white_color-bg cs-height-50 cs-width-160" to={to}><span>{t("common.cta.moreDetails")}</span></Link>
                         </div>
                       </div>
