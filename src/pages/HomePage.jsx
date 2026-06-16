@@ -13,7 +13,7 @@ const homeServiceImages = {
   "03": { src: "/assets/img/service/piping/piping-03.jpg",       alt: "Piping Works" },
   "04": { src: "/assets/img/projects/laskaro-1.jpg",             alt: "Tank Works" },
   "05": { src: "/assets/img/service/steelwork/steelwork-02.jpg", alt: "Structural Reinforcements" },
-  "06": { src: "/assets/img/service/piping/piping-01.jpg",       alt: "Pneumatic and Hydraulic Systems" },
+  "06": { src: "/assets/img/service/piping/piping-engine-room.jpg", alt: "Pneumatic and Hydraulic Systems" },
   "07": { src: "/assets/img/service/steelwork/steelwork-05.jpg", alt: "Wear Restoration" },
 };
 
