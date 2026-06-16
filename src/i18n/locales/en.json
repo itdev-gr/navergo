@@ -44,6 +44,7 @@
   },
   "footer": {
     "newsletter": "NEWSLETTER",
+    "newsletterTagline": "Stay up to date with our latest news and projects.",
     "newsletterPlaceholder": "Enter your email...",
     "usefulLinks": "USEFUL LINK",
     "ourServices": "OUR SERVICES",
@@ -184,11 +185,11 @@
       "members": {
         "1": {
           "name": "Christos Zachos",
-          "role": "Co-founder & Director"
+          "role": "Co-founder & Technical Director"
         },
         "2": {
           "name": "Nikolaos Katzilieris",
-          "role": "Co-founder & Technical Director"
+          "role": "Co-founder & Director"
         }
       }
     },
@@ -504,11 +505,11 @@
       "members": {
         "1": {
           "name": "Christos Zachos",
-          "role": "Co-founder & Director"
+          "role": "Co-founder & Technical Director"
         },
         "2": {
           "name": "Nikolaos Katzilieris",
-          "role": "Co-founder & Technical Director"
+          "role": "Co-founder & Director"
         }
       }
     },
@@ -706,11 +707,11 @@
     "members": {
       "1": {
         "name": "Christos Zachos",
-        "role": "Co-founder & Director"
+        "role": "Co-founder & Technical Director"
       },
       "2": {
         "name": "Nikolaos Katzilieris",
-        "role": "Co-founder & Technical Director"
+        "role": "Co-founder & Director"
       }
     }
   },
