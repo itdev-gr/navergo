@@ -119,7 +119,7 @@
         "title": "Ship Repair Services",
         "items": {
           "1": "Metal structure repairs",
-          "2": "Fabrication of metal components and specialised structures",
+          "2": "Steel Plate Works",
           "3": "Piping works",
           "4": "Dry-docking works",
           "5": "Structural reinforcements and technical restorations"
@@ -350,7 +350,7 @@
       "sendMessage": "Send Message",
       "links": {
         "metalRepairs": "Metal Structure Repairs",
-        "metalConstruction": "Metal Elements & Special Structures",
+        "metalConstruction": "Steel Plate Works",
         "piping": "Piping Works",
         "tankWorks": "Tank Works",
         "structuralReinforcement": "Structural Reinforcements & Technical Restorations",
@@ -401,7 +401,7 @@
           "title": "1. Ship Repair Services",
           "items": [
             "Metal structure repairs",
-            "Fabrication of metal components and special structures",
+            "Steel Plate Works",
             "Piping works",
             "Tank works",
             "Structural reinforcements and technical restorations"

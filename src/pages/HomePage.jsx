@@ -9,7 +9,7 @@ import { homeServiceSlug } from "../data/services";
 
 const homeServiceKeys = ["01", "02", "03", "04", "05", "06", "07"];
 const homeServiceImages = {
-  "01": { src: "/assets/img/service/aluminum/aluminum-03.jpg",   alt: "Metal Components and Special Structures" },
+  "01": { src: "/assets/img/service/steelwork/steelwork-03.jpg", alt: "Steel Plate Works" },
   "02": { src: "/assets/img/service/steelwork/steelwork-01.jpg", alt: "Metal Structure Repairs" },
   "03": { src: "/assets/img/service/piping/piping-03.jpg",       alt: "Piping Works" },
   "04": { src: "/assets/img/projects/laskaro-1.jpg",             alt: "Tank Works" },
