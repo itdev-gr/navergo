@@ -11,7 +11,6 @@ const ServiceDetailsPage = lazy(() => import("./pages/ServiceDetailsPage.jsx"));
 const ProjectsPage = lazy(() => import("./pages/ProjectsPage.jsx"));
 const ProjectDetailsPage = lazy(() => import("./pages/ProjectDetailsPage.jsx"));
 const TeamPage = lazy(() => import("./pages/TeamPage.jsx"));
-const TeamDetailsPage = lazy(() => import("./pages/TeamDetailsPage.jsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.jsx"));
 const FaqPage = lazy(() => import("./pages/FaqPage.jsx"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage.jsx"));
@@ -31,7 +30,6 @@ export default function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/project-details" element={<ProjectDetailsPage />} />
           <Route path="/team" element={<TeamPage />} />
-          <Route path="/team-details" element={<TeamDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/gallery" element={<GalleryPage />} />

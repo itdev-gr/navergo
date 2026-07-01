@@ -20,7 +20,12 @@ export default function Layout() {
 
   useEffect(() => {
     document.documentElement.lang = i18n.language;
-    const slug = pathname === "/" ? "home" : pathname.replace(/^\//, "").replace(/-/g, "");
+    const knownSlugs = new Set([
+      "home", "about", "service", "servicedetails", "projects", "projectdetails",
+      "team", "contact", "faq", "gallery", "coming", "404", "privacypolicy", "terms",
+    ]);
+    const rawSlug = pathname === "/" ? "home" : pathname.replace(/^\//, "").replace(/-/g, "");
+    const slug = knownSlugs.has(rawSlug) ? rawSlug : "404";
     const titleSuffix = t("common.brand.name", { defaultValue: "Navergo" });
     const pageTitle = t(`pageTitles.${slug}`, { defaultValue: titleSuffix });
     document.title = pageTitle === titleSuffix ? titleSuffix : `${pageTitle} | ${titleSuffix}`;

@@ -28,3 +28,4 @@ dist-ssr
 
 # Local responsiveness-audit screenshots (not part of the deliverable)
 audit/
+smoke/

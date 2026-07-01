@@ -369,86 +369,41 @@ export default function AboutPage() {
               <span className="cs-text-style-h1 cs-animated-text">{t("about.team.animatedText")}</span>
               <div className="cs-height-50"></div>
             </div>
-            <div className="row">
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details?member=1">
-                    <img loading="lazy" className="animated-img" src="/assets/img/member/team-member-1.jpg" alt={t("about.team.members.1.name")} />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details?member=1">
-                      <h6>{t("about.team.members.1.name")}</h6>
-                    </Link>
-                    <p>{t("about.team.members.1.role")}</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
+            <div className="row team-no-photos">
+              {["1", "2"].map((k) => (
+                <div className="col-xl-6 col-md-6" key={k}>
+                  <div className="team-card-plain">
+                    <div className="content">
+                      <h6>{t(`about.team.members.${k}.name`)}</h6>
+                      <p>{t(`about.team.members.${k}.role`)}</p>
+                    </div>
+                    <div className="theme-social">
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i className="flaticon-facebook-app-symbol"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i className="flaticon-linkedin-big-logo"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
+                            <i className="flaticon-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i className="flaticon-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="team-member">
-                <div className="member-img">
-                  <Link to="/team-details?member=2">
-                    <img loading="lazy" className="animated-img" src="/assets/img/member/team-member-2.jpg" alt={t("about.team.members.2.name")} />
-                  </Link>
-                </div>
-                <div className="member-in">
-                  <div className="content">
-                    <Link to="/team-details?member=2">
-                      <h6>{t("about.team.members.2.name")}</h6>
-                    </Link>
-                    <p>{t("about.team.members.2.role")}</p>
-                  </div>
-                  <div className="theme-social">
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-facebook-app-symbol"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-linkedin-big-logo"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                          <i className="flaticon-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
+              ))}
             </div>
           </div>
         </div>

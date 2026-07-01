@@ -581,3 +581,293 @@ textarea:focus-visible {
     background-size: cover;
   }
 }
+
+/* --- Smoke-test fixes 2026-07-01 ---------------------------------------- */
+
+/* Team cards without portraits — the vendored .team-member styles assume a
+   .member-img column exists. We removed the photos entirely, so switch to a
+   plain centered card that reads as intentional (not a broken photo slot). */
+.team-no-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 0;
+  justify-content: center;
+}
+.team-card-plain {
+  background: #ffffff;
+  border: 1px solid rgba(10, 12, 46, 0.08);
+  border-radius: 14px;
+  padding: 32px 28px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(10, 12, 46, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  height: 100%;
+}
+.team-card-plain:hover {
+  box-shadow: 0 14px 34px rgba(10, 12, 46, 0.12);
+  transform: translateY(-2px);
+}
+.team-card-plain .content h6 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  line-height: 1.25;
+}
+.team-card-plain .content p {
+  margin: 0 0 18px;
+  color: rgba(10, 12, 46, 0.7);
+}
+.team-card-plain .theme-social ul {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.team-card-plain .theme-social a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(10, 12, 46, 0.06);
+  color: rgba(10, 12, 46, 0.75);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.team-card-plain .theme-social a:hover {
+  background: var(--themecolor, #7c1d1f);
+  color: #fff;
+}
+
+/* Redesigned 404 page. The vendored .error-wrap loaded a huge 850×850 raster
+   placeholder — replaced with a clean centered layout, iconic badge, and two
+   CTAs. Scoped under .cs-not-found-section so the legacy .error-* rules are
+   untouched (still used by the /coming template if it ever ships). */
+.cs-not-found-section {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 100px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(124, 29, 31, 0.08), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(10, 12, 46, 0.06), transparent 55%),
+    #fafafa;
+}
+.cs-not-found-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cs-not-found-badge {
+  display: inline-flex;
+  width: 96px;
+  height: 96px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(124, 29, 31, 0.08);
+  color: var(--themecolor, #7c1d1f);
+  margin-bottom: 28px;
+}
+.cs-not-found-eyebrow {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  font-weight: 600;
+  color: var(--themecolor, #7c1d1f);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.cs-not-found-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+.cs-not-found-desc {
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(10, 12, 46, 0.7);
+  margin: 0 0 34px;
+}
+.cs-not-found-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.cs-not-found-secondary {
+  color: rgba(10, 12, 46, 0.85);
+  font-weight: 500;
+  padding: 10px 6px;
+  border-bottom: 1px solid rgba(10, 12, 46, 0.35);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.cs-not-found-secondary:hover {
+  color: var(--themecolor, #7c1d1f);
+  border-color: var(--themecolor, #7c1d1f);
+}
+
+/* Gallery grid: template hard-codes `repeat(auto-fit, minmax(50%, 1fr))`, which
+   forces at most 2 columns even at 1440px, then the `.gallery-vertical` and
+   `.gallery-horizontal` span classes cause the last few tiles to fall short and
+   leave a large empty band before the footer. Switch to a real 4-column grid on
+   desktop (3 on tablet, 2 on phones), give rows a sane fixed height, and drop
+   the row/col spanning that was compounding the whitespace. */
+.gallery {
+  display: grid;
+  grid-gap: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 240px;
+  grid-auto-flow: dense;
+}
+.gallery .gallery-vertical,
+.gallery .gallery-horizontal,
+.gallery .big {
+  grid-column: auto;
+  grid-row: auto;
+}
+@media (max-width: 1199.98px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+  }
+}
+@media (max-width: 767.98px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+    grid-gap: 10px;
+  }
+}
+@media (max-width: 419.98px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+  }
+}
+
+/* `.cs-animated-text` (the huge outlined h1 backdrop behind section headings)
+   is intrinsically wider than its column and pokes past the viewport at 1440px.
+   It appears in two wrapper flavors: `.cs-heading-with-animation` (About/Home
+   journey) and `.position-relative` (Home contact heading). Constrain both. */
+.cs-heading-with-animation,
+.cs-animated-text {
+  max-width: 100%;
+}
+.cs-heading-with-animation {
+  position: relative;
+  overflow: hidden;
+}
+.cs-animated-text {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* /service CTA row: `.cs-cta-content` is a flex row of a title + a fixed-width
+   220px button. Vendored `.row` adds -12px negative margins, and `.cs-cta-content`
+   sits directly inside the row (no .col-* wrapper), so the button's right edge
+   lands past the viewport at 1440px. Zero the row's negative margins, allow the
+   flex row to wrap, and constrain the button to its intrinsic width. */
+.cta-wrap .row,
+.cta-wrap .row.cs_center {
+  margin-left: 0;
+  margin-right: 0;
+}
+.cta-wrap .cs-cta-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.cta-wrap .cs-cta-content > .title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.cta-wrap .cs-cta-content .cs-primary-btn {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+.cta-wrap {
+  overflow-x: clip;
+}
+
+/* /projects .project-item-text is absolutely positioned by the vendored theme
+   with a right offset that pushes it past the viewport on wider items.
+   Bound it inside its parent. */
+.projects-list .project-item {
+  position: relative;
+}
+.projects-list .project-item .project-item-text {
+  max-width: 100%;
+  right: auto;
+  box-sizing: border-box;
+}
+
+/* /service tile balance: intro-copy card + 6 service tiles = 7 items in a
+   3-column grid → last row is a single orphan card. Make the last-of-row
+   orphan center itself so the grid reads as intentional. Uses :nth-last-child
+   trick: when the last row has exactly one child, center it. */
+.services-wrapper .row > .col-xl-4:last-child:nth-child(3n+1) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* /projects tile balance: 5 items in a 2-column grid → orphan on last row.
+   Let the orphan span both columns and use the same aspect as the others. */
+@media (min-width: 1200px) {
+  .projects-list .row > .col-xl-6:last-child:nth-child(odd) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .projects-list .row > .col-xl-6:last-child:nth-child(odd) .project-item-in img {
+    max-height: 520px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Home projects section on mobile: `.project-masonry` is styled as absolute
+   overlapping tiles for desktop, which collapses on phones and leaves a big
+   blank vertical band. Stack the items normally on phones. */
+@media (max-width: 767.98px) {
+  .cs-project-wrap .project-masonry {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: auto;
+  }
+  .cs-project-wrap .project-masonry .cs-project-item,
+  .cs-project-wrap .project-masonry .cs-project-item.first,
+  .cs-project-wrap .project-masonry .cs-project-item.second,
+  .cs-project-wrap .project-masonry .cs-project-item.third {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .cs-project-wrap .project-masonry .cs-project-item.second {
+    grid-template-columns: 1fr;
+  }
+  .cs-project-wrap .project-masonry .cs-project-item .cs-project-item-content-in {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .cs-project-wrap .project-masonry .cs-project-item .cs-project-item-content-in img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+}

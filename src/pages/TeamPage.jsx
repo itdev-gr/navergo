@@ -3,10 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export default function TeamPage() {
   const { t } = useTranslation();
-  const members = [
-    { key: "1", img: "/assets/img/member/team-member-1.jpg" },
-    { key: "2", img: "/assets/img/member/team-member-2.jpg" },
-  ];
+  const members = [{ key: "1" }, { key: "2" }];
 
   return (
     <>
@@ -43,40 +40,33 @@ export default function TeamPage() {
       <section>
         <div className="team-wrap">
           <div className="container">
-            <div className="row cs-exclude-top-40">
+            <div className="row team-no-photos cs-exclude-top-40">
               {members.map((m) => (
-                <div className="team-member" key={m.key}>
-                  <div className="member-img">
-                    <Link to={`/team-details?member=${m.key}`}>
-                      <img loading="lazy" className="animated-img" src={m.img} alt={t(`about.team.members.${m.key}.name`, { defaultValue: "" })} />
-                    </Link>
-                  </div>
-                  <div className="member-in">
+                <div className="col-xl-6 col-md-6" key={m.key}>
+                  <div className="team-card-plain">
                     <div className="content">
-                      <Link to={`/team-details?member=${m.key}`}>
-                        <h6>{t(`team.members.${m.key}.name`)}</h6>
-                      </Link>
+                      <h6>{t(`team.members.${m.key}.name`)}</h6>
                       <p>{t(`team.members.${m.key}.role`)}</p>
                     </div>
                     <div className="theme-social">
                       <ul>
                         <li>
-                          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <i className="flaticon-facebook-app-symbol"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i className="flaticon-linkedin-big-logo"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
                             <i className="flaticon-twitter"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <i className="flaticon-instagram"></i>
                           </a>
                         </li>

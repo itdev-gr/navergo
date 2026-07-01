@@ -796,44 +796,8 @@
     "code": "404",
     "title": "Sorry! The Page Isn't Found Here",
     "description": "The page you are looking for may have been moved, renamed, or be temporarily unavailable. Return to the home page or use the navigation menu to find what you need.",
-    "backToHome": "Back to Home"
-  },
-  "teamDetails": {
-    "breadcrumb": {
-      "title": "Team Details",
-      "fromHome": "HOME",
-      "current": "TEAM SINGLE"
-    },
-    "contact": {
-      "sayHello": "Say hello!",
-      "meetUs": "Meet Us:",
-      "address": "Leof. Dimokratias 395-397\nPerama 188 63, Greece"
-    },
-    "member": {
-      "bio1": "As a member of the Navergo team, they contribute every day to delivering top-tier ship repair services, with a focus on quality, safety, and the on-time delivery of every project.",
-      "bio2": "With deep industry knowledge and a commitment to modern techniques, they support the execution of numerous repair projects on commercial and passenger vessels from conception to completion, collaborating closely with the rest of the team to ensure the success of every mission."
-    },
-    "videoIntroduction": "Video Introduction",
-    "blockquote": "\"As a member of our team, they are committed to quality craftsmanship, on-time delivery, and cost-effective execution, making their contribution invaluable in driving our projects to success.\"",
-    "skills": {
-      "headingPrefix": "Skills of",
-      "animatedText": "SKILLS",
-      "structural": "Structural Engineering",
-      "quality": "Quality Control & Assurance",
-      "materials": "Material Selection & Procurement",
-      "leadership": "Team Leadership & Coordination"
-    },
-    "form": {
-      "headingPrefix": "Contact With",
-      "animatedText": "CONTACT",
-      "firstName": "First Name*",
-      "lastName": "Last Name",
-      "phone": "Phone*",
-      "email": "Email Address*",
-      "subject": "Subject",
-      "message": "Write your message...",
-      "send": "Send Message"
-    }
+    "backToHome": "Back to Home",
+    "contactUs": "Contact Us"
   },
   "pageTitles": {
     "home": "Home",
@@ -843,7 +807,6 @@
     "projects": "Our Projects",
     "projectdetails": "Project Details",
     "team": "Our Team",
-    "teamdetails": "Team Details",
     "contact": "Contact",
     "faq": "FAQ",
     "gallery": "Gallery",

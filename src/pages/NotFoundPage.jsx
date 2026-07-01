@@ -5,28 +5,30 @@ export default function NotFoundPage() {
   const { t } = useTranslation();
 
   return (
-    <>
-      <div className="cs-height-100"></div>
-
-      {/* Start 404 */}
-      <section className="cs_gray_bg" data-src="/assets/img/footer-bg.png">
-        <div className="error-wrap" data-src="/assets/img/error-bg.png">
-          <div className="error-section-wrap">
-            <div className="container">
-              <div className="error-content">
-
-                <h1 className="error-title">{t("notFound.code")}</h1>
-                <h2 className="erro-sub-title cs_semi_bold">{t("notFound.title")}</h2>
-                <p className="erro-desp">{t("notFound.description")}</p>
-
-                <Link to="/" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180"><span>{t("notFound.backToHome")}</span></Link>
-
-              </div>
-            </div>
+    <section className="cs-not-found-section">
+      <div className="container">
+        <div className="cs-not-found-inner">
+          <div className="cs-not-found-badge" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 34c3-2 6-2 9 0s6 2 9 0 6-2 9 0 6 2 9 0" />
+              <path d="M6 40c3-2 6-2 9 0s6 2 9 0 6-2 9 0 6 2 9 0" />
+              <path d="M12 28V16l12-8 12 8v12" />
+              <path d="M18 28v-6h12v6" />
+            </svg>
+          </div>
+          <span className="cs-not-found-eyebrow">{t("notFound.code")}</span>
+          <h1 className="cs-not-found-title">{t("notFound.title")}</h1>
+          <p className="cs-not-found-desc">{t("notFound.description")}</p>
+          <div className="cs-not-found-actions">
+            <Link to="/" className="cs-primary-btn secondary-btn cs-color-white themecolor-bg cs-height-60 cs-width-180">
+              <span>{t("notFound.backToHome")}</span>
+            </Link>
+            <Link to="/contact" className="cs-not-found-secondary">
+              {t("notFound.contactUs")}
+            </Link>
           </div>
         </div>
-      </section>
-      {/* End 404 */}
-    </>
+      </div>
+    </section>
   );
 }
