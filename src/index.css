@@ -12,6 +12,9 @@
   height: auto;
   min-height: 365px;
   box-sizing: border-box;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /* Hero text contrast: photographic slides need a scrim so the headline and
@@ -228,10 +231,9 @@ img {
   padding: 0 42px;
 }
 .client-marquee-item img {
-  max-height: 55px;
-  max-width: 230px;
+  height: 90px;
   width: auto;
-  height: auto;
+  max-width: 440px;
   object-fit: contain;
   opacity: 0.8;
   transition: opacity 0.25s ease;
