@@ -6,7 +6,7 @@ export const projects = [
   { slug: "north-star", images: ["/assets/img/projects/north-star-1.jpg", "/assets/img/projects/north-star-2.jpg"] },
   { slug: "golden-princess", images: ["/assets/img/projects/golden-princess-1.jpg", "/assets/img/projects/golden-princess-2.jpg"] },
   { slug: "laskaro", images: ["/assets/img/projects/laskaro-1.jpg", "/assets/img/projects/laskaro-2.jpg", "/assets/img/projects/laskaro-3.jpg", "/assets/img/projects/laskaro-repairs.jpg", "/assets/img/projects/laskaro-repairs-2.jpg"] },
-  { slug: "anna-s", images: ["/assets/img/projects/anna-s-1.jpg", "/assets/img/projects/anna-s-2.jpg", "/assets/img/projects/anna-s-3.jpg", "/assets/img/projects/anna-s-4.jpg", "/assets/img/projects/anna-s-repairs.jpg"] },
+  { slug: "anna-s", images: ["/assets/img/projects/anna-s-1.jpg", "/assets/img/projects/anna-s-2.jpg", "/assets/img/projects/anna-s-3.jpg", "/assets/img/projects/anna-s-4.jpg", "/assets/img/projects/anna-s-repairs.jpg", "/assets/img/projects/anna-s-repairs-2.jpg"] },
 ];
 
 export const projectSlugs = projects.map((p) => p.slug);
