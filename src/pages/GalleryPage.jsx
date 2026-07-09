@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLightbox } from "../components/lightbox-context";
 
 // Real project photos. span: "wide" -> full-width landscape (grid-column span 2),
 // "tall" -> double-height portrait (grid-row span 2), "" -> single cell.
@@ -23,8 +24,11 @@ const GALLERY = [
 
 const SPAN_CLASS = { wide: "gallery-vertical", tall: "gallery-horizontal", "": "" };
 
+const LIGHTBOX_IMAGES = GALLERY.map((g) => ({ src: g.src, alt: g.alt }));
+
 export default function GalleryPage() {
   const { t } = useTranslation();
+  const { openLightbox } = useLightbox();
 
   return (
     <>
@@ -60,14 +64,19 @@ export default function GalleryPage() {
       {/* Start Gallery */}
       <section className="container">
         <div className="gallery" id="static-thumbnails">
-          {GALLERY.map((g) => (
+          {GALLERY.map((g, i) => (
             <div className={`item ${SPAN_CLASS[g.span]}`.trim()} key={g.src}>
-              <a href={g.src}>
+              <button
+                type="button"
+                className="ng-gallery-trigger"
+                aria-label={`View ${g.alt} full screen`}
+                onClick={() => openLightbox(LIGHTBOX_IMAGES, i)}
+              >
                 <img loading="lazy" src={g.src} alt={g.alt} />
                 <div className="frame gallery-hover-icon">
                   <i className="flaticon-magnifying-glass"></i>
                 </div>
-              </a>
+              </button>
             </div>
           ))}
         </div>

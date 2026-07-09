@@ -1,6 +1,7 @@
 // Port of assets/js/main.js into React-friendly init/cleanup pair.
 // Global plugin libs (jQuery, GSAP, ScrollTrigger, SplitText, Swiper, AOS,
-// lightGallery, Masonry) are loaded via <script> tags in index.html.
+// Masonry) are loaded via <script> tags in index.html. The fullscreen image
+// viewer is now the React <Lightbox> component, not the old jQuery plugin.
 
 const g = () => window;
 
@@ -608,21 +609,6 @@ function initDynamicBackground() {
   });
 }
 
-function initLightGallery() {
-  const lightGallery = g().lightGallery;
-  if (!lightGallery) return;
-  const galleryDiv = document.getElementById("static-thumbnails");
-  if (!galleryDiv) return;
-  lightGallery(galleryDiv, {
-    selector: ".item a",
-    addClass: "lg-custom-thumbnails",
-    animateThumb: true,
-    zoomFromOrigin: true,
-    allowMediaOverlap: true,
-    toggleThumb: true,
-  });
-}
-
 function initMasonry() {
   const $ = $$();
   if (!$ || !$.fn || !$.fn.masonry) return;
@@ -694,7 +680,6 @@ export function initPage() {
   initHeadingTitleAnim();
   initAeTitle();
   initSkillBar();
-  initLightGallery();
   initMasonry();
 
   if (coomingCleanup) {

@@ -876,3 +876,170 @@ textarea:focus-visible {
     display: block;
   }
 }
+
+/* ------------------------------------------------------------------
+   Fullscreen image viewer (React <Lightbox>)
+   Content photos open large on a dark backdrop; close via the X,
+   Escape, or a backdrop click; step with the arrows or ← / → keys.
+------------------------------------------------------------------ */
+
+/* Affordance: any image wired to the viewer gets a zoom cursor. */
+.ng-zoomable {
+  cursor: zoom-in;
+}
+
+/* Gallery-page tiles: the trigger fills its grid cell so the existing
+   `.gallery .item img` / `.frame` descendant styles keep working. */
+.ng-gallery-trigger {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.ng-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 4vw, 48px);
+  background: rgba(6, 8, 26, 0.94);
+  animation: ng-lightbox-fade 0.22s ease;
+}
+
+.ng-lightbox__figure {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  animation: ng-lightbox-zoom 0.22s ease;
+}
+
+.ng-lightbox__img {
+  max-width: 100%;
+  max-height: calc(100vh - 130px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.ng-lightbox__caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 16px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  text-align: center;
+}
+
+.ng-lightbox__counter {
+  color: rgba(255, 255, 255, 0.55);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Shared button base for close + nav controls. */
+.ng-lightbox__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.ng-lightbox__btn:hover,
+.ng-lightbox__btn:focus-visible {
+  background: var(--themecolor, #7c1d1f);
+  border-color: var(--themecolor, #7c1d1f);
+  outline: none;
+}
+
+.ng-lightbox__close {
+  top: clamp(12px, 3vw, 28px);
+  right: clamp(12px, 3vw, 28px);
+  width: 46px;
+  height: 46px;
+  font-size: 30px;
+}
+
+.ng-lightbox__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  font-size: 34px;
+  padding-bottom: 4px;
+}
+
+.ng-lightbox__nav:hover,
+.ng-lightbox__nav:focus-visible {
+  transform: translateY(-50%) scale(1.06);
+}
+
+.ng-lightbox__prev {
+  left: clamp(8px, 2.5vw, 28px);
+}
+
+.ng-lightbox__next {
+  right: clamp(8px, 2.5vw, 28px);
+}
+
+@keyframes ng-lightbox-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ng-lightbox-zoom {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ng-lightbox__nav {
+    width: 42px;
+    height: 42px;
+    font-size: 28px;
+  }
+  .ng-lightbox__img {
+    max-height: calc(100vh - 150px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ng-lightbox,
+  .ng-lightbox__figure {
+    animation: none;
+  }
+  .ng-lightbox__btn {
+    transition: none;
+  }
+}

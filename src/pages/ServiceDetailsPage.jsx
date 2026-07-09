@@ -1,6 +1,7 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import { ZoomImage } from "../components/Lightbox";
 import { services, serviceSlugs, getService } from "../data/services";
 
 // Service titles in i18n are prefixed "01. ", "02. " … — strip that for the
@@ -62,7 +63,7 @@ export default function ServiceDetailsPage() {
             <div className="col-xl-8 col-md-12">
               <div className="scolling-content">
                 <div className="srv-single-content">
-                  <img loading="lazy" className="project-main-img" data-aos="fade-top" data-aos-duration="400" src={service.image} alt={title} />
+                  <ZoomImage images={[{ src: service.image, alt: title }]} index={0} loading="lazy" className="project-main-img" data-aos="fade-top" data-aos-duration="400" src={service.image} alt={title} />
                   <div className="cs-height-50"></div>
                   <h3>{title}</h3>
                   <div className="cs-height-10"></div>

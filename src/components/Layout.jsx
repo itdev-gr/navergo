@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Header from "./Header";
 import SideHeader from "./SideHeader";
 import Footer from "./Footer";
+import { LightboxProvider } from "./Lightbox";
 import { bindGlobalHandlers, initPage, cleanupPage } from "../lib/template.js";
 
 export default function Layout() {
@@ -89,7 +90,7 @@ export default function Layout() {
   }, [pathname]);
 
   return (
-    <>
+    <LightboxProvider>
       <Header />
       <SideHeader />
       <Outlet />
@@ -111,6 +112,6 @@ export default function Layout() {
           </div>
         </div>
       </div>
-    </>
+    </LightboxProvider>
   );
 }

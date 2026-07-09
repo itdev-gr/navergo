@@ -4,9 +4,9 @@
 
 // Services shown in the /service page grid.
 export const services = [
-  { slug: "aluminum",            base: "service.items.01", image: "/assets/img/service/steelwork/steelwork-01.jpg" },
+  { slug: "aluminum",            base: "service.items.01", image: "/assets/img/service/aluminum/aluminum-01.jpg" },
   { slug: "plating",             base: "service.items.02", image: "/assets/img/service/steelwork/steelwork-03.jpg" },
-  { slug: "piping",              base: "service.items.03", image: "/assets/img/service/piping/piping-03.jpg" },
+  { slug: "piping",              base: "service.items.03", image: "/assets/img/projects/laskaro-repairs-2.jpg" },
   { slug: "tanks",               base: "service.items.04", image: "/assets/img/service/steelwork/steelwork-04.jpg" },
   { slug: "structural",          base: "service.items.05", image: "/assets/img/service/steelwork/steelwork-02.jpg" },
   { slug: "pneumatic-hydraulic", base: "service.items.06", image: "/assets/img/service/piping/piping-engine-room.jpg" },

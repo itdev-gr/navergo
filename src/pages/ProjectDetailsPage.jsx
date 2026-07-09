@@ -1,6 +1,7 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ClientLogos from "../components/ClientLogos";
+import { ZoomImage } from "../components/Lightbox";
 import { projects, projectSlugs, getProject } from "../data/projects";
 
 export default function ProjectDetailsPage() {
@@ -21,6 +22,9 @@ export default function ProjectDetailsPage() {
   const scope = t(`${base}.scope`, { returnObjects: true });
   const scopeList = Array.isArray(scope) ? scope : [];
   const galleryImages = project.images.slice(1);
+  // One lightbox group for the whole project: main image first, then the
+  // gallery photos in order. `index` on each ZoomImage points into this array.
+  const lightboxImages = project.images.map((src) => ({ src, alt: title }));
 
   return (
     <>
@@ -63,7 +67,7 @@ export default function ProjectDetailsPage() {
           <div className="row stickysec-wrap">
             <div className="col-lg-8 col-md-12 scolling-content">
               <div className="scolling-content">
-                <img loading="lazy" className="project-main-img" data-aos="fade-top" data-aos-duration="400" src={project.images[0]} alt={title} />
+                <ZoomImage images={lightboxImages} index={0} loading="lazy" className="project-main-img" data-aos="fade-top" data-aos-duration="400" src={project.images[0]} alt={title} />
                 <div className="cs-height-50"></div>
                 <h3>{title}</h3>
                 <div className="cs-height-10"></div>
@@ -86,13 +90,13 @@ export default function ProjectDetailsPage() {
                   <div className="row project-gallery">
                     {galleryImages.map((src, i) => (
                       <div className="col-md-6" key={i}>
-                        <img loading="lazy" className="project-gallery-img" data-aos="fade-top" data-aos-duration={400 + i * 100} src={src} alt={title} />
+                        <ZoomImage images={lightboxImages} index={i + 1} loading="lazy" className="project-gallery-img" data-aos="fade-top" data-aos-duration={400 + i * 100} src={src} alt={title} />
                         <div className="cs-height-30"></div>
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <img loading="lazy" data-aos="fade-top" data-aos-duration="400" src={galleryImages[0]} alt={title} />
+                  <ZoomImage images={lightboxImages} index={1} loading="lazy" data-aos="fade-top" data-aos-duration="400" src={galleryImages[0]} alt={title} />
                 )}
               </div>
             </div>
