@@ -5,18 +5,11 @@ import ClientLogos from "../components/ClientLogos";
 import ContactForm from "../components/ContactForm";
 import CountUp from "../components/CountUp";
 import { projects } from "../data/projects";
-import { homeServiceSlug } from "../data/services";
+import { homeServiceSlug, services } from "../data/services";
 
+// Home tiles 01–07 mirror the /service grid images by position, so both pages
+// always show identical photos (services.js is the single source of truth).
 const homeServiceKeys = ["01", "02", "03", "04", "05", "06", "07"];
-const homeServiceImages = {
-  "01": { src: "/assets/img/service/steelwork/steelwork-03.jpg", alt: "Steel Plate Works" },
-  "02": { src: "/assets/img/service/steelwork/steelwork-01.jpg", alt: "Metal Structure Repairs" },
-  "03": { src: "/assets/img/service/piping/piping-03.jpg",       alt: "Piping Works" },
-  "04": { src: "/assets/img/projects/laskaro-1.jpg",             alt: "Tank Works" },
-  "05": { src: "/assets/img/service/steelwork/steelwork-02.jpg", alt: "Structural Reinforcements" },
-  "06": { src: "/assets/img/service/piping/piping-engine-room.jpg", alt: "Pneumatic and Hydraulic Systems" },
-  "07": { src: "/assets/img/service/steelwork/steelwork-05.jpg", alt: "Wear Restoration" },
-};
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -222,7 +215,7 @@ export default function HomePage() {
                       <div className="service-item" data-aos="fade-up" data-aos-duration={300 + idx * 100}>
                         <div className="srv-img">
                           <Link to={to}>
-                            <img loading="lazy" src={homeServiceImages[key].src} alt={homeServiceImages[key].alt} />
+                            <img loading="lazy" src={services[idx].image} alt={t(`home.services.items.${key}.title`)} />
                           </Link>
                         </div>
                         <div className="services-content">
