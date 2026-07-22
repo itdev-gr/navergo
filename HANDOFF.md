@@ -15,11 +15,13 @@ and has been smoke-tested in the browser (desktop 1440px and mobile 390px, EL + 
    differs, update: `index.html` (canonical, og:url, og:image, JSON-LD), `public/robots.txt`,
    `public/sitemap.xml`.
 
-3. **Contact / newsletter forms** — wired to FormSubmit (no backend needed), delivering to
-   `navergozk@gmail.com`. **The first submission triggers a one-time activation e-mail from
-   formsubmit.co to that inbox — the client must click the confirmation link once**, after
-   which all messages arrive normally. Endpoint constants live in
-   `src/components/ContactForm.jsx` and `src/components/Footer.jsx`.
+3. **Contact / newsletter forms** — no backend needed for either. The contact form
+   (Contact page + homepage) submits via Web3Forms; the access key in
+   `src/components/ContactForm.jsx` routes messages to the inbox registered at
+   web3forms.com. The footer newsletter still uses FormSubmit delivering to
+   `navergozk@gmail.com` — **its first submission triggers a one-time activation e-mail
+   from formsubmit.co that the client must confirm once** (endpoint constant in
+   `src/components/Footer.jsx`).
 
 4. **Social media links** — footer/hero/team social icons point to the platform homepages
    (facebook.com, linkedin.com, x.com, instagram.com). Replace with the company's real

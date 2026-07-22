@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const FORM_ENDPOINT = "https://formsubmit.co/ajax/navergozk@gmail.com";
+const FORM_ENDPOINT = "https://api.web3forms.com/submit";
+const WEB3FORMS_ACCESS_KEY = "a09fadfc-4491-45af-9723-de23745d81d9";
 
 // Shared contact form used on the Contact page and the homepage. Submits via
-// FormSubmit (no backend needed); the destination inbox must confirm the
-// first submission once before messages start arriving.
+// Web3Forms (no backend needed); the access key routes messages to the inbox
+// registered at web3forms.com.
 export default function ContactForm({ tPrefix = "contact.form" }) {
   const { t } = useTranslation();
   const [status, setStatus] = useState("idle");
@@ -20,16 +21,18 @@ export default function ContactForm({ tPrefix = "contact.form" }) {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          _subject: `Navergo website: ${form.elements.subject.value}`,
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `Navergo website: ${form.elements.subject.value}`,
+          from_name: `${form.elements.firstName.value} ${form.elements.lastName.value}`.trim(),
           firstName: form.elements.firstName.value,
           lastName: form.elements.lastName.value,
           phone: form.elements.phone.value,
           email: form.elements.email.value,
-          subject: form.elements.subject.value,
           message: form.elements.message.value,
         }),
       });
-      if (!res.ok) throw new Error("send failed");
+      const data = await res.json();
+      if (!res.ok || !data.success) throw new Error("send failed");
       setStatus("success");
       form.reset();
     } catch {
