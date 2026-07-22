@@ -1903,9 +1903,12 @@ footer P {
   list-style: none;
   color: var(--theme_dark_border);
   padding-bottom: 20px;
+  display: flex;
+  align-items: baseline;
 }
 .cs-constr-footer-menu ul li i {
   margin-right: 10px;
+  flex: 0 0 auto;
 }
 .cs-constr-footer-menu ul li a span {
   color: var(--theme_white);

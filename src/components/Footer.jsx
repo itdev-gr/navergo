@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { services } from "../data/services";
 
 const NEWSLETTER_ENDPOINT = "https://formsubmit.co/ajax/navergozk@gmail.com";
 
@@ -112,7 +113,7 @@ export default function Footer() {
                     <ul>
                       <li><i className="flaticon-right-arrow themecolor"></i><Link to="/about" className="cs-text_b_line"><span>{t("footer.links.aboutUs")}</span></Link></li>
                       <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service" className="cs-text_b_line"><span>{t("footer.links.ourServices")}</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/projects" className="cs-text_b_line"><span>{t("footer.links.recentPortfolio")}</span></Link></li>
+                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/projects" className="cs-text_b_line"><span>{t("footer.links.projects")}</span></Link></li>
                       <li><i className="flaticon-right-arrow themecolor"></i><Link to="/contact" className="cs-text_b_line"><span>{t("footer.links.contactUs")}</span></Link></li>
                     </ul>
                   </div>
@@ -128,11 +129,9 @@ export default function Footer() {
                   </div>
                   <div className="cs-constr-footer-menu">
                     <ul>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.aluminum")}</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.steel")}</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.piping")}</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.consulting")}</span></Link></li>
-                      <li><i className="flaticon-right-arrow themecolor"></i><Link to="/service-details" className="cs-text_b_line"><span>{t("footer.services.industrial")}</span></Link></li>
+                      {services.map((s) => (
+                        <li key={s.slug}><i className="flaticon-right-arrow themecolor"></i><Link to={`/service-details?service=${s.slug}`} className="cs-text_b_line"><span>{t(`footer.services.${s.slug}`)}</span></Link></li>
+                      ))}
                     </ul>
                   </div>
                 </div>

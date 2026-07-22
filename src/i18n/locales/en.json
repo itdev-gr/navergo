@@ -46,20 +46,22 @@
     "newsletter": "NEWSLETTER",
     "newsletterTagline": "Stay up to date with our latest news and projects.",
     "newsletterPlaceholder": "Enter your email...",
-    "usefulLinks": "USEFUL LINK",
+    "usefulLinks": "USEFUL LINKS",
     "ourServices": "OUR SERVICES",
     "links": {
       "aboutUs": "ABOUT US",
       "ourServices": "OUR SERVICES",
-      "recentPortfolio": "RECENT PORTFOLIO",
+      "projects": "OUR PROJECTS",
       "contactUs": "CONTACT US"
     },
     "services": {
       "aluminum": "ALUMINUM WORKS",
-      "steel": "STEEL PLATE WORKS",
+      "plating": "STEEL PLATE WORKS",
       "piping": "PIPING WORKS",
-      "consulting": "CONSULTING",
-      "industrial": "INDUSTRIAL"
+      "tanks": "TANK WORKS",
+      "structural": "STRUCTURAL REINFORCEMENTS",
+      "pneumatic-hydraulic": "PNEUMATIC & HYDRAULIC SYSTEMS",
+      "wear-restoration": "WEAR RESTORATION"
     },
     "rights": "All Rights Reserved.",
     "credit": "Designed and developed by",
